@@ -148,7 +148,7 @@ int main ()
 
 
     //2 with ios::trunc
-    myFile.open ("Script.py", ios::trunc);
+    myFile.open ("Script.cpp", ios::trunc);
 
     myFile.close ();
 
