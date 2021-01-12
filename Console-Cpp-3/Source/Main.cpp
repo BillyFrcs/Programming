@@ -1,6 +1,9 @@
 //Preprocessing directive
 #include <iostream>
-
+#include <string>
+#include "SOO.h"
+#include "Bar.h"
+#include "Together.h"
 //Macro change variable with name, without memory
 #define PI 5.190820
 #define BI 3.15626117819
@@ -17,11 +20,32 @@
 
 #endif
 
+//Check there is BOO or not
+#define BOO 19
+//ifdef ==> if definition
+#ifdef BOO
+     #define TESTBOO "BOO yes"
+
+#else 
+     #define TESTBOO "BOO no"
+
+#endif
+     
+
+//ifndef ==> if not definition
+#ifndef FOO
+     #define FOO "New FOO"
+      
+#else 
+
+#endif
+
+
 using namespace std;
 
 double Pi = 5.190820;
 
-int main (int argc, char const *argv[])
+int main ()
 {
      //Basic preprocessing directive
      cout << "Value PI = " << PI << endl;
@@ -65,6 +89,23 @@ int main (int argc, char const *argv[])
      //cout << "MAXIMUM = " << MAXIMUM (10, 2) << endl;
 
      cout << "Name string = " << Name << endl;
+
+     cout << endl;
+
+
+     //Preprocessing directive "ifdef"
+     cout << TESTBOO << endl;
+     cout << FOO << endl;
+
+     //cout << SOO << endl;
+     
+     cout << endl;
+
+     //Pragma once 
+     Students Student;
+
+     Student.NPM = 8;
+     cout << Student.NPM << endl;
 
      system ("pause > 0");
      cin.get();
