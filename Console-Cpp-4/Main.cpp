@@ -29,6 +29,40 @@ void Hello()
 }
 
 
+void printInt (int Content)
+{
+    cout << Content << endl;
+}
+
+void printDouble (double Data)
+{
+    cout << Data << endl;
+}
+
+void printChar (char Character)
+{
+    cout << Character << endl;
+}
+
+//Template
+template <typename T>
+void Printf (T Data)
+{
+    cout << Data << endl;
+}
+
+template <typename T>
+int toInt (T Data)
+{
+    return int (Data);
+}
+
+template <typename T, typename U>
+T max (T Data1, U Data2)
+{
+    return (Data1 > Data2) ? Data1 : Data2; //Ternary
+}
+
 int main ()
 {
     Hello ();
@@ -80,8 +114,33 @@ int main ()
 
     cout << "Value O: " << O << endl;
 
+    cout << endl;
 
 
+
+    //Function template
+    printInt (19);
+    printDouble (19.08);
+    printChar ('B');
+
+    printf ("\n");
+
+    Printf (20);
+    Printf (1.2);
+    Printf ('F');
+    Printf ("Billy");
+
+    printf ("\n");
+
+    cout << toInt (30.000) << endl;
+
+    printf ("\n");
+
+    cout << max (10,400.50) << endl;
+
+    Printf <double> (70.95);
+
+    cout << max <double, int> (1.10,15) << endl;
 
     system ("pause > 0");
     std::cin.get();
