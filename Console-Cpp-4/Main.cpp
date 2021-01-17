@@ -2,6 +2,7 @@
 #include <string>
 #include <stdio.h>
 #include "Header.h"
+#include <typeinfo>
 
 using namespace std;
 
@@ -57,10 +58,16 @@ int toInt (T Data)
     return int (Data);
 }
 
-template <typename T, typename U>
+/*template <typename T, typename U>
 T max (T Data1, U Data2)
 {
     return (Data1 > Data2) ? Data1 : Data2; //Ternary
+}*/
+
+template <typename T, typename U>
+auto max (T a, U b)
+{
+    return (a > b) ? T(a) : U(b);
 }
 
 int main ()
@@ -136,11 +143,30 @@ int main ()
 
     printf ("\n");
 
-    cout << max (10,400.50) << endl;
+    //cout << max (10,400.50) << endl;
 
     Printf <double> (70.95);
 
-    cout << max <double, int> (1.10,15) << endl;
+    //cout << max <double, int> (1.10,15) << endl;
+
+    cout << endl;
+
+
+
+    //Auto
+    int a = 23;
+    string b = "Billy";
+    double c = 19.200;
+    float d = 35.5f;
+
+    auto e = max (a, c);
+
+    cout << a << "\tData type: " << typeid (a).name() << endl;
+    cout << b << "\tData type: " << typeid (b).name() << endl;
+    cout << c << "\tData type: " << typeid (c).name() << endl;
+    cout << d << "\tData type: " << typeid (d).name() << endl;
+    
+    cout << e << "\tData type: " << typeid (e).name() << endl;
 
     system ("pause > 0");
     std::cin.get();
