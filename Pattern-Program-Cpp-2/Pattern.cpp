@@ -26,12 +26,13 @@ int main()
 
     system ("color 5"); //Color code
 
+    //For loops
     for (i = 1; i <= 22; i++)
     {
 
         for (j = 1; j <= 60; j++)
         {
-
+            //If else statements
             if (i == 1)
                 if (((j >= 14) && (j <= 23)) || ((j >= 39) && (j <= 48)))
                     cout << "*";
