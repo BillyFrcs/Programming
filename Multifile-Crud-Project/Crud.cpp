@@ -68,7 +68,7 @@ int getOption()
     int Input;
 
     system ("cls");
-    system ("clear");
+    //system ("clear");
 
     cout << "Crud program data mahasiswa" << endl;
     cout << "===========================" << endl;
