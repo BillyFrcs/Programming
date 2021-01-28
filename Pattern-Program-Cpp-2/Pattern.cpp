@@ -7,9 +7,9 @@ using namespace std;
 
 int main()
 {
-    system ("cls");
+    system("cls");
 
-    /*/Pattern 1
+    //Pattern 1
     int a = 1;
 
     for (int b = 6; b >= 1; b--)
@@ -20,8 +20,25 @@ int main()
             a++;
         }
         cout << endl;
-    }*/
+    }
 
+    //Pattern 2 (Number)
+
+    int Rows;
+
+    cout << "Enter number of rows: ";
+    cin >> Rows;
+
+    for (int c = Rows; c >= 1; c--)
+    {
+        for (int d = 1; d <= c; d++)
+        {
+            cout << d << "";
+        }
+        cout << endl;
+    }
+
+    /*/Love pattern
     int i, j;
 
     system ("color 5"); //Color code
@@ -149,7 +166,7 @@ int main()
         }
 
         cout << "\n";
-    }
+    }*/
 
     system("pause > 0");
     cin.get();

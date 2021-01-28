@@ -7,6 +7,8 @@ using namespace std;
 
 int main()
 {
+	system ("cls");
+	
 	//Triangle program 1
 	int a;
 
