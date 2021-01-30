@@ -39,9 +39,7 @@ int main()
 	Result = (a + b) * b;
 	cout << Result << endl;
 
-
 	cout << endl;
-
 
 	//Comparison / Relation Expression
 	int c = 2;
@@ -56,7 +54,6 @@ int main()
 	//Not Comparabel ! + = => !=
 	Result2 = (c != d);
 	cout << (Result2) << endl;
-
 
 	cout << endl;
 
@@ -74,9 +71,7 @@ int main()
 	Result4 = (e > f);
 	cout << Result4 << endl;
 
-
 	cout << endl;
-
 
 	//Comparasion 3
 	int h = 5;
@@ -92,9 +87,7 @@ int main()
 	Result6 = (h >= g);
 	cout << Result6 << endl;
 
-
 	cout << endl;
-
 
 	//Operator Logic = And, Not, Or
 	int i = 9;
@@ -123,9 +116,7 @@ int main()
 	result = (i == 8) || (j == 9);
 	cout << result << endl;
 
-
 	cout << endl;
-
 
 	//If Statement
 	int k;
@@ -142,9 +133,7 @@ int main()
 		cout << "Please enter number 19" << endl;
 	}
 
-
 	cout << endl;
-
 
 	//Basic if, else if, else
 	int l;
@@ -166,44 +155,52 @@ int main()
 		cout << "This is number 70" << endl;
 	}
 
-	else {
+	else
+	{
 		cout << "This is not 90 , 80 and 70" << endl;
 	}
-	
-	//Year program
-	  int y = 0;
-  
-  cout << "Enter year: ";
-  cin >> y;
 
-  if ( y < 1000 || y > 9999){
-    cout << "Invalid entry. \n";
-  } else if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0){
-    cout << y;
-    cout << "Falls on a leap year. \n";
-  } else {
-    cout << y;
-    cout << " is not a leap year. \n";
-  }
-	
+	printf("\n");
+
+	//Year program
+	int y = 0;
+
+	cout << "Enter year: ";
+	cin >> y;
+
+	if (y < 1000 || y > 9999)
+	{
+		cout << "Invalid entry. \n";
+	}
+	else if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0)
+	{
+		cout << y;
+		cout << "Falls on a leap year. \n";
+	}
+	else
+	{
+		cout << y;
+		cout << " is not a leap year. \n";
+	}
+
 	//Logical operator and (&&)
-/*a	b	a && b
-false	false	false
-false	true	false
-true	false	false
-true	true	true*/
-	
+	/*a	   b	     a && b
+    false	 false	false
+    false	 true	false
+    true	 false	false
+    true	 true	true*/
+
 	//Logocal operator or (||)
-	/*a	b	a || b
-false	false	false
-false	true	true
-true	false	true
-true	true	true*/
-	
+	/*a	   b	     a || b
+    false	 false	false
+    false	 true	true
+    true	false	true
+    true	true	    true*/
+
 	//Logical operator not (!)
-	/*a	!a
-false	true
-true	false*/
+	/*a	   !a
+    false	   true
+    true	   false*/
 
 	cin.get();
 	return 0;
