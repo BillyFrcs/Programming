@@ -169,7 +169,25 @@ int main()
 	else {
 		cout << "This is not 90 , 80 and 70" << endl;
 	}
-
+	
+	//Logical operator and (&&)
+/*a	b	a && b
+false	false	false
+false	true	false
+true	false	false
+true	true	true*/
+	
+	//Logocal operator or (||)
+	/*a	b	a || b
+false	false	false
+false	true	true
+true	false	true
+true	true	true*/
+	
+	//Logical operator not (!)
+	/*a	!a
+false	true
+true	false*/
 
 	cin.get();
 	return 0;
