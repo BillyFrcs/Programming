@@ -170,6 +170,22 @@ int main()
 		cout << "This is not 90 , 80 and 70" << endl;
 	}
 	
+	//Year program
+	  int y = 0;
+  
+  cout << "Enter year: ";
+  cin >> y;
+
+  if ( y < 1000 || y > 9999){
+    cout << "Invalid entry. \n";
+  } else if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0){
+    cout << y;
+    cout << "Falls on a leap year. \n";
+  } else {
+    cout << y;
+    cout << " is not a leap year. \n";
+  }
+	
 	//Logical operator and (&&)
 /*a	b	a && b
 false	false	false
