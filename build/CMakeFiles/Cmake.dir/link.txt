@@ -1,0 +1,2 @@
+"C:/Program Files/MinGW/bin/ar.exe" qc libCmake.a CMakeFiles/Cmake.dir/Cmake.cpp.obj
+"C:/Program Files/MinGW/bin/ranlib.exe" libCmake.a
