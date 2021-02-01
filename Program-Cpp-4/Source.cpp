@@ -39,18 +39,21 @@ int main()
 	cout << b << endl;
 	b++; //b = b + 1;
 	//cout << b++ << endl;
-	cout << b << endl << "\n";
+	cout << b << endl
+		<< "\n";
 
 	//Preincrement
 	cout << c << endl;
 	++c;
 	//cout << ++b << endl;
-	cout << c << endl << "\n";
+	cout << c << endl
+		<< "\n";
 
 	//Decrement
 	cout << d << endl;
 	d--; //d = d - 1;
-	cout << d << endl << "\n";
+	cout << d << endl
+		<< "\n";
 
 	cout << e << endl;
 	--e;
@@ -61,7 +64,8 @@ int main()
 	//While Looping
 	int f = 5;
 
-	while (f <= 10) {
+	while (f <= 10)
+	{
 		cout << "Billy ";
 		cout << f << endl;
 		f += 1;
@@ -74,7 +78,8 @@ int main()
 	//Do While Loop
 	int g = 1;
 
-	do {
+	do
+	{
 		cout << "Okay";
 		cout << g << endl;
 		g++;
@@ -88,31 +93,37 @@ int main()
 	//For Loop
 	//Counter
 	cout << "For loop 1 \n";
-	for (int h = 1; h <= 10; h++) {
+	for (int h = 1; h <= 10; h++)
+	{
 		cout << h << endl;
 	}
 
 	cout << "For loop 2 \n";
-	for (int h = 1; h <= 10; h += 2) {
+	for (int h = 1; h <= 10; h += 2)
+	{
 		cout << h << endl;
 	}
 
 	cout << "For loop 3 \n";
-	for (int h = 1; h >= -10; h--) {
+	for (int h = 1; h >= -10; h--)
+	{
 		cout << h << endl;
 	}
 
 	cout << "For loop 4 \n";
 	int total = 0;
-	for (int h = 1; h <= 10; total += h, h++) {
+	for (int h = 1; h <= 10; total += h, h++)
+	{
 		cout << h << "||" << total << endl;
 	}
 
 	cout << endl;
 
 	//Break
-	for (int i = 0; i <= 10; i++) {
-		if (i == 5) {
+	for (int i = 0; i <= 10; i++)
+	{
+		if (i == 5)
+		{
 			break;
 		}
 
@@ -123,9 +134,11 @@ int main()
 	//Continue
 	cout << "\n";
 	int j = 0;
-	while (j <= 10) {
+	while (j <= 10)
+	{
 		j++;
-		if (j == 6) {
+		if (j == 6)
+		{
 			continue;
 		}
 
@@ -159,6 +172,34 @@ int main()
 		cout << k_l << endl;
 	}
 
+	//Guess program
+	int Guess, Tries = 0;
+
+	cout << "Guess number 1 - 10: ";
+	cin >> Guess;
+
+	while (Guess != 9 && Tries < 50)
+	{
+		cout << "Wrong guess, try again: ";
+		cin >> Guess;
+
+		Tries++;
+	}
+
+	if (Guess == 9)
+	{
+		cout << "You got it \n";
+	}
+
+	//Square program
+	int I = 0;
+	int Square = 0;
+
+	while (I < 10)
+	{
+		cout << I << " " << I * I << "\n";
+		I++;
+	}
 
 	cin.get();
 	return 0;
