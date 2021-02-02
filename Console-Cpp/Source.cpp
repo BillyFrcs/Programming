@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <fstream>
 #include <array>
 #include <stdio.h>
 
@@ -16,7 +15,7 @@ struct Fruits
 };
 
 //Nesting struct
-struct Actors 
+struct Actors
 {
     string Name;
     int YearOfBird;
@@ -34,25 +33,27 @@ struct Movies
 };
 
 //Unions
-union Data 
+union Data
 {
     int intValue;
-    char charValue [5];
+    char charValue[5];
 };
 
 //Enum
 enum Colors
 {
-    Blue, Black, White = 10
+    Blue,
+    Black,
+    White = 10
 };
 
 //Comma operator
-void printResult (int val)
+void printResult(int val)
 {
     cout << val << endl;
 }
 
-int main (int argc, char const *argv[])
+int main(int argc, char const *argv[])
 {
     //Struct
     Fruits Banana, Grape;
@@ -65,7 +66,7 @@ int main (int argc, char const *argv[])
     cout << "Banana" << endl;
 
     cout << "Color: " << Banana.Color << endl;
-    cout << "Weight: "<< Banana.Weight << endl;
+    cout << "Weight: " << Banana.Weight << endl;
     cout << "Price: " << Banana.Price << endl;
     cout << "Taste: " << Banana.Taste << endl;
 
@@ -83,8 +84,6 @@ int main (int argc, char const *argv[])
 
     cout << endl;
 
-
-
     //Nesting struct
     Actors Cast1, Cast2;
     Movies Movie1, Movie2;
@@ -101,7 +100,8 @@ int main (int argc, char const *argv[])
 
     cout << "Title movie, " << Movie1.Title << endl;
     cout << "Actor name, " << Movie1.Actor1.Name << endl;
-    cout << "Year release, " << Movie1.Year << endl << endl;
+    cout << "Year release, " << Movie1.Year << endl
+         << endl;
 
     //Make actor 2
     Cast2.Name = "Franscois";
@@ -113,32 +113,28 @@ int main (int argc, char const *argv[])
     Movie2.Year = 2020;
     Movie2.Actor2 = Cast2;
 
-    cout << "Title movie: " <<  Movie2.Title << endl;
+    cout << "Title movie: " << Movie2.Title << endl;
     cout << "Actor name: " << Movie2.Actor2.Name << endl;
     cout << "Year release: " << Movie2.Year << endl;
 
     cout << endl;
 
-
-
     //Unions
     Data dataUnion;
-    
+
     dataUnion.intValue = 10;
-    
-    cout << "Data intValue: " << sizeof (dataUnion.intValue) << " Value: " << dataUnion.intValue << endl;
-    
-    dataUnion.charValue [0] = 'B';
-    dataUnion.charValue [1] = 'i';
-    dataUnion.charValue [2] = 'l';
-    dataUnion.charValue [3] = 'l';
-    dataUnion.charValue [4] = 'y';
+
+    cout << "Data intValue: " << sizeof(dataUnion.intValue) << " Value: " << dataUnion.intValue << endl;
+
+    dataUnion.charValue[0] = 'B';
+    dataUnion.charValue[1] = 'i';
+    dataUnion.charValue[2] = 'l';
+    dataUnion.charValue[3] = 'l';
+    dataUnion.charValue[4] = 'y';
 
     cout << "Data charValue: " << dataUnion.charValue << endl;
-    
+
     cout << endl;
-
-
 
     //Enum
     Colors Tshirt, Pants;
@@ -151,19 +147,15 @@ int main (int argc, char const *argv[])
 
     cout << Tshirt << endl;
 
-
     Pants = White;
 
-    cout <<"Color pants White " << Pants << endl;
+    cout << "Color pants White " << Pants << endl;
 
     cout << endl;
-
-
 
     //Ternary operator = ?
     int a, b, c, d;
     string Result1, Result2, Result3, Result4, Output1, Output2;
-
 
     Result1 = "Billy";
     Result2 = "Franscois";
@@ -180,12 +172,11 @@ int main (int argc, char const *argv[])
 
     cout << endl;
 
-
     Result3 = "Programmer / Developer";
     Result4 = "Ceo";
 
     c = 5;
-    
+
     cout << "Enter number: ";
     cin >> d;
 
@@ -199,8 +190,6 @@ int main (int argc, char const *argv[])
 
     cout << endl;
 
-
-
     //Comma operator
     //Method 1
     int e, f, g;
@@ -208,22 +197,22 @@ int main (int argc, char const *argv[])
     g = (e = 5, f = 5);
     g = (e + f);
 
-    cout << g << endl << endl;
-
+    cout << g << endl
+         << endl;
 
     //Method 2
     int h, i, j;
     j = (h = 10, i = 10, (h * i));
 
-    cout << j << endl << endl;
-
+    cout << j << endl
+         << endl;
 
     //Method 3
     int k, l, m;
     m = (k = 4, cout << k << endl, l = 4, cout << l << endl, (k / l));
 
-    cout << m << endl << endl;
-
+    cout << m << endl
+         << endl;
 
     //Method 4
     int o, p, q;
@@ -231,9 +220,25 @@ int main (int argc, char const *argv[])
 
     cout << q << endl;
 
+    // For loops statements
+    // Increment
+    int x, y;
+    for (y = 0; y < 10; y++) //Conditions
+    { 
+        //Statements
+        cout << "Billy \n";
+    }
 
+    printf("");
 
-    system ("pause > 0");
+    //Decrement
+    for (x = 20; x > 0; x--) //Conditions
+    {
+        //Statements
+        cout << "Franscois \n";
+    }
+
+    system("pause > 0");
     cin.get();
     return 0;
 }

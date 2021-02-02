@@ -9,7 +9,7 @@ int main()
 {
     system("cls");
 
-    //Pattern 1
+    /*/Pattern 1
     int a = 1;
 
     for (int b = 6; b >= 1; b--)
@@ -36,12 +36,12 @@ int main()
             cout << d << "";
         }
         cout << endl;
-    }
+    }*/
 
-    /*/Love pattern
+    //Love pattern
     int i, j;
 
-    system ("color 5"); //Color code
+    system ("color 6"); //Color code
 
     //For loops
     for (i = 1; i <= 22; i++)
@@ -166,7 +166,7 @@ int main()
         }
 
         cout << "\n";
-    }*/
+    }
 
     system("pause > 0");
     cin.get();
