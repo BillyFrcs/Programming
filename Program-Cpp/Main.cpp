@@ -1,13 +1,13 @@
 #include <iostream>
 #include <stdio.h>
-#include <string.h>
-#include <cstdlib>
+#include <string>
 
 using namespace std;
 
 //Basic c++
-int main() {
-    
+int main()
+{
+
     //Data Type
     cout << "Hello World" << endl;
     cout << "Hello Billy \n";
@@ -57,7 +57,8 @@ int main() {
 
     //Number While
     int num = 1;
-    while (num < 10) {
+    while (num < 10)
+    {
         cout << "Number: " << num << endl;
         num++;
     }
@@ -75,13 +76,16 @@ int main() {
     //Print number program loops
     int n = 4;
     int m = 1;
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j <= i; j++) {
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
             cout << m << " ";
             m = m + 2;
         }
         m++;
-        if (m == 16) {
+        if (m == 16)
+        {
             m++;
         }
         cout << endl;
@@ -108,12 +112,10 @@ int main() {
     unsigned int a = 5;
     cout << a << endl;
     cout << sizeof(a) << " Byte" << endl;
-    cout << numeric_limits <int>::max() << endl;
-    cout << numeric_limits <int>::min() << endl;
-
-
+    
+    // cout << numeric_limits<int>::max() << endl;
+    // cout << numeric_limits<int>::min() << endl;
 
     cin.get();
     return 0;
-
 }

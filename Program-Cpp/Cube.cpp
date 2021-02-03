@@ -17,7 +17,6 @@ int main () {
 
      cout << endl;
      
-
      
      //Count keliling persegi panjang
      float p, l, Result;
