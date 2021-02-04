@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string.h>
 #include <stdio.h>
+#include <vector>
 
 using namespace std;
 
@@ -172,6 +173,8 @@ int main()
 		cout << k_l << endl;
 	}
 
+	printf ("\n");
+
 	//Guess program
 	int Guess, Tries = 0;
 
@@ -200,7 +203,20 @@ int main()
 		cout << I << " " << I * I << "\n";
 		I++;
 	}
+     
+	printf ("\n");
 
+	//Vector program
+	vector <double> numVector = {200, 400, 500}; //Data type double
+      
+	cout << "Value: " << numVector[0] << endl;
+
+	vector <char> charVector = {'a', 'b', 'c'};
+
+	cout << "Character 1: " << charVector[0] << endl;
+	cout << "Character 2: " << charVector[1] << endl;
+	cout << "Character 3: " << charVector[2] << endl;
+	
 	cin.get();
 	return 0;
 }
