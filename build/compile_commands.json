@@ -1,7 +1,0 @@
-[
-{
-  "directory": "C:/ProgramCpp/build",
-  "command": "\"C:/Program Files/MinGW/bin/g++.exe\"   -g -o CMakeFiles/Cmake.dir/Cmake.cpp.obj -c C:/ProgramCpp/Cmake.cpp",
-  "file": "C:/ProgramCpp/Cmake.cpp"
-}
-]
