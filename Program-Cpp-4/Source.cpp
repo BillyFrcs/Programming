@@ -211,12 +211,23 @@ int main()
       
 	cout << "Value: " << numVector[0] << endl;
 
+	printf ("\n");
+
 	vector <char> charVector = {'a', 'b', 'c'};
 
 	cout << "Character 1: " << charVector[0] << endl;
 	cout << "Character 2: " << charVector[1] << endl;
 	cout << "Character 3: " << charVector[2] << endl;
-	
+
+	printf ("\n");
+
+	vector <string> stringVectorName;
+
+	stringVectorName.push_back("Billy");
+
+	cout << "Name: " << stringVectorName[0] << endl;
+
+
 	cin.get();
 	return 0;
 }
