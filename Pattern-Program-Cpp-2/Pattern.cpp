@@ -22,6 +22,8 @@ int main()
         cout << endl;
     }
 
+    cout << endl;
+
     //Pattern 2 (Number)
 
     int Rows;
@@ -36,9 +38,11 @@ int main()
             cout << d << "";
         }
         cout << endl;
-    }*/
+    }
 
-    //Love pattern
+    cout << endl;*/
+
+    /*/Love pattern
     int i, j;
 
     system ("color 6"); //Color code
@@ -166,6 +170,57 @@ int main()
         }
 
         cout << "\n";
+    }*/
+
+    cout << endl;
+
+    /*/Number program
+    int n = 0;
+cout << "Masukkan nilai n: ";
+cin >> n;
+if (n <= 0) exit(0);
+for (int e = (n - 1); e >= 0; e--) {
+if ((e % 2) == 0) {
+cout << "1";
+for (int f = 1; f <= e; f++) {
+if ((f % 2) == 0) {
+cout << f;
+}
+}
+cout << "\n";
+} else {
+for (int f = 1; f <= (e + 2); f++) {
+if ((f % 2) == 1) {
+cout << f;
+}
+}
+cout << "\n";
+}
+}*/
+
+    cout << endl;
+
+    //Number program
+    for (int g = 10; g > 1; g--)
+    {
+        if (g % 2 == 0)
+        {
+            cout << 1;
+            for (int h = 2; h < g; h += 2)
+            {
+                cout << h;
+            }
+        }
+
+        else
+        {
+            for (int h = 1; h <= g; g += 2)
+            {
+                cout << h;
+            }
+        }
+
+        cout << endl;
     }
 
     system("pause > 0");
