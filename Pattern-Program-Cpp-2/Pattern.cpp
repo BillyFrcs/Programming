@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <stdlib.h>
 #include <windows.h>
 
 using namespace std;
@@ -174,29 +173,40 @@ int main()
 
     cout << endl;
 
-    /*/Number program
+    //Number program
     int n = 0;
-cout << "Masukkan nilai n: ";
-cin >> n;
-if (n <= 0) exit(0);
-for (int e = (n - 1); e >= 0; e--) {
-if ((e % 2) == 0) {
-cout << "1";
-for (int f = 1; f <= e; f++) {
-if ((f % 2) == 0) {
-cout << f;
-}
-}
-cout << "\n";
-} else {
-for (int f = 1; f <= (e + 2); f++) {
-if ((f % 2) == 1) {
-cout << f;
-}
-}
-cout << "\n";
-}
-}*/
+    cout << "Masukkan nilai n: ";
+    cin >> n;
+
+    if (n <= 0)
+        exit(0);
+
+    for (int e = (n - 1); e >= 0; e--)
+    {
+        if ((e % 2) == 0)
+        {
+            cout << "1";
+            for (int f = 1; f <= e; f++)
+            {
+                if ((f % 2) == 0)
+                {
+                    cout << f;
+                }
+            }
+            cout << "\n";
+        }
+        else
+        {
+            for (int f = 1; f <= (e + 2); f++)
+            {
+                if ((f % 2) == 1)
+                {
+                    cout << f;
+                }
+            }
+            cout << "\n";
+        }
+    }
 
     cout << endl;
 
@@ -206,6 +216,7 @@ cout << "\n";
         if (g % 2 == 0)
         {
             cout << 1;
+
             for (int h = 2; h < g; h += 2)
             {
                 cout << h;
@@ -214,7 +225,7 @@ cout << "\n";
 
         else
         {
-            for (int h = 1; h <= g; g += 2)
+            for (int h = 1; h <= g; h += 2)
             {
                 cout << h;
             }
