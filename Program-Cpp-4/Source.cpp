@@ -173,7 +173,7 @@ int main()
 		cout << k_l << endl;
 	}
 
-	printf ("\n");
+	printf("\n");
 
 	//Guess program
 	int Guess, Tries = 0;
@@ -203,30 +203,45 @@ int main()
 		cout << I << " " << I * I << "\n";
 		I++;
 	}
-     
-	printf ("\n");
+
+	printf("\n");
 
 	//Vector program
-	vector <double> numVector = {200, 400, 500}; //Data type double
-      
+	vector<double> numVector = {200, 400, 500}; //Data type double
+
 	cout << "Value: " << numVector[0] << endl;
 
-	printf ("\n");
+	printf("\n");
 
-	vector <char> charVector = {'a', 'b', 'c'};
+	vector<char> charVector = {'a', 'b', 'c'};
 
 	cout << "Character 1: " << charVector[0] << endl;
 	cout << "Character 2: " << charVector[1] << endl;
 	cout << "Character 3: " << charVector[2] << endl;
 
-	printf ("\n");
+	printf("\n");
 
-	vector <string> stringVectorName;
+	vector<string> stringVectorName;
 
 	stringVectorName.push_back("Billy");
 
 	cout << "Name: " << stringVectorName[0] << endl;
 
+	printf("\n");
+
+	vector<double> deliveryOrder;
+
+	deliveryOrder.push_back(1.50);
+	deliveryOrder.push_back(2.34);
+
+	double Total = 0.0;
+
+	for (int z = 0; z < deliveryOrder.size(); z++)
+	{
+		Total = Total + deliveryOrder[z];
+	}
+
+	cout << "Total $" << Total << "\n";
 
 	cin.get();
 	return 0;
