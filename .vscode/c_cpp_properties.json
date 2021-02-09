@@ -3,7 +3,9 @@
         {
             "name": "Win64",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "C:/Program Files/MinGW/include/c++/9.2.0/x86_64-w64-mingw32/bits",
+                "C:/Program Files/MinGW/include/c++/9.2.0/x86_64-w64-mingw32/bits"
             ],
             "defines": [
                 "_DEBUG",
@@ -11,7 +13,7 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.18362.0",
-            "compilerPath": "C:/Program Files/MinGW/bin/gcc.exe",
+            "compilerPath": "C:/Program Files/MinGW/bin/g++.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "gcc-x64",

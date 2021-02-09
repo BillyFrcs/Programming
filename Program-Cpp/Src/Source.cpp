@@ -18,7 +18,7 @@ int main()
      cout << "Enter answer: ";
      cin >> Answer;
 
-     printf ("");
+     printf ("\n");
 
      //Random sentence program
      srand(time(NULL));
