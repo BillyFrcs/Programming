@@ -54,8 +54,8 @@ double luas_cube(double sisi)
 
 
 
-//Function recrusive
-int pangkatIterasi (int b, int c) 
+//Function recursive
+int pangkatIteration (int b, int c) 
 {
 	int result = b;
 	for (int d = 1; d < c; d++) {
@@ -137,7 +137,7 @@ int main()
 
 
 
-	//Function recursive or rekursif
+	//Function iteration and recursive
 	int b;
 	int c;
 
@@ -147,11 +147,18 @@ int main()
 	cout << "Pangkat: ";
 	cin >> c;
 
-	//Iterasi
-	cout << "Result Iterasi = " << pangkatIterasi (b, c) << endl;
+	//Iteration
+	cout << "Result Iteration = " << pangkatIteration (b, c) << endl;
 	
 	//Recursive
 	cout << "Result Recursive = " << pangkatRecursive (b, c) << endl;
+
+	cout << endl;
+
+	//Random program
+	int createRandomNumber = rand() %50;
+
+	cout << "Random number: " << createRandomNumber << endl;
 
 
 
