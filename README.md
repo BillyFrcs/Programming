@@ -1,5 +1,5 @@
-# ProgramCpp
+# Program C++ / Cpp
 
-This repository contains learning and builds simple project all about programming language C++ / Cpp.
+This repository contains about C++ / Cpp Programming and Object Oriented Programming.
 
 © Billy Franscois
