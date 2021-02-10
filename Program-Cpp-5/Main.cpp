@@ -9,59 +9,71 @@ using namespace std;
 //void = 0 (Kosong function)
 
 //Reporter
-void Billy() {
+void Billy()
+{
     cout << "Billy Franscois" << endl;
 }
 
-int kuadrat (int b) { //Function
+int kuadrat(int b)
+{ //Function
     int c;
     c = b * b;
     return c;
 }
 
 //Void reporter
-void menampilkan (int input) {
+void menampilkan(int input)
+{
     cout << "Menampilkan with void: ";
     cout << input << endl;
 }
 
-int tambah (int d, int e) { //function
+int tambah(int d, int e)
+{ //function
     int f;
-    f = d + e, d* e;
+    f = d + e, d * e;
     return f;
 }
 
 //1
 //Menghitung luas
-double menghitung_luas (double p, double l) {
+double menghitung_luas(double p, double l)
+{
     double luas = p * l;
     return luas;
 }
 
 //2
 //Menghitung keliling
-double menghitung_keliling (double p, double l) {
+double menghitung_keliling(double p, double l)
+{
     double keliling = 2 * (p + l);
     return keliling;
 }
 
 //1
 //Luas with void
-void tampilkan_luas (double p, double l) {
+void tampilkan_luas(double p, double l)
+{
     cout << "=> Using void function" << endl;
     cout << "Luasnya is: ";
-    cout << menghitung_luas (p, l) << endl << endl;
+    cout << menghitung_luas(p, l) << endl
+         << endl;
 }
 
 //2
 //Keliling with void
-void tampilkan_keliling (double p, double l) {
+void tampilkan_keliling(double p, double l)
+{
     cout << "=> Using void function" << endl;
     cout << "Kelilingnya is: ";
-    cout << menghitung_keliling (p, l) << endl;
+    cout << menghitung_keliling(p, l) << endl;
 }
 
-int main (int argc, char const *argv[])
+//Prototype
+void animalProgram();
+
+int main(int argc, char const *argv[])
 {
     Billy();
 
@@ -77,8 +89,6 @@ int main (int argc, char const *argv[])
 
     cout << endl;
 
-
-
     //Konsep Dice program example
     //cout << "Konsep dice program \n";
     // for (int a = 0; a < b; a++) {
@@ -90,28 +100,29 @@ int main (int argc, char const *argv[])
 
     char lanjut;
 
-    while (true) {
+    while (true)
+    {
 
         cout << "Lempar dadu (y/n)" << endl;
         cin >> lanjut;
 
-        if (lanjut == 'y') {
+        if (lanjut == 'y')
+        {
             cout << 1 + rand() % 6 << endl;
         }
 
-        else if (lanjut == 'n') {
+        else if (lanjut == 'n')
+        {
             break;
         }
 
-        else {
+        else
+        {
             cout << "Please choose y/n :) \n";
         }
     }
 
     cout << endl;
-
-
-
 
     //Fuction return "kuadrat"
     int input, hasil;
@@ -122,11 +133,9 @@ int main (int argc, char const *argv[])
     hasil = kuadrat(input);
 
     cout << "Value kuadrat is: " << hasil << endl;
-    menampilkan(hasil); //=> with void 
+    menampilkan(hasil); //=> with void
 
     cout << endl;
-
-
 
     //Function "tambah"
     int hasil2, d, e;
@@ -142,8 +151,6 @@ int main (int argc, char const *argv[])
 
     cout << endl;
 
-
-
     //Function luas dan keliling persegi panjang with data type "double"
     double panjang, lebar;
 
@@ -158,21 +165,46 @@ int main (int argc, char const *argv[])
     //Luas
     //1
     cout << "Luasnya adalah: ";
-    cout << menghitung_luas (panjang, lebar) << endl << endl;
+    cout << menghitung_luas(panjang, lebar) << endl
+         << endl;
 
     //2
-    tampilkan_luas (panjang, lebar);
-   
+    tampilkan_luas(panjang, lebar);
 
     //Keliling
     //1
     cout << "Kelilingnya adalah: ";
-    cout << menghitung_keliling(panjang, lebar) << endl << endl;
+    cout << menghitung_keliling(panjang, lebar) << endl
+         << endl;
 
-    //2 
-    tampilkan_keliling (panjang, lebar);
+    //2
+    tampilkan_keliling(panjang, lebar);
 
+    cout << endl;
+
+    //Call function animal program
+    animalProgram();
 
     cin.get();
     return 0;
+}
+
+void animalProgram()
+{
+    string favAnimal, Pet;
+
+    cout << "Favorite animal: ";
+    cin >> favAnimal;
+
+    cout << "So do you have " << favAnimal << " as your pet? (y/n) ? ";
+    cin >> Pet;
+    
+    if (Pet == "y" || Pet == "y")
+    {
+        cout << "Wow " << favAnimal << " that's cool. \n";
+    }
+    else
+    {
+        cout << "Oh that's to bad. \n";
+    }
 }
