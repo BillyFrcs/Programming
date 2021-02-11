@@ -4,8 +4,29 @@
 
 using namespace std;
 
+string returnString(string Name)
+{
+	cout << Name << endl;
+
+	return Name;
+}
+
+bool returnBool(bool dataTrue = true, bool dataFalse = false)
+{
+	cout << dataTrue << endl;
+	cout << dataFalse << endl;
+
+	return returnBool;
+}
+
 int main()
 {
+	//Return value
+	returnString("Billy");
+	returnBool();
+
+	printf("\n");
+
 	//Simple Arithmetic
 	int a, b, Result;
 
@@ -123,7 +144,7 @@ int main()
 	cout << "Enter number: ";
 	cin >> k;
 
-	if (k /*== 18*/) //It can use another Variable to fill
+	if (k == 19) //It can use another Variable to fill
 
 	{
 		cout << "Thank you \n";
@@ -163,44 +184,44 @@ int main()
 	printf("\n");
 
 	//Year program
-	int y = 0;
+	int year = 0;
 
 	cout << "Enter year: ";
-	cin >> y;
+	cin >> year;
 
-	if (y < 1000 || y > 9999)
+	if (year < 1000 || year > 9999)
 	{
 		cout << "Invalid entry. \n";
 	}
-	else if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0)
+	else if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
 	{
-		cout << y;
+		cout << year;
 		cout << "Falls on a leap year. \n";
 	}
 	else
 	{
-		cout << y;
+		cout << year;
 		cout << " is not a leap year. \n";
 	}
 
-	//Logical operator and (&&)
-	/*a	   b	     a && b
-    false	 false	false
-    false	 true	false
-    true	 false	false
-    true	 true	true*/
+	// 	Logical operator and (&&)
+	// 	    a	   b	     a && b
+	//     false	 false	false
+	//     false	 true	false
+	//     true	 false	false
+	//     true	 true	true
 
-	//Logocal operator or (||)
-	/*a	   b	     a || b
-    false	 false	false
-    false	 true	true
-    true	false	true
-    true	true	    true*/
+	// 	Logical operator or (||)
+	// 	    a	   b	     a || b
+	//     false	 false	false
+	//     false	 true	true
+	//     true	false	true
+	//     true	true	     true
 
-	//Logical operator not (!)
-	/*a	   !a
-    false	   true
-    true	   false*/
+	// 	Logical operator not (!)
+	// 	   a	          !a
+	//     false	   true
+	//     true	   false
 
 	cin.get();
 	return 0;
