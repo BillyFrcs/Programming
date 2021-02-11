@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Function count digits number
 void countDigitsNumber(int Number = 0)
 {
      cout << "Enter number: ";
@@ -28,6 +29,30 @@ void countDigitsNumber(int Number = 0)
      }
 }
 
+//Class reserved program
+class reversedProgram
+{
+public:
+     int number, reverseNumber;
+
+     reversedProgram()
+     {
+          cout << "Enter number: ";
+          cin >> number;
+
+          while (number != 0)
+          {
+               reverseNumber *= 10;
+
+               int lastDigits = number % 10;
+               reverseNumber += lastDigits;
+               number /= 10;
+          }
+
+          cout << "Reversed: " << reverseNumber << endl;
+     }
+};
+
 int main()
 {
      /*int Counter = 1; //100
@@ -45,6 +70,11 @@ int main()
 
      //Program count digits of a number
      countDigitsNumber();
+
+     printf("\n");
+
+     //Program reversing digits of a number
+     reversedProgram();
 
      system("pause > 0");
 }
