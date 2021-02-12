@@ -48,7 +48,7 @@ int main()
 	float c, d, result;
 	char arithmetic;
 
-	cout << "<--Simple Calulator--> \n \n";
+	cout << "<--Simple Calculator--> \n \n";
 
 	//Input from user
 	cout << "Enter first number: ";
