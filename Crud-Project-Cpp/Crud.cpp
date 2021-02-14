@@ -110,9 +110,8 @@ int main()
         }
     }
 
-    //cout << "The last program" << endl;
+    cout << "The last program" << endl;
 
-    system("pause > 0");
     cin.get();
     return 0;
 }
@@ -122,8 +121,8 @@ int getOption()
 {
     int Input;
 
-    system ("cls");
-    //system ("clear");
+    //system ("cls"); //Using for windows
+    system ("clear"); //Using for Mac or Linux
 
     cout << "Crud program data mahasiswa" << endl;
     cout << "===========================" << endl;
@@ -136,12 +135,12 @@ int getOption()
     cout << "Choose [1 - 5]: ";
 
     cin >> Input;
-    cin.ignore (numeric_limits <streamsize>::max(), '\n');
+    //cin.ignore (numeric_limits <streamsize>::max(), '\n');
 
     return Input;
 }
 
-/*/Check database
+//Check database
 void checkDataBase (fstream &data)
 {
     data.open ("data.bin", ios::out | ios::in | ios::binary);
@@ -160,7 +159,7 @@ void checkDataBase (fstream &data)
 
         data.open ("data.bin", ios::trunc | ios::out | ios::in | ios::binary);
     }
-}*/
+}
 
 //Write data mahasiswa
 void writeDataMahasiswa (fstream &data, int Position, Mahasiswa &inputMahasiswa)
@@ -201,7 +200,7 @@ void addDataMahasiswa (fstream &data)
 {
     Mahasiswa inputMahasiswa, lastMahasiswa;
 
-    /*/Read size input data
+    //Read size input data
     int Size = getDataSize (data);
 
     cout << "Size data" << Size << endl;
@@ -218,18 +217,18 @@ void addDataMahasiswa (fstream &data)
         cout << "Pk: " << lastMahasiswa.Pk << endl;
 
         inputMahasiswa.Pk = lastMahasiswa.Pk + 1;
-    }*/
+    }
 
     cout << "Name: ";
-    getline (cin, inputMahasiswa.NPM);
+    getline (cin, inputMahasiswa.Name);
 
     cout << "NPM: ";
-    getline (cin, inputMahasiswa.Name);
+    getline (cin, inputMahasiswa.NPM);
 
     cout << "Prodi: ";
     getline (cin, inputMahasiswa.Prodi);
 
-    //writeDataMahasiswa (data, Size + 1, inputMahasiswa);
+    writeDataMahasiswa (data, Size + 1, inputMahasiswa);
 }
 
 //Display or show data mahasiswa 
@@ -239,7 +238,7 @@ void displayDataMahasiswa (fstream &data)
 
     Mahasiswa showMahasiswa;
 
-    cout << "No.\tPk.\tName.\tNPM.\tProdi." << endl;
+    cout << "No.\t Pk.\t Name.\t NPM.\t Prodi." << endl;
 
     //Loops
     for (int a = 1; a <= Size; a++)
@@ -264,7 +263,7 @@ void changeDataMahasiswa (fstream &data)
 
     cout << "Choose no: ";
     cin >> No;
-    cin.ignore (numeric_limits <streamsize>::max(), '\n');
+    //cin.ignore (numeric_limits <streamsize>::max(), '\n');
 
     updateMahasiswa = readDataMahasiswa (data, No);
 
