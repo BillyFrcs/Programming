@@ -7,7 +7,7 @@
 using namespace std;
 
 // Run terminal command
-// 1. g++ Main.cpp Player.cpp Weapon.cpp -o Main.exe
+// 1. g++ Main.cpp Player.cpp Weapon.cpp -o Main.exe (Main)
 // 2. ./Main
 
 int main(int argc, char const *argv[])
