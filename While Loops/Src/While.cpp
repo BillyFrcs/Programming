@@ -33,7 +33,7 @@ void countDigitsNumber(int Number = 0)
 class reversedProgram
 {
 public:
-     int number, reverseNumber;
+     int number, reversedNumber;
 
      reversedProgram()
      {
@@ -42,22 +42,25 @@ public:
 
           while (number != 0)
           {
-               reverseNumber *= 10;
+               reversedNumber *= 10;
 
                int lastDigits = number % 10;
-               reverseNumber += lastDigits;
+               reversedNumber += lastDigits;
                number /= 10;
           }
 
-          cout << "Reversed: " << reverseNumber << endl;
+          cout << "Reversed: " << reversedNumber << endl;
      }
 };
 
+//Prototype nameLines
+void nameLines(string name, int x);
+
 int main()
 {
-     /*int Counter = 1; //100
+     /*int Counter = 100; //100
 
-     while (Counter <= 10) //500
+     while (Counter <= 500) //500
      {
           if (Counter % 3 == 0 && Counter % 5 == 0)
           {
@@ -76,5 +79,22 @@ int main()
      //Program reversing digits of a number
      reversedProgram();
 
-     system("pause > 0");
+     printf("\n");
+
+     //Declare nameLines
+     string Name = "Billy ";
+     int numLines = 5;
+
+     nameLines(Name, numLines);
+
+     return 0;
+}
+
+void nameLines(string name, int x)
+{
+     while (x > 0)
+     {
+          cout << name;
+          x--;
+     }
 }
