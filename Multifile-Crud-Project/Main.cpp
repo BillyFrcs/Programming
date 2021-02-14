@@ -76,9 +76,8 @@ int main()
         }
     }
 
-    //cout << "The last program" << endl;
+    cout << "The last program" << endl;
 
-    system("pause > 0");
     cin.get();
     return 0;
 }

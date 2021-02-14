@@ -14,7 +14,7 @@ int main(int argc, char const *argv[])
 {
      Player *Player1 = new Player("Rusher");
      Weapon *Weapon1 = new Weapon("M4", 50);
-     //Implementasion setter for equipment weapon
+     //Implementation setter for equipment weapon
      Player1->equipmentWeapon(Weapon1);
      Player1->Display();
      Weapon1->Display();
