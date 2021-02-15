@@ -7,7 +7,8 @@
                 "C:/Program Files/MinGW/include/c++/9.2.0/x86_64-w64-mingw32/bits",
                 "C:/Program Files/MinGW/include/c++/9.2.0/x86_64-w64-mingw32/bits",
                 "C:/Program Files/MinGW/include/c++/9.2.0",
-                "C:/Program Files/MinGW/include/c++/9.2.0/x86_64-w64-mingw32"
+                "C:/Program Files/MinGW/include/c++/9.2.0/x86_64-w64-mingw32",
+                "C:/Program Files/MinGW/include/c++/9.2.0/tr1"
             ],
             "defines": [
                 "_DEBUG",
@@ -15,7 +16,7 @@
                 "_UNICODE"
             ],
             "windowsSdkVersion": "10.0.18362.0",
-            "compilerPath": "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/gcc.exe",
+            "compilerPath": "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/g++.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "windows-gcc-x64"

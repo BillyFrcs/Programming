@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 
 using namespace std;
 
@@ -12,6 +13,14 @@ void asciiProgram(){
      << int(c4) << " " << int(c5) << endl;
 }
 
+void additionProgram(){
+     int a = 20, b = 20;
+     int c = ++a + ++b;
+
+     printf("%d", c);
+}
+
+
 int main()
 {
      //abbreviated American Standard Code for Information Interchange
@@ -24,4 +33,8 @@ int main()
      printf("\n");
 
      asciiProgram();
+
+     printf("\n");
+
+     additionProgram();
 }
