@@ -35,9 +35,29 @@ public:
      }
 };
 
+class changeMToCm
+{
+public:
+     int m, cm;
+
+     changeMToCm()
+     {
+          cout << "Enter meter value: ";
+          cin >> m;
+
+          cm = m * 100;
+
+          cout << "Result m to cm = " << cm  << " cm" << endl;
+     }
+};
+
 int main()
 {
      bmiCalculator();
+
+     printf("\n");
+
+     changeMToCm();
 
      return 0;
 }
