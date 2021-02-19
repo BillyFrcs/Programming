@@ -17,7 +17,7 @@ void showMenu()
 void chooseOption()
 {
      int option;
-     double balance = 500;
+     double balance = 100;
 
      //Check balance, deposit, withdraw, show menu
      do
@@ -48,7 +48,11 @@ void chooseOption()
                     balance -= withdrawAmount;
                else
                     cout << "Not enough money" << endl;
+
+          default:
+               cout << "Please choose 1 - 4" << endl;
           }
+
      } while (option != 4);
 }
 
