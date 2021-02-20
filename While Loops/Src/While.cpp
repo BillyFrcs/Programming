@@ -56,9 +56,42 @@ public:
 //Prototype nameLines
 void nameLines(string name, int x);
 
-int main()
+void whileProgram()
 {
-     /*int Counter = 100; //100
+     //Guess program
+     int Guess, Tries = 0;
+
+     cout << "Guess number 1 - 10: ";
+     cin >> Guess;
+
+     while (Guess != 9 && Tries < 50)
+     {
+          cout << "Wrong guess, try again: ";
+          cin >> Guess;
+
+          Tries++;
+     }
+
+     if (Guess == 9)
+     {
+          cout << "You got it \n";
+     }
+
+     cout << endl;
+
+     //Square program
+     int I = 0;
+     int Square = 0;
+
+     while (I < 10)
+     {
+          cout << I << " " << I * I << "\n";
+          I++;
+     }
+}
+
+void testsWhileProgram(){
+          int Counter = 100; //100
 
      while (Counter <= 500) //500
      {
@@ -69,8 +102,11 @@ int main()
           }
      }
 
-     cout << endl;*/
+     cout << endl;
+}
 
+int main()
+{
      //Program count digits of a number
      countDigitsNumber();
 
@@ -80,6 +116,10 @@ int main()
      reversedProgram();
 
      printf("\n");
+
+     whileProgram();
+
+     cout << endl;
 
      //Declare nameLines
      string Name = "Billy ";

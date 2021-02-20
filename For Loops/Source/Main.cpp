@@ -18,6 +18,9 @@ void factorialProgram()
      cout << "Result factorial " << Number << " is " << Factorial << "\n";
 }
 
+//Prototype
+void printLoops();
+
 int main()
 {
      //The factorial of a number
@@ -38,5 +41,29 @@ int main()
      //Called function factorial program
      factorialProgram();
 
-     system("pause > 0");
+     cout << endl;
+
+     printLoops();
+
+     cin.get();
+}
+
+void printLoops(){
+   //Print number program loops
+    int n = 4;
+    int m = 1;
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            cout << m << " ";
+            m = m + 2;
+        }
+        m++;
+        if (m == 16)
+        {
+            m++;
+        }
+        cout << endl;
+    }
 }

@@ -73,26 +73,6 @@ int main()
 
     cout << endl;
 
-    //Print number program loops
-    int n = 4;
-    int m = 1;
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j <= i; j++)
-        {
-            cout << m << " ";
-            m = m + 2;
-        }
-        m++;
-        if (m == 16)
-        {
-            m++;
-        }
-        cout << endl;
-    }
-
-    cout << endl;
-
     //Data Fundamental
     long b = 6;
     short c = 7;

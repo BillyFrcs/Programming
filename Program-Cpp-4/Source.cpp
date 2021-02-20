@@ -173,37 +173,6 @@ int main()
 		cout << k_l << endl;
 	}
 
-	printf("\n");
-
-	//Guess program
-	int Guess, Tries = 0;
-
-	cout << "Guess number 1 - 10: ";
-	cin >> Guess;
-
-	while (Guess != 9 && Tries < 50)
-	{
-		cout << "Wrong guess, try again: ";
-		cin >> Guess;
-
-		Tries++;
-	}
-
-	if (Guess == 9)
-	{
-		cout << "You got it \n";
-	}
-
-	//Square program
-	int I = 0;
-	int Square = 0;
-
-	while (I < 10)
-	{
-		cout << I << " " << I * I << "\n";
-		I++;
-	}
-
 	cin.get();
 	return 0;
 }
