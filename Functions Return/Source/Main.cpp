@@ -29,3 +29,8 @@ int main()
 
      return 0;
 }
+
+// Commit and push to Github
+// git add .
+// git commit -m "Massage"
+// git push -u origin master
