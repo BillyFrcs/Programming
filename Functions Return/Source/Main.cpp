@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//Functions return string 
+//Functions return string
 string needsWater(int days, bool isSucculent)
 {
      if (isSucculent == false && days > 3)
@@ -23,9 +23,32 @@ string needsWater(int days, bool isSucculent)
      }
 }
 
+bool isPalindrome(string text)
+{
+
+     string reversed_text = "";
+
+     for (int i = text.size() - 1; i >= 0; i--)
+     {
+          reversed_text += text[i];
+     }
+
+     if (reversed_text == text)
+     {
+          return true;
+     }
+
+     return false;
+}
+
 int main()
 {
      cout << needsWater(20, true) << endl;
+
+     cout << endl;
+
+     cout << isPalindrome("Billy") << endl;
+     cout << isPalindrome("Franscois") << endl;
 
      return 0;
 }
