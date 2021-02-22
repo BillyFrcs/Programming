@@ -41,6 +41,12 @@ bool isPalindrome(string text)
      return false;
 }
 
+//Return data type int
+int multiplyInt(int a, int b)
+{
+     return a * b;
+}
+
 int main()
 {
      cout << needsWater(20, true) << endl;
@@ -49,6 +55,16 @@ int main()
 
      cout << isPalindrome("Billy") << endl;
      cout << isPalindrome("Franscois") << endl;
+
+     cout << endl;
+
+     int a = 5;
+     int b = 5;
+     int x;
+
+     x = a * b;
+
+     cout << "Result " << x << endl;
 
      return 0;
 }
