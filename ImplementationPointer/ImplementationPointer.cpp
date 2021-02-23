@@ -52,15 +52,14 @@ int main()
 
     cout << "Value manipulation ptrValueNum: " << *ptrValueNum << endl;
 
-    //Aritmetics 
+    //Arithmetics 
     *ptrValueNum += 5;
     cout << "Count ptrValueNum: " << *ptrValueNum << endl;
 
     //Increment and decrement
     (*ptrValueNum)++; //It can change with this --
-    cout << "Increament ptrValueNum: " << *ptrValueNum << endl;
+    cout << "Increment ptrValueNum: " << *ptrValueNum << endl;
 
-    system("pause < 0");
     cin.get();
     return 0;
 }
