@@ -5,15 +5,22 @@
 using namespace std;
 
 //Enumerationate
-enum EyeColor { Brown, Black, Blue, Gray, Other };
+enum EyeColor
+{
+    Brown,
+    Black,
+    Blue,
+    Gray,
+    Other
+};
 
 //Function declaration
-float sum (float b, float c);
+float sum(float b, float c);
 
-void IntroduceMe (string Name, int AGe = 9);
+void IntroduceMe(string Name, int AGe = 9);
 
 //Pointers
-void celebrateBirthday (int* AGE);
+void celebrateBirthday(int *AGE);
 
 //Classes in C++
 //First class
@@ -21,18 +28,16 @@ class Car
 {
 
 public: //For add . to the variable
-
     string CarName;
     string CarColor;
     double CarPrice;
 };
 
 //Second class
-class House 
+class House
 {
 
-public: 
-
+public:
     string HouseModel;
     string ColorHouse;
     double PRiceHouse;
@@ -50,20 +55,19 @@ class Billy
 {
 
 public:
-
     string NAme;
     string HObby;
     double AgE;
 
-    Billy (string Name, string Hobby, double Age)
+    Billy(string Name, string Hobby, double Age)
     {
         NAme = Name;
         HObby = Hobby;
         AgE = Age;
     }
 
-    void GetInfo ()
-    {//Method
+    void GetInfo()
+    { //Method
         cout << "Name: " << NAme << endl;
         cout << "Hobby: " << HObby << endl;
         cout << "Age: " << AgE << endl;
@@ -75,21 +79,19 @@ class Laptop
 {
 
 private:
-
     string BrandLaptop;
     double TotalLaptop;
     bool IsBroken;
 
-public: 
-
-    Laptop (string brandlaptop, double totallaptop) 
+public:
+    Laptop(string brandlaptop, double totallaptop)
     {
         BrandLaptop = brandlaptop;
         TotalLaptop = totallaptop;
         IsBroken = false;
     }
 
-    void getInfo() 
+    void getInfo()
     {
         cout << "Laptop Name " << BrandLaptop << endl;
         cout << "Total Laptop " << TotalLaptop << endl;
@@ -124,14 +126,12 @@ class airPlane
 {
 
 private:
-
     string airPlaneName;
     double NoFlight;
     bool isBroken;
 
 public:
-
-    airPlane (string airplanename, double noflight)
+    airPlane(string airplanename, double noflight)
     {
         airPlaneName = airplanename;
         NoFlight = noflight;
@@ -168,14 +168,12 @@ public:
     }
 };
 
-class FlyingAirPlane :public airPlane //Inheritance here
+class FlyingAirPlane : public airPlane //Inheritance here
 {
 
 public:
-
-    FlyingAirPlane (string airplanename, double noflight) :airPlane(airplanename, noflight)
+    FlyingAirPlane(string airplanename, double noflight) : airPlane(airplanename, noflight)
     {
-
     }
 };
 
@@ -184,16 +182,13 @@ class Birds
 {
 
 private:
-
     double TotalBirds;
 
 protected:
-
     string NameBirds;
     bool IsDie;
 
 public:
-
     Birds(string namebirds, double totalbirds)
     {
         NameBirds = namebirds;
@@ -231,14 +226,12 @@ public:
     }
 };
 
-class BirdsFlying :public Birds
+class BirdsFlying : public Birds
 {
 
 public:
-
-    BirdsFlying (string namebirds, double totalbirds) :Birds(namebirds, totalbirds)
+    BirdsFlying(string namebirds, double totalbirds) : Birds(namebirds, totalbirds)
     {
-
     }
 
     void MoveBirds()
@@ -253,14 +246,12 @@ public:
     }
 };
 
-class UnderWaterBirds :public Birds
+class UnderWaterBirds : public Birds
 {
 
-public: 
-
-    UnderWaterBirds (string namebirds, double totalbirds) :Birds(namebirds, totalbirds)
+public:
+    UnderWaterBirds(string namebirds, double totalbirds) : Birds(namebirds, totalbirds)
     {
-
     }
 
     void MoveBirds()
@@ -273,9 +264,7 @@ public:
 
             cout << NameBirds << " Is sleep" << endl;
     }
-
 };
-
 
 int main()
 {
@@ -311,7 +300,7 @@ int main()
 
         else
             cout << "Go to the park, but take an umbrella" << endl;
-        }
+    }
 
     else
         cout << "Go to collage" << endl;
@@ -320,41 +309,49 @@ int main()
 
     cout << endl;
 
-
-
     //Data type "switch case".
     EyeColor eyeColor = Black;
 
     switch (eyeColor)
     {
-    case Brown: cout << "50% of people have Brown color eyes"; break;
+    case Brown:
+        cout << "50% of people have Brown color eyes";
+        break;
 
-    case Blue: cout << "90% of people have Blue color eyes"; break;
+    case Blue:
+        cout << "90% of people have Blue color eyes";
+        break;
 
-    case Black: cout << "100% of people have Black color eyes"; break;
+    case Black:
+        cout << "100% of people have Black color eyes";
+        break;
 
-    case Gray: cout << "10% of people have Gray color eyes"; break;
+    case Gray:
+        cout << "10% of people have Gray color eyes";
+        break;
 
-    case Other: cout << "1% of people have some Other eye color"; break;
+    case Other:
+        cout << "1% of people have some Other eye color";
+        break;
 
-    default: cout << "Not valid eye color"; break;
+    default:
+        cout << "Not valid eye color";
+        break;
     }
 
     cout << endl;
-
-
 
     // Infinite loops, While and Do-While loops
     cout << "While \n";
 
     int Counter = 1;
 
-    while (Counter <= 10) 
+    while (Counter <= 10)
     {
         cout << Counter << endl;
         Counter++;
     }
-    
+
     cout << endl;
 
     cout << "DO While \n";
@@ -371,57 +368,49 @@ int main()
 
     cout << endl;
 
-
-
     //Data type "string with array loop"
-    string Animals [5]= {"Dog", "Cat", "Chicken", "Bird", "Fish"};
+    string Animals[5] = {"Dog", "Cat", "Chicken", "Bird", "Fish"};
 
     for (int a = 0; a < 5; a++)
     {
-        cout << Animals [a] << endl;
+        cout << Animals[a] << endl;
     }
 
     cout << endl;
 
-
-
     //Float and sum
-    cout << sum (5.5, 5) << endl;
+    cout << sum(5.5, 5) << endl;
 
-    cout << sum (50, 50) << endl;
+    cout << sum(50, 50) << endl;
 
-    cout << sum (10, 10) << endl;
-
-    cout << endl;
-
-    IntroduceMe ("Billy", 18);
-
-    IntroduceMe ("Sendy");
+    cout << sum(10, 10) << endl;
 
     cout << endl;
 
+    IntroduceMe("Billy", 18);
 
+    IntroduceMe("Sendy");
+
+    cout << endl;
 
     //Passing pointers to function
     int MyAge = 18;
 
     cout << "Before function AGE: " << MyAge << endl;
 
-    celebrateBirthday (&MyAge);
+    celebrateBirthday(&MyAge);
 
     cout << "After function AGE: " << MyAge << endl;
 
     cout << endl;
 
-
-
     //Array
-    string Colors[10] = { "Blue", "Red", "Yellow", "Orange", "Black" };
+    string Colors[10] = {"Blue", "Red", "Yellow", "Orange", "Black"};
     cout << Colors[4] << endl;
 
     cout << endl;
 
-    int Luckynumbers[5] = { 2, 5, 6, 8, 9 };
+    int Luckynumbers[5] = {2, 5, 6, 8, 9};
 
     cout << Luckynumbers << endl;
     cout << &Luckynumbers[2] << endl;
@@ -429,10 +418,8 @@ int main()
 
     cout << endl;
 
-
-
     //Array pointer
-    int* LuckyPointer = Luckynumbers;
+    int *LuckyPointer = Luckynumbers;
 
     cout << "Pointing to " << LuckyPointer << " Value " << *LuckyPointer << endl;
     LuckyPointer++;
@@ -440,8 +427,6 @@ int main()
     cout << "Pointing to " << LuckyPointer << " Value " << *LuckyPointer << endl;
 
     cout << endl;
-
-
 
     //Class in C++
     //First
@@ -457,8 +442,8 @@ int main()
 
     cout << endl;
 
-    //Second 
-    House myHouse ("Minimaslist", "Red, Blue, White", 300000);
+    //Second
+    House myHouse("Minimaslist", "Red, Blue, White", 300000);
 
     cout << "House Model: " << myHouse.HouseModel << endl;
     cout << "House Color: " << myHouse.ColorHouse << endl;
@@ -467,13 +452,11 @@ int main()
     cout << endl;
 
     //Third
-    Billy myBio ("Billy Franscois", "Programming Coding", 18);
-    
+    Billy myBio("Billy Franscois", "Programming Coding", 18);
+
     myBio.GetInfo();
 
     cout << endl;
-
-
 
     //Encapsulation
     Laptop myLaptop("Asus", 1);
@@ -486,42 +469,35 @@ int main()
 
     cout << endl;
 
-
-
     //Inheritance
-    FlyingAirPlane Flyingairplane ("Lion Air", 5);
+    FlyingAirPlane Flyingairplane("Lion Air", 5);
     Flyingairplane.gEtInfo();
 
     cout << endl;
 
-
-
     //Polymorphism
-    UnderWaterBirds underwaterBirds ("Owl", 10);
+    UnderWaterBirds underwaterBirds("Owl", 10);
 
     myLaptop.MoveLaptop();
     Flyingairplane.MoveAirplane();
     underwaterBirds.MoveBirds();
-    
-    cout << endl;
-    
-    
 
-    system("pause > 0");
+    cout << endl;
+
     cin.get();
     return 0;
 }
 
 //Declare float and sum
-float sum (float c, float b)
+float sum(float c, float b)
 {
     return c + b;
 }
 
-void IntroduceMe (string Name, int AGe)
+void IntroduceMe(string Name, int AGe)
 {
     cout << "My name is " << Name << endl;
-    cout << "I'm " << AGe << " Years Old" << endl; 
+    cout << "I'm " << AGe << " Years Old" << endl;
 }
 
 //Pointer

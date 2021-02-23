@@ -36,7 +36,7 @@ void arrFunc()
 
      ptr[3] = 20;
 
-     cout << "NUmber: " << ptr[3] << "\n";
+     cout << "Number: " << ptr[3];
 
      delete[] ptr;
 }
