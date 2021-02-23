@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 
 using namespace std;
 
@@ -55,7 +56,7 @@ int main()
 {
      bmiCalculator();
 
-     printf("\n");
+     cout << endl;
 
      changeMToCm();
 
