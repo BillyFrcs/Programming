@@ -3,6 +3,9 @@
 
 using namespace std;
 
+//Basics of functions
+void myFunction();
+
 //Find average number
 double averageProgram(double num1, double num2)
 {
@@ -23,12 +26,11 @@ void favoriteTransport(string favTransport)
 {
 
      string Transportation = favTransport;
-     cout << "Fav transportation is" << favTransport << "\n";
+     cout << "Fav transportation is " << favTransport << "\n";
 }
 
 void enterCode(int passcode)
 {
-
      string secretKnowledge = "https://content.codecademy.com/courses/regex/onyourexcitingjourneylearningtocodeyouwillfindthis.gif";
 
      cout << "Enter the passcode to access the link: ";
@@ -48,6 +50,9 @@ void enterCode(int passcode)
 
 int main()
 {
+     myFunction();
+
+     cout << endl;
 
      cout << averageProgram(25.05, 35.56) << "\n";
 
@@ -66,4 +71,9 @@ int main()
      enterCode(1908);
 
      return 0;
+}
+
+void myFunction()
+{
+     cout << "Hello functions" << endl;
 }
