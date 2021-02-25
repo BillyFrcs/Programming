@@ -47,24 +47,8 @@ int multiplyInt(int a, int b)
      return a * b;
 }
 
-//Prime number
-bool primeNumber(int number)
-{
-     bool primeFlag = true; //Comment this when using return true the bottom
-
-     for (int i = 2; i < number; i++)
-     {
-          if (number % i == 0)
-          {
-               primeFlag = false;
-               break;
-               //This can use return false;
-          }
-     }
-
-     return primeFlag;
-     //This can use return true;
-}
+//Prime number prototype
+bool primeNumber(int number);
 
 int main()
 {
@@ -115,6 +99,26 @@ int main()
 
      return 0;
 }
+
+//Prime number
+bool primeNumber(int number)
+{
+     bool primeFlag = true; //Comment this when using return true the bottom
+
+     for (int i = 2; i < number; i++)
+     {
+          if (number % i == 0)
+          {
+               primeFlag = false;
+               break;
+               //This can use return false;
+          }
+     }
+
+     return primeFlag;
+     //This can use return true;
+}
+
 // Commit and push to Github
 // git add .
 // git commit -m "Massage"
