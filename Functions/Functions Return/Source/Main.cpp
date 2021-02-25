@@ -47,6 +47,25 @@ int multiplyInt(int a, int b)
      return a * b;
 }
 
+//Prime number
+bool primeNumber(int number)
+{
+     bool primeFlag = true; //Comment this when using return true the bottom
+
+     for (int i = 2; i < number; i++)
+     {
+          if (number % i == 0)
+          {
+               primeFlag = false;
+               break;
+               //This can use return false;
+          }
+     }
+
+     return primeFlag;
+     //This can use return true;
+}
+
 int main()
 {
      cout << needsWater(20, true) << endl;
@@ -66,9 +85,36 @@ int main()
 
      cout << "Result " << x << endl;
 
+     cout << endl;
+
+     //Declared function prime number
+     //Method 1
+     int number;
+
+     cout << "Enter number: ";
+     cin >> number;
+
+     bool primeFlag = primeNumber(number);
+
+     if (primeFlag)
+          cout << "Prime number" << endl;
+
+     else
+          cout << "Not prime number" << endl;
+
+     cout << endl;
+
+     //Method 2
+     for (int i = 1; i <= 1000; i++)
+     {
+          bool isPrime = primeNumber(i);
+
+          if (isPrime)
+               cout << i << " is prime number \n";
+     }
+
      return 0;
 }
-
 // Commit and push to Github
 // git add .
 // git commit -m "Massage"

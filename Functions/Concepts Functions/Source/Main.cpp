@@ -6,6 +6,8 @@ using namespace std;
 //Basics of functions
 void myFunction();
 
+void introduceMe(string name);
+
 //Find average number
 double averageProgram(double num1, double num2)
 {
@@ -54,6 +56,10 @@ int main()
 
      cout << endl;
 
+     introduceMe("Billy"); //Argument
+
+     cout << endl;
+
      cout << averageProgram(25.05, 35.56) << "\n";
 
      cout << endl;
@@ -76,4 +82,9 @@ int main()
 void myFunction()
 {
      cout << "Hello functions" << endl;
+}
+
+void introduceMe(string name) //Parameter
+{
+     cout << "My name is " << name << endl;
 }
