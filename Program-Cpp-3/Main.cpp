@@ -1,45 +1,42 @@
 #include <iostream>
-#include <stdio.h>
-#include <string.h>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-	//String
-	string Hello = "Hello world \n";
-
-	cout << Hello << endl;
-
-
-
 	//Switch case
 	int b;
 
 	cout << "Enter value = ";
 	cin >> b;
 
-	switch (b) {
+	switch (b)
+	{
 	case 1:
 		cout << "b = 1" << endl;
 		break;
 
 	case 2:
 		cout << "b = 2" << endl;
+		break;
 
 	case 3:
 		cout << "b = 3" << endl;
+		break;
 
 	case 4:
 		cout << "b = 4" << endl;
+		break;
 
 	case 5:
 		cout << "b = 5" << endl;
+		break;
 
 		//Default
 	default:
 		cout << "Not found operator" << endl;
-
+		break;
 	}
 
 	cout << endl;
@@ -48,7 +45,7 @@ int main()
 	float c, d, result;
 	char arithmetic;
 
-	cout << "<--Simple Calculator--> \n \n";
+	cout << "<--Simple Calculator switch, case--> \n";
 
 	//Input from user
 	cout << "Enter first number: ";
@@ -60,25 +57,23 @@ int main()
 	cout << "Enter second number: ";
 	cin >> d;
 
-	//Output from user
-	cout << "Result " << c << arithmetic << d;
-
 	//Step 1 using "switch, case, default"
-	switch (arithmetic) {
+	switch (arithmetic)
+	{
 	case '+':
-		cout << " = " << (c + d) << endl;
+		cout << "Result " << c << " " << arithmetic << " " << d << " = " << (c + d) << endl;
 		break;
 
 	case '-':
-		cout << " = " << (c - d) << endl;
+		cout << "Result " << c << " " << arithmetic << " " << d << " = " << (c - d) << endl;
 		break;
 
 	case '*':
-		cout << " = " << (c * d) << endl;
+		cout << "Result " << c << " " << arithmetic << " " << d << " = " << (c * d) << endl;
 		break;
 
 	case '/':
-		cout << " = " << (c / d) << endl;
+		cout << "Result " << c << " " << arithmetic << " " << d << " = " << (c / d) << endl;
 		break;
 
 	default:
@@ -89,7 +84,7 @@ int main()
 	cout << endl;
 
 	//Calculator with "if, else if, else" statements
-	cout << "<--Simple calculator--> \n" << endl;
+	cout << "<--Simple Calculator if, else--> \n";
 
 	float a, e, Result;
 	char Arithmetic;
@@ -103,31 +98,32 @@ int main()
 	cout << "Enter second number = ";
 	cin >> e;
 
-	cout << "Result " << a << Arithmetic << e;
-
-	if (Arithmetic == '+') {
+	if (Arithmetic == '+')
+	{
 		Result = a + e;
 	}
 
-	else if (Arithmetic == '-') {
+	else if (Arithmetic == '-')
+	{
 		Result = a - e;
 	}
 
-	else if (Arithmetic == '*') {
+	else if (Arithmetic == '*')
+	{
 		Result = a * e;
 	}
 
-	else if (Arithmetic == '/') {
+	else if (Arithmetic == '/')
+	{
 		Result = a / e;
 	}
 
-	else {
+	else
+	{
 		cout << "Wrong operator, please try again" << endl;
 	}
 
-	cout << " = " << Result << endl;
-
-
+	cout << "Result " << a << " " << Arithmetic << " " << e << " = " << Result << endl;
 
 	cin.get();
 	return 0;
