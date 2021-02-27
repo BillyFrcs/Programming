@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Template.hpp"
 
 using namespace std;
 
@@ -32,6 +33,12 @@ int main()
      Swap<char>(c, d);
 
      cout << c << " = " << d << endl;
+
+     cout << endl;
+
+     //Declare from file hpp
+     cout << getBiggerNum(100, 50) << endl;
+     cout << getBiggerNum(345.6, 567.8) << endl;
 
      return 0;
 }
