@@ -57,8 +57,6 @@ public:
 
 int main(int argc, char const *argv[])
 {
-     system("cls");
-
      //Show data with void
      Name dataStudent = Name("Billy", "Programming", 19.08);
      Name dataStudent1 = Name("Franscois", "Coding", 13.90);
