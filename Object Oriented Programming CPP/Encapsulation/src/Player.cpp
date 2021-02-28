@@ -14,7 +14,7 @@ Player::Player(const char *namePlayer)
 void Player::Display()
 {
      cout << "This player is a " << this->namePlayer << endl;
-     cout << "Player helth " << this->Health << endl;
+     cout << "Player health " << this->Health << endl;
      cout << "Using weapon " << this->weapon->getPlayerName();
      cout << " Attack power " << this->weapon->getAttackPower();
 }
@@ -24,7 +24,7 @@ void Player::attackPlayer(Player *player)
      if (this->Health <= 0)
      {
           cout << this->namePlayer << " already die" << endl;
-          cout << this->namePlayer << " coulnd't war" << endl;
+          cout << this->namePlayer << " couldn't war" << endl;
      }
      else
      {
