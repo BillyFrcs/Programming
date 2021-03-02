@@ -188,11 +188,7 @@ int main (int argc, char const *argv[])
     cout << "insert 1. " << Sentence5 << endl;
     cout << "insert 2. " << Sentence6 << endl;
 
-    cout << endl;
 
-
-
-    system ("pause > 0");
     cin.get();
     return 0;
 }

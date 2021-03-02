@@ -6,4 +6,4 @@
 
 std::string Name = "BILLY";
 
-cout << "Billy Franscois" << endl;
+std::cout << "Billy Franscois" << std::endl;

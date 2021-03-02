@@ -133,7 +133,6 @@ int main (int argc, char const *argv[])
 
     cout << "Value of h: " << h << endl;
 
-    system("pause > 0");
     cin.get();
     return 0;
 }

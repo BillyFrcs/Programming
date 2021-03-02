@@ -35,7 +35,7 @@ int main()
 
     printf ("\n");
 
-    //Initialitation member structure
+    //Initialization member structure
     Data2 = {"kolibonso", 19, {"Coding", "Games"}};
 
     cout << "Name " << Data2.Name << endl;

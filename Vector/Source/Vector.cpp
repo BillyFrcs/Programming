@@ -51,6 +51,8 @@ int main()
      {
           cout << element << endl;
      }
+
+     return 0;
 }
 
 //Vector program

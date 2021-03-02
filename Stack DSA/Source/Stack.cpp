@@ -99,4 +99,6 @@ int main()
 
      cout << "\nAfter popping out\n";
      printStack(s);
+
+     return 0;
 }

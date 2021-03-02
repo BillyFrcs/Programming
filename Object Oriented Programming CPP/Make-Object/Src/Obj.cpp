@@ -63,7 +63,6 @@ int main(int argc, char const *argv[])
      Object5 = new withContructor("Object 5");
      Object5->Show();
 
-     system("pause > 0");
      cin.get();
      return 0;
 }

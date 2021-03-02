@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <windows.h>
 
 using namespace std;
 
@@ -234,7 +233,6 @@ int main()
         cout << endl;
     }
 
-    system("pause > 0");
     cin.get();
     return 0;
 }

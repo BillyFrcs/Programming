@@ -28,5 +28,5 @@ int main()
      //Pin validation program
      validationPinProgram();
 
-     system("pause > 0");
+     return 0;
 }

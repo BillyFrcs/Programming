@@ -21,7 +21,6 @@ int main(int argc, char const *argv[])
      Data *Student3 = new Data ("Kolibonso");
      Student3 -> showDisplay();
 
-     system("pause > 0");
      cin.get();
      return 0;
 }

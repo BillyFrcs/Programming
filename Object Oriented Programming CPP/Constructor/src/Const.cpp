@@ -39,7 +39,6 @@ int main (int argc, char const *argv[])
      //Second
      Data data2 = Data ("Sendy", 18, 24.08);
 
-     system ("pause > 0");
      cin.get();
      return 0;
 }

@@ -32,7 +32,6 @@ int main(int argc, char const *argv[])
      playerObject->changeName("Franscois");
      playerObject->Display();
 
-     system("pause > 0");
      return 0;
 }
 

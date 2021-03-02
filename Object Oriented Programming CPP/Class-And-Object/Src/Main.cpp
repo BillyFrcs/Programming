@@ -36,7 +36,6 @@ int main (int argc, char const *argv[])
      cout << "Age: " << student.Age << endl;
      cout << "Height: " << student.Height << endl;
 
-     system ("pause > 0");
      cin.get();
      return 0;
 }

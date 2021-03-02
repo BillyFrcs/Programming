@@ -27,5 +27,5 @@ int main()
      //Called function nesting program here
      nestingProgram();
 
-     system("pause > 0");
+     return 0;
 }

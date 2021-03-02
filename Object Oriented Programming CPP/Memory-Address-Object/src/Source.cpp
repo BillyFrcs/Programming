@@ -98,7 +98,6 @@ int main(int argc, char const *argv[])
      Duration = *heapEnd - *heapStart;
      cout << "Time to make object in heap is " << Duration.count() << endl;
 
-     system("pause > 0");
      cin.get();
      return 0;
 }

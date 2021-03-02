@@ -89,8 +89,8 @@ int main(int argc, char const *argv[])
 
     cout << endl;
 
-    //Konsep Dice program example
-    //cout << "Konsep dice program \n";
+    //Concept Dice program example
+    //cout << "Concept dice program \n";
     // for (int a = 0; a < b; a++) {
     //     cout << a + rand() % 6 << endl;
     // }

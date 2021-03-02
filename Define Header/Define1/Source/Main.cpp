@@ -1,9 +1,9 @@
 //Preprocessing directive
 #include <iostream>
 #include <string>
-#include "SOO.h"
-#include "Bar.h"
-#include "Together.h"
+#include "SOO.hpp"
+#include "Bar.hpp"
+#include "Together.hpp"
 //Macro change variable with name, without memory
 #define PI 5.190820
 #define BI 3.15626117819
@@ -81,7 +81,7 @@ int main ()
 
 
      //Preprocessing directive include 
-     #include "Library.h"
+     #include "Library.hpp"
 
      cout << "DI = " << DI << endl;
 
@@ -107,7 +107,6 @@ int main ()
      Student.NPM = 8;
      cout << Student.NPM << endl;
 
-     system ("pause > 0");
      cin.get();
      return 0;
 }

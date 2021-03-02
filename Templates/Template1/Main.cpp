@@ -168,9 +168,6 @@ int main ()
     
     cout << e << "\tData type: " << typeid (e).name() << endl;
 
-
-    
-    system ("pause > 0");
     std::cin.get();
     return 0;
 }

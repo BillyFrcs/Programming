@@ -22,7 +22,6 @@ int main(int argc, char const *argv[])
      Player1->changeName("Franscois");
      Player1->displayData();
 
-     system("pause > 0");
      return 0;
 }
 

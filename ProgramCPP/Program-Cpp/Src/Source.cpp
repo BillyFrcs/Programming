@@ -32,6 +32,5 @@ int main()
 
      cout << "Result is " << Result << endl;
 
-     system("pause < 0");
      return 0;
 }
