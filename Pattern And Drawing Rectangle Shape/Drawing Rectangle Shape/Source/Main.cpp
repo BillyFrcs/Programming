@@ -60,6 +60,9 @@ void triangleShape()
      }
 }
 
+//Prototype
+void printNumLoops();
+
 int main()
 {
      rectangleShape();
@@ -68,5 +71,30 @@ int main()
 
      triangleShape();
 
+     cout << endl;
+
+     printNumLoops();
+
      return 0;
+}
+
+void printNumLoops()
+{
+     //Print number program loops
+     int n = 4;
+     int m = 1;
+     for (int i = 0; i < n; i++)
+     {
+          for (int j = 0; j <= i; j++)
+          {
+               cout << m << " ";
+               m = m + 2;
+          }
+          m++;
+          if (m == 16)
+          {
+               m++;
+          }
+          cout << endl;
+     }
 }
