@@ -40,7 +40,7 @@ public:
      //Players down => berkurang
      void playersGamesDown()
      {
-          if (totalPlayers > 0)
+          if (totalPlayers > 0) //Fix bug
                totalPlayers--;
      }
 
