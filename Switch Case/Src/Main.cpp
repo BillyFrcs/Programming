@@ -40,9 +40,50 @@ void numbersDaysMonth()
      }
 }
 
+void conceptSwitchCase()
+{
+     //Switch case
+     int b;
+
+     cout << "Enter value = ";
+     cin >> b;
+
+     switch (b)
+     {
+     case 1:
+          cout << "b = 1" << endl;
+          break;
+
+     case 2:
+          cout << "b = 2" << endl;
+          break;
+
+     case 3:
+          cout << "b = 3" << endl;
+          break;
+
+     case 4:
+          cout << "b = 4" << endl;
+          break;
+
+     case 5:
+          cout << "b = 5" << endl;
+          break;
+
+          //Default
+     default:
+          cout << "Not found operator" << endl;
+          break;
+     }
+}
+
 int main()
 {
      numbersDaysMonth();
+
+     cout << endl;
+
+     conceptSwitchCase();
 
      return 0;
 }
