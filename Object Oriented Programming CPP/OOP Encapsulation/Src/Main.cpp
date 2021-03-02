@@ -51,7 +51,7 @@ public:
      }
 };
 
-int main()
+int main(int argc, char const *argv[])
 {
      //Declare first method and object
      popularGame popularGameOne("Pubg", 150.456);
