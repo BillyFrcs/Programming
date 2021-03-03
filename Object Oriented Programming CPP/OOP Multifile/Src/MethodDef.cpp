@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 #include "Class.hpp"
 
@@ -20,4 +21,26 @@ void Song::addArtist(std::string addartist)
 std::string Song::getArtist()
 {
      return "Artist Name " + artist;
+}
+
+//Fraction => pecahan
+void Fraction::printFraction()
+{
+     std::cout << num << den;
+}
+
+Fraction::Fraction()
+{
+     num = 5;
+     den = 6;
+}
+
+int &Fraction::Num()
+{
+     return num;
+}
+
+int &Fraction::Den()
+{
+     return den;
 }
