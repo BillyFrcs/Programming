@@ -7,13 +7,13 @@
 using namespace std;
 
 //Prototype
-int Kuadrat (int &Value);
+int Kuadrat(int &Value);
 
-int Division (int &Num, int &Denum)
+int Division(int &Num, int &Denum)
 {
      if (Denum == 0)
      {
-        throw overflow_error ("Error division 0");
+          throw overflow_error("Error division 0");
      }
 
      return Num / Denum;
@@ -80,7 +80,7 @@ int main()
 
      cout << "Denum: ";
      cin >> d;
-     
+
      while (true)
      {
           try
@@ -91,7 +91,7 @@ int main()
 
           catch (exception &g)
           {
-               cout << g.what () << endl;
+               cout << g.what() << endl;
           }
 
           break;
