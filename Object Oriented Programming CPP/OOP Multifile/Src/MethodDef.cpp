@@ -2,7 +2,7 @@
 #include <string>
 #include "Class.hpp"
 
-//Add method definition here
+//Add method definition here and scope the class with ::
 void Song::addTitle(std::string newTitle)
 {
      title = newTitle;
