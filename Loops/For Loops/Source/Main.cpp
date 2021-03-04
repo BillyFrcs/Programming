@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -45,11 +46,44 @@ int main()
      {
           if (i == 4)
           {
-               continue;
+               continue; //Is function
           }
 
           cout << i << endl;
      }
 
-     cin.get();
+     cout << endl;
+
+     //for (initialization; condition; increase) statement;
+     for (int n = 10; n > 0; n--)
+     {
+          cout << n << ", ";
+          if (n == 3)
+          {
+               cout << "Aborted \n";
+               break;
+          }
+     }
+
+     for (int x = 10; x > 0; x--)
+     {
+          if (x == 5) continue;
+          cout << x << " ,";
+     }
+
+     cout << "Off \n";
+
+     cout << endl;
+
+     //For using string
+     string name{"Billy"};
+
+     for (char c : name)
+     {
+          cout << "[" << c << "]";
+     }
+
+     cout << '\n';
+
+     return 0;
 }

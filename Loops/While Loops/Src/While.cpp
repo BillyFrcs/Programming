@@ -90,8 +90,9 @@ void whileProgram()
      }
 }
 
-void testsWhileProgram(){
-          int Counter = 100; //100
+void testsWhileProgram()
+{
+     int Counter = 100; //100
 
      while (Counter <= 500) //500
      {
@@ -126,6 +127,16 @@ int main()
      int numLines = 5;
 
      nameLines(Name, numLines);
+
+     cout << endl;
+
+     int n = 10;
+
+     while (n > 0)
+     {
+          cout << n << ", ";
+          --n;
+     }
 
      return 0;
 }
