@@ -2,6 +2,13 @@
 #include <string>
 #include "Class.hpp"
 
+//Add Constructor
+Song::Song(std::string newTitle, std::string newArtist)
+{
+     title = newTitle;
+     artist = newArtist;
+}
+
 //Add method definition here and scope the class with ::
 void Song::addTitle(std::string newTitle)
 {

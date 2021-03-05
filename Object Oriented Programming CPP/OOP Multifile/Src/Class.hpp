@@ -1,3 +1,5 @@
+#ifndef SONG
+#define SONG
 #include <string>
 
 //Add class here
@@ -7,6 +9,10 @@ class Song
      std::string title;
 
 public:
+     //Constructor
+     Song (std::string newTitle, std::string newArtist);
+
+     //Methods
      void addTitle(std::string newTitle);
      std::string getTitle();
 
@@ -26,3 +32,5 @@ public:
      int &Num();
      int &Den();
 };
+
+#endif
