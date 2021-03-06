@@ -1,19 +1,21 @@
 #include <iostream>
-#include "Header.hpp"
+#include "HeaderCalculator.hpp"
 
 using namespace std;
 
-//Prototype
-void addition(float num1, float num2);
+//Prototype functions
+void addition(double num1, double num2);
 
-void subtraction(float num1, float num2);
+void subtraction(double num1, double num2);
 
-void multiplication(float num1, float num2);
+void multiplication(double num1, double num2);
 
-void division(float num1, float num2);
+void division(double num1, double num2);
 
 int main()
 {
+     //"clear" only available on linux and mac
+     system("clear"); //For clear console using "cls" if run on windows
 
      float num1, num2;
      int arithmeticOperators;
@@ -24,6 +26,7 @@ menuCalculator: //Using function goto
      cout << "Billy's Calculator Functions" << endl;
      cout << "============================ \n \n";
 
+     //User enter first number
      do
      {
           cout << "Enter first number: ";
@@ -33,27 +36,27 @@ menuCalculator: //Using function goto
 
      cout << endl;
 
+//User choose operator
 Arithmetic:
      do
      {
-          cout << "1. Addition(+) \n2. Subtraction(-) \n3. Multiplication(*) \n4. Division(/) \nChoose number operator: ";
+          cout << "1. Addition(+) \n2. Subtraction(-) \n3. Multiplication(*) \n4. Division(/) \n5. Modulo(%)\n\nChoose number operator: ";
           cin >> arithmeticOperators;
           break;
      } while (arithmeticOperators);
      cout << endl;
 
+     //User enter second number
      do
      {
           cout << "Enter second number: ";
           cin >> num2;
           break;
      } while (num2);
-
-     cout << endl;
-
      //The algorithm for this calculator
      switch (arithmeticOperators)
      {
+          //Called function operators
      case 1:
           addition(num1, num2);
           break;
@@ -68,6 +71,10 @@ Arithmetic:
 
      case 4:
           division(num1, num2);
+          break;
+
+     case 5:
+          modulo(num1, num2);
           break;
 
      default:
@@ -88,6 +95,7 @@ Continue:
 
           if (continueCalculator == 'y' || continueCalculator == 'Y')
           {
+               system("clear");
                goto menuCalculator; //This can use to comeback to menu calculator
           }
           else if (continueCalculator == 'n' || continueCalculator == 'N')

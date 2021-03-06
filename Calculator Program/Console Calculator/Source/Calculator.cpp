@@ -9,7 +9,7 @@ void calculatorApp()
      float num1, num2;
      char operators;
 
-     cout << "<=== Billy Calculator ===>" << endl;
+     cout << "<=== Calculator ===>" << endl;
 
      cout << "Enter number and operation: ";
      cin >> num1 >> operators >> num2;
