@@ -111,12 +111,12 @@ int main()
      //Program count digits of a number
      countDigitsNumber();
 
-     printf("\n");
+     cout << endl;
 
      //Program reversing digits of a number
      reversedProgram();
 
-     printf("\n");
+     cout << endl;
 
      whileProgram();
 
@@ -136,6 +136,23 @@ int main()
      {
           cout << n << ", ";
           --n;
+     }
+
+     cout << endl;
+
+     //Countdown
+     int x;
+     cout << "x = ";
+     cin >> x;
+
+     while (x > 0)
+     {
+          cout << x << endl;
+          if (x % 5 == 0)
+          {
+               cout << "Beep" << endl;
+          }
+          x--;
      }
 
      return 0;

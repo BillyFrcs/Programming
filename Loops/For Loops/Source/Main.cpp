@@ -67,7 +67,8 @@ int main()
 
      for (int x = 10; x > 0; x--)
      {
-          if (x == 5) continue;
+          if (x == 5)
+               continue;
           cout << x << " ,";
      }
 
@@ -84,6 +85,26 @@ int main()
      }
 
      cout << '\n';
+
+     cout << endl;
+
+     //Countdown
+     int n = 1, a, i;
+     cout << "n = ";
+     cin >> n;
+
+     a = n;
+
+     for (i = 1; i <= n; i++)
+     {
+
+          cout << a << endl;
+
+          if (a % 5 == 0)
+               cout << "Beep" << endl;
+
+          a--;
+     }
 
      return 0;
 }
