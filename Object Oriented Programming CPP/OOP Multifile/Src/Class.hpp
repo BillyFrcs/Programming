@@ -12,6 +12,9 @@ public:
      //Constructor
      Song (std::string newTitle, std::string newArtist);
 
+     //Destructor using this symbol ~
+     ~Song();
+
      //Methods
      void addTitle(std::string newTitle);
      std::string getTitle();

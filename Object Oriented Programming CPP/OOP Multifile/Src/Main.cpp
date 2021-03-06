@@ -21,12 +21,15 @@ int main(int argc, char const *argv[])
 
     cout << endl;
 
+    //With destructor
+
     //Called class and method fraction
     Fraction fOne;
 
     fOne.Num() = 9;
     fOne.Den() = 8;
     fOne.printFraction();
-
+    cout << endl;
+    
     return 0;
 }

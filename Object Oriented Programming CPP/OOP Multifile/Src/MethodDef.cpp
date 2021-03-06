@@ -9,6 +9,12 @@ Song::Song(std::string newTitle, std::string newArtist)
      artist = newArtist;
 }
 
+//Add Destructor using this symbol ~
+Song::~Song()
+{
+     std::cout << "Song class destructor \n";
+}
+
 //Add method definition here and scope the class with ::
 void Song::addTitle(std::string newTitle)
 {
