@@ -14,8 +14,8 @@ void division(double num1, double num2);
 
 int main()
 {
-     //"clear" only available on linux and mac
-     system("clear"); //For clear console using "cls" if run on windows
+     //"clear" is only available on linux and mac
+     system("cls"); //For clear console using "cls" if run on windows
 
      float num1, num2;
      int arithmeticOperators;
@@ -53,6 +53,7 @@ Arithmetic:
           cin >> num2;
           break;
      } while (num2);
+
      //The algorithm for this calculator
      switch (arithmeticOperators)
      {
@@ -78,7 +79,7 @@ Arithmetic:
           break;
 
      default:
-          cout << "Operators valid! \n";
+          cout << "Operators valid try again !\n";
      }
 
      cout << endl;
@@ -95,7 +96,7 @@ Continue:
 
           if (continueCalculator == 'y' || continueCalculator == 'Y')
           {
-               system("clear");
+               system("cls");       //Change to "cls" when run on windows
                goto menuCalculator; //This can use to comeback to menu calculator
           }
           else if (continueCalculator == 'n' || continueCalculator == 'N')
@@ -111,5 +112,6 @@ Continue:
           }
      }
 
+     cin.get();
      return 0;
 }
