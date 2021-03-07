@@ -2,6 +2,15 @@
 
 using namespace std;
 
+//Swapping value with references
+void swapNum(int &i, int &j)
+{
+
+     int temp = i;
+     i = j;
+     j = temp;
+}
+
 int main()
 {
      cout << "Swapping values with third variable \n";
@@ -30,6 +39,17 @@ int main()
 
      cout << "x = " << x << endl;
      cout << "z = " << z << endl;
+
+     cout << endl;
+
+     cout << "Swapping number with Functions \n";
+     int k = 200;
+     int l = 300;
+
+     swapNum(k, l);
+
+     cout << "k = " << k << endl;
+     cout << "l = " << l << endl;
 
      return 0;
 }
