@@ -17,7 +17,7 @@ int main()
      //scanf for ask input from user
      scanf("%d", &numInteger);
      getchar(); //To take one character under scanf
-     printf("Num int= %d \n\n", numInteger);
+     printf("Num int = %d \n\n", numInteger);
 
      //%f is use for floating number or data type
      scanf("%f", &numFloating);
@@ -35,7 +35,7 @@ int main()
      getchar();
      printf("Display = %s \n\n", displayString);
 
-     printf("Num double = %f", numDouble); //Same with float
+     printf("Num double = %.1f", numDouble); //Same with float
 
      return 0;
 }
