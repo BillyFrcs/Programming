@@ -8,7 +8,7 @@ void factorialProgram()
 {
      int Number, Factorial = 1;
 
-     cout << "Enter number factorial: ";
+     cout << "Enter number factorial function: ";
      cin >> Number;
 
      for (int i = Number; i >= 1; i--)
@@ -16,7 +16,16 @@ void factorialProgram()
           Factorial = Factorial * i;
      }
 
-     cout << "Result factorial " << Number << " is " << Factorial << "\n";
+     cout << "Result factorial function " << Number << " is " << Factorial << "\n";
+}
+
+//Range Based for Loop
+void arrLoopNumber(){
+     int arrNum[] = {0, 1, 2, 3, 4, 5};
+
+     for (int n : arrNum){
+          cout << n << " ";
+     }
 }
 
 int main()
@@ -105,6 +114,11 @@ int main()
 
           a--;
      }
+
+     cout << endl;
+
+     //Range Based for Loop
+     arrLoopNumber();
 
      return 0;
 }
