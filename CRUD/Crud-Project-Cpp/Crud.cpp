@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <stdio.h>
 #include <fstream>
 
 //CRUD ==> Create Read Update And Delete
@@ -19,8 +18,8 @@ struct Mahasiswa
 //Get option
 int getOption ();
 
-/*/Check database 
-void checkDataBase (fstream &data);*/
+//Check database 
+void checkDataBase (fstream &data);
 
 //Write data mahasiswa
 void writeDataMahasiswa (fstream &data, int Position, Mahasiswa &inputMahasiswa);
@@ -104,10 +103,6 @@ int main()
             break;
         }
 
-        else
-        {
-            cout << "" << endl;
-        }
     }
 
     cout << "The last program" << endl;
@@ -121,8 +116,8 @@ int getOption()
 {
     int Input;
 
-    //system ("cls"); //Using for windows
-    system ("clear"); //Using for Mac or Linux
+    system ("cls"); //Using for windows
+    //system ("clear"); //Using for Mac or Linux
 
     cout << "Crud program data mahasiswa" << endl;
     cout << "===========================" << endl;
@@ -143,7 +138,7 @@ int getOption()
 //Check database
 void checkDataBase (fstream &data)
 {
-    data.open ("data.bin", ios::out | ios::in | ios::binary);
+    data.open ("data.txt", ios::out | ios::in | ios::binary);
 
     //Check database file is avaliable or not
     if (data.is_open())
@@ -157,7 +152,7 @@ void checkDataBase (fstream &data)
 
         data.close();
 
-        data.open ("data.bin", ios::trunc | ios::out | ios::in | ios::binary);
+        data.open ("data.txt", ios::trunc | ios::out | ios::in | ios::binary);
     }
 }
 
@@ -219,13 +214,13 @@ void addDataMahasiswa (fstream &data)
         inputMahasiswa.Pk = lastMahasiswa.Pk + 1;
     }
 
-    cout << "Name: ";
+    cout << "Name: \n";
     getline (cin, inputMahasiswa.Name);
 
-    cout << "NPM: ";
+    cout << "NPM: \n";
     getline (cin, inputMahasiswa.NPM);
 
-    cout << "Prodi: ";
+    cout << "Prodi: \n";
     getline (cin, inputMahasiswa.Prodi);
 
     writeDataMahasiswa (data, Size + 1, inputMahasiswa);
@@ -275,12 +270,15 @@ void changeDataMahasiswa (fstream &data)
     cout << "Change Data: " << endl;
 
     cout << "Name: ";
+    cin.ignore();
     getline (cin, updateMahasiswa.NPM);
 
     cout << "NPM: ";
+    cin.ignore();
     getline (cin, updateMahasiswa.Name);
 
     cout << "Prodi: ";
+    cin.ignore();
     getline (cin, updateMahasiswa.Prodi);
 
     writeDataMahasiswa (data, No, updateMahasiswa);
@@ -328,10 +326,10 @@ void deleteDataMahasiswa (fstream& data)
     Size = getDataSize (tempData);
     data.close ();
 
-    data.open ("data.bin", ios::trunc | ios::out | ios::binary);
+    data.open ("data.txt", ios::trunc | ios::out | ios::binary);
     data.close ();
 
-    data.open ("data.bin", ios::out | ios::in | ios::binary);
+    data.open ("data.txt", ios::out | ios::in | ios::binary);
 
     for (int c = 1; c <= Size; c++)
     {
