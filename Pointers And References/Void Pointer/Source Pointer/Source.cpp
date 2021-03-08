@@ -33,8 +33,21 @@ int triple(int &i)
      return i;
 }
 
+//Const can be used for a function where the parameter(s) won’t change inside the function.
+int square(int const &i)
+{
+     return i + i;
+}
+
 int main()
 {
+     /*/Concepts 
+     Reference
+     int &reference = original;
+ 
+     Pointer
+     int* pointer = &original;*/
+
      int number = 7;
      char letter = 'b';
 
@@ -62,6 +75,33 @@ int main()
 
      cout << triple(num) << "\n";
      cout << triple(num) << "\n";
+
+     cout << endl;
+
+     //Const reference
+     int code = 9;
+
+     cout << square(code) << endl;
+
+     cout << endl;
+
+     //Basics references
+     int value = 6;
+
+     cout << &value << endl;
+
+     //Basics Pointers
+     /*nullptr is a new keyword introduced in C++11. 
+     It provides a typesafe pointer value representing an 
+     empty pointer.*/
+
+     int attackPower = 1000;
+
+     int *ptr = nullptr;
+
+     ptr = &attackPower;
+
+     cout << ptr << endl; //It can change with & or *
 
      return 0;
 }

@@ -5,6 +5,8 @@ using namespace std;
 
 int main()
 {
+    //Memory address represented in hexadecimal.
+    //int* makes it a pointer rather than a normal variable.
     //Pointer(*) and reference(&)
     string Name = "Billy";
 
