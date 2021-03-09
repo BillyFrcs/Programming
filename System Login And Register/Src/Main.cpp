@@ -55,7 +55,7 @@ int main()
 
 bool userLoggedIn()
 {
-     string username, password, un, pw;
+     string username, password, loginUsername, loginPassword;
 
      //Input from user
      cout << "Login Username: ";
@@ -66,11 +66,11 @@ bool userLoggedIn()
 
      //File user
      ifstream read(username + ".txt"); 
-     getline(read, un);
-     getline(read, pw);
+     getline(read, loginUsername);
+     getline(read, loginPassword);
 
      //Comparison
-     if (un == username && pw == password)
+     if (loginUsername == username && loginPassword == password)
           return true;
 
      else
