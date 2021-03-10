@@ -97,7 +97,7 @@ Continue:
           if (continueCalculator == 'y' || continueCalculator == 'Y')
           {
                system("cls");       //Change to "cls" when run on windows
-               goto menuCalculator; //This can use to comeback to menu calculator
+               goto menuCalculator; //This can use to comeback to the calculator menu
           }
           else if (continueCalculator == 'n' || continueCalculator == 'N')
           {
