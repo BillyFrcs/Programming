@@ -6,9 +6,9 @@ int main()
 {
 
      //Concepts
-     /*try {
-        Block of code to try
-       throw exception; // Throw an exception when a problem arise
+     /**try {
+        * * Block of code to try
+       * ! throw exception; // Throw an exception when a problem arise
      }
      catch () {
         Block of code to handle errors

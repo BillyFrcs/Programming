@@ -169,7 +169,7 @@ void openFileCrud()
 {
      //Add and open file .txt
      string line;
-     ifstream crudFile("Data.txt"); //This can change with another file location
+     ifstream crudFile("DataStudents.txt"); //This can change with another file location
 
      if (crudFile.is_open())
      {
@@ -178,8 +178,8 @@ void openFileCrud()
           while (getline(crudFile, line))
           {
                int l = line.length();
-               studentName[x] = line.substr(0, 3);
-               studentID[x] = line.substr(4, l - 4);
+               studentName[x] = line.substr(0, 12);//0, 3
+               studentID[x] = line.substr(0, l - 12);//4, l - 4
                x++;
           }
      }
@@ -191,7 +191,7 @@ void saveFileCrud()
      //Save file .txt
      ofstream crudFile;
 
-     crudFile.open("Data.txt"); //This can change with another file location
+     crudFile.open("DataStudents.txt"); //This can change with another file location
 
      for (int x = 0; x < maxRow; x++)
      {
