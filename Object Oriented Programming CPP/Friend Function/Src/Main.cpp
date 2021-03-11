@@ -4,6 +4,7 @@ using namespace std;
 
 class System
 {
+     //Friend function can access with private or protected
 private:
      int numberSystem;
      string systemName;
