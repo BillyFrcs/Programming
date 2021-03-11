@@ -1,8 +1,0 @@
-This is external file
-This is the second line
-
-Data:
-No  Name
-1.  Billy 
-2.  Franscois
-3.  Kolibonso
