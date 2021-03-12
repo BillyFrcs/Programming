@@ -106,6 +106,35 @@ void quizProgram()
 
 int main()
 {
+     //Advance if else statements
+     int i = 6;
+
+     bool comparisonResult = i == 6; //True condition
+
+     if (comparisonResult) //This can change to 1 = true and 0 = false
+          cout << "Comparison true" << endl;
+
+     else
+          cout << "Comparison false" << endl;
+
+     cout << endl;
+
+     const char *ptr = "Hello";
+
+     if (ptr != "Hello")
+     {
+          cout << ptr << endl;
+     }
+     else if (ptr == "Billy")
+     {
+          cout << "Billy ptr" << endl;
+     }
+     else
+     {
+          cout << "Ptr is null" << endl;
+     }
+
+     cout << endl;
 
      evenAndOddNumber();
 
