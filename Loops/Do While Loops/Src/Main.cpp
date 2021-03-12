@@ -25,10 +25,26 @@ void validationPinProgram()
 
 int main()
 {
+     int z = 0;
+     bool condition = true;
+
+     do
+     {
+          cout << "Billy \n";
+          z++;
+
+          if (!(z < 10))
+               condition = false;
+
+     } while (condition);
+
+     cout << endl;
+
      //Pin validation program
      validationPinProgram();
 
-     cout << endl << endl;
+     cout << endl
+          << endl;
 
      int i = 0;
 

@@ -30,28 +30,24 @@ void countDigitsNumber(int Number = 0)
 }
 
 //Class reserved program
-class reversedProgram
+void reversedProgram()
 {
-public:
      int number, reversedNumber;
 
-     reversedProgram()
+     cout << "Enter number: ";
+     cin >> number;
+
+     while (number != 0)
      {
-          cout << "Enter number: ";
-          cin >> number;
+          reversedNumber *= 10;
 
-          while (number != 0)
-          {
-               reversedNumber *= 10;
-
-               int lastDigits = number % 10;
-               reversedNumber += lastDigits;
-               number /= 10;
-          }
-
-          cout << "Reversed: " << reversedNumber << endl;
+          int lastDigits = number % 10;
+          reversedNumber += lastDigits;
+          number /= 10;
      }
-};
+
+     cout << "Reversed: " << reversedNumber << endl;
+}
 
 //Prototype nameLines
 void nameLines(string name, int x);
@@ -108,6 +104,20 @@ void testsWhileProgram()
 
 int main()
 {
+     //Advance while loops
+     int i = 0;
+     bool condition = true;
+
+     while (condition)
+     {
+          cout << "Hello Billy \n";
+          i++;
+          if (!(i < 7))
+               condition = false;
+     }
+
+     cout << endl;
+
      //Program count digits of a number
      countDigitsNumber();
 

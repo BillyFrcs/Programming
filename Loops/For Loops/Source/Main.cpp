@@ -20,16 +20,34 @@ void factorialProgram()
 }
 
 //Range Based for Loop
-void arrLoopNumber(){
+void arrLoopNumber()
+{
      int arrNum[] = {0, 1, 2, 3, 4, 5};
 
-     for (int n : arrNum){
+     for (int n : arrNum)
+     {
           cout << n << " ";
      }
 }
 
 int main()
 {
+     //Advance for loops
+     int o = 0;
+
+     bool condition = true;
+
+     for (; condition;)
+     {
+          cout << "Hello Billy" << endl;
+          o++;
+
+          if (!(o < 5))
+               condition = false;
+     }
+
+     cout << endl;
+
      //The factorial of a number
      int number, factorial = 1;
 
@@ -46,7 +64,7 @@ int main()
      cout << endl;
 
      //Called function factorial program
-     factorialProgram();
+     //factorialProgram();
 
      cout << endl;
 
