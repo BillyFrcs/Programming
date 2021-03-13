@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//For loops table multiplication
+//Nested for loops table multiplication
 void multiplicationProgram()
 {
      for (int i = 1; i <= 10; i++)
@@ -18,7 +18,19 @@ void multiplicationProgram()
 
 int main()
 {
+     for (int i = 0; i < 10; i++)
+     {
+          if (i == 5)
+          {
+               break; //For end condition
+          }
+
+          cout << i << endl;
+     }
+
+     cout << endl;
+
      multiplicationProgram();
-     
+
      return 0;
 }
