@@ -276,6 +276,8 @@ void play()
 
 int main()
 {
+     system("Color 1");
+
      setCursor(0, 0);
      srand((unsigned)time(NULL));
 
