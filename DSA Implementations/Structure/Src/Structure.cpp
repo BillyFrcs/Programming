@@ -22,7 +22,7 @@ int main()
     cout << "Age " << Data1.Age << endl;
     cout << "Hobby "<< Data1.Hobby[0] << endl;
 
-    printf("\n");
+    cout << endl;
 
     //Declare with variable local
     Data dataPerson;
@@ -33,7 +33,7 @@ int main()
     cout << "Name " << dataPerson.Name << endl;
     cout << "Age " << dataPerson.Age << endl;
 
-    printf ("\n");
+    cout << endl;
 
     //Initialization member structure
     Data2 = {"kolibonso", 19, {"Coding", "Games"}};
@@ -43,7 +43,7 @@ int main()
     cout << "Hobby " << Data2.Hobby[0] << endl;
     cout << "Second hobby " << Data2.Hobby[1] << endl;
 
-    printf ("\n");
+    cout << endl;
 
     Data personalData = {"Reggy", 18};
 
