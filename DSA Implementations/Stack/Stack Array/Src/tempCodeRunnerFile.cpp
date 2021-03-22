@@ -1,2 +1,0 @@
-  // dataArr("Reggy");
-  // displayDataArr();
