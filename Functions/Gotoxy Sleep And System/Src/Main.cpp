@@ -1,6 +1,7 @@
 #include <iostream>
 #include <windows.h>
 
+//Windows functions
 using namespace std;
 
 void gotoxy(int x, int y)
@@ -14,9 +15,17 @@ void gotoxy(int x, int y)
 
 int main()
 {
-     gotoxy(12, 10);
+     gotoxy(5, 5);
 
      cout << "Hello world" << endl;
+
+     Sleep(1000);
+
+     gotoxy(5, 7);
+
+     cout << "Billy" << endl;
+
+     system("Color 1");
 
      return 0;
 }
