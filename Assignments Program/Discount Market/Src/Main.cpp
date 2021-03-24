@@ -10,7 +10,7 @@ using namespace std;
 
 // Global variable
 char name[50];
-long long inputPrice;
+long long inputTotal;
 
 // Input from user
 void ManulakaMart() {
@@ -18,8 +18,8 @@ void ManulakaMart() {
   cout << "Masukan Nama Anda: ";
   cin.getline(name, 50);
 
-  cout << "Total Harga: ";
-  cin >> inputPrice;
+  cout << "Total Harga : Rp. ";
+  cin >> inputTotal;
 
   cout << "-------------------" << endl;
 }
@@ -27,19 +27,19 @@ void ManulakaMart() {
 // Display data from user
 void getInfoManulakaMart(long counter) {
 
-  counter = inputPrice - DISCOUNT;
+  counter = inputTotal - DISCOUNT;
 
-  if (inputPrice >= MAX) {
+  if (inputTotal >= MAX) {
     cout << "Selamat, " << name << ". Anda mendapatkan diskon sebesar Rp. "
          << DISCOUNT << endl;
 
     cout << "Total pembayaran anda : Rp. " << counter << endl;
     printf("==================================\n");
-  } else if (inputPrice < MAX) {
+  } else if (inputTotal < MAX) {
     cout << "Hai, " << name << ". Anda belum mendapatkan diskon kali ini."
          << endl;
 
-    cout << "Total pembayaran anda : Rp. " << inputPrice << endl;
+    cout << "Total pembayaran anda : Rp. " << inputTotal << endl;
     printf("==================================\n");
   }
 }
@@ -51,5 +51,6 @@ int main() {
 
   getInfoManulakaMart(0);
 
+  system("pause > 0");
   return 0;
 }
