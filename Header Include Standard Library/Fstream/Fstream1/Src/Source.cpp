@@ -63,9 +63,5 @@ int main()
     cout << Output.Name << endl;
     cout << Output.Prodi << endl;
 
-
-
-    system ("pause > 0");
-    cin.get();
     return 0;
 }

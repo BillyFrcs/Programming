@@ -260,10 +260,6 @@ int main ()
     cout << "Integer size = " << sizeof (REsult) << endl;
 
     cout << REsult << endl;
-
-
-
-    system("pause > 0");
-    cin.get();
+    
     return 0;
 }
