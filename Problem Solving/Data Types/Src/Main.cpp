@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
   int i = 6, inputNum;
   double d = 5.0, inputFloatingNum;
   string s = " Franscois", printStr;

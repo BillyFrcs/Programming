@@ -9,8 +9,6 @@ int main()
 {
      int in;
 
-statements:
-     cout << "Enter one number 1 - 5: ";
      cin >> in;
 
      if (in > 5)
@@ -18,19 +16,6 @@ statements:
 
      else
           cout << num[in];
-
-     char symbol;
-     cout << "Try again ?(y/n): ";
-     cin >> symbol;
-
-     if (symbol == 'y' || symbol == 'Y')
-     {
-          goto statements;
-     }
-     else if (symbol == 'n' || symbol == 'N')
-     {
-          cout << "Stopped" << endl;
-     }
 
      return 0;
 }

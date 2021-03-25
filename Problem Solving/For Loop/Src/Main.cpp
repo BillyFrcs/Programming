@@ -2,43 +2,57 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
   int a, b;
   int n = 0;
-  string arr[9] = {"one", "two",   "three", "four", "five",
+  string arr[9] = {"one", "two", "three", "four", "five",
                    "six", "seven", "eight", "nine"};
 
   cin >> a >> b;
 
-  if ((a <= 9) && (b <= 9)) {
+  if ((a <= 9) && (b <= 9))
+  {
 
-    for (n = a; n <= b; n++) {
+    for (n = a; n <= b; n++)
+    {
+      cout << arr[n - 1] << endl;
+    }
+  }
+  else if ((a <= 9) && (b > 9))
+  {
+
+    for (n = a; n <= 9; n++)
+    {
       cout << arr[n - 1] << endl;
     }
 
-  } else if ((a <= 9) && (b > 9)) {
+    for (n = 10; n <= b; n++)
+    {
 
-    for (n = a; n <= 9; n++) {
-      cout << arr[n - 1] << endl;
-    }
-
-    for (n = 10; n <= b; n++) {
-
-      if (n % 2 == 0) {
+      if (n % 2 == 0)
+      {
         cout << "even" << endl;
-      } else {
+      }
+      else
+      {
         cout << "odd" << endl;
       }
     }
   }
 
-  else {
+  else
+  {
 
-    for (n = a; n <= b; n++) {
+    for (n = a; n <= b; n++)
+    {
 
-      if (n % 2 == 0) {
+      if (n % 2 == 0)
+      {
         cout << "even" << endl;
-      } else {
+      }
+      else
+      {
         cout << "odd" << endl;
       }
     }
