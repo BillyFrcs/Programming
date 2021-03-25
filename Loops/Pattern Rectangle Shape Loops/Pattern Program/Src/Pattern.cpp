@@ -1,7 +1,4 @@
 #include <iostream>
-#include <string>
-#include <cmath>
-#include <stdio.h>
 
 using namespace std;
 
@@ -137,8 +134,5 @@ int main()
 		cout << endl;
 	}
 
-
-
-	cin.get();
 	return 0;
 }

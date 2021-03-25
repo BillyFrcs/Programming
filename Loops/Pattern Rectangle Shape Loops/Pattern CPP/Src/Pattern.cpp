@@ -6,41 +6,8 @@ using namespace std;
 int main()
 {
     system("cls");
-
-    /*/Pattern 1
-    int a = 1;
-
-    for (int b = 6; b >= 1; b--)
-    {
-        for (int c = 1; c < b; c++)
-        {
-            cout << a << " ";
-            a++;
-        }
-        cout << endl;
-    }
-
-    cout << endl;
-
-    //Pattern 2 (Number)
-
-    int Rows;
-
-    cout << "Enter number of rows: ";
-    cin >> Rows;
-
-    for (int c = Rows; c >= 1; c--)
-    {
-        for (int d = 1; d <= c; d++)
-        {
-            cout << d << "";
-        }
-        cout << endl;
-    }
-
-    cout << endl;*/
-
-    /*/Love pattern
+    
+    //Love pattern
     int i, j;
 
     system ("color 6"); //Color code
@@ -168,7 +135,7 @@ int main()
         }
 
         cout << "\n";
-    }*/
+    }
 
     cout << endl;
 
@@ -233,6 +200,37 @@ int main()
         cout << endl;
     }
 
-    cin.get();
+    cout << endl;
+
+    //Pattern 1
+    int a = 1;
+
+    for (int b = 6; b >= 1; b--)
+    {
+        for (int c = 1; c < b; c++)
+        {
+            cout << a << " ";
+            a++;
+        }
+        cout << endl;
+    }
+
+    cout << endl;
+
+    //Pattern 2 (Number)
+    int Rows;
+
+    cout << "Enter number of rows: ";
+    cin >> Rows;
+
+    for (int c = Rows; c >= 1; c--)
+    {
+        for (int d = 1; d <= c; d++)
+        {
+            cout << d << "";
+        }
+        cout << endl;
+    }
+
     return 0;
 }

@@ -3,22 +3,6 @@
 
 using namespace std;
 
-//Factorial program with function
-void factorialProgram()
-{
-     int Number, Factorial = 1;
-
-     cout << "Enter number factorial function: ";
-     cin >> Number;
-
-     for (int i = Number; i >= 1; i--)
-     {
-          Factorial = Factorial * i;
-     }
-
-     cout << "Result factorial function " << Number << " is " << Factorial << "\n";
-}
-
 //Range Based for Loop
 void arrLoopNumber()
 {
@@ -60,11 +44,6 @@ int main()
      }
 
      cout << "Result factorial " << number << " is " << factorial << "\n";
-
-     cout << endl;
-
-     //Called function factorial program
-     //factorialProgram();
 
      cout << endl;
 

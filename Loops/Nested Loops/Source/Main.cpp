@@ -22,10 +22,29 @@ void nestingProgram()
      cout << "Average grade = " << (float) sum / 3.0 << endl;
 }
 
+void factorialProgram(){ 
+
+     int Number, Factorial = 1;
+
+     cout << "Enter number factorial function: ";
+     cin >> Number;
+
+     for (int i = Number; i >= 1; i--)
+     {
+          Factorial *= i;
+     }
+
+     cout << "Result factorial function " << Number << " is " << Factorial << "\n";
+}
+
 int main()
 {
      //Called function nesting program here
      nestingProgram();
+
+     cout << endl;
+
+     factorialProgram();
 
      return 0;
 }

@@ -48,7 +48,7 @@ void triangleShape()
           cout << endl;
      }
 
-     printf("\n");
+     cout << endl;
 
      for (int l = length; l >= 1; l--)
      {
@@ -63,17 +63,48 @@ void triangleShape()
 //Prototype
 void printNumLoops();
 
+void numbersTriangle(int n){
+     
+     for (int i = 1; i <= n ; i++){
+          for (int j = 1; j <= i; j++){
+               cout << j << " ";
+          }
+          cout << endl;
+     }
+
+     cout << endl;
+
+     int x = 1;
+
+     for (int m = 1; m <= n; m++){
+          for (int p = 1; p <= m; p++){
+               cout << x++ << " ";
+          }
+          cout << endl;
+     }
+}
+
 int main()
 {
      rectangleShape();
 
-     printf("\n");
+     cout << endl;
 
      triangleShape();
 
      cout << endl;
 
      printNumLoops();
+
+     cout << endl;
+
+     //Numbers triangle
+     int num;
+
+     cout << "Enter num = ";
+     cin >> num;
+
+     numbersTriangle(num);
 
      return 0;
 }
@@ -83,6 +114,7 @@ void printNumLoops()
      //Print number program loops
      int n = 4;
      int m = 1;
+
      for (int i = 0; i < n; i++)
      {
           for (int j = 0; j <= i; j++)
