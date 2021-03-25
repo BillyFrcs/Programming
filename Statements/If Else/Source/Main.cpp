@@ -14,10 +14,13 @@ void evenAndOddNumber()
 
      if (Number % 2 == 0)
           cout << "You have entered even number." << endl;
+          //return true;
 
      else
           cout << "You have entered odd number." << endl;
+          //return false;
 }
+
 void lengthTriangle()
 {
      //User enters side length of a triangle (a, b, c)
@@ -140,7 +143,7 @@ int main()
 
      cout << endl;
 
-     //lengthTriangle();
+     lengthTriangle();
 
      cout << endl;
 
@@ -172,9 +175,9 @@ int main()
      }
 
      if (temp == sum)
-          cout << " is a palindrome";
+          cout << " is a palindrome" << endl;
      else
-          cout << " is NOT a palindrome";
+          cout << " is not a palindrome" << endl;;
 
      return 0;
 }
