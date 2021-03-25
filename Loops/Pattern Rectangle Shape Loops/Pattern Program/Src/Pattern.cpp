@@ -4,8 +4,6 @@ using namespace std;
 
 int main()
 {
-	system ("cls");
-	
 	//Triangle program 1
 	int a;
 
@@ -19,8 +17,6 @@ int main()
 		cout << endl;
 	}
 
-
-
 	//Triangle program 2
 	int d;
 
@@ -33,8 +29,6 @@ int main()
 		}
 		cout << endl;
 	}
-
-
 
 	//Triangle program 3
 	int g;
@@ -52,8 +46,6 @@ int main()
 		cout << endl;
 	}
 
-
-
 	//Triangle program 4
 	int k;
 
@@ -69,8 +61,6 @@ int main()
 		}
 		cout << endl;
 	}
-
-
 
 	//Triangle program 5
 	int o;
@@ -88,8 +78,6 @@ int main()
 		cout << endl;
 	}
 
-
-
 	//Triangle program 6
 	int s;
 
@@ -105,8 +93,6 @@ int main()
 		}
 		cout << endl;
 	}
-
-
 
 	//Triangle program combination no 5 and 6
 	int w;
