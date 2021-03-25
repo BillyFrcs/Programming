@@ -50,6 +50,12 @@ int multiplyInt(int a, int b)
 //Prime number prototype
 bool primeNumber(int number);
 
+bool isEvenOdd(int number) {
+
+  return number % 2 == 0;
+  
+}
+
 int main()
 {
      cout << needsWater(20, true) << endl;
@@ -89,13 +95,19 @@ int main()
      cout << endl;
 
      //Method 2
-     for (int i = 1; i <= 1000; i++)
+     for (int i = 1; i <= 10; i++)
      {
           bool isPrime = primeNumber(i);
 
           if (isPrime)
                cout << i << " is prime number \n";
      }
+
+     cout << endl;
+
+     bool num = isEvenOdd(2);
+
+     cout << num << endl;
 
      return 0;
 }
@@ -118,8 +130,3 @@ bool primeNumber(int number)
      return primeFlag;
      //This can use return true;
 }
-
-// Commit and push to Github
-// git add .
-// git commit -m "Massage"
-// git push -u origin master
