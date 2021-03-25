@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main (int argc, char const *argv[])
+int main ()
 {
     //Basic string
     string Word ("Motor");
@@ -188,7 +188,5 @@ int main (int argc, char const *argv[])
     cout << "insert 1. " << Sentence5 << endl;
     cout << "insert 2. " << Sentence6 << endl;
 
-
-    cin.get();
     return 0;
 }

@@ -26,7 +26,7 @@ void kuadrat (int &);
 
 
 
-int main (int argc, char const *argv[])
+int main ()
 {
     //Recursive factorial
     int number, result;
@@ -133,7 +133,6 @@ int main (int argc, char const *argv[])
 
     cout << "Value of h: " << h << endl;
 
-    cin.get();
     return 0;
 }
 

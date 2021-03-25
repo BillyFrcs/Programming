@@ -9,7 +9,7 @@
 
 using namespace std;
 
-int main (int argc, char const *argv[])
+int main ()
 
 {
 	//Basic of array
@@ -177,8 +177,5 @@ int main (int argc, char const *argv[])
 		cout << &nilaiRef << " Value is " << nilaiRef << endl;
 	}
 
-
-
-	cin.get();
 	return 0;
 }

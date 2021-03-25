@@ -160,9 +160,6 @@ int main()
 
 	cout << "Random number: " << createRandomNumber << endl;
 
-
-
-	cin.get();
 	return 0;
 }
 

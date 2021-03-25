@@ -86,7 +86,7 @@ void PRINTARRAY (array <int, arraySIZE> &angka)
 
 
 
-int main (int argc, char const *argv[])
+int main ()
 {
     //Multidimension array
     //Step 1
@@ -175,7 +175,5 @@ int main (int argc, char const *argv[])
         cout << "Not found" << endl;
     }
 
-
-    cin.get();
     return 0;
 }
