@@ -47,6 +47,5 @@ int main() {
 
   getInfoManulakaMart(0);
 
-  system("pause > 0");
   return 0;
 }
