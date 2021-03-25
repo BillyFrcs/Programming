@@ -27,7 +27,7 @@ void ManulakaMart() {
 // Display data from user
 void getInfoManulakaMart(long counter) {
 
-  counter = inputTotal - DISCOUNT;
+  counter = (inputTotal - DISCOUNT);
 
   if (inputTotal >= MAX) {
     cout << "Selamat, " << name << ". Anda mendapatkan diskon sebesar Rp. " << DISCOUNT << endl;
