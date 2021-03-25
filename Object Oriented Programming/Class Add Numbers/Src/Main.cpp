@@ -2,12 +2,14 @@
 
 using namespace std;
 
-class Add {
+class Add
+{
 protected:
   int firstNum, secondNum;
 
 public:
-  void Input() {
+  void Input()
+  {
     cout << "Enter first num = ";
     cin >> firstNum;
 
@@ -15,12 +17,19 @@ public:
     cin >> secondNum;
   }
 
-  int sum(int num1, int num2) { return num1 * num2; }
+  int sum(int num1, int num2)
+  {
+    return num1 * num2;
+  }
 
-  void showResult() { cout << "Result = " << sum(firstNum, secondNum) << endl; }
+  void showResult()
+  {
+    cout << "Result = " << sum(firstNum, secondNum) << endl;
+  }
 };
 
-int main() {
+int main()
+{
 
   Add obj;
 

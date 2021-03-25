@@ -4,11 +4,20 @@ using namespace std;
 
 // This can change with another data type
 // enum is behind the scene of int
-enum example : unsigned char { A, B = 5, C };
+enum example : unsigned char
+{
+  A,
+  B = 5,
+  C
+};
 
-enum var : int { num = 50 };
+enum var : int
+{
+  num = 50
+};
 
-int main() {
+int main()
+{
 
   // Basics of enum
   example value = B;

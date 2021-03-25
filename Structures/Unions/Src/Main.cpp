@@ -2,31 +2,40 @@
 
 using namespace std;
 
-struct Vector {
+struct Vector
+{
   float x, y;
 };
 
-struct vectorTwo {
-  union {
-    struct {
+struct vectorTwo
+{
+  union
+  {
+    struct
+    {
       float a, b, c, d;
     };
 
-    struct {
+    struct
+    {
       Vector k, l;
     };
   };
 };
 
-void printVector(const Vector &vector) {
+void printVector(const Vector &vector)
+{
   cout << vector.x << ", " << vector.y << endl;
 }
 
-int main() {
+int main()
+{
 
   // Basics of union
-  struct Union {
-    union {
+  struct Union
+  {
+    union
+    {
       float a;
       int b;
     };
