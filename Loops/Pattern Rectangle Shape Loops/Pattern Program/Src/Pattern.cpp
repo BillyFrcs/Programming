@@ -4,7 +4,6 @@ using namespace std;
 
 void triangleNumbers(int n)
 {
-
 	for (int i = 1; i <= n; i++)
 	{
 		for (int j = n - i; j > 0; j--)
