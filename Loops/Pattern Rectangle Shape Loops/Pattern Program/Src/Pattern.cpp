@@ -2,6 +2,37 @@
 
 using namespace std;
 
+void triangleNumbers(int n)
+{
+
+	for (int i = 1; i <= n; i++)
+	{
+		for (int j = n - i; j > 0; j--)
+			cout << " ";
+		for (int k = 1; k <= i; k++)
+			cout << "* ";
+		cout << endl;
+	}
+}
+
+void pascalTriangle(int n)
+{
+	for (int i = 1; i <= n; i++)
+	{
+		int coef = 1;
+
+		for (int j = n - i; j > 0; j--)
+			cout << " ";
+
+		for (int k = 1; k <= i; k++)
+		{
+			cout << coef << " ";
+			coef = coef * (i - k) / k;
+		}
+		cout << endl;
+	}
+}
+
 int main()
 {
 	//Triangle program 1
@@ -10,8 +41,10 @@ int main()
 	cout << "Enter number: ";
 	cin >> a;
 
-	for (int b = 1; b <= a; b++) {
-		for (int c = 1; c <= b; c++) {
+	for (int b = 1; b <= a; b++)
+	{
+		for (int c = 1; c <= b; c++)
+		{
 			cout << "*";
 		}
 		cout << endl;
@@ -23,8 +56,10 @@ int main()
 	cout << "Enter number: ";
 	cin >> d;
 
-	for (int e = 1; e <= d; e++) {
-		for (int f = d; f >= e; f--) {
+	for (int e = 1; e <= d; e++)
+	{
+		for (int f = d; f >= e; f--)
+		{
 			cout << "*";
 		}
 		cout << endl;
@@ -36,11 +71,14 @@ int main()
 	cout << "Enter number: ";
 	cin >> g;
 
-	for (int h = 1; h <= g; h++) {
-		for (int i = 1; i <= h; i++) {
+	for (int h = 1; h <= g; h++)
+	{
+		for (int i = 1; i <= h; i++)
+		{
 			cout << " ";
 		}
-		for (int j = g; j >= h; j--) {
+		for (int j = g; j >= h; j--)
+		{
 			cout << "*";
 		}
 		cout << endl;
@@ -52,11 +90,14 @@ int main()
 	cout << "Enter number: ";
 	cin >> k;
 
-	for (int l = 1; l <= k; l++) {
-		for (int m = k; m >= l; m--) {
+	for (int l = 1; l <= k; l++)
+	{
+		for (int m = k; m >= l; m--)
+		{
 			cout << " ";
 		}
-		for (int n = 1; n <= l; n++) {
+		for (int n = 1; n <= l; n++)
+		{
 			cout << "*";
 		}
 		cout << endl;
@@ -68,11 +109,14 @@ int main()
 	cout << "Enter number: ";
 	cin >> o;
 
-	for (int p = 1; p <= o; p++) {
-		for (int q = o; q >= p; q--) {
+	for (int p = 1; p <= o; p++)
+	{
+		for (int q = o; q >= p; q--)
+		{
 			cout << " ";
 		}
-		for (int r = 1; r <= (2 * p - 1); r++) {
+		for (int r = 1; r <= (2 * p - 1); r++)
+		{
 			cout << "*";
 		}
 		cout << endl;
@@ -84,11 +128,14 @@ int main()
 	cout << "Enter number: ";
 	cin >> s;
 
-	for (int t = 1; t <= s; t++) {
-		for (int u = 1; u <= t; u++) {
+	for (int t = 1; t <= s; t++)
+	{
+		for (int u = 1; u <= t; u++)
+		{
 			cout << " ";
 		}
-		for (int v = s; v >= (2 * t - s); v--) {
+		for (int v = s; v >= (2 * t - s); v--)
+		{
 			cout << "*";
 		}
 		cout << endl;
@@ -100,25 +147,49 @@ int main()
 	cout << "Enter number: ";
 	cin >> w;
 
-	for (int x = 1; x <= w; x++) {
-		for (int y = w; y >= x; y--) {
+	for (int x = 1; x <= w; x++)
+	{
+		for (int y = w; y >= x; y--)
+		{
 			cout << " ";
 		}
-		for (int z = 1; z <= (2 * x - 1); z++) {
+		for (int z = 1; z <= (2 * x - 1); z++)
+		{
 			cout << "*";
 		}
 		cout << endl;
 	}
 
-	for (int x = 2; x <= w; x++) {
-		for (int y = 1; y <= x; y++) {
+	for (int x = 2; x <= w; x++)
+	{
+		for (int y = 1; y <= x; y++)
+		{
 			cout << " ";
 		}
-		for (int z = w; z >= (2 * x - w); z--) {
+		for (int z = w; z >= (2 * x - w); z--)
+		{
 			cout << "*";
 		}
 		cout << endl;
 	}
+
+	cout << endl;
+
+	int num;
+
+	cout << "Num = ";
+	cin >> num;
+
+	triangleNumbers(num);
+
+	cout << endl;
+
+	int Num;
+
+	cout << "Num = ";
+	cin >> Num;
+
+	pascalTriangle(Num);
 
 	return 0;
 }
