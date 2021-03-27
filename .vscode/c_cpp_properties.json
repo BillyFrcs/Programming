@@ -1,37 +1,34 @@
 {
     "configurations": [
         {
-            "name": "Win64",
+            "name": "Win 64",
             "includePath": [
-                "${workspaceFolder}/**",
-                "C:/Program Files/MinGW/include/c++/9.2.0/x86_64-w64-mingw32/bits",
-                "C:/Program Files/MinGW/include/c++/9.2.0/x86_64-w64-mingw32/bits",
-                "C:/Program Files/MinGW/include/c++/9.2.0",
-                "C:/Program Files/MinGW/include/c++/9.2.0/x86_64-w64-mingw32",
-                "C:/Program Files/MinGW/include/c++/9.2.0/tr1",
-                "C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include"
+                "${workspaceFolder}/**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
                 "_UNICODE"
             ],
-            "windowsSdkVersion": "10.0.18362.0",
-            "compilerPath": "C:/Program Files/MinGW/bin/g++.exe",
-            "cStandard": "c17",
-            "cppStandard": "c++17",
+            "compilerPath": "C:\\Program Files\\MinGW\\bin\\gcc.exe",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
             "intelliSenseMode": "windows-gcc-x64"
         },
         {
-            "name": "Linux",
+            "name": "Win64",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
-            "defines": [],
-            "compilerPath": "/usr/bin/gcc",
-            "cStandard": "gnu11",
-            "cppStandard": "gnu++20",
-            "intelliSenseMode": "linux-gcc-x64"
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:\\Program Files\\MinGW\\bin\\gcc.exe",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "windows-gcc-x64"
         }
     ],
     "version": 4
