@@ -3,10 +3,12 @@
 
 using namespace std;
 
-void listArr() {
+void listArr()
+{
   string cars[5] = {"Volvo", "BMW", "Ford", "Mazda", "Ferary"};
 
-  for (int i = 0; i < 5; i++) {
+  for (int i = 0; i < 5; i++)
+  {
     cout << cars[i] << "\n";
   }
 
@@ -15,7 +17,8 @@ void listArr() {
   int a[8] = {};
   int x = 3;
 
-  for (int i = 0; i < 6; i++) {
+  for (int i = 0; i < 6; i++)
+  {
     a[i] = ++x;
   }
 
@@ -23,11 +26,13 @@ void listArr() {
 }
 
 // Discount program with ages
-void discountProgram() {
+void discountProgram()
+{
 
   int ages[5];
 
-  for (int i = 0; i < 5; ++i) {
+  for (int i = 0; i < 5; ++i)
+  {
     cout << "Enter age: ";
     cin >> ages[i];
   }
@@ -35,7 +40,8 @@ void discountProgram() {
   float perc;
   float min = ages[0];
 
-  for (int x = 1; x < 5; ++x) {
+  for (int x = 1; x < 5; ++x)
+  {
     if (min > ages[x])
       min = ages[x];
   }
@@ -45,19 +51,22 @@ void discountProgram() {
 }
 
 // Array loops concept
-void conceptArrLoops() {
+void conceptArrLoops()
+{
   int arrNum[9];
 
   cout << "Element - Value" << endl;
 
-  for (int i = 0; i <= 8; i++) {
+  for (int i = 0; i <= 8; i++)
+  {
     arrNum[i] = 99;
 
     cout << i << " --------- " << arrNum[i] << endl;
   }
 }
 
-int main() {
+int main()
+{
 
   listArr();
 
