@@ -2,7 +2,8 @@
 
 using namespace std;
 
-class System {
+class System
+{
   // Friend function can access with private or protected
 private:
   int numberSystem;
@@ -11,14 +12,16 @@ private:
   int num;
 
 public:
-  System() {
+  System()
+  {
     systemName = "Game mechanical";
     numberSystem = 1;
     name = "Billy";
     num = 19;
   }
 
-  void displaySystem() {
+  void displaySystem()
+  {
     cout << "System name: " << systemName << endl;
     cout << "System number: " << numberSystem << endl;
   }
@@ -31,17 +34,20 @@ public:
 };
 
 // Friend declaration
-void addValue(System &varData) {
+void addValue(System &varData)
+{
   varData.systemName = varData.systemName;
   varData.numberSystem = varData.numberSystem + 10;
 }
 
-void createData(System &data) {
+void createData(System &data)
+{
   cout << "Name " << data.name << endl;
   cout << "Number " << data.num << endl;
 }
 
-int main(int argc, char const *argv[]) {
+int main(int argc, char const *argv[])
+{
   System dataFriend;
 
   //*Called friend function
