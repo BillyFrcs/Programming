@@ -246,8 +246,6 @@ int main ()
 
     cout << endl;
 
-
-
     //Read binary file on terminal
     fstream MYFIle;
 
