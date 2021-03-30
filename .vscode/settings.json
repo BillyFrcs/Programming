@@ -2,7 +2,8 @@
      "files.associations": {
           "chrono": "cpp",
           "cmath": "cpp",
-          "limits": "cpp"
+          "limits": "cpp",
+          "ostream": "cpp"
      },
      "C_Cpp.errorSquiggles": "Enabled"
 }
