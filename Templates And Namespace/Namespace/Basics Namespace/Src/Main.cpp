@@ -1,13 +1,13 @@
 #include <iostream>
 
 using namespace std;
-
 namespace Data
 {
-     size_t Value = 19;
+     size_t Value = 19, show;
      void printData()
      {
-          cout << Value << endl;
+          show = Value;
+          cout << show << endl;
      }
 }
 
