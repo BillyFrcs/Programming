@@ -1,6 +1,6 @@
 #pragma once
-#include <stddef.h>
 #include <iostream>
+#include <stddef.h>
 
 using namespace std;
 
@@ -14,6 +14,12 @@ public:
           reAlloc(2);
      }
 
+     ~Vector()
+     {
+          Clear();
+          ::operator delete(mData, mCapacity * sizeof(T));
+     }
+
      void pushBack(const T &value)
      {
           if (mSize >= mCapacity)
@@ -21,6 +27,44 @@ public:
 
           mData[mSize] = value;
           mSize++;
+     }
+
+     void pushBack(T &&value)
+     {
+          if (mSize >= mCapacity)
+               reAlloc(mCapacity + mCapacity / 2);
+
+          mData[mSize] = move(value);
+          mSize++;
+     }
+
+     template <typename... Args>
+     T &emplaceBack(Args &&...args)
+     {
+          if (mSize >= mCapacity)
+               reAlloc(mCapacity + mCapacity / 2);
+
+          new (&mData[mSize]) T(forward<Args>(args)...);
+          mData[mSize] = T(forward<Args>(args)...);
+
+          return mData[mSize++];
+     }
+
+     void popBack()
+     {
+          if (mSize > 0)
+          {
+               mSize--;
+               mData[mSize].~T();
+          }
+     }
+
+     void Clear()
+     {
+          for (size_t i = 0; i < mSize; i++)
+               mData[mSize].~T();
+
+          mSize = 0;
      }
 
      const T &operator[](size_t index) const
@@ -39,6 +83,7 @@ public:
           {
                //Assert
           }
+
           return mData[index];
      }
 
@@ -54,15 +99,18 @@ private:
           //2. Copy / move a new elements into blocks
           //3. Delete
 
-          T *newBlock = new T[newCapacity];
+          T *newBlock = (T *)::operator new(newCapacity * sizeof(T));
 
           if (newCapacity < mSize)
                mSize = newCapacity;
 
           for (size_t i = 0; i < mSize; i++)
-               newBlock[i] = mData[i];
+               newBlock[i] = move(mData[i]);
 
-          delete[] mData;
+          for (size_t i = 0; i < mSize; i++)
+               mData[mSize].~T();
+
+          ::operator delete(mData, newCapacity * sizeof(T));
           mData = newBlock;
           mCapacity = newCapacity;
      }
