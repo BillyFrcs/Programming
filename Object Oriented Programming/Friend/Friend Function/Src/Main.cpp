@@ -6,18 +6,18 @@ class System
 {
   // Friend function can access with private or protected
 private:
-  int numberSystem;
-  string systemName;
-  string name;
-  int num;
+  int numberSystem, num;
+  string systemName, name;
+  size_t height;
 
 public:
-  System()
+  System() : height() //Scope
   {
     systemName = "Game mechanical";
     numberSystem = 1;
     name = "Billy";
     num = 19;
+    height = 1;
   }
 
   void displaySystem()
@@ -31,6 +31,8 @@ public:
   friend void addValue(System &varData);
 
   friend void createData(System &data);
+
+  friend int printHeight(System H);
 };
 
 // Friend declaration
@@ -46,6 +48,13 @@ void createData(System &data)
   cout << "Number " << data.num << endl;
 }
 
+int printHeight(System H)
+{
+  H.height *= 175;
+
+  return H.height;
+}
+
 int main(int argc, char const *argv[])
 {
   System dataFriend;
@@ -57,6 +66,10 @@ int main(int argc, char const *argv[])
   cout << endl;
 
   createData(dataFriend);
+
+  cout << endl;
+
+  cout << printHeight(dataFriend) << endl;
 
   return 0;
 }
