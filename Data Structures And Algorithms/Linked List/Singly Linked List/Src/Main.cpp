@@ -231,7 +231,7 @@ void printSingleLinkedList()
 
 int main()
 {
-     /*/Initialisation single lisked list in main (1)
+     //Initialisation single lisked list in main (1)
      Books *Node1, *Node2, *Node3;
 
      //Memory allocation
@@ -273,7 +273,7 @@ int main()
           cout << endl;
 
           Current = Current->Next;
-     }*/
+     }
 
      //Create and print single linked list with void function (2)
      createSingleLinkedList("Flutter beginner", "Sendy", 24072011);
@@ -296,7 +296,7 @@ int main()
 
      cout << endl;
 
-     /*/Delete node single linked list
+     //Delete node single linked list
      deleteFirstSingleLinkedList();
      printSingleLinkedList();
 
@@ -304,18 +304,18 @@ int main()
      printSingleLinkedList();
 
      deleteLastSingleLinkedList();
-     printSingleLinkedList();*/
+     printSingleLinkedList();
 
      deleteMiddleSingleLinkedList(3);
 
      cout << endl;
 
-     /*/Change the first and last node single linked list;
+     //Change the first and last node single linked list;
      changeFirstSingleLinkedList("Android app", "Buddie", 2078);
      printSingleLinkedList();
 
      changeLastSingleLinkedList("Build ios app", "Andy", 2050);
-     printSingleLinkedList();*/
+     printSingleLinkedList();
 
      return 0;
 }

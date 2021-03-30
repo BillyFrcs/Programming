@@ -7,10 +7,14 @@ int Max = 5, top = 0;
 string arrData[5];
 
 // Check data array (Full)
-bool isFull() {
-  if (top == Max) {
+bool isFull()
+{
+  if (top == Max)
+  {
     return 1; // True
-  } else {
+  }
+  else
+  {
     return 0; // False
   }
 }
@@ -18,43 +22,59 @@ bool isFull() {
 void checkDataFull() { cout << "Data full ? " << isFull() << endl; }
 
 // Check data array (Empty)
-bool isEmpty() {
-  if (top == 0) {
+bool isEmpty()
+{
+  if (top == 0)
+  {
     return true;
-  } else {
+  }
+  else
+  {
     return false;
   }
 }
 
-void checkDataEmpty() { cout << "Data empty ? " << isEmpty() << endl << endl; }
+void checkDataEmpty() { cout << "Data empty ? " << isEmpty() << endl
+                             << endl; }
 
-void dataArr(string data) {
-  if (isFull()) {
+void dataArr(string data)
+{
+  if (isFull())
+  {
     cout << "Data full!" << endl;
-  } else {
+  }
+  else
+  {
     arrData[top] = data;
     top++;
   }
 }
 
-void popArray() {
-  if (isEmpty()) {
+void popArray()
+{
+  if (isEmpty())
+  {
     cout << "Data empty" << endl;
-  } else {
+  }
+  else
+  {
     arrData[top - 1] = "";
     top--;
   }
 }
 
 // Display data array
-void displayDataArr() {
+void displayDataArr()
+{
   if (isEmpty())
     cout << "Data empty" << endl;
   else
     cout << "Data stack array: " << endl;
 
-  for (int i = Max - 1; i >= 0; i--) {
-    if (arrData[i] != "") {
+  for (int i = Max - 1; i >= 0; i--)
+  {
+    if (arrData[i] != "")
+    {
       cout << "Data: " << arrData[i] << endl;
     }
   }
@@ -62,12 +82,17 @@ void displayDataArr() {
 }
 
 // Peek data array
-void peekArray(int position) {
-  if (isEmpty()) {
+void peekArray(int position)
+{
+  if (isEmpty())
+  {
     cout << "Data empty" << endl;
-  } else {
+  }
+  else
+  {
     int index = top;
-    for (int i = 0; i < position; i++) {
+    for (int i = 0; i < position; i++)
+    {
       index--;
     }
     cout << "Data position " << position << " = " << arrData[index] << endl;
@@ -75,12 +100,17 @@ void peekArray(int position) {
 }
 
 // Change data array
-void changeDataArray(int position, string data) {
-  if (isEmpty()) {
+void changeDataArray(int position, string data)
+{
+  if (isEmpty())
+  {
     cout << "Data empty" << endl;
-  } else {
+  }
+  else
+  {
     int index = top;
-    for (int i = 0; i < position; i++) {
+    for (int i = 0; i < position; i++)
+    {
       index--;
     }
     arrData[index] = data;
@@ -88,26 +118,35 @@ void changeDataArray(int position, string data) {
 }
 
 // Count total data array
-int countDataArray() {
-  if (isEmpty()) {
+int countDataArray()
+{
+  if (isEmpty())
+  {
     return 0;
-  } else {
+  }
+  else
+  {
     return top;
   }
 }
 
-void showTotalDataArray() {
-  cout << "Total data array =  " << countDataArray() << endl << endl;
+void showTotalDataArray()
+{
+  cout << "Total data array =  " << countDataArray() << endl
+       << endl;
 }
 
-void removeDataStackArray(){
-  for (int i = 0; i < top; i++){
+void removeDataStackArray()
+{
+  for (int i = 0; i < top; i++)
+  {
     arrData[i] = "";
   }
   top = 0;
 }
 
-int main() {
+int main()
+{
 
   // Data
   dataArr("Billy");
