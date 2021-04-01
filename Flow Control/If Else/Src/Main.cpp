@@ -1,7 +1,9 @@
-#include <iostream>
 #include <cstdlib>
+#include <iostream>
 
 using namespace std;
+
+void petProgam();
 
 void evenAndOddNumber()
 {
@@ -14,11 +16,11 @@ void evenAndOddNumber()
 
      if (Number % 2 == 0)
           cout << "You have entered even number." << endl;
-          //return true;
+     //return true;
 
      else
           cout << "You have entered odd number." << endl;
-          //return false;
+     //return false;
 }
 
 void lengthTriangle()
@@ -177,7 +179,31 @@ int main()
      if (temp == sum)
           cout << " is a palindrome" << endl;
      else
-          cout << " is not a palindrome" << endl;;
+          cout << " is not a palindrome" << endl;
+
+     cout << endl;
+
+     petsProgram();
 
      return 0;
+}
+
+void petsProgram()
+{
+     string favAnimal, Pet;
+
+     cout << "Favorite animal: ";
+     cin >> favAnimal;
+
+     cout << "So do you have " << favAnimal << " as your pet? (y/n) ? ";
+     cin >> Pet;
+
+     if (Pet == "y" || Pet == "y")
+     {
+          cout << "Wow " << favAnimal << " that's cool. \n";
+     }
+     else
+     {
+          cout << "Oh that's to bad. \n";
+     }
 }
