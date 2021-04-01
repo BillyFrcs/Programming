@@ -59,7 +59,7 @@ public:
      }
 };
 
-int main()
+int main(int argc, char const *argv[])
 {
      numberToPredikat obj(0);
 
