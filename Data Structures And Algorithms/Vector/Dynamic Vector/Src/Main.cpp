@@ -77,7 +77,7 @@ void printVector(const Vector<Vector3> &vector)
     cout << "------------------------" << endl;
 }
 
-int main()
+int main(int argc, char const *argv[])
 {
     //Array
     Array<string, 2> data;
