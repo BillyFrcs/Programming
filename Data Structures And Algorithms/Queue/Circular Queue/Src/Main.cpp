@@ -2,14 +2,16 @@
 
 using namespace std;
 
-class Queue
+class circularQueue
 {
 private:
-     int front, rear, arr[5];
+     int front, rear, itemsCount;
+     int arr[5];
 
 public:
-     Queue()
+     circularQueue()
      {
+          itemsCount = 0;
           front = -1;
           rear = -1;
 
@@ -29,7 +31,7 @@ public:
 
      bool isFull()
      {
-          if (rear == 4)
+          if ((rear + 1) % 5 == front)
                return true;
           else
                return false;
@@ -39,7 +41,8 @@ public:
      {
           if (isFull())
           {
-               cout << "Queue is full" << endl;
+               cout << "Circular queue is full" << endl;
+
                return;
           }
           else if (isEmpty())
@@ -50,9 +53,11 @@ public:
           }
           else
           {
-               rear++;
+               rear = (rear + 1) % 5;
                arr[rear] = value;
           }
+
+          itemsCount++;
      }
 
      int Dequeue()
@@ -61,34 +66,39 @@ public:
 
           if (isEmpty())
           {
-               cout << "Queue is empty" << endl;
+               cout << "Circular queue is empty" << endl;
+
                return temp;
           }
-          else if (front == rear)
+          else if (rear == front)
           {
                temp = arr[rear];
                arr[front] = 0;
                rear = -1;
                front = -1;
+               itemsCount--;
+
                return temp;
           }
           else
           {
                temp = arr[front];
                arr[front] = 0;
-               front++;
+               front = (front + 1) % 5;
+               itemsCount--;
+
                return temp;
           }
      }
 
      int count()
      {
-          return (rear - front + 1);
+          return (itemsCount);
      }
 
      void display()
      {
-          cout << "Values queue" << endl;
+          cout << "Values circular queue" << endl;
 
           for (int i = 0; i < 5; i++)
           {
@@ -97,9 +107,10 @@ public:
      }
 };
 
-int main()
+int main(int argc, char const *argv[])
 {
-     Queue q1;
+
+     circularQueue q1;
 
      int option, value;
 
@@ -136,25 +147,25 @@ int main()
 
           case 3:
                if (q1.isEmpty())
-                    cout << "Queue is empty" << endl;
+                    cout << "Circular queue is empty" << endl;
                else
-                    cout << "Queue is not empty" << endl;
+                    cout << "Circular queue is not empty" << endl;
 
                break;
 
           case 4:
                if (q1.isFull())
-                    cout << "Queue is full" << endl;
+                    cout << "Circular queue is full" << endl;
                else
-                    cout << "Queue is not full" << endl;
+                    cout << "Circular queue is not full" << endl;
                break;
 
           case 5:
-               cout << "Count items queue: " << q1.count() << endl;
+               cout << "Count items circular queue: " << q1.count() << endl;
                break;
 
           case 6:
-               cout << "All value queue: " << endl;
+               cout << "All value circular queue: " << endl;
                q1.display();
                break;
 
