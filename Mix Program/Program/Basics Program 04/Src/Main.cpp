@@ -6,9 +6,7 @@
 //www.cppreference.com
 using namespace std;
 
-//void = 0 (Kosong function)
-
-//Reporter
+//void = 0 (function empty)
 void Billy()
 {
     cout << "Billy Franscois" << endl;
