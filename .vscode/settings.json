@@ -1,11 +1,11 @@
 {
-     "files.associations": {
-          "chrono": "cpp",
-          "cmath": "cpp",
-          "limits": "cpp",
-          "ostream": "cpp",
-          "iostream": "cpp",
-          "ratio": "cpp"
-     },
-     "C_Cpp.errorSquiggles": "EnabledIfIncludesResolve"
+  "files.associations": {
+    "chrono": "cpp",
+    "cmath": "cpp",
+    "limits": "cpp",
+    "ostream": "cpp",
+    "iostream": "cpp",
+    "ratio": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "EnabledIfIncludesResolve"
 }
