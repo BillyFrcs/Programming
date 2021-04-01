@@ -4,7 +4,8 @@
           "cmath": "cpp",
           "limits": "cpp",
           "ostream": "cpp",
-          "iostream": "cpp"
+          "iostream": "cpp",
+          "ratio": "cpp"
      },
      "C_Cpp.errorSquiggles": "EnabledIfIncludesResolve"
 }
