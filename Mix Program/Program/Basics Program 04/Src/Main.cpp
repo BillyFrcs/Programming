@@ -87,41 +87,6 @@ int main(int argc, char const *argv[])
 
     cout << endl;
 
-    //Concept Dice program example
-    //cout << "Concept dice program \n";
-    // for (int a = 0; a < b; a++) {
-    //     cout << a + rand() % 6 << endl;
-    // }
-
-    // Simple Dice program
-    cout << "Dice program example" << endl;
-
-    char lanjut;
-
-    while (true)
-    {
-
-        cout << "Lempar dadu (y/n)" << endl;
-        cin >> lanjut;
-
-        if (lanjut == 'y')
-        {
-            cout << 1 + rand() % 6 << endl;
-        }
-
-        else if (lanjut == 'n')
-        {
-            break;
-        }
-
-        else
-        {
-            cout << "Please choose y/n :) \n";
-        }
-    }
-
-    cout << endl;
-
     //Fuction return "kuadrat"
     int input, hasil;
 
@@ -178,31 +143,5 @@ int main(int argc, char const *argv[])
     //2
     tampilkan_keliling(panjang, lebar);
 
-    cout << endl;
-
-    //Call function animal program
-    animalProgram();
-
-    cin.get();
     return 0;
-}
-
-void animalProgram()
-{
-    string favAnimal, Pet;
-
-    cout << "Favorite animal: ";
-    cin >> favAnimal;
-
-    cout << "So do you have " << favAnimal << " as your pet? (y/n) ? ";
-    cin >> Pet;
-    
-    if (Pet == "y" || Pet == "y")
-    {
-        cout << "Wow " << favAnimal << " that's cool. \n";
-    }
-    else
-    {
-        cout << "Oh that's to bad. \n";
-    }
 }
