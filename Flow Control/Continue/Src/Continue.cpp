@@ -6,8 +6,9 @@ void continueWhileLoops()
 {
      int x = 1;
 
-     while (x < 20)
+     while (x < 10)
      {
+          //Continue is use to skip the current iteration of the loop
           if (x == 5)
           {
                x++;
@@ -18,9 +19,69 @@ void continueWhileLoops()
      }
 }
 
+void continueForLoops()
+{
+     for (int i = 1; i <= 5; i++)
+     {
+          if (i == 4)
+          {
+               continue;
+          }
+          cout << i << endl;
+     }
+}
+
+void continueWhileLoopsProgram()
+{
+     double num = 0, sum = 0;
+
+     while (num >= 0)
+     {
+          sum += num;
+
+          cout << "Number = ";
+          cin >> num;
+
+          if (num > 50)
+          {
+               cout << "If number is greater than 50 it won't be calculated \n";
+               num = 0;
+               continue;
+          }
+     }
+     cout << "Result = " << sum << endl;
+}
+
+void continueNestedLoops()
+{
+     for (int i = 1; i <= 5; i++)
+     {
+          for (int j = 1; j <= 5; j++)
+          {
+               if (j == 3)
+               {
+                    continue;
+               }
+               cout << "i = " << i << ", j = " << j << endl;
+          }
+     }
+}
+
 int main()
 {
      continueWhileLoops();
+
+     cout << endl;
+
+     continueForLoops();
+
+     cout << endl;
+
+     continueWhileLoopsProgram();
+
+     cout << endl;
+
+     continueNestedLoops();
 
      return 0;
 }

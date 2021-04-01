@@ -40,7 +40,7 @@ void sumBreak()
      {
           cout << "Num = ";
           cin >> num;
-          
+
           //Break program after input -number
           if (num < 0)
           {
@@ -51,6 +51,21 @@ void sumBreak()
      }
 
      cout << "The sum is = " << sum << endl;
+}
+
+void breakNestesLoops()
+{
+     for (int i = 1; i <= 5; i++)
+     {
+          for (int j = 1; j <= 5; j++)
+          {
+               if (i == 2)
+               {
+                    break;
+               }
+               cout << "i = " << i << ", j = " << j << endl;
+          }
+     }
 }
 
 int main()
@@ -65,6 +80,10 @@ int main()
      cout << endl;
 
      sumBreak();
+
+     cout << endl;
+
+     breakNestesLoops();
 
      return 0;
 }
