@@ -102,37 +102,6 @@ void testsWhileProgram()
      cout << endl;
 }
 
-void breakWhileLoops()
-{
-     int i = 0;
-
-     while (i < 10)
-     {
-          i++;
-          cout << i << endl;
-          if (i == 5)
-          {
-               break;
-          }
-     }
-}
-
-void continueWhileLoops()
-{
-     int x = 1;
-
-     while (x < 20)
-     {
-          if (x == 5)
-          {
-               x++;
-               continue;
-          }
-          cout << x << endl;
-          x++;
-     }
-}
-
 int main()
 {
      //Advance while loops
@@ -195,14 +164,6 @@ int main()
           }
           x--;
      }
-
-     cout << endl;
-
-     breakWhileLoops();
-
-     cout << endl;
-
-     continueWhileLoops();
 
      return 0;
 }
