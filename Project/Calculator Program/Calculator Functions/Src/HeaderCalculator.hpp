@@ -1,10 +1,9 @@
+#pragma once
 #ifndef CALCULATOR_APP
-#define CALCULATOR_APP
 #include <iostream>
 
 using namespace std;
 
-//Penjabaran/algebra the calculator
 //This index array use for show operators
 char arithmeticOperators[6] = {'+', '-', '*', '/', '%'};
 

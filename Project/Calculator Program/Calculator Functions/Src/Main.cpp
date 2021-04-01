@@ -1,5 +1,5 @@
-#include <iostream>
 #include "HeaderCalculator.hpp"
+#include <iostream>
 
 using namespace std;
 
@@ -14,17 +14,30 @@ void division(double num1, double num2);
 
 int main()
 {
-     //"clear" is only available on linux and mac
-     system("cls"); //For clear console using "cls" if run on windows
 
-     float num1, num2;
+     double num1, num2;
      int arithmeticOperators;
 
-//Ask input from user
-menuCalculator: //Using function goto
+     //Ask input from user
      cout << "============================ \n";
      cout << "Billy's Calculator Functions" << endl;
      cout << "============================ \n \n";
+
+     //User choose operator
+     do
+     {
+          cout << "1. Addition(+) \n";
+          cout << "2. Subtraction(-) \n";
+          cout << "3. Multiplication(*) \n";
+          cout << "4. Division(/) \n";
+          cout << "5. Modulo(%) \n";
+          cout << "Choose number operator: ";
+
+          cin>> arithmeticOperators;
+          break;
+     } while (arithmeticOperators);
+
+     cout << endl;
 
      //User enter first number
      do
@@ -34,16 +47,6 @@ menuCalculator: //Using function goto
           break;
      } while (num1);
 
-     cout << endl;
-
-//User choose operator
-Arithmetic:
-     do
-     {
-          cout << "1. Addition(+) \n2. Subtraction(-) \n3. Multiplication(*) \n4. Division(/) \n5. Modulo(%)\n\nChoose number operator: ";
-          cin >> arithmeticOperators;
-          break;
-     } while (arithmeticOperators);
      cout << endl;
 
      //User enter second number
@@ -79,37 +82,7 @@ Arithmetic:
           break;
 
      default:
-          cout << "Operators valid try again !\n";
-     }
-
-     cout << endl;
-
-//Continue or repeat the calculator
-Continue:
-     char continueCalculator;
-
-     cout << "Wanna continue this calculator again ? (Y/N): ";
-     cin >> continueCalculator;
-
-     while (continueCalculator)
-     {
-
-          if (continueCalculator == 'y' || continueCalculator == 'Y')
-          {
-               system("cls");       //Change to "cls" when run on windows
-               goto menuCalculator; //This can use to comeback to the calculator menu
-          }
-          else if (continueCalculator == 'n' || continueCalculator == 'N')
-          {
-               cout << "Thank's for using this calculator :)";
-               break;
-          }
-          else
-          {
-               cout << "Not valid! please enter (y/n) \n";
-               goto Continue;
-               break;
-          }
+          cout << "Operators valid try again! \n";
      }
 
      cin.get();
