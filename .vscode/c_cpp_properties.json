@@ -10,6 +10,15 @@
       "intelliSenseMode": "windows-gcc-x64"
     },
     {
+      "name": "Win32",
+      "includePath": ["${workspaceFolder}/**"],
+      "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+      "compilerPath": "C:/Program Files/MinGW/bin/gcc.exe",
+      "cStandard": "gnu17",
+      "cppStandard": "gnu++20",
+      "intelliSenseMode": "windows-gcc-x64"
+    },
+    {
       "name": "Linux",
       "includePath": ["${workspaceFolder}/**"],
       "defines": [],
