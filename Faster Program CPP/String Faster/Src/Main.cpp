@@ -47,8 +47,8 @@ int main()
      std::string LastName(Name + 6, 10);
 
 #endif
-     // printName(firstName);
-     // printName(lastName);
+     //printName(firstName);
+     //printName(lastName);
 
      printName(FirstName);
      printName(LastName);
