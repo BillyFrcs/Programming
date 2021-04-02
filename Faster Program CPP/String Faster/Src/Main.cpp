@@ -12,31 +12,46 @@ void *operator new(size_t size)
      return malloc(size);
 }
 
+//#define STR_VIEW 1
+#if STR_VIEW
+void printName(std::string_view Name) //View
+{
+     std::cout << Name << std::endl;
+}
+
+#else
 void printName(const std::string &name) //Reference
 {
      std::cout << name << std::endl;
 }
 
-void showName(std::string_view Name) //View
-{
-     std::cout << Name << std::endl;
-}
+#endif
+
 
 int main()
 {
      std::string name = "Billy Franscois";
+     const char *Name = "Billy Franscois";
 
-#if 0
-     std::string firstName = name.substr(0, 5);
-     std::string lastName = name.substr(6, 10);
+#if STR_VIEW
 
-#else
      std::string_view firstName(name.c_str(), 5);
      std::string_view lastName(name.c_str() + 6, 10);
 
+#else
+
+     std::string firstName = name.substr(0, 5);
+     std::string lastName = name.substr(6, 10);
+
+     std::string FirstName(Name, 5);
+     std::string LastName(Name + 6, 10);
+
 #endif
-     showName(firstName);
-     showName(lastName);
+     // printName(firstName);
+     // printName(lastName);
+
+     printName(FirstName);
+     printName(LastName);
 
      std::cout << strAllocatedCount << " allocation" << std::endl;
 
