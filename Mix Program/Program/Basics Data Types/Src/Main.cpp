@@ -4,7 +4,7 @@
 
 using namespace std;
 
-//Basic c++
+//Basics c++
 int main()
 {
 
@@ -92,7 +92,7 @@ int main()
     unsigned int a = 5;
     cout << a << endl;
     cout << sizeof(a) << " Byte" << endl;
-    
+
     // cout << numeric_limits<int>::max() << endl;
     // cout << numeric_limits<int>::min() << endl;
 

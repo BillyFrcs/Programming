@@ -1,6 +1,6 @@
+#include <cmath>
 #include <iostream>
 #include <string>
-#include <cmath>
 
 using namespace std;
 
@@ -61,15 +61,9 @@ int main()
 
      cout << endl;
 
-     /*making a program for a bus service. 
-     A bus can transport 50 passengers at once. 
-     Given the number of passengers waiting in the bus station as 
-     input, you need to calculate and output how many empty seats 
-     the last bus will have.*/
-     
      int pasNo;
      int remSeat;
-     
+
      cout << "Pass No: ";
      cin >> pasNo;
 
