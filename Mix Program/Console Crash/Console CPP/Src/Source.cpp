@@ -238,7 +238,6 @@ int main(int argc, char const *argv[])
         cout << "Franscois \n";
     }
 
-    system("pause > 0");
     cin.get();
     return 0;
 }
