@@ -1,67 +1,64 @@
-#include <iostream>
-#include <stdio.h>
-#include <cmath>
-#include <string>
-#include <array> //Standart library
 #include <algorithm>
+#include <array> //Standard library
+#include <cmath>
+#include <iostream>
+#include <string>
 
 //"&" => For check address
 
 using namespace std;
 
-int main ()
+int main()
 
 {
 	//Basic of array
-	int value [5] = { 0, 1, 2, 3, 4 }; //Step 1
+	int value[5] = {0, 1, 2, 3, 4}; //Step 1
 
-	value [0] = 0; //Step 2
-	value [1] = 1;
-	value [2] = 2;
-	value [3] = 3;
-	value [4] = 4;
+	value[0] = 0; //Step 2
+	value[1] = 1;
+	value[2] = 2;
+	value[3] = 3;
+	value[4] = 4;
 
-	cout << &value [0] << " Value is " << value [0] << endl;
-	cout << &value [1] << " Value is " << value [1] << endl;
-	cout << &value [2] << " Value is " << value [2] << endl;
-	cout << &value [3] << " Value is " << value [3] << endl;
-	cout << &value [4] << " Value is " << value [4] << endl;
+	cout << &value[0] << " Value is " << value[0] << endl;
+	cout << &value[1] << " Value is " << value[1] << endl;
+	cout << &value[2] << " Value is " << value[2] << endl;
+	cout << &value[3] << " Value is " << value[3] << endl;
+	cout << &value[4] << " Value is " << value[4] << endl;
 
 	//Change value address with array
 	int *ptr = value; //No 1
 	*(ptr + 2) = 6;
 
-	value [3] = 7; // No 2
+	value[3] = 7; // No 2
 
 	cout << endl;
 
-	cout << &value [0] << " Value is " << value [0] << endl;
-	cout << &value [1] << " Value is " << value [1] << endl;
-	cout << &value [2] << " Value is " << value [2] << endl;
-	cout << &value [3] << " Value is " << value [3] << endl;
-	cout << &value [4] << " Value is " << value [4] << endl;
+	cout << &value[0] << " Value is " << value[0] << endl;
+	cout << &value[1] << " Value is " << value[1] << endl;
+	cout << &value[2] << " Value is " << value[2] << endl;
+	cout << &value[3] << " Value is " << value[3] << endl;
+	cout << &value[4] << " Value is " << value[4] << endl;
 
 	cout << endl;
 
 	//Size of array
-	cout << "Size array: " << sizeof (value) << " Byte"<< endl;
+	cout << "Size array: " << sizeof(value) << " Byte" << endl;
 
-	//Total array 
-	cout << "Total member of array: " << sizeof (value) / sizeof (int) << endl;
+	//Total array
+	cout << "Total member of array: " << sizeof(value) / sizeof(int) << endl;
 
-	cout << endl << endl;
+	cout << endl;
 
-
-
-    //Make array with standart library
-	array <int, 6> nilai;
+	//Make array with standart library
+	array<int, 6> nilai;
 
 	for (int a = 0; a <= 5; a++)
 	{
-		nilai [a] = a;
+		nilai[a] = a;
 
-		cout << "Nilai [" << a << "] = " << nilai [a];
-		cout << " Address: " << &nilai [a] << endl;
+		cout << "Nilai [" << a << "] = " << nilai[a];
+		cout << " Address: " << &nilai[a] << endl;
 	}
 
 	cout << endl;
@@ -76,12 +73,11 @@ int main ()
 	//cout << "Last address: " << nilai.end() << endl;
 
 	//Value with index
-	cout << "Value ke 4: " << nilai.at(4) << endl << endl;
-    
-
+	cout << "Value ke 4: " << nilai.at(4) << endl
+		<< endl;
 
 	//Program show graphic value
-	array <int, 10> Value;
+	array<int, 10> Value;
 
 	cout << "Show graphic value" << endl;
 
@@ -118,7 +114,7 @@ int main ()
 	{
 		//cout << Value[b] << endl;
 
-		if (b == 0) 
+		if (b == 0)
 		{
 			cout << "0 - 9   : ";
 		}
@@ -128,7 +124,7 @@ int main ()
 			cout << "100     : ";
 		}
 
-		else 
+		else
 		{
 			cout << b * 10 << " - " << (b * 10) + 9 << " : ";
 		}
@@ -143,10 +139,8 @@ int main ()
 
 	cout << endl;
 
-
-
-	//Lopping array c++ 
-	array <int, 11> arrayNilai = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	//Lopping array c++
+	array<int, 11> arrayNilai = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
 	for (int c = 0; c < 10; c++) //Step 1
 	{
@@ -166,13 +160,13 @@ int main ()
 	for (int &nilaiRef : arrayNilai) //Step 2 more simple
 	{
 		nilaiRef *= 2;
-		
+
 		//cout << &nilaiRef << " Value is " << nilaiRef << endl;
 	}
 
 	cout << endl;
 
-	for (int& nilaiRef : arrayNilai)
+	for (int &nilaiRef : arrayNilai)
 	{
 		cout << &nilaiRef << " Value is " << nilaiRef << endl;
 	}
