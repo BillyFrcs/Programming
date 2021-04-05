@@ -34,7 +34,7 @@ private:
      std::chrono::time_point<std::chrono::high_resolution_clock> memoryStartTimePoint;
 };
 
-int main()
+int main(int argc, char const *argv[])
 {
      //Wrap
      {
