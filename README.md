@@ -7,4 +7,4 @@ Basics to advanced high level Object Oriented Programming C++, coding for solve 
 > * Create Read Update Delete (CRUD).
 > * Number system converted etc.
 
-<i> @ Billy Franscois </i>
+<i> © Billy Franscois </i>
