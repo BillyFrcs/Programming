@@ -20,7 +20,7 @@ int main()
 
      cout << a << " = " << b << endl;
 
-     Swap<int>(a, b); //int use to change the data typ of T
+     Swap<int>(a, b); //int use to change the data type of T
 
      cout << a << " = " << b << endl;
 
