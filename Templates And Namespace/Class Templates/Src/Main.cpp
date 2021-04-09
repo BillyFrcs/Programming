@@ -3,47 +3,52 @@
 using namespace std;
 
 template <typename T>
-class Height{
+class Height
+{
 private:
      T cm;
 
 public:
-
-     void addData(T var){
+     void addData(T var)
+     {
           cm = var;
      }
 
-     T getData(){
+     T getData()
+     {
           return cm;
      }
-
 };
 
 template <class N, class A>
-class Data{
+class Data
+{
 protected:
      N name;
      A age;
 
 public:
-     Data (N Name, A Age){
+     Data(N Name, A Age)
+     {
           name = Name;
           age = Age;
      }
 
-     N showDataName(){
+     N showDataName()
+     {
           return name;
      }
 
-     void showDataAge(){
+     void showDataAge()
+     {
           cout << "Age = " << age << endl;
      }
-
 };
 
-int main (){
+int main()
+{
      //Set data type bellow
-     Height <int> objTemplate;
+     Height<int> objTemplate;
 
      objTemplate.addData(175);
 
@@ -51,15 +56,15 @@ int main (){
      cout << "Value int = " << objTemplate.getData() << endl;
 
      //The data type can change with another data type
-     Height <double> objTemplate2;
+     Height<double> objTemplate2;
 
      objTemplate2.addData(1.75);
-     
+
      cout << "Value double = " << objTemplate2.getData() << endl;
 
      cout << endl;
 
-     Data <string, int> objTemplateData("Billy", 18);
+     Data<string, int> objTemplateData("Billy", 18);
 
      cout << "Name = " << objTemplateData.showDataName() << endl;
      objTemplateData.showDataAge();
