@@ -30,9 +30,9 @@ int main()
           cout << "2. Subtraction(-) \n";
           cout << "3. Multiplication(*) \n";
           cout << "4. Division(/) \n";
-          cout << "5. Modulo(%) \n";
+          cout << "5. Modulo(%) \n\n";
+          
           cout << "Choose number operator: ";
-
           cin>> arithmeticOperators;
           break;
      } while (arithmeticOperators);
