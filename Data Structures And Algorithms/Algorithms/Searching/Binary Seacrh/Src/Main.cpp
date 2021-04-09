@@ -1,13 +1,14 @@
 #include <iostream>
 
+template <class T>
 class binarySearch
 {
 public:
-     int BinarySearch(int arr[], int left, int right, int temp)
+     int BinarySearch(T arr[], T left, T right, T temp)
      {
           do
           {
-               size_t mid = left + (right - left) / 2;
+               T mid = left + (right - left) / 2;
 
                if (arr[mid] == temp)
                {
@@ -33,7 +34,8 @@ int main(int argc, char const *argv[])
 {
      //Class object binary class
      {
-          binarySearch BS;
+          //Set the template class
+          binarySearch<int> BS;
 
           int num, myArr[10], Out;
 
@@ -54,7 +56,7 @@ int main(int argc, char const *argv[])
                std::cout << "Not found! \n";
 
           else
-               std::cout << "Found value at index: " << (Out + 1)<< "\n";
+               std::cout << "Found value at index: " << (Out + 1) << "\n";
      }
 
      return 0;
