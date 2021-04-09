@@ -23,6 +23,7 @@ int main()
      {
           //Method 1
           cout << myArr[i] << " ";
+          
           //Method 2
           //cout << *(myArr + i) << " ";
      }
