@@ -41,7 +41,8 @@ void continueWhileLoopsProgram()
 
           cout << "Number = ";
           cin >> num;
-
+          
+          //Stop program when enter minus number
           if (num > 50)
           {
                cout << "If number is greater than 50 it won't be calculated \n";
@@ -82,6 +83,18 @@ int main()
      cout << endl;
 
      continueNestedLoops();
+
+     std::cout << "\n";
+
+     for (int i = 1; i < 10; i++)
+     {
+          if (i == 6) //This not executed
+          {
+               continue; //For continue the condition
+          }
+
+          cout << i << endl;
+     }
 
      return 0;
 }

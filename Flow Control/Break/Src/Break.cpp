@@ -38,6 +38,7 @@ void sumBreak()
 
      while (true)
      {
+          //Break program when enter minus number
           cout << "Num = ";
           cin >> num;
 
@@ -84,6 +85,18 @@ int main()
      cout << endl;
 
      breakNestesLoops();
+
+     std::cout << "\n";
+
+     for (int x = 1; x < 20; x++)
+     {
+          if (x == 6) //This can executed
+          {
+               break; //For end the condition
+          }
+
+          cout << x << endl;
+     }
 
      return 0;
 }
