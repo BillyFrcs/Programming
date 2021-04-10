@@ -17,6 +17,7 @@ void arrLoopNumber()
 int main()
 {
      //Advance for loops
+     //Remember don't increase boolean
      int o = 0;
 
      bool condition = true;
