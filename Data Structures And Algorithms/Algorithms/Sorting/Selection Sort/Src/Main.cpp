@@ -95,7 +95,6 @@ int main(int argc, char const *argv[])
      SS->getUnsorted();
      std::cout << "\n\n";
      SS->getSortedAscending();
-     std::cout << "\n";
      SS->getShortedDescending();
 
      __debugbreak;
