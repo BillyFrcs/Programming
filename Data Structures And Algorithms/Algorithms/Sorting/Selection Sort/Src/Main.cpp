@@ -1,5 +1,4 @@
 #include <iostream>
-
 class selectionSort
 {
 private:
@@ -9,7 +8,7 @@ public:
      virtual void getUnsorted()
      {
           std::cout << "Enter 5 random index to sorted: ";
-          for (int i = 0; i < 5; i++)
+          for (int i = 0; i < 5; ++i)
           {
                std::cin >> arr[i];
           }
@@ -19,11 +18,9 @@ public:
           {
                std::cout << arr[i] << " ";
           }
-
-          std::cout << "\n";
      }
 
-     virtual void getSorted()
+     virtual void getSortedAscending()
      {
           for (int i = 0; i < 4; i++)
           {
@@ -33,7 +30,7 @@ public:
                //Check the minimum element
                for (int j = i + 1; j < 5; j++)
                {
-                    //Modify this operator to (>) to descending the values
+                    //Ascending logic
                     if (arr[j] < arr[min])
                          min = j;
                }
@@ -46,12 +43,38 @@ public:
                     arr[i] = swap;
                }
           }
+
+          std::cout << "Sorted ascending values: ";
+          for (int i = 0; i < 5; ++i)
+          {
+               std::cout << arr[i] << " ";
+          }
      }
 
-     virtual void printSortedValues()
+     virtual void
+     getShortedDescending()
      {
-          std::cout << "Sorted values: ";
-          for (int i = 0; i < 5; ++i)
+          for (int i = 0; i < 4; i++)
+          {
+               size_t min = i;
+
+               for (int j = i + 1; j < 5; j++)
+               {
+                    //Descending logic
+                    if (arr[j] > arr[min])
+                         min = j;
+               }
+
+               if (min != i)
+               {
+                    int swap = arr[min];
+                    arr[min] = arr[i];
+                    arr[i] = swap;
+               }
+          }
+
+          std::cout << "Sorted descending values: ";
+          for (int i = 0; i < 5; i++)
           {
                std::cout << arr[i] << " ";
           }
@@ -70,8 +93,11 @@ int main(int argc, char const *argv[])
      SS = &ss;
 
      SS->getUnsorted();
-     SS->getSorted();
-     SS->printSortedValues();
+     std::cout << "\n\n";
+     SS->getSortedAscending();
+     std::cout << "\n";
+     SS->getShortedDescending();
 
+     __debugbreak;
      return false;
 }
