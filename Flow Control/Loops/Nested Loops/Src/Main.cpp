@@ -1,7 +1,5 @@
 #include <iostream>
 
-using namespace std;
-
 void nestingProgram()
 {
      //Nesting for do while loops
@@ -11,30 +9,60 @@ void nestingProgram()
      {
           do
           {
-               cout << "Enter grade " << i + 1 << " : ";
-               cin >> grade;
+               std::cout << "Enter grade " << i + 1 << " : ";
+               std::cin >> grade;
 
           } while (grade < 1 || grade > 5);
           sum += grade;
      }
 
-     cout << "Sum = " << sum << endl;
-     cout << "Average grade = " << (float) sum / 3.0 << endl;
+     std::cout << "Sum = " << sum << std::endl;
+     std::cout << "Average grade = " << (float)sum / 3.0 << std::endl;
 }
 
-void factorialProgram(){ 
+void factorialProgram()
+{
 
      int Number, Factorial = 1;
 
-     cout << "Enter number factorial function: ";
-     cin >> Number;
+     std::cout << "Enter number factorial function: ";
+     std::cin >> Number;
 
      for (int i = Number; i >= 1; i--)
      {
           Factorial *= i;
      }
 
-     cout << "Result factorial function " << Number << " is " << Factorial << "\n";
+     std::cout << "Result factorial function " << Number << " is " << Factorial << "\n";
+}
+
+void multiplicationProgram()
+{
+     for (auto i = 1; i <= 10; ++i)
+     {
+          for (auto j = 1; j <= 10; ++j)
+          {
+               std::cout << i << " * " << j << " = " << i * j << "\n";
+          }
+          std::cout << "\n";
+     }
+}
+
+void multiplyProgramWhile()
+{
+     int i = 10;
+
+     while (i >= 1)
+     {
+          int j = 10;
+          while (j >= 1)
+          {
+               std::cout << i << " * " << j << " = " << i * j << "\n";
+               --j;
+          }
+          --i;
+          std::cout << "\n";
+     }
 }
 
 int main()
@@ -42,9 +70,18 @@ int main()
      //Called function nesting program here
      nestingProgram();
 
-     cout << endl;
+     std::cout << "\n";
 
      factorialProgram();
+
+     std::cout << "\n";
+
+     //Multiply program
+     multiplicationProgram();
+
+     std::cout << "\n";
+
+     multiplyProgramWhile();
 
      return 0;
 }
