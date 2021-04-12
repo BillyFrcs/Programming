@@ -1,4 +1,5 @@
 #include <iostream>
+
 class selectionSort
 {
 private:
@@ -74,7 +75,7 @@ public:
           }
 
           std::cout << "Sorted descending values: ";
-          for (int i = 0; i < 5; i++)
+          for (int i = 0; i < 5; ++i)
           {
                std::cout << arr[i] << " ";
           }
