@@ -27,7 +27,6 @@ const int print(const T size)
      return size;
 }
 
-//Mutable
 int main(int argc, char const *argv[])
 {
      //Const with int
