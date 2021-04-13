@@ -1,5 +1,7 @@
 #include <iostream>
 
+using std::cout;
+
 //Mutable keyword for modify the const
 class Ordered
 {
@@ -32,16 +34,44 @@ public:
      }
 };
 
+class Testing
+{
+public:
+     int a;
+     mutable int b;
+
+     Testing()
+     {
+          a = 7;
+          b = 9;
+     }
+};
+
 int main(int argc, char const *argv[])
 {
      Ordered O1("Pasta", 100);
-     
-     //Modify the const
+
+     //Modify the const mutable
      O1.modifyFoodName("Pizza");
      O1.modifyPrice(50);
 
-     //Display the const
+     //Display the const mutable
      O1.display();
+
+     std::cout << "\n";
+
+     const Testing *T1;
+
+     Testing Tptr;
+
+     T1 = &Tptr;
+     T1->b = 10; //Can modify
+
+     std::cout << T1->b << "\n";
+
+     T1->a; //Cannot modify
+
+     std::cout << T1->a;
 
      return false;
 }
