@@ -52,8 +52,7 @@ public:
           }
      }
 
-     virtual void
-     getShortedDescending()
+     virtual void getShortedDescending()
      {
           for (int i = 0; i < 4; i++)
           {
