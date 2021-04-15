@@ -1,5 +1,5 @@
 //Pragma once 
-//#define SOO "SOO in file Together.h"
+//#define SOO "SOO in file Together.hpp"
 //#ifndef _TOGETHER 
 //#define _TOGETHER
 #pragma once

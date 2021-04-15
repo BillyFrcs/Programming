@@ -32,7 +32,7 @@ int main(int argc, char const *argv[])
      //Const with int
      const int MAX = 60;
 
-     //When adding const annot modify the pointer
+     //When adding const cannot modify the pointer
      int *a = new int;
 
      *a = 19;
