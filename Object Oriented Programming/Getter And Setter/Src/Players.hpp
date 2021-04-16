@@ -1,5 +1,5 @@
 #ifndef __PLAYERS
-#define __PLAAYERS
+#define __PLAYERS
 #include <iostream>
 #include <string>
 
