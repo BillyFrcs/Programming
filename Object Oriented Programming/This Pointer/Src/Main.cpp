@@ -1,3 +1,4 @@
+#include <cmath>
 #include <iostream>
 
 class memberThis
@@ -63,6 +64,30 @@ public:
      }
 };
 
+class Cube
+{
+protected:
+     double length, breadth, height;
+
+public:
+     Cube(double l, double b, double h)
+     {
+          this->length = l;
+          this->breadth = b;
+          this->height = h;
+     }
+
+     double volume() const
+     {
+          return length * breadth * height;
+     }
+
+     long counter(Cube cube)
+     {
+          return this->volume() > cube.volume();
+     }
+};
+
 int main(int argc, char const *argv[])
 {
      //First class obj
@@ -83,6 +108,29 @@ int main(int argc, char const *argv[])
      Obj2.TestA(21).TestB(39);
 
      Obj2.Print();
+
+     std::cout << "\n";
+
+     {
+          //Volume cube
+          Cube cube2(3.4, 4.6, 2.1);
+
+          Cube cube1(4.6, 2.7, 3.9);
+
+          std::cout << "Result cube 1 = " << cube1.volume() << "\n";
+          std::cout << "Result cube 2 = " << cube2.volume() << "\n";
+
+          while (true)
+          {
+               if (cube1.counter(cube2))
+                    std::cout << "Cube 2 is smaller than cube 1 \n";
+
+               if (cube2.counter(cube1))
+                    std::cout << "Cube 2 is equal or greater than cube 1 \n";
+
+               break;
+          }
+     }
 
      return 0;
 }
