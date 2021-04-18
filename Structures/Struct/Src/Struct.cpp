@@ -8,19 +8,19 @@ struct Data
     //Components / member
     string Name;
     int Age;
-    string Hobby [2]; //Array variable
-} Data1, Data2; //Variable global
+    string Hobby[2]; //Array variable
+} Data1, Data2;      //Variable global
 
 int main()
 {
     //Declare with variable global
     Data1.Name = "Billy";
     Data1.Age = 18;
-    Data1.Hobby [0] = {"Programming"}; //Array
+    Data1.Hobby[0] = {"Programming"}; //Array
 
     cout << "Name " << Data1.Name << endl;
     cout << "Age " << Data1.Age << endl;
-    cout << "Hobby "<< Data1.Hobby[0] << endl;
+    cout << "Hobby " << Data1.Hobby[0] << endl;
 
     cout << endl;
 
