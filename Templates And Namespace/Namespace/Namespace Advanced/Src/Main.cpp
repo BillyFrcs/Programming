@@ -1,12 +1,7 @@
 #include <iostream>
 #include <string>
-#include <stdio.h>
 #include "Header.hpp"
 #include <typeinfo>
-
-using namespace std;
-
-//using namespace Number;
 
 namespace Number
 {
@@ -26,30 +21,30 @@ namespace Number
 
 void Hello()
 {
-    cout << "Hello world" << endl;
+    std::cout << "Hello world" << std::endl;
 }
 
 
 void printInt (int Content)
 {
-    cout << Content << endl;
+    std::cout << Content << std::endl;
 }
 
 void printDouble (double Data)
 {
-    cout << Data << endl;
+    std::cout << Data << std::endl;
 }
 
 void printChar (char Character)
 {
-    cout << Character << endl;
+    std::cout << Character << std::endl;
 }
 
 //Template
 template <typename T>
 void Printf (T Data)
 {
-    cout << Data << endl;
+    std::cout << Data << std::endl;
 }
 
 template <typename T>
@@ -58,14 +53,14 @@ int toInt (T Data)
     return int (Data);
 }
 
-/*template <typename T, typename U>
+template <typename T, typename U>
 T max (T Data1, U Data2)
 {
     return (Data1 > Data2) ? Data1 : Data2; //Ternary
-}*/
+}
 
 template <typename T, typename U>
-auto max (T a, U b)
+auto Max (T a, U b)
 {
     return (a > b) ? T(a) : U(b);
 }
@@ -83,9 +78,9 @@ int main ()
     Data::Name ();
     Data::Printf (2002);
 
-    cout << "hell \n";
+    std::cout << "hell \n";
 
-    cout << endl;
+    std::cout << std::endl;
 
 
 
@@ -94,7 +89,7 @@ int main ()
     typedef int iVector [3];
     typedef unsigned long Billy;
     typedef double Vector [2];
-    typedef string Name;
+    typedef std::string Name;
     typedef float decimalNumbers;
 
     using Numbers = double;
@@ -107,21 +102,21 @@ int main ()
     Name N = "Billy";
     decimalNumbers O = 19.08;
 
-    cout << "value A: " << A << endl;
+    std::cout << "value A: " << A << std::endl;
 
-    cout << "Value C: " << C [0] << ", " << C [1] << " and " << C [2] << endl;
+    std::cout << "Value C: " << C [0] << ", " << C [1] << " and " << C [2] << std::endl;
     
-    cout << "value D = " << D << endl;
+    std::cout << "value D = " << D << std::endl;
 
-    cout << "Value X: " << X [0] << " and " << X [1] << endl;
+    std::cout << "Value X: " << X [0] << " and " << X [1] << std::endl;
 
-    cout << "Value Y: " << Y << endl;
+    std::cout << "Value Y: " << Y << std::endl;
 
-    cout << "Name: " << N << endl;
+    std::cout << "Name: " << N << std::endl;
 
-    cout << "Value O: " << O << endl;
+    std::cout << "Value O: " << O << std::endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
 
 
@@ -139,7 +134,7 @@ int main ()
 
     printf ("\n");
 
-    cout << toInt (30.000) << endl;
+    std::cout << toInt (30.000) << std::endl;
 
     printf ("\n");
 
@@ -149,24 +144,24 @@ int main ()
 
     //cout << max <double, int> (1.10,15) << endl;
 
-    cout << endl;
+    std::cout << std::endl;
 
 
 
     //Auto
     int a = 23;
-    string b = "Billy";
+    std::string b = "Billy";
     double c = 19.200;
     float d = 35.5f;
 
-    auto e = max (a, c);
+    auto e = Max (a, c);
 
-    cout << a << "\tData type: " << typeid (a).name() << endl;
-    cout << b << "\tData type: " << typeid (b).name() << endl;
-    cout << c << "\tData type: " << typeid (c).name() << endl;
-    cout << d << "\tData type: " << typeid (d).name() << endl;
+    std::cout << a << "\tData type: " << typeid (a).name() << std::endl;
+    std::cout << b << "\tData type: " << typeid (b).name() << std::endl;
+    std::cout << c << "\tData type: " << typeid (c).name() << std::endl;
+    std::cout << d << "\tData type: " << typeid (d).name() << std::endl;
     
-    cout << e << "\tData type: " << typeid (e).name() << endl;
+    std::cout << e << "\tData type: " << typeid (e).name() << std::endl;
 
     return 0;
 }

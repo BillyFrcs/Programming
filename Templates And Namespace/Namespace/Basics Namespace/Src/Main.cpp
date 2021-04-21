@@ -1,22 +1,19 @@
 #include <iostream>
 
-using namespace std;
 namespace Data
 {
      size_t Value = 19, show;
      void printData()
      {
           show = Value;
-          cout << show << endl;
+          std::cout << "Value = " << show << "\n";
      }
 }
 
-using namespace Data;
-
 int main()
 {
-
-     printData();
+     //Without using namespace Data, that should invoke
+     Data::printData();
 
      return 0;
 }
