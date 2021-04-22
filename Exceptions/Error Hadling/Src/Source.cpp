@@ -1,8 +1,7 @@
-#include <iostream>
-#include <string>
-#include <stdio.h>
 #include <array>
 #include <exception>
+#include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -37,7 +36,7 @@ int main()
      int c, d, e;
      char Continue;
 
-     /*while (true)
+     while (true)
      {
           cout << "Num: ";
           cin >> c;
@@ -52,26 +51,23 @@ int main()
           cout << "Continue (y/n): ";
           cin >> Continue;
 
-          if (Continue == 'n' || Continue == 'N' )
-             break;
-
+          if (Continue == 'n' || Continue == 'N')
+               break;
      }
 
-     cout << endl;/*
+     cout << endl;
 
+     /*/Array
+     array<int, 5> e = {0, 1, 2, 3, 4};
 
-
-     //Array
-     /*array <int, 5> e = {0, 1, 2, 3, 4};
-
-     try 
+     try
      {
-         cout << e.at(5) << endl; //Error here
+          cout << e.at(5) << endl; //Error here
      }
 
      catch (exception &f) //Process
      {
-         cout << f.what() << endl;
+          cout << f.what() << endl;
      }*/
 
      //Division program with try, catch and throw
@@ -97,7 +93,6 @@ int main()
           break;
      }
 
-     system("pause > 0");
      cin.get();
      return 0;
 }

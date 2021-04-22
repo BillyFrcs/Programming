@@ -1,8 +1,6 @@
 #include <iostream>
 
-using namespace std;
-
-int main()
+int main(int, char**)
 {
 
      //Concepts
@@ -18,12 +16,12 @@ int main()
      {
           int age;
 
-          cout << "Enter age: ";
-          cin >> age;
+          std::cout << "Enter age: ";
+          std::cin >> age;
 
           if (age >= 18)
           {
-               cout << "Access available" << endl;
+               std::cout << "Access available" << std::endl;
           }
           else
           {
@@ -33,8 +31,8 @@ int main()
 
      catch (int myAge) //It can change to (...)
      {
-          cout << "Access not available" << endl;
-          cout << "Age still " << myAge;
+          std::cout << "Access not available" << std::endl;
+          std::cout << "Age still " << myAge << std::endl;
      }
 
      return 0;
