@@ -14,9 +14,6 @@ int main(int, char **)
      std::cout << "Enter name = ";
      std::cin.get(D1.Name, 30);
 
-     std::ios_base::sync_with_stdio(false);
-     std::cin.tie(NULL);
-
      //Get data
      std::cout << "Name = " << D1.Name << "\n";
 
