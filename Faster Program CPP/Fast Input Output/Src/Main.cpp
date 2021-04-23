@@ -41,7 +41,7 @@ void fastProgram()
 
 int main()
 {
-     //Fast();
+     Fast();
 
      std::cout << std::endl;
 
