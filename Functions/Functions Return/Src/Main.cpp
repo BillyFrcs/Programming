@@ -26,14 +26,14 @@ string needsWater(int days, bool isSucculent)
 bool isPalindrome(string text)
 {
 
-     string reversed_text = "";
+     string reversedText = "";
 
      for (int i = text.size() - 1; i >= 0; i--)
      {
-          reversed_text += text[i];
+          reversedText += text[i];
      }
 
-     if (reversed_text == text)
+     if (reversedText == text)
      {
           return true;
      }
@@ -50,10 +50,10 @@ int multiplyInt(int a, int b)
 //Prime number prototype
 bool primeNumber(int number);
 
-bool isEvenOdd(int number) {
+bool isEvenOdd(int number)
+{
 
-  return number % 2 == 0;
-  
+     return number % 2 == 0;
 }
 
 int main()
