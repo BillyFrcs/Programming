@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <unistd.h> //For linux
 
 namespace loopsTimer
@@ -14,8 +15,6 @@ namespace loopsTimer
           }
      }
 }
-
-using namespace loopsTimer;
 
 void numbers()
 {
@@ -34,18 +33,37 @@ void decrementLoops()
      }
 }
 
+namespace stringLoops
+{
+     std::string S = "Billy";
+     void getStr()
+     {
+          for (int i = 0; i < S.size(); i++)
+          {
+               for (int j = i; i < S.length(); i++)
+               {
+                    std::cout << S << "\n";
+               }
+          }
+     }
+}
+
 int main(int argc, char *argv[])
 {
 
-     setTimer();
+     loopsTimer::setTimer();
 
-     std::cout << std::endl;
+     std::cout << "\n";
 
      numbers();
 
-     std::cout << std::endl;
+     std::cout << "\n";
 
      decrementLoops();
+
+     std::cout << "\n";
+
+     stringLoops::getStr();
 
      return 0;
 }
