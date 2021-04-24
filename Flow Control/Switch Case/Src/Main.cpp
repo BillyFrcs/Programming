@@ -81,7 +81,7 @@ int main()
 {
      numbersDaysMonth();
 
-     cout << endl;
+     cout << endl << "\n";
 
      conceptSwitchCase();
 
