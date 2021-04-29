@@ -39,7 +39,7 @@ int square(int const &i)
      return i + i;
 }
 
-int main(int argc, char* argv[])
+int main(int, char**)
 {
      /*/Concepts 
      Reference
