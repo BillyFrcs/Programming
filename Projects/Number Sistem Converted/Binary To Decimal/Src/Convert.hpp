@@ -1,3 +1,6 @@
+#pragma once
+
+#include <iostream>
 #include <cmath>
 
 //Binary to decimal converted

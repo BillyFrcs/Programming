@@ -1,5 +1,8 @@
+#pragma once
+
 #ifndef CRUD__APP
 #define CRUD__APP
+
 #include <iostream>
 #include <string>
 #include <fstream>

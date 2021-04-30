@@ -1,5 +1,7 @@
 #pragma once
+
 #ifndef CALCULATOR_APP
+
 #include <iostream>
 
 using namespace std;
