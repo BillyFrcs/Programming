@@ -10,6 +10,7 @@ std::string underscoreValue(std::string text)
           if (isspace(text[i]))
                text[i] = '_';
      }
+     
      return text;
 }
 
@@ -20,7 +21,12 @@ std::string UnderscoreValue(std::string text)
           if (std::isspace(c))
                c = '-';
 
-                   return text;
+     return text;
+}
+
+std::string process(const char *charPtr)
+{
+     return charPtr;
 }
 
 int main(int, char **)
@@ -35,5 +41,10 @@ int main(int, char **)
      std::string text = "Sendy Friscila";
      std::cout << UnderscoreValue(text);
 
-     return 0;
+     std::cout << std::endl;
+
+     const char print[5] = {'H', 'e', 'l', 'l', 'o'};
+     std::cout << process(print);
+
+     std::cin.get();
 }
