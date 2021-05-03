@@ -1,6 +1,8 @@
 #include "Array.hpp"
 #include "Vector.hpp"
+
 #include <iostream>
+
 #define CLOSE
 
 using namespace std;
@@ -106,7 +108,6 @@ int main(int argc, char const *argv[])
 
     //Vector 3
     {
-
         Vector<Vector3> vector3;
 
         vector3.emplaceBack(2.0f);
