@@ -5,20 +5,18 @@ namespace Sorting
      class BubbleSort
      {
      private:
-          int arr[5];
+          int arr[5], Rounds = 0;
 
      public:
-          void setNumbers();
+          void setNumbersBubbleSort();
 
           virtual void getBubbleSortAscending();
 
           virtual void getBubbleSortDescending();
-
-          void getSortedBubbleSort();
      };
-}
+};
 
-void Sorting::BubbleSort::setNumbers()
+void Sorting::BubbleSort::setNumbersBubbleSort()
 {
      std::cout << "Enter 5 numbers: ";
      for (size_t i = 0; i < 5; i++)
@@ -31,6 +29,8 @@ void Sorting::BubbleSort::getBubbleSortAscending()
 {
      for (int i = 0; i < 5; i++)
      {
+          Rounds++;
+
           for (int j = 0; j < (5 - i - 1); j++)
           {
                //Comparison ascending
@@ -50,12 +50,16 @@ void Sorting::BubbleSort::getBubbleSortAscending()
      {
           std::cout << arr[i] << ' ';
      }
+
+     std::cout << "\nTotal rounds: " << Rounds << "\n";
 }
 
 void Sorting::BubbleSort::getBubbleSortDescending()
 {
      for (int i = 0; i < 5; i++)
      {
+          Rounds++;
+
           for (int j = 0; j < (5 - i - 1); j++)
           {
                //Comparison descending
@@ -69,27 +73,32 @@ void Sorting::BubbleSort::getBubbleSortDescending()
      }
 
      //Get the values sorted descending
-     std::cout << "Values sorted descending: ";
+     std::cout << "\nValues sorted descending: ";
      for (size_t i = 0; i < 5; i++)
      {
           std::cout << arr[i] << ' ';
      }
+
+     std::cout << "\nTotal rounds = " << Rounds << "\n";
 }
 
-int main(int argc, char const *argv[])
+void PrintBubbleSort()
 {
      Sorting::BubbleSort *BS = new Sorting::BubbleSort;
 
      //Set numbers
-     BS->setNumbers();
+     BS->setNumbersBubbleSort();
 
      //Bubble sort algorithm ascending
      BS->getBubbleSortAscending();
-     
-     std::cout << "\n";
-     
+
      //Bubble sort algorithm descending
      BS->getBubbleSortDescending();
+}
+
+int main(int argc, char const *argv[])
+{
+     PrintBubbleSort();
 
      return 0;
 }
