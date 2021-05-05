@@ -23,24 +23,6 @@ string needsWater(int days, bool isSucculent)
      }
 }
 
-bool isPalindrome(string text)
-{
-
-     string reversedText = "";
-
-     for (int i = text.size() - 1; i >= 0; i--)
-     {
-          reversedText += text[i];
-     }
-
-     if (reversedText == text)
-     {
-          return true;
-     }
-
-     return false;
-}
-
 //Return data type int
 int multiplyInt(int a, int b)
 {
@@ -59,11 +41,6 @@ bool isEvenOdd(int number)
 int main()
 {
      cout << needsWater(20, true) << endl;
-
-     cout << endl;
-
-     cout << isPalindrome("Billy") << endl;
-     cout << isPalindrome("Franscois") << endl;
 
      cout << endl;
 
