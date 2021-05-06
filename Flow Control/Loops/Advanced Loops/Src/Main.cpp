@@ -26,6 +26,14 @@ void autoLoops(std::string Text)
      }
 }
 
+void Loops(float i)
+{
+     for (i; i <= 5; i -= -1)
+     {
+          std::cout << i << " ";
+     }
+}
+
 int main(int, char **)
 {
 
@@ -34,6 +42,10 @@ int main(int, char **)
      std::cout << "\n";
 
      autoLoops("Programming");
+
+     std::cout << "\n";
+
+     Loops(1);
 
      return 0;
 }
