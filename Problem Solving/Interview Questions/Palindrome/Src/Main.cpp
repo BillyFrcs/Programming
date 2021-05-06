@@ -18,7 +18,8 @@ bool isPalindromeWithTempVar(std::string value)
 //Is palindrome without temporary variable
 bool isPalindromeWithoutTempVar(std::string value)
 {
-     for (int i = 0; i < value.length(); i++)
+     //Add length() / 2 to optimized palindrome
+     for (int i = 0; i < value.length() / 2; i++)
      {
           int firstIndex = i, lastIndex = (value.length() - i - 1);
 
@@ -36,15 +37,34 @@ bool isPalindromeWithoutTempVar(std::string value)
                return true;
           }
      }
-
      return NULL;
+}
+
+bool isPalindromeRecursive(std::string value, int i)
+{
+     if (i < value.length() / 2)
+     {
+          if (value[i] != value.length() - i - 1)
+          {
+               return false;
+          }
+
+          else
+          {
+               return isPalindromeRecursive(value, i++);
+          }
+     }
+     return true;
 }
 
 void runPalindrome()
 {
-     std::string input = "aba";
+     isPalindromeWithTempVar("eye");
+     isPalindromeWithTempVar("soup");
 
-     if (isPalindromeWithTempVar(input) == false)
+     /*std::string value = "aba";
+
+     if (isPalindromeWithTempVar(value) == false)
      {
           std::cout << "It's palindrome \n \n";
      }
@@ -52,17 +72,29 @@ void runPalindrome()
      else
      {
           std::cout << "It's not palindrome \n \n";
-     }
+     }*/
 }
 
 void testPalindrome()
 {
-     std::string input;
+     std::string value;
 
      std::cout << "Enter number, letter or sentence: ";
-     std::cin >> input;
+     std::cin >> value;
 
-     isPalindromeWithoutTempVar(input);
+     isPalindromeWithoutTempVar(value);
+}
+
+bool getPalindromeRecursive(std::string value)
+{
+
+     return isPalindromeRecursive(value, 0);
+}
+
+void displayPalindromeRecursive()
+{
+     getPalindromeRecursive("44");
+     getPalindromeRecursive("86");
 }
 
 int main()
@@ -70,6 +102,8 @@ int main()
      runPalindrome();
 
      testPalindrome();
+
+     displayPalindromeRecursive();
 
      return 0;
 }
