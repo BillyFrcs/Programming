@@ -161,28 +161,6 @@ int main()
 
      cout << endl;
 
-     //Palindrome
-     int n, r, sum = 0, temp;
-     cout << "Enter number: ";
-     cin >> n;
-
-     cout << n;
-     temp = n;
-
-     while (n > 0)
-     {
-          r = n % 10;
-          sum = (sum * 10) + r;
-          n = n / 10;
-     }
-
-     if (temp == sum)
-          cout << " is a palindrome" << endl;
-     else
-          cout << " is not a palindrome" << endl;
-
-     cout << endl;
-
      petsProgram();
 
      return 0;
