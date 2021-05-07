@@ -17,7 +17,24 @@ void loops(L num)
      }
 }
 
-int main(int, char **)
+template <typename T>
+T counter(T a, T b)
+{
+     T result = (a * b);
+
+     return result;
+}
+
+void printCounter()
+{
+     int result = counter<int>(3, 4);
+     float show = counter<float>(4.5f, 7.6f);
+
+     std::cout << "Result = " << result << "\n";
+     std::cout << "Show value = " << show << "\n";
+}
+
+int main()
 {
      //Print the value template
      printTemplate(19);
@@ -28,6 +45,10 @@ int main(int, char **)
 
      //Set the loops value here
      loops(5);
+
+     std::cout << std::endl;
+
+     printCounter();
 
      return 0;
 }
