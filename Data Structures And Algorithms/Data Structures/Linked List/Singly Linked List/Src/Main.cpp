@@ -27,7 +27,7 @@ Node::Node(int k, int d)
 }
 
 //Singly linked list class
-class SinglyLinkedList
+class SinglyLinkedList : public Node
 {
 public:
      Node *head;
@@ -147,7 +147,7 @@ public:
                if (head->key == k)
                {
                     head = (head->next);
-                    std::cout << "Node unlinked with key values: " << k << "\n";
+                    std::cout << "Node unlinked with key value: " << k << "\n";
                }
 
                else
@@ -174,12 +174,12 @@ public:
                     if (temp != NULL)
                     {
                          prevPtr->next = (temp->next);
-                         std::cout << "Node unlinked with key values: " << k << "\n";
+                         std::cout << "Node unlinked with key value: " << k << "\n";
                     }
 
                     else
                     {
-                         std::cout << "Node doesn't exists with key values: " << k << "\n";
+                         std::cout << "Node doesn't exists with key value: " << k << "\n";
                     }
                }
           }
@@ -198,7 +198,7 @@ public:
 
           else
           {
-               std::cout << "Node doesn't exists with key values: " << k << "\n";
+               std::cout << "Node doesn't exists with key value: " << k << "\n";
           }
      }
 
@@ -211,7 +211,7 @@ public:
 
           else
           {
-               std::cout << "Singly linked list values: ";
+               std::cout << "Singly linked list value: ";
                Node *temp = head;
 
                while (temp != NULL)
