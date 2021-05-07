@@ -3,9 +3,9 @@
 
 using namespace std;
 
+//Basics calculator
 int main()
 {
-
 	//Simple Calculator with "switch, case, default"
 	float c, d, result;
 	char arithmetic;

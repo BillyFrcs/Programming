@@ -38,7 +38,7 @@ void Game::GuessingGame::playGuessingGame()
      } while (Guess);
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
      Game::GuessingGame *Game = new Game::GuessingGame();
 

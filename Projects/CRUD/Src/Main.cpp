@@ -1,17 +1,15 @@
-#include <iostream>
-#include <string>
-#include <fstream>
-
 #include "Crud.hpp"
 
 using namespace std;
 
-int main()
+void showCrud()
 {
+     Crud *crud = new Crud;
+
      system("cls");
 
      //Open file CRUD
-     openFileCrud();
+     crud->openFileCrud();
 
      //User select menu
      int options;
@@ -37,7 +35,7 @@ int main()
           {
                //Create or add data
           case 1:
-               createAddData();
+               crud->createAddData();
                system("cls");
                break;
 
@@ -46,7 +44,7 @@ int main()
                cin.ignore();
                cout << "Update by name or ID: ";
                getline(cin, searchData);
-               updateData(searchData);
+               crud->updateData(searchData);
                system("cls");
                break;
 
@@ -55,7 +53,7 @@ int main()
                cin.ignore();
                cout << "Delete by name or ID: ";
                getline(cin, searchData);
-               deleteData(searchData);
+               crud->deleteData(searchData);
                system("cls");
                break;
 
@@ -64,20 +62,25 @@ int main()
                cin.ignore();
                cout << "Search by name or ID: ";
                getline(cin, searchData);
-               searchingData(searchData);
+               crud->searchingData(searchData);
                break;
 
                //Display or show all data
           case 5:
-               displayListData();
+               crud->displayListData();
                break;
           }
 
      } while (options != 6);
 
-     //Save to file crud
-     saveFileCrud();
+     //Save the data crud to txt file
+     crud->saveFileCrud();
      cout << "Exit and saving file..." << endl;
+}
+
+int main()
+{
+     showCrud();
 
      return 0;
 }

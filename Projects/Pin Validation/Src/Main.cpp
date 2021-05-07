@@ -21,7 +21,7 @@ void validationPinProgram()
           std::cout << "Blocked...";
 }
 
-int main(int, char **)
+int main()
 {
      validationPinProgram();
 

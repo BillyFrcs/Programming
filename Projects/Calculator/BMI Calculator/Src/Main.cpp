@@ -46,7 +46,7 @@ public:
      }
 };
 
-int main(int argc, char const *argv[])
+int main()
 {
      bmiCalculator *BMI = new bmiCalculator();
 
