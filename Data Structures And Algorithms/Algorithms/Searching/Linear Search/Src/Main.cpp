@@ -33,7 +33,7 @@ public:
      }
 };
 
-int main(int argc, char const *argv[])
+int main()
 {
      linearSearch Ls;
 

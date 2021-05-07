@@ -81,7 +81,7 @@ void InsertionSort::insertionSortConditionDescending()
      }
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
      InsertionSort *IS = new InsertionSort();
 

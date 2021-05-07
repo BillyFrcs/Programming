@@ -81,7 +81,7 @@ public:
      }
 };
 
-int main(int argc, char const *argv[])
+int main()
 {
      //Ascending (From smallest number to largest number)
      //Descending (From the largest number to smallest number)

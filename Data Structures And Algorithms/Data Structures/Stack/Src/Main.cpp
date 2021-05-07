@@ -1,187 +1,226 @@
 #include <iostream>
+#include <string>
 
-using namespace std;
-
-int Max = 5, top = 0;
-
-string arrData[5];
-
-// Check data array (Full)
-bool isFull()
+//Stack array
+class Stack
 {
-  if (top == Max)
-  {
-    return 1; // True
-  }
-  else
-  {
-    return 0; // False
-  }
-}
+private:
+     int top, arr[5];
 
-void checkDataFull() { cout << "Data full ? " << isFull() << endl; }
+public:
+     Stack()
+     {
+          top = -1;
+          for (int i = 0; i < 5; i++)
+          {
+               arr[i] = 0;
+          }
+     }
 
-// Check data array (Empty)
-bool isEmpty()
+     bool isEmpty()
+     {
+          if (top == -1)
+          {
+               return true;
+          }
+          else
+          {
+               return false;
+          }
+     }
+
+     bool isFull()
+     {
+          if (top == 4)
+          {
+               return true;
+          }
+          else
+          {
+               return false;
+          }
+     }
+
+     void push(int value)
+     {
+          if (isFull())
+          {
+               std::cout << "Stack overflow" << std::endl;
+          }
+          else
+          {
+               top++; //0
+               arr[top] = value;
+          }
+     }
+
+     int pop()
+     {
+          if (isEmpty())
+          {
+               std::cout << "Stack underflow \n";
+
+               return 0;
+          }
+          else
+          {
+               int valuePop = arr[top];
+               arr[top] = 0;
+               top--;
+
+               return valuePop; //Temporary variable
+          }
+     }
+
+     int count()
+     {
+          return (top + 1);
+     }
+
+     int peek(int position)
+     {
+          if (isFull())
+          {
+               std::cout << "Stack underflow \n";
+
+               return 0;
+          }
+          else
+          {
+               return arr[position];
+          }
+     }
+
+     void change(int position, int value)
+     {
+          arr[position] = value;
+
+          std::cout << "Value already change at location " << position << std::endl;
+     }
+
+     void display()
+     {
+          std::cout << "Values stack" << std::endl;
+          for (int i = 4; i >= 0; i--)
+          {
+               std::cout << arr[i] << std::endl;
+          }
+     }
+};
+
+void showStack()
 {
-  if (top == 0)
-  {
-    return true;
-  }
-  else
-  {
-    return false;
-  }
-}
+     Stack s1;
 
-void checkDataEmpty() { cout << "Data empty ? " << isEmpty() << endl
-                             << endl; }
+     int option, position, value;
 
-void dataArr(string data)
-{
-  if (isFull())
-  {
-    cout << "Data full!" << endl;
-  }
-  else
-  {
-    arrData[top] = data;
-    top++;
-  }
-}
+     //Enter some numbers
+     do
+     {
+          std::cout << "1. Push" << std::endl;
+          std::cout << "2. Pop" << std::endl;
+          std::cout << "3. Empty" << std::endl;
+          std::cout << "4. Full" << std::endl;
+          std::cout << "5. Peek" << std::endl;
+          std::cout << "6. Count" << std::endl;
+          std::cout << "7. Change" << std::endl;
+          std::cout << "8. Display" << std::endl;
+          std::cout << "9. Clear Screen" << std::endl;
+          std::cout << "0. Exit" << std::endl
+                    << std::endl;
 
-void popArray()
-{
-  if (isEmpty())
-  {
-    cout << "Data empty" << endl;
-  }
-  else
-  {
-    arrData[top - 1] = "";
-    top--;
-  }
-}
+          std::cout << "Choose Number: ";
+          std::cin >> option;
 
-// Display data array
-void displayDataArr()
-{
-  if (isEmpty())
-    cout << "Data empty" << endl;
-  else
-    cout << "Data stack array: " << endl;
+          switch (option)
+          {
+          case 0:
+               break;
 
-  for (int i = Max - 1; i >= 0; i--)
-  {
-    if (arrData[i] != "")
-    {
-      cout << "Data: " << arrData[i] << endl;
-    }
-  }
-  cout << endl;
-}
+          case 1:
+               std::cout << "Enter value in the stack \n";
+               std::cin >> value;
+               s1.push(value);
+               break;
 
-// Peek data array
-void peekArray(int position)
-{
-  if (isEmpty())
-  {
-    cout << "Data empty" << endl;
-  }
-  else
-  {
-    int index = top;
-    for (int i = 0; i < position; i++)
-    {
-      index--;
-    }
-    cout << "Data position " << position << " = " << arrData[index] << endl;
-  }
-}
+          case 2:
+               std::cout << "Pop value: " << s1.pop() << std::endl;
+               break;
 
-// Change data array
-void changeDataArray(int position, string data)
-{
-  if (isEmpty())
-  {
-    cout << "Data empty" << endl;
-  }
-  else
-  {
-    int index = top;
-    for (int i = 0; i < position; i++)
-    {
-      index--;
-    }
-    arrData[index] = data;
-  }
-}
+          case 3:
+               if (s1.isEmpty())
+                    std::cout << "Stack is empty" << std::endl;
 
-// Count total data array
-int countDataArray()
-{
-  if (isEmpty())
-  {
-    return 0;
-  }
-  else
-  {
-    return top;
-  }
-}
+               else
+                    std::cout << "Stack is not empty" << std::endl;
+               break;
 
-void showTotalDataArray()
-{
-  cout << "Total data array =  " << countDataArray() << endl
-       << endl;
-}
+          case 4:
+               if (s1.isFull())
+                    std::cout << "Stack is full" << std::endl;
+               else
+                    std::cout << "Stack is not full" << std::endl;
+               break;
 
-void removeDataStackArray()
-{
-  for (int i = 0; i < top; i++)
-  {
-    arrData[i] = "";
-  }
-  top = 0;
+          case 5:
+               std::cout << "Peek position: ";
+               std::cin >> position;
+
+               std::cout << "Value position " << position << " is " << s1.peek(position) << std::endl;
+               break;
+
+          case 6:
+               std::cout << "Total stack is: " << s1.count() << std::endl;
+               break;
+
+          case 7:
+               std::cout << "Enter stack position: ";
+               std::cin >> position;
+
+               std::cout << std::endl;
+
+               std::cout << "Enter value to change: ";
+               std::cin >> value;
+
+               s1.change(position, value);
+               break;
+
+          case 8:
+               std::cout << "Show values stack" << std::endl;
+               s1.display();
+               break;
+
+          case 9:
+               system("cls");
+               break;
+
+          default:
+               std::cout << "Not found!" << std::endl;
+          }
+
+     } while (option != 0);
 }
 
 int main()
 {
+     showStack();
 
-  // Data
-  dataArr("Billy");
-  displayDataArr();
+     // 1) push()
+     //     Place an item onto the stack. If there is no place for new item, stack is in overflow state.
+     // 2) pop()
+     //     Return the item at the top of the stack and then remove it. If pop is called when stack is empty, it is in an underflow state.
+     // 3) isEmpty()
+     //     Tells if the stack is empty or not
+     // 4) isfull()
+     //     Tells if the stack is full or not.
+     // 5) peek()
+     //     Access the item at the i position
+     // 6) count()
+     //     Get the number of items in the stack.
+     // 7) change()
+     //     Change the item at the i position
+     // 8) display()
+     //     Display all items in the stack
 
-  dataArr("Franscois");
-  dataArr("Kolibonso");
-  dataArr("Sendy");
-  dataArr("Friscilla");
-  displayDataArr();
-
-  dataArr("Reggy");
-  displayDataArr();
-
-  popArray();
-  displayDataArr();
-
-  // Check data
-  checkDataFull();
-  checkDataEmpty();
-
-  // Peek data array
-  peekArray(3);
-
-  // Show total data array
-  showTotalDataArray();
-
-  // Change data array
-  changeDataArray(2, "Reggy");
-  displayDataArr();
-
-  //Remove data stack array and check condition data
-  removeDataStackArray();
-  checkDataFull();
-  checkDataEmpty();
-
-  return 0;
+     return 0;
 }

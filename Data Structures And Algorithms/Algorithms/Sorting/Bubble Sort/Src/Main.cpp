@@ -96,7 +96,7 @@ void PrintBubbleSort()
      BS->getBubbleSortDescending();
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
      PrintBubbleSort();
 

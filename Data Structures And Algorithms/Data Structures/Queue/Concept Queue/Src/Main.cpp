@@ -2,6 +2,7 @@
 
 using namespace std;
 
+//Queue array
 class Queue
 {
 private:
@@ -102,12 +103,13 @@ public:
      }
 };
 
-int main(int argc, char const *argv[])
+void showQueue()
 {
      Queue q1;
 
      int option, value;
 
+     //Enter numbers
      do
      {
           cout << "Select number: " << endl;
@@ -172,12 +174,17 @@ int main(int argc, char const *argv[])
                break;
           }
      } while (option != 0);
+}
+
+int main()
+{
+     showQueue();
+
+     // Enqueue() – Add item to the queue from the REAR.
+     // Dequeue() – Remove item from the queue from the FRONT.
+     // isFull() – Check if queue is full or not.
+     // isEmpty() – Check if queue empty or not.
+     // count() – Get number of items in the queue.
 
      return 0;
 }
-
-/*Enqueue() – Add item to the queue from the REAR.
-Dequeue() – Remove item from the queue from the FRONT.
-isFull() – Check if queue is full or not.
-isEmpty() – Check if queue empty or not.
-count() – Get number of items in the queue.*/
