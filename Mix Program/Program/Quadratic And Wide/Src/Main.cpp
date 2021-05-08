@@ -71,7 +71,7 @@ void tampilkan_keliling(double p, double l)
 //Prototype
 void animalProgram();
 
-int main(int argc, char const *argv[])
+int main()
 {
     Billy();
 
