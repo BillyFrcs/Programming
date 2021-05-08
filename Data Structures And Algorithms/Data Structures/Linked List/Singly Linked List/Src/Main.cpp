@@ -232,7 +232,7 @@ void showSinglyLinkedList()
 
      do
      {
-          std::cout << "\nSelect option: \n";
+          std::cout << "\nSelect option (0 to exit): \n";
           std::cout << "1.) Append Node \n";
           std::cout << "2.) Prepend Node \n";
           std::cout << "3.) Insert Node \n";
@@ -287,7 +287,7 @@ void showSinglyLinkedList()
                break;
 
           case 5:
-               std::cout << "Enter new key & data to updated: ";
+               std::cout << "Enter key & new data to updated: ";
                std::cin >> key1 >> data;
 
                SLL->updateNode(key1, data);
@@ -304,7 +304,7 @@ void showSinglyLinkedList()
           default:
                std::cout << "Not found \n";
           }
-     } while (Options != NULL);
+     } while (Options != 0);
 }
 
 int main()
