@@ -26,7 +26,7 @@ void printArray(int *ptrArray, int line, int colum)
 const int kolom = 3;
 const int baris = 2;
 
-void printARRAY(array<array<int, kolom>, baris> &ValueARRAY)
+void Matrix(array<array<int, kolom>, baris> &ValueARRAY)
 {
     for (array<int, kolom> VectorBaris : ValueARRAY)
     {
@@ -116,7 +116,7 @@ int main()
     cout << valueMD[1][2] << " " << endl;
 
     //Step 2
-    printARRAY(valueMD);
+    Matrix(valueMD);
 
     cout << endl;
 

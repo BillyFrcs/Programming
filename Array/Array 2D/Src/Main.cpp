@@ -16,7 +16,7 @@ void basicsArray2D()
      }
 }
 
-void showArray2D()
+void show2DArray()
 {
      double arr[1][5] = {2.3, 8.5, 10.2, 9.7, 14.3};
 
@@ -31,7 +31,7 @@ int main()
 
      std::cout << "\n";
 
-     showArray2D();
+     show2DArray();
 
      return 0;
 }
