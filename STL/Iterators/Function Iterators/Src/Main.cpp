@@ -8,7 +8,7 @@ void Iterators()
 
      for (std::vector<int>::iterator val = vector2.begin(); val != vector2.end(); val++)
      {
-          //Deference to print the values
+          //Dereference to print the values
           std::cout << *val << std::endl;
      }
 }
