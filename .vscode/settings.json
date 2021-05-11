@@ -75,5 +75,5 @@
     "charconv": "cpp",
     "variant": "cpp"
   },
-  "C_Cpp.errorSquiggles": "EnabledIfIncludesResolve"
+  "C_Cpp.errorSquiggles": "Enabled"
 }
