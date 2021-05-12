@@ -4,7 +4,7 @@ using namespace std;
 
 void calculatorApp()
 {
-     system("clear");
+     system("cls");
 
      float num1, num2;
      char operators;
@@ -46,12 +46,13 @@ void calculatorApp()
           break;
 
      default:
-          cout << "Not valid operator!" << endl;
+          cout << "Not valid operator !" << endl;
      }
 }
 
 int main()
 {
      calculatorApp();
+
      return 0;
 }

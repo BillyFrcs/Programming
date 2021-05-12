@@ -1,20 +1,9 @@
-#include "HeaderCalculator.hpp"
-#include <iostream>
+#include "Calculator.hpp"
 
 using namespace std;
 
-//Prototype functions
-void addition(double num1, double num2);
-
-void subtraction(double num1, double num2);
-
-void multiplication(double num1, double num2);
-
-void division(double num1, double num2);
-
 int main()
 {
-
      double num1, num2;
      int arithmeticOperators;
 
@@ -57,7 +46,6 @@ int main()
           break;
      } while (num2);
 
-     //The algorithm for this calculator
      switch (arithmeticOperators)
      {
           //Called function operators
