@@ -229,6 +229,7 @@ void showSinglyLinkedList()
      SinglyLinkedList *SLL = new SinglyLinkedList();
 
      int Options, key1, key2, data;
+     bool exit = false;
 
      do
      {
@@ -245,10 +246,17 @@ void showSinglyLinkedList()
           std::cin >> Options;
 
           Node *n1 = new Node();
-          
+
           //Enter numbers
           switch (Options)
           {
+          case 0:
+               if (exit == 0)
+               {
+                    exit = true;
+               }
+               break;
+
           case 1:
                std::cout << "Enter key & data to append: ";
                std::cin >> key1 >> data;
