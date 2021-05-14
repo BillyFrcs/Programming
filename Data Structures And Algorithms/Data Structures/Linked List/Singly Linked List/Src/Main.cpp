@@ -202,7 +202,7 @@ public:
           }
      }
 
-     void printListNode()
+     void printListSinglyLinkedList()
      {
           if (head == NULL)
           {
@@ -294,7 +294,7 @@ void showSinglyLinkedList()
                break;
 
           case 6:
-               SLL->printListNode();
+               SLL->printListSinglyLinkedList();
                break;
 
           case 7:

@@ -78,7 +78,7 @@ public:
      void updateNode(int k, int d);
 
      //Print node
-     void printListNode();
+     void printListDoublyLinkedList();
 };
 
 //Append a node to the list
@@ -245,7 +245,7 @@ void DoublyLinkedList::updateNode(int k, int d)
 }
 
 //Print the node
-void DoublyLinkedList::printListNode()
+void DoublyLinkedList::printListDoublyLinkedList()
 {
      if (head == NULL)
      {
@@ -330,7 +330,7 @@ void showDoublyLinkedList()
                break;
 
           case 6:
-               DLL->printListNode();
+               DLL->printListDoublyLinkedList();
                break;
 
           case 7:
@@ -338,7 +338,7 @@ void showDoublyLinkedList()
                break;
 
           default:
-               std::cout << "Not found \n";
+               std::cout << "Not found! \n";
                break;
           }
      } while (Options != 0);
