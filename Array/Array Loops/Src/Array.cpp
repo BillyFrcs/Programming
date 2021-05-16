@@ -65,6 +65,26 @@ void conceptArrLoops()
   }
 }
 
+void calculateEvenOddNumbers()
+{
+  int numbers[6] = {6, 2, 4, 9, 7, 5}, evenNum = 0, oddNum = 0;
+
+  for (auto &n : numbers)
+  {
+    if (n % 2 == 0)
+    {
+      evenNum += n;
+    }
+    else
+    {
+      oddNum += n;
+    }
+  }
+
+  cout << "Total even number " << evenNum << "\n";
+  cout << "Total odd number " << oddNum << "\n";
+}
+
 int main()
 {
 
@@ -77,6 +97,10 @@ int main()
   cout << endl;
 
   conceptArrLoops();
+
+  cout << endl;
+
+  calculateEvenOddNumbers();
 
   return 0;
 }
