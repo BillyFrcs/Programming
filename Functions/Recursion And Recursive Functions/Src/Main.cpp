@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -8,6 +9,18 @@ int recursiveSum(int a, int b)
           return a;
 
      return a + recursiveSum(a + 1, b);
+}
+
+int recursionFactorial(int f)
+{
+     if (f < 0)
+          return -1;
+
+     else if (f == 0)
+          return 1;
+
+     else
+          return (f * recursionFactorial(f - 1));
 }
 
 int main()
@@ -24,9 +37,24 @@ int main()
 
      cout << endl;
 
+     //Recursive
      int a = 5, b = 6;
 
-     cout << "Sum is: " << recursiveSum(a, b) << endl;
+     cout << "Sum is: " << recursiveSum(a, b) << endl
+          << "\n";
+
+     //Recursion
+
+     int f = 4;
+
+     f = recursionFactorial(f);
+
+     std::cout << "Recursion factorial is: " << f << "\n";
+     
+     //With function
+     sqrt(f);
+
+     std::cout << f << "\n";
 
      return 0;
 }
