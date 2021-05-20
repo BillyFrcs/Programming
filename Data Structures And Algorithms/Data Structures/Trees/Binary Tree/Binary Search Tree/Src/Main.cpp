@@ -1,5 +1,9 @@
 #include <iostream>
 
+//Define macro
+#define SPACE 10
+#define VALUE_SPACE 5
+
 //Class tree node
 class TreeNode
 {
@@ -35,6 +39,11 @@ public:
      //Data members
      TreeNode *root;
 
+     BinarySearchTree()
+     {
+          root = NULL;
+     }
+
      //Member functions (method)
      bool isEmpty()
      {
@@ -47,52 +56,130 @@ public:
                return false;
           }
      }
+
+     //Insert node
+     void insertNode(TreeNode *newNode)
+     {
+          if (root == NULL)
+          {
+               root = newNode;
+               std::cout << "Value node inserted as root \n";
+          }
+          else
+          {
+               TreeNode *temp = root;
+
+               while (temp != NULL)
+               {
+                    if ((newNode->value) == (temp->value))
+                    {
+                         std::cout << "Value already exists, insert another value \n";
+
+                         return; //No duplicate allowed
+                    }
+                    else if ((newNode->value < temp->value) && (temp->left == NULL))
+                    {
+                         temp->left = newNode;
+                         std::cout << "Value inserted on the left \n";
+                         break; //Get out
+                    }
+                    else if ((newNode->value) < (temp->value))
+                    {
+                         temp = temp->left;
+                    }
+                    else if ((newNode->value > temp->value) && (temp->right == NULL))
+                    {
+                         temp->right = newNode;
+                         std::cout << "Value inserted on the right \n";
+                         break; //Get out
+                    }
+                    else
+                    {
+                         temp = temp->right;
+                    }
+               }
+          }
+     }
+
+     //Print 2D
+     void printTwoD(TreeNode *R, int space)
+     {
+          if (R == NULL) //Base case
+          {
+               return;
+          }
+
+          space += SPACE; //Increase distance between space
+
+          printTwoD(R->right, space); //Proces the right child (first)
+
+          std::cout << "\n";
+
+          for (int i = SPACE; i < space; i++)
+          {
+               std::cout << " ";
+          }
+
+          std::cout << (R->value) << "\n";
+
+          printTwoD(R->left, space); //Process the left child
+     }
 };
 
 void displayBinarySearchTree()
 {
-     int options;
+     BinarySearchTree *BST = new BinarySearchTree();
+
+     int options, v;
      bool exit = false;
 
      do
      {
+          //Enter numbers
           std::cout << "Select option (0 to exit): \n";
           std::cout << "1.) Insert node \n";
           std::cout << "2.) Search node \n";
           std::cout << "3.) Delete node \n";
-          std::cout << "4.) Print binary search tree values \n";
+          std::cout << "4.) Print binary search tree \n";
           std::cout << "5.) Clear screen \n";
 
           std::cout << "Choose option: ";
           std::cin >> options;
 
-          switch (options)
+          TreeNode *newNode = new TreeNode(); //Heap memory
+
+          //Todo:
+          if (options == 0)
           {
-          case 0:
                if (exit == 0)
                     exit = true;
-               break;
-          //Todo:
-          case 1:
-               break;
-
-          case 2:
-               break;
-
-          case 3:
-               break;
-
-          case 4:
-               break;
-
-          case 5:
-               system("cls");
-               break;
-
-          default:
-               std::cout << "Not found! \n";
           }
+          else if (options == 1)
+          {
+               std::cout << "Enter value of three node to insert in BST: ";
+               std::cin >> v;
 
+               newNode->value = v;
+               BST->insertNode(newNode);
+          }
+          else if (options == 2)
+          {
+          }
+          else if (options == 3)
+          {
+          }
+          else if (options == 4)
+          {
+               BST->printTwoD(BST->root, VALUE_SPACE);
+          }
+          else if (options == 5)
+          {
+               system("cls");
+          }
+          else
+          {
+               std::cout << "Not found \n";
+          }
      } while (options != 0);
 }
 
