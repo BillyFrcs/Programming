@@ -124,6 +124,21 @@ public:
 
           printTwoD(R->left, space); //Process the left child
      }
+
+     //Print pre-order
+     void printPreOrder(TreeNode *R) //Root
+     {
+          if (R == NULL)
+          {
+               return;
+          }
+
+          //Print the first value of the node
+          std::cout << R->value << " ";
+
+          printPreOrder(R->left);  //Recursive left TreeNode
+          printPreOrder(R->right); //Recursive right TreeNode
+     }
 };
 
 void displayBinarySearchTree()
@@ -136,7 +151,7 @@ void displayBinarySearchTree()
      do
      {
           //Enter numbers
-          std::cout << "Select option (0 to exit): \n";
+          std::cout << "\nSelect option (0 to exit): \n";
           std::cout << "1.) Insert node \n";
           std::cout << "2.) Search node \n";
           std::cout << "3.) Delete node \n";
@@ -170,7 +185,11 @@ void displayBinarySearchTree()
           }
           else if (options == 4)
           {
+               std::cout << "Print 2D \n";
                BST->printTwoD(BST->root, VALUE_SPACE);
+
+               std::cout << "Print Pre-Order \n";
+               BST->printPreOrder(BST->root);
           }
           else if (options == 5)
           {
