@@ -256,7 +256,7 @@ void displayCircularLinkedList()
      CircularLinkedList *CLL = new CircularLinkedList();
 
      int Options, key1, key2, data;
-     bool exit = false;
+     bool ext = true;
 
      do
      {
@@ -278,9 +278,9 @@ void displayCircularLinkedList()
           switch (Options)
           {
           case 0:
-               if (exit == 0)
+               if (ext == true)
                {
-                    exit == true;
+                    exit(ext);
                }
                break;
 
@@ -339,7 +339,7 @@ void displayCircularLinkedList()
                std::cout << "Not found! \n";
                break;
           }
-     } while (Options != exit);
+     } while (Options != ext);
 }
 
 int main()

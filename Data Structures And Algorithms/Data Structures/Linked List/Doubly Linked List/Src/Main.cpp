@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 
 //Node class
 class Node
@@ -269,7 +270,7 @@ void showDoublyLinkedList()
      DoublyLinkedList *DLL = new DoublyLinkedList();
 
      int Options, key1, key2, data;
-     bool exit = false;
+     bool ext = true;
 
      do
      {
@@ -291,9 +292,9 @@ void showDoublyLinkedList()
           switch (Options)
           {
           case 0:
-               if (exit == 0)
+               if (ext == true)
                {
-                    exit = true;
+                    exit(ext);
                }
                break;
 
@@ -349,7 +350,7 @@ void showDoublyLinkedList()
                std::cout << "Not found! \n";
                break;
           }
-     } while (Options != 0);
+     } while (Options != 100);
 }
 
 int main()
