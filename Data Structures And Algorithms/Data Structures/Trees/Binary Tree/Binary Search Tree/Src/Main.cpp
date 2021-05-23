@@ -1,8 +1,10 @@
 #include <iostream>
+#include <stdlib.h>
 
 //Define macro
 #define SPACE 10
 #define VALUE_SPACE 5
+#define EXT true
 
 //Class tree node
 class TreeNode
@@ -134,12 +136,12 @@ public:
           }
 
           //Print the first value of the node
-          std::cout << R->value << " ";
+          std::cout << (R->value) << " ";
 
           printPreOrder(R->left);  //Recursive left TreeNode
           printPreOrder(R->right); //Recursive right TreeNode
      }
-     
+
      //Print In-Order
      void printInOrder(TreeNode *R)
      {
@@ -151,9 +153,24 @@ public:
           printInOrder(R->left); //Recursive on left
 
           //Print the value
-          std::cout << R->value << " ";
+          std::cout << (R->value) << " ";
 
           printInOrder(R->right); //Recursive on right
+     }
+
+     //Print Post-Order
+     void printPostOrder(TreeNode *R)
+     {
+          if (R == NULL)
+          {
+               return;
+          }
+
+          printPostOrder(R->left); //Left subtree
+
+          printPostOrder(R->right); //Right subtree
+
+          std::cout << (R->value) << " "; //Print the value
      }
 };
 
@@ -162,7 +179,6 @@ void displayBinarySearchTree()
      BinarySearchTree *BST = new BinarySearchTree();
 
      int options, v;
-     bool exit = false;
 
      do
      {
@@ -182,8 +198,8 @@ void displayBinarySearchTree()
           //Todo:
           if (options == 0)
           {
-               if (exit == 0)
-                    exit = true;
+               if (EXT == true)
+                    exit(EXT);
           }
           else if (options == 1)
           {
@@ -209,6 +225,9 @@ void displayBinarySearchTree()
 
                std::cout << "\n\nPrint In-Order \n";
                BST->printInOrder(BST->root);
+
+               std::cout << "\n\nPrint Post-Order \n";
+               BST->printPostOrder(BST->root);
           }
           else if (options == 5)
           {
@@ -218,7 +237,7 @@ void displayBinarySearchTree()
           {
                std::cout << "Not found \n";
           }
-     } while (options != 0);
+     } while (options != 100);
 }
 
 int main()
