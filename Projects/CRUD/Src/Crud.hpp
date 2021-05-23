@@ -1,9 +1,7 @@
 #pragma once
 
-#ifndef CRUD__APP
-#define CRUD__APP
+#ifndef CRUD_APP
 
-#include <fstream>
 #include <iostream>
 #include <string>
 
@@ -15,13 +13,11 @@ private:
      //Max limits data
      const int maxRow = 20;
 
-     //Global variable array
-     string studentName[20];
-     string studentID[20];
+     string studentName[20], studentID[20];
 
 public:
      //Create or add data
-     void createAddData()
+     virtual void createAddData()
      {
           char name[50];
           char ID[13];
@@ -105,42 +101,8 @@ public:
           }
      }
 
-     //Search data
-     void searchingData(string search)
-     {
-          system("cls");
-
-          cout << "Result searching Data Students \n";
-          cout << "========================================\n";
-
-          cout << "No\t\t|Name\t\t|ID\t\t" << endl;
-          cout << "---------------------------------------\n";
-
-          int counter = 0;
-
-          for (int x = 0; x < maxRow; x++)
-          {
-               if ((studentName[x] == search) || (studentID[x] == search))
-               {
-                    counter++;
-
-                    cout << counter << ""
-                         << "\t\t" << studentName[x] << "\t\t" << studentID[x] << endl;
-
-                    break;
-               }
-          }
-
-          if (counter == 0)
-          {
-               cout << "Search not found! \n";
-          }
-
-          cout << "========================================\n\n";
-     }
-
      //Display list data
-     void displayListData()
+     virtual void displayListData()
      {
           system("cls");
 
@@ -171,48 +133,14 @@ public:
           cout << "========================================\n\n";
      }
 
+     //Searching data
+     void searchingData(string search);
+
      //Open file CRUD (Still have bugs)
-     void openFileCrud()
-     {
-          //Add and open file .txt
-          string line;
-          ifstream crudFile("DataStudents.txt"); //This can change with another file location
-
-          if (crudFile.is_open())
-          {
-               int x = 0;
-
-               while (getline(crudFile, line))
-               {
-                    int l = line.length();
-                    studentName[x] = line.substr(0, 12);   //0, 3
-                    studentID[x] = line.substr(0, l - 12); //4, l - 4
-                    x++;
-               }
-          }
-     }
+     void openFileCrud();
 
      //Save file CRUD (Still have bugs)
-     void saveFileCrud()
-     {
-          //Saving file .txt
-          ofstream crudFile;
-
-          crudFile.open("DataStudents.txt"); //This can change with another file location
-
-          for (int x = 0; x < maxRow; x++)
-          {
-               if ((studentName[x] == "\0") && (studentID[x] == "\0"))
-               {
-                    break;
-               }
-
-               else
-               {
-                    crudFile << studentName[x] + "," + studentID[x] << endl;
-               }
-          }
-     }
+     void saveFileCrud();
 };
 
 #endif
