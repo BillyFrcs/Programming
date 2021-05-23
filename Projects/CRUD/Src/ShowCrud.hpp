@@ -18,7 +18,6 @@ void showCrud()
      //User select menu
      int options;
      string searchData;
-     bool exit = false;
 
      do
      {
@@ -73,25 +72,18 @@ void showCrud()
                //Display or show all data
           case 5:
                crud->displayListData();
+               crud->openFileCrud();
                break;
 
           case 6:
-               if (exit == '6')
-               {
-                    exit = true;
-               }
+               crud->saveFileCrud();
                break;
 
           default:
                std::cout << "Not found! \n";
                break;
-
           }
-     } while (options != 6);
-
-     //Save the data crud to txt file
-     crud->saveFileCrud();
-     cout << "Exit and saving file...\n";
+     } while (options != 100);
 }
 
 #endif

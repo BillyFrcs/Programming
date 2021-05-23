@@ -1,8 +1,10 @@
 #pragma once
 
 #ifndef DATABASE
+#define EXT true
 
 #include <fstream>
+#include <stdlib.h>
 
 #include "Crud.hpp"
 
@@ -77,6 +79,13 @@ void Crud::saveFileCrud()
           {
                crudFile << studentName[x] + "," + studentID[x] << endl;
           }
+     }
+
+     if (EXT == true)
+     {
+          //Save the data crud to txt file
+          cout << "Exit and saving file...\n";
+          exit(EXT); //Function from stdlib.h header
      }
 }
 
