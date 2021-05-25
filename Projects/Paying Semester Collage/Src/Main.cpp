@@ -12,14 +12,14 @@ struct Student
      char nameAcademicOfficer[20], nameStudent[20];
 
      long double totalCostCollage, costCollageI, costCollageII,
-         costCollageIII, costCollageIV, remainderPaying;
+         costCollageIII, costCollageIV, remainderPaying, totalCost;
 };
 
 namespace Collage
 {
      class SemesterCollage
      {
-     private:
+     protected:                     //Property
           std::vector<Student> vec; //Vector initialization
           int totalStudent;
 
@@ -28,7 +28,7 @@ namespace Collage
      public:
           SemesterCollage()
           {
-               system("clear"); //Clear console
+               system("cls"); //Clear console
 
                std::cout << "||=================================||\n";
                std::cout << "||Program Pembayaran Uang Semester ||\n";
@@ -63,7 +63,7 @@ namespace Collage
                     std::cout << "\nNama mahasiswa: ";
                     std::cin.getline(s.nameStudent, 20);
 
-                    std::cout << "Total biaya kuliah: ";
+                    std::cout << "Total biaya kuliah Rp.";
                     std::cin >> s.totalCostCollage;
 
                     std::cout << "Masukan pembayaran I Rp.";
@@ -81,7 +81,11 @@ namespace Collage
                     vec.push_back(s);
                }
           }
+     };
 
+     class Semester : public SemesterCollage //Access with inheritance
+     {
+     public:
           virtual void displayDataStudent()
           {
                std::cout << "\nJumlah mahasiswa: " << totalStudent << "\n";
@@ -97,6 +101,7 @@ namespace Collage
                     std::cout << "Pembayaran III     Rp." << std::fixed << std::setprecision(0) << s.costCollageIII << "\n";
                     std::cout << "Pembayaran IV      Rp." << std::fixed << std::setprecision(0) << s.costCollageIV << "\n";
 
+                    //Calculate total cost
                     s.remainderPaying = s.totalCostCollage - (s.costCollageI + s.costCollageII + s.costCollageIII + s.costCollageIV);
 
                     std::cout << "Sisa pembayaran    Rp." << fabs(s.remainderPaying) << '\n'; //To remove negative value
@@ -116,6 +121,10 @@ namespace Collage
                          std::cout << info << " Masih menunggak\n";
                     }
                }
+
+               s.totalCost = (s.costCollageI + s.costCollageII + s.costCollageIII + s.costCollageIV);
+
+               std::cout << "\nTotal pembayaran semua mahasiswa adalah Rp." << std::fixed << std::setprecision(0) << fabs(s.totalCost) << "\n";
           }
      };
 } //Namespace Collage
@@ -123,7 +132,7 @@ namespace Collage
 void displayData()
 {
      //Object from class
-     Collage::SemesterCollage *SC = new Collage::SemesterCollage(); //Heap memory
+     Collage::Semester *SC = new Collage::Semester(); //Heap memory
 
      SC->getDataAcademicOfficer();
      SC->getDataCostStudent();
