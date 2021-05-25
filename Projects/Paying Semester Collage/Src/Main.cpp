@@ -1,14 +1,17 @@
+#include <cmath>
+#include <iomanip>
 #include <iostream>
-#include <stdio.h>
 #include <string>
 #include <vector>
+
+#define VALUE 0
 
 //Struct student
 struct Student
 {
      char nameAcademicOfficer[20], nameStudent[20];
 
-     uint64_t totalCostCollage, costCollageI, costCollageII,
+     long double totalCostCollage, costCollageI, costCollageII,
          costCollageIII, costCollageIV, remainderPaying;
 };
 
@@ -25,7 +28,7 @@ namespace Collage
      public:
           SemesterCollage()
           {
-               system("cls"); //Clear console
+               system("clear"); //Clear console
 
                std::cout << "||=================================||\n";
                std::cout << "||Program Pembayaran Uang Semester ||\n";
@@ -43,12 +46,13 @@ namespace Collage
           void getDataAcademicOfficer()
           {
                std::cout << "Masukan nama petugas akademik: ";
-               gets(s.nameAcademicOfficer);
+               std::cin.getline(s.nameAcademicOfficer, 20);
 
                std::cout << "Masukan jumlah mahasiswa: ";
                std::cin >> totalStudent;
 
-               std::cout << "\nHi " << s.nameAcademicOfficer << " petugas akademik, silahkan masukan data mahasiswa...\n";
+               std::cout << "\nHi " << s.nameAcademicOfficer << " petugas akademik, silahkan masukan data mahasiswa sebanyak "
+                         << totalStudent << " kali.\n";
           }
 
           void getDataCostStudent()
@@ -62,16 +66,16 @@ namespace Collage
                     std::cout << "Total biaya kuliah: ";
                     std::cin >> s.totalCostCollage;
 
-                    std::cout << "Masukan pembayaran I: ";
+                    std::cout << "Masukan pembayaran I Rp.";
                     std::cin >> s.costCollageI;
 
-                    std::cout << "Masukan pembayaran II: ";
+                    std::cout << "Masukan pembayaran II Rp.";
                     std::cin >> s.costCollageII;
 
-                    std::cout << "Masukan pembayaran III: ";
+                    std::cout << "Masukan pembayaran III Rp.";
                     std::cin >> s.costCollageIII;
 
-                    std::cout << "Masukan pembayaran IV: ";
+                    std::cout << "Masukan pembayaran IV Rp.";
                     std::cin >> s.costCollageIV;
 
                     vec.push_back(s);
@@ -86,16 +90,31 @@ namespace Collage
                {
                     s = vec[i];
 
-                    std::cout << "\nNama mahasiswa\t  : " << s.nameStudent << "\n";
-                    std::cout << "Total biaya kuliah: " << s.totalCostCollage << "\n";
-                    std::cout << "Pembayaran I      : " << s.costCollageI << "\n";
-                    std::cout << "Pembayaran II     : " << s.costCollageII << "\n";
-                    std::cout << "Pembayaran III    : " << s.costCollageIII << "\n";
-                    std::cout << "Pembayaran IV     : " << s.costCollageIV << "\n";
+                    std::cout << "\nNama mahasiswa\t     : " << s.nameStudent << "\n";
+                    std::cout << "Total biaya kuliah Rp." << std::fixed << std::setprecision(0) << s.totalCostCollage << "\n"; //Remove large values (hex)
+                    std::cout << "Pembayaran I       Rp." << std::fixed << std::setprecision(0) << s.costCollageI << "\n";
+                    std::cout << "Pembayaran II      Rp." << std::fixed << std::setprecision(0) << s.costCollageII << "\n";
+                    std::cout << "Pembayaran III     Rp." << std::fixed << std::setprecision(0) << s.costCollageIII << "\n";
+                    std::cout << "Pembayaran IV      Rp." << std::fixed << std::setprecision(0) << s.costCollageIV << "\n";
 
                     s.remainderPaying = s.totalCostCollage - (s.costCollageI + s.costCollageII + s.costCollageIII + s.costCollageIV);
 
-                    std::cout << "Sisa pembayaran   : " << s.remainderPaying << '\n';
+                    std::cout << "Sisa pembayaran    Rp." << fabs(s.remainderPaying) << '\n'; //To remove negative value
+
+                    std::string info = "Keterangan\t     : ";
+
+                    if (s.remainderPaying == VALUE)
+                    {
+                         std::cout << info << " Lunas\n";
+                    }
+                    else if (s.remainderPaying < VALUE)
+                    {
+                         std::cout << info << " Lunas(ada kelebihan Rp." << fabs(s.remainderPaying) << ")\n";
+                    }
+                    else
+                    {
+                         std::cout << info << " Masih menunggak\n";
+                    }
                }
           }
      };
