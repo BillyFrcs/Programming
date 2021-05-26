@@ -120,10 +120,12 @@ namespace Collage
                     {
                          std::cout << info << " Masih menunggak\n";
                     }
+
+                    for (std::size_t j = 0; j < totalStudent; ++j)
+                    {
+                         s.totalCost = totalStudent * (s.costCollageI + s.costCollageII + s.costCollageIII + s.costCollageIV);
+                    }
                }
-
-               s.totalCost = (s.costCollageI + s.costCollageII + s.costCollageIII + s.costCollageIV);
-
                std::cout << "\nTotal pembayaran semua mahasiswa adalah Rp." << std::fixed << std::setprecision(0) << fabs(s.totalCost) << "\n";
           }
      };
