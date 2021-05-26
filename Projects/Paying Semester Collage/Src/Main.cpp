@@ -13,6 +13,8 @@ struct Student
 
      long double totalCostCollage, costCollageI, costCollageII,
          costCollageIII, costCollageIV, remainderPaying, totalCost;
+
+     int totalStudent;
 };
 
 namespace Collage
@@ -21,12 +23,11 @@ namespace Collage
      {
      protected:                     //Property
           std::vector<Student> vec; //Vector initialization
-          int totalStudent;
 
           Student s; //Calling from struct
 
      public:
-          SemesterCollage()
+          SemesterCollage() //Constructor
           {
                system("cls"); //Clear console
 
@@ -49,15 +50,15 @@ namespace Collage
                std::cin.getline(s.nameAcademicOfficer, 20);
 
                std::cout << "Masukan jumlah mahasiswa: ";
-               std::cin >> totalStudent;
+               std::cin >> s.totalStudent;
 
                std::cout << "\nHi " << s.nameAcademicOfficer << " petugas akademik, silahkan masukan data mahasiswa sebanyak "
-                         << totalStudent << " kali.\n";
+                         << s.totalStudent << " kali.\n";
           }
 
           void getDataCostStudent()
           {
-               for (std::size_t i = 0; i < totalStudent; i++)
+               for (std::size_t i = 0; i < s.totalStudent; i++)
                {
                     std::cin.ignore();
                     std::cout << "\nNama mahasiswa: ";
@@ -88,9 +89,9 @@ namespace Collage
      public:
           virtual void displayDataStudent()
           {
-               std::cout << "\nJumlah mahasiswa: " << totalStudent << "\n";
+               std::cout << "\nJumlah mahasiswa: " << s.totalStudent << "\n";
 
-               for (std::size_t i = 0; i < totalStudent; ++i)
+               for (std::size_t i = 0; i < s.totalStudent; ++i)
                {
                     s = vec[i];
 
@@ -110,23 +111,20 @@ namespace Collage
 
                     if (s.remainderPaying == VALUE)
                     {
-                         std::cout << info << " Lunas\n";
+                         std::cout << info << "Lunas\n";
                     }
                     else if (s.remainderPaying < VALUE)
                     {
-                         std::cout << info << " Lunas(ada kelebihan Rp." << fabs(s.remainderPaying) << ")\n";
+                         std::cout << info << "Lunas(ada kelebihan Rp." << fabs(s.remainderPaying) << ")\n";
                     }
                     else
                     {
-                         std::cout << info << " Masih menunggak\n";
+                         std::cout << info << "Masih menunggak(kurang Rp." << fabs(s.remainderPaying) << ")\n";
                     }
 
-                    for (std::size_t j = 0; j < totalStudent; ++j)
-                    {
-                         s.totalCost = totalStudent * (s.costCollageI + s.costCollageII + s.costCollageIII + s.costCollageIV);
-                    }
+                    s.totalCost = s.totalStudent * (s.costCollageI + s.costCollageII + s.costCollageIII + s.costCollageIV);
                }
-               std::cout << "\nTotal pembayaran semua mahasiswa adalah Rp." << std::fixed << std::setprecision(0) << fabs(s.totalCost) << "\n";
+               std::cout << "\nTotal pembayaran semua mahasiswa adalah Rp." << std::fixed << std::setprecision(0) << fabs(s.totalCost) << '\n';
           }
      };
 } //Namespace Collage
