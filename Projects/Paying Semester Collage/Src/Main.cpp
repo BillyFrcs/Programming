@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-#define VALUE 0
+#define VALUE 0 //Preprocessor directive
 
 //Struct student
 struct Student
