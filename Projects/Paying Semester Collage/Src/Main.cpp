@@ -9,7 +9,7 @@
 //Struct student
 struct Student
 {
-     char nameAcademicOfficer[20], nameStudent[20];
+     char nameAcademicOfficer[30], nameStudent[30];
 
      long double totalCostCollage, costCollageI, costCollageII,
          costCollageIII, costCollageIV, remainderPaying, totalCost;
@@ -58,7 +58,7 @@ namespace Collage
 
           void getDataCostStudent()
           {
-               for (std::size_t i = 0; i < s.totalStudent; i++)
+               for (auto i = 0; i < s.totalStudent; i++)
                {
                     std::cin.ignore();
                     std::cout << "\nNama mahasiswa: ";
@@ -89,9 +89,10 @@ namespace Collage
      public:
           virtual void displayDataStudent()
           {
-               std::cout << "\nJumlah mahasiswa: " << s.totalStudent << "\n";
+               std::cout << "\n===== Daftar pembayaran mahasiswa =====\n";
+               std::cout << "\nJumlah mahasiswa: " << s.totalStudent << " orang.\n";
 
-               for (std::size_t i = 0; i < s.totalStudent; ++i)
+               for (auto i = 0; i < s.totalStudent; i++)
                {
                     s = vec[i];
 
@@ -102,8 +103,10 @@ namespace Collage
                     std::cout << "Pembayaran III     Rp." << std::fixed << std::setprecision(0) << s.costCollageIII << "\n";
                     std::cout << "Pembayaran IV      Rp." << std::fixed << std::setprecision(0) << s.costCollageIV << "\n";
 
-                    //Calculate total cost
-                    s.remainderPaying = s.totalCostCollage - (s.costCollageI + s.costCollageII + s.costCollageIII + s.costCollageIV);
+                    //Calculate remainder paying
+                    {
+                         s.remainderPaying = s.totalCostCollage - (s.costCollageI + s.costCollageII + s.costCollageIII + s.costCollageIV);
+                    }
 
                     std::cout << "Sisa pembayaran    Rp." << fabs(s.remainderPaying) << '\n'; //To remove negative value
 
@@ -122,9 +125,12 @@ namespace Collage
                          std::cout << info << "Masih menunggak(kurang Rp." << fabs(s.remainderPaying) << ")\n";
                     }
 
-                    s.totalCost = s.totalStudent * (s.costCollageI + s.costCollageII + s.costCollageIII + s.costCollageIV);
+                    //Calculate total cost
+                    {
+                         s.totalCost = (s.costCollageI + s.costCollageII + s.costCollageIII + s.costCollageIV);
+                         std::cout << "Total pembayaran " << s.nameStudent << " adalah Rp." << std::fixed << std::setprecision(0) << fabs(s.totalCost) << '\n';
+                    }
                }
-               std::cout << "\nTotal pembayaran semua mahasiswa adalah Rp." << std::fixed << std::setprecision(0) << fabs(s.totalCost) << '\n';
           }
      };
 } //Namespace Collage
