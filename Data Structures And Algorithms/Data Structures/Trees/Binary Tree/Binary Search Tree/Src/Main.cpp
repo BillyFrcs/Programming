@@ -103,8 +103,8 @@ public:
           }
      }
 
-     //Print 2D
-     void printTwoD(TreeNode *R, int space)
+     //Print graphical binary search tree
+     void printGraphicalBST(TreeNode *R, int space)
      {
           if (R == NULL) //Base case
           {
@@ -113,7 +113,7 @@ public:
 
           space += SPACE; //Increase distance between space
 
-          printTwoD(R->right, space); //Proces the right child (first)
+          printGraphicalBST(R->right, space); //Process the right child (first)
 
           std::cout << "\n";
 
@@ -124,7 +124,7 @@ public:
 
           std::cout << (R->value) << "\n";
 
-          printTwoD(R->left, space); //Process the left child
+          printGraphicalBST(R->left, space); //Process the left child
      }
 
      //Print Pre-Order
@@ -218,7 +218,7 @@ void displayBinarySearchTree()
           else if (options == 4)
           {
                std::cout << "Print 2D \n";
-               BST->printTwoD(BST->root, VALUE_SPACE);
+               BST->printGraphicalBST(BST->root, VALUE_SPACE);
 
                std::cout << "\nPrint Pre-Order \n";
                BST->printPreOrder(BST->root);
