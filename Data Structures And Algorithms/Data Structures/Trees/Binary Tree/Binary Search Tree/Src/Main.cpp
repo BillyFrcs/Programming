@@ -172,13 +172,43 @@ public:
 
           std::cout << (R->value) << " "; //Print the value
      }
+
+     //Iterative search BST
+     TreeNode *iterativeSearch(int v) //value
+     {
+          if (root == NULL)
+          {
+               return root;
+          }
+          else
+          {
+               TreeNode *temp = root;
+
+               while (temp != NULL)
+               {
+                    if (v == (temp->value))
+                    {
+                         return temp;
+                    }
+                    else if (v < (temp->value))
+                    {
+                         temp = (temp->left);
+                    }
+                    else
+                    {
+                         temp = (temp->right);
+                    }
+               }
+               return NULL;
+          }
+     }
 };
 
 void displayBinarySearchTree()
 {
      BinarySearchTree *BST = new BinarySearchTree();
 
-     int options, v;
+     int options, value;
 
      do
      {
@@ -204,13 +234,22 @@ void displayBinarySearchTree()
           else if (options == 1)
           {
                std::cout << "Enter value of three node to insert in BST: ";
-               std::cin >> v;
+               std::cin >> value;
 
-               newNode->value = v;
+               newNode->value = value;
                BST->insertNode(newNode);
           }
           else if (options == 2)
           {
+               std::cout << "Enter value to search in BST: ";
+               std::cin >> value;
+
+               newNode = BST->iterativeSearch(value);
+
+               if (newNode != NULL)
+                    std::cout << "Found value \n";
+               else
+                    std::cout << "Value not found \n";
           }
           else if (options == 3)
           {
