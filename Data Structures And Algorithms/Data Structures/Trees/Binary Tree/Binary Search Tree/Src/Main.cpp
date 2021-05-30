@@ -202,6 +202,29 @@ public:
                return NULL;
           }
      }
+
+     //Find the height of binary search tree
+     int findHeight(TreeNode *R)
+     {
+          if (R == NULL)
+          {
+               return -1;
+          }
+          else
+          {
+               int leftHeight = findHeight(R->left),
+                   rightHeight = findHeight(R->right);
+
+               if (leftHeight > rightHeight)
+               {
+                    return (leftHeight + 1);
+               }
+               else
+               {
+                    return (rightHeight + 1);
+               }
+          }
+     }
 };
 
 void displayBinarySearchTree()
@@ -212,13 +235,16 @@ void displayBinarySearchTree()
 
      do
      {
-          //Enter numbers(Max 6)
+          /*Enter numbers(Max 6)
+          *Recomendation enter numbers (n1 = 30, n2 = 18, n3 = 45, n4 = 10, n5 = 25, n6 = 65)
+          */
           std::cout << "\nSelect option (0 to exit): \n";
           std::cout << "1.) Insert node \n";
           std::cout << "2.) Search node \n";
           std::cout << "3.) Delete node \n";
-          std::cout << "4.) Print traversal (BST) \n";
-          std::cout << "5.) Clear screen \n";
+          std::cout << "4.) Height of (BST) \n";
+          std::cout << "5.) Print traversal (BST) \n";
+          std::cout << "6.) Clear console \n";
 
           std::cout << "Choose option: ";
           std::cin >> options;
@@ -256,6 +282,10 @@ void displayBinarySearchTree()
           }
           else if (options == 4)
           {
+               std::cout << "\nHeight of BST is: " << BST->findHeight(BST->root);
+          }
+          else if (options == 5)
+          {
                std::cout << "Print 2D \n";
                BST->printGraphicalBST(BST->root, VALUE_SPACE);
 
@@ -268,7 +298,7 @@ void displayBinarySearchTree()
                std::cout << "\n\nPrint Post-Order \n";
                BST->printPostOrder(BST->root);
           }
-          else if (options == 5)
+          else if (options == 6)
           {
                system("cls");
           }
