@@ -225,6 +225,37 @@ public:
                }
           }
      }
+
+     //Print level order BSF(Breadth First Search)
+     void printLevelOrder(TreeNode *R)
+     {
+          int height = findHeight(R); //Calculate the height of tree
+
+          for (int i = 0; i <= height; i++)
+          {
+               //Called the printGivenLevel function to set as recursion
+               printGivenLevel(R, i);
+          }
+     }
+
+     //Print given level BFS
+     void printGivenLevel(TreeNode *R, int level)
+     {
+          if (R == NULL)
+          {
+               return;
+          }
+          else if (level == 0)
+          {
+               std::cout << (R->value) << " ";
+          }
+          else
+          {
+               //Print recursion left, right and level - 1
+               printGivenLevel(R->left, level - 1);
+               printGivenLevel(R->right, level - 1);
+          }
+     }
 };
 
 void displayBinarySearchTree()
@@ -251,7 +282,6 @@ void displayBinarySearchTree()
 
           TreeNode *newNode = new TreeNode(); //Heap memory
 
-          //Todo:
           if (options == 0)
           {
                if (EXT == true)
@@ -279,6 +309,7 @@ void displayBinarySearchTree()
           }
           else if (options == 3)
           {
+               //TODO: delete
           }
           else if (options == 4)
           {
@@ -286,7 +317,7 @@ void displayBinarySearchTree()
           }
           else if (options == 5)
           {
-               std::cout << "Print 2D \n";
+               std::cout << "Print graphical BST \n";
                BST->printGraphicalBST(BST->root, VALUE_SPACE);
 
                std::cout << "\nPrint Pre-Order \n";
@@ -297,6 +328,9 @@ void displayBinarySearchTree()
 
                std::cout << "\n\nPrint Post-Order \n";
                BST->printPostOrder(BST->root);
+
+               std::cout << "\n\nPrint level order BFS\n";
+               BST->printLevelOrder(BST->root);
           }
           else if (options == 6)
           {
