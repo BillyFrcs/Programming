@@ -104,16 +104,16 @@ public:
      }
 
      //Print graphical binary search tree
-     void printGraphicalBST(TreeNode *R, int space)
+     void printGraphicalBST(TreeNode *r, int space)
      {
-          if (R == NULL) //Base case
+          if (r == NULL) //Base case
           {
                return;
           }
 
           space += SPACE; //Increase distance between space
 
-          printGraphicalBST(R->right, space); //Process the right child (first)
+          printGraphicalBST(r->right, space); //Process the right child (first)
 
           std::cout << "\n";
 
@@ -122,55 +122,55 @@ public:
                std::cout << " ";
           }
 
-          std::cout << (R->value) << "\n";
+          std::cout << (r->value) << "\n";
 
-          printGraphicalBST(R->left, space); //Process the left child
+          printGraphicalBST(r->left, space); //Process the left child
      }
 
      //Print Pre-Order
-     void printPreOrder(TreeNode *R) //Root
+     void printPreOrder(TreeNode *r) //Root
      {
-          if (R == NULL)
+          if (r == NULL)
           {
                return;
           }
 
           //Print the first value of the node
-          std::cout << (R->value) << " ";
+          std::cout << (r->value) << " ";
 
-          printPreOrder(R->left);  //Recursive left TreeNode
-          printPreOrder(R->right); //Recursive right TreeNode
+          printPreOrder(r->left);  //Recursive left TreeNode
+          printPreOrder(r->right); //Recursive right TreeNode
      }
 
      //Print In-Order
-     void printInOrder(TreeNode *R)
+     void printInOrder(TreeNode *r)
      {
-          if (R == NULL)
+          if (r == NULL)
           {
                return;
           }
 
-          printInOrder(R->left); //Recursive on left
+          printInOrder(r->left); //Recursive on left
 
           //Print the value
-          std::cout << (R->value) << " ";
+          std::cout << (r->value) << " ";
 
-          printInOrder(R->right); //Recursive on right
+          printInOrder(r->right); //Recursive on right
      }
 
      //Print Post-Order
-     void printPostOrder(TreeNode *R)
+     void printPostOrder(TreeNode *r)
      {
-          if (R == NULL)
+          if (r == NULL)
           {
                return;
           }
 
-          printPostOrder(R->left); //Left subtree
+          printPostOrder(r->left); //Left subtree
 
-          printPostOrder(R->right); //Right subtree
+          printPostOrder(r->right); //Right subtree
 
-          std::cout << (R->value) << " "; //Print the value
+          std::cout << (r->value) << " "; //Print the value
      }
 
      //Iterative search BST
@@ -204,16 +204,16 @@ public:
      }
 
      //Find the height of binary search tree
-     int findHeight(TreeNode *R)
+     int findHeight(TreeNode *r)
      {
-          if (R == NULL)
+          if (r == NULL)
           {
                return -1;
           }
           else
           {
-               int leftHeight = findHeight(R->left),
-                   rightHeight = findHeight(R->right);
+               int leftHeight = findHeight(r->left),
+                   rightHeight = findHeight(r->right);
 
                if (leftHeight > rightHeight)
                {
@@ -227,34 +227,87 @@ public:
      }
 
      //Print level order BSF(Breadth First Search)
-     void printLevelOrder(TreeNode *R)
+     void printLevelOrder(TreeNode *r)
      {
-          int height = findHeight(R); //Calculate the height of tree
+          int height = findHeight(r); //Calculate the height of tree
 
           for (int i = 0; i <= height; i++)
           {
                //Called the printGivenLevel function to set as recursion
-               printGivenLevel(R, i);
+               printGivenLevel(r, i);
           }
      }
 
      //Print given level BFS
-     void printGivenLevel(TreeNode *R, int level)
+     void printGivenLevel(TreeNode *r, int level)
      {
-          if (R == NULL)
+          if (r == NULL)
           {
                return;
           }
           else if (level == 0)
           {
-               std::cout << (R->value) << " ";
+               std::cout << (r->value) << " ";
           }
           else
           {
                //Print recursion left, right and level - 1
-               printGivenLevel(R->left, level - 1);
-               printGivenLevel(R->right, level - 1);
+               printGivenLevel(r->left, level - 1);
+               printGivenLevel(r->right, level - 1);
           }
+     }
+
+     //Minimum value node binary search tree
+     TreeNode *minimumValueNode(TreeNode *node)
+     {
+          TreeNode *current = node;
+
+          //Loops to find the leftmost
+          while ((current->left) != NULL)
+          {
+               current = (current->left);
+          }
+
+          return current;
+     }
+
+     //Delete node binary search tree
+     TreeNode *deleteNode(TreeNode *r, int v)
+     {
+          if (r == NULL)
+          {
+               return r;
+          }
+          else if (v < (r->value))
+          {
+               r->left = deleteNode(r->left, v);
+          }
+          else if (v > (r->value))
+          {
+               r->right = deleteNode(r->right, v);
+          }
+          else
+          {
+               if ((r->left) == NULL)
+               {
+                    TreeNode *temp = r->right;
+                    delete r;
+                    return temp;
+               }
+               else if ((r->right) == NULL)
+               {
+                    TreeNode *temp = r->left;
+                    delete r;
+                    return temp;
+               }
+               else
+               {
+                    TreeNode *temp = minimumValueNode(r->right);
+                    r->value = temp->value;
+                    r->right = deleteNode(r->right, temp->value);
+               }
+          }
+          return r;
      }
 };
 
@@ -303,13 +356,26 @@ void displayBinarySearchTree()
                newNode = BST->iterativeSearch(value);
 
                if (newNode != NULL)
-                    std::cout << "Found value \n";
+                    std::cout << "Found value. \n";
                else
-                    std::cout << "Value not found \n";
+                    std::cout << "Value not found. \n";
           }
           else if (options == 3)
           {
-               //TODO: delete
+               std::cout << "Enter value to delete: ";
+               std::cin >> value;
+
+               newNode = BST->iterativeSearch(value);
+
+               if (newNode != NULL)
+               {
+                    BST->deleteNode(BST->root, value);
+                    std::cout << "Value deleted. \n";
+               }
+               else
+               {
+                    std::cout << "Value not found, make sure to check the value again.\n";
+               }
           }
           else if (options == 4)
           {
@@ -338,7 +404,7 @@ void displayBinarySearchTree()
           }
           else
           {
-               std::cout << "Not found \n";
+               std::cout << "Not found try again ! \n";
           }
      } while (options != 100);
 }
