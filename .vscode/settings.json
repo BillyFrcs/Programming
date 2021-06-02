@@ -88,7 +88,17 @@
     "xstddef": "cpp",
     "xstring": "cpp",
     "xtr1common": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "filesystem": "cpp",
+    "format": "cpp",
+    "locale": "cpp",
+    "stack": "cpp",
+    "stop_token": "cpp",
+    "xlocbuf": "cpp",
+    "xlocmes": "cpp",
+    "xlocmon": "cpp",
+    "xloctime": "cpp",
+    "xtree": "cpp"
   },
   "C_Cpp.errorSquiggles": "Enabled"
 }
