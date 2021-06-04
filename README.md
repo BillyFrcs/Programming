@@ -1,8 +1,10 @@
 # Object Oriented Programming C++ / CPP.
 
-Basics to experts high level Object Oriented Programming (OOP) with C++, coding to solve problem and solution data structures and algorithms and create simple to advanced console program.
+Basics to advanced high level Object Oriented Programming (OOP) with C++, learn coding to solve problems and solution.
 
-### This repository are also contains about project.
+Implementation data structures and algorithms, and Create program with logic and concepts in C++.
+
+### This repository contains about projects.
 > * Calculator apps. 
 > * Create read update delete (CRUD).
 > * Number system converted.
