@@ -3,6 +3,8 @@
 #include <stdlib.h>
 
 #define EXT true
+#define VALUE 0
+#define IS_EMPTY true
 
 namespace Heap
 {
@@ -52,8 +54,8 @@ namespace Heap
                heap = temp;
           }
 
-          //Insert values in heap
-          void insertKeyHeap(int key)
+          //Insert values in mini heap
+          void insertMinHeap(int key)
           {
                if (heapSize == capacity)
                {
@@ -93,13 +95,65 @@ namespace Heap
                return (2 * r + 2);
           }
 
+          //Extract mini heap
+          int extractMinHeap()
+          {
+               if (heapSize <= 0)
+               {
+                    return INT_MAX; //Return empty heap
+               }
+
+               if (heapSize == 1)
+               {
+                    heapSize--;
+                    return heapArr[0]; //Return heap array at index '0'
+               }
+
+               //Enter the minimum value and then remove it from heap
+               int root = heapArr[0];
+
+               heapArr[0] = heapArr[heapSize - 1];
+               heapSize--;
+
+               //Calling minHeap method and pass VALUE into argument with macro
+               minHeap(0);
+
+               return root;
+          }
+
+          //Mini heap method
+          void minHeap(int m) //Min
+          {
+               // l = left, r = right
+               int l = left(m), r = right(m); //Recursion with methods left and right
+
+               size_t small = m;
+
+               if ((l < heapSize) && (heapArr[l] < heapArr[m]))
+               {
+                    small = l;
+               }
+               if ((r < heapSize) && (heapArr[r] < heapArr[small]))
+               {
+                    small = r;
+               }
+               if (small != m)
+               {
+                    swapHeap(heapArr[m], heapArr[small]);
+                    minHeap(small); //Recursion with minHeap method
+               }
+          }
+
           //Print traversal value in heap
           void printHeap()
           {
                std::cout << "\nValues in heap: ";
-               for (int i = 0; i < heapSize; i++)
+               for (auto i = 0; i < heapSize; i++)
                {
-                    std::cout << heapArr[i] << " ";
+                    if (heapArr[i] != IS_EMPTY)  //Comparison with macro
+                    {
+                         std::cout << heapArr[i] << " ";
+                    }
                }
           }
      };
@@ -112,7 +166,7 @@ void displayHeap()
      std::cout << "Enter size of min Heap: ";
      std::cin >> size;
 
-     std::cout << "Min heap is created, you can only insert " << size << " numbers.";
+     std::cout << "Min heap is created, you can only insert " << size << " numbers. \n";
 
      //Create an object for MinHeap
      Heap::MinHeap *MH = new Heap::MinHeap(size);
@@ -121,13 +175,13 @@ void displayHeap()
      do
      {
           std::cout << "\nSelect option (0 to exit): \n";
-          std::cout << "1.) Insert key value \n";
-          std::cout << "2.) Search key value \n";
-          std::cout << "3.) Delete key value \n";
-          std::cout << "4.) Get min \n";
-          std::cout << "5.) Extract min \n";
+          std::cout << "1.) Insert value heap \n";
+          std::cout << "2.) Search value heap \n";
+          std::cout << "3.) Delete value heap \n";
+          std::cout << "4.) Get min heap \n";
+          std::cout << "5.) Extract min heap\n";
           std::cout << "6.) Height of heap \n";
-          std::cout << "7.) Print heap \n";
+          std::cout << "7.) Print min heap \n";
           std::cout << "8.) Clear console \n";
 
           std::cout << "Choose option: ";
@@ -143,7 +197,7 @@ void displayHeap()
           {
                std::cout << "Insert value in heap: ";
                std::cin >> value;
-               MH->insertKeyHeap(value);
+               MH->insertMinHeap(value);
           }
           else if (options == 2)
           {
@@ -162,6 +216,7 @@ void displayHeap()
           else if (options == 5)
           {
                std::cout << "Exract min values: ";
+               std::cout << MH->extractMinHeap() << std::endl;
           }
           else if (options == 6)
           {
