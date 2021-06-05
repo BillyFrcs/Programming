@@ -4,7 +4,8 @@
 
 #define EXT true
 #define VALUE 0
-#define IS_EMPTY true
+#define IS_EMPTY false
+#define ZERO 0
 
 namespace Heap
 {
@@ -31,7 +32,6 @@ namespace Heap
                     if (heapArr[i] == value)
                     {
                          std::cout << "Found key value" << std::endl;
-                         return;
                     }
                     else
                     {
@@ -60,7 +60,7 @@ namespace Heap
                if (heapSize == capacity)
                {
                     std::cout << "\nCannot insert, key value is full" << std::endl;
-                    return;
+                    return; //For return array index from 1
                }
 
                //Increase the heapSize to insert
@@ -95,18 +95,25 @@ namespace Heap
                return (2 * r + 2);
           }
 
+          //Get min heap
+          int getMinHeap()
+          {
+               return heapArr[0];
+          }
+
           //Extract mini heap
           int extractMinHeap()
           {
                if (heapSize <= 0)
                {
-                    return INT_MAX; //Return empty heap
+                    //Return '0' value from value heap if it's empty
+                    return ZERO;
                }
 
                if (heapSize == 1)
                {
                     heapSize--;
-                    return heapArr[0]; //Return heap array at index '0'
+                    return heapArr[ZERO]; //Return heap array at index '0'
                }
 
                //Enter the minimum value and then remove it from heap
@@ -144,13 +151,33 @@ namespace Heap
                }
           }
 
+          //Decrease key value min heap
+          void decreaseKeyHeap(int h, int newValue) //Heap
+          {
+               heapArr[h] = newValue;
+
+               while ((h != 0) && (heapArr[parent(h)] > heapArr[h]))
+               {
+                    swapHeap(heapArr[h], heapArr[parent(h)]);
+                    h = parent(h);
+               }
+          }
+
+          //Delete key value min heap
+          void deleteKeyHeap(int value)
+          {
+               //Recursion from method decreaseKeyHeap() and extractMinHeap()
+               decreaseKeyHeap(value, ZERO);
+               extractMinHeap();
+          }
+
           //Print traversal value in heap
           void printHeap()
           {
                std::cout << "\nValues in heap: ";
                for (auto i = 0; i < heapSize; i++)
                {
-                    if (heapArr[i] != IS_EMPTY)  //Comparison with macro
+                    if (IS_EMPTY != heapArr[i])
                     {
                          std::cout << heapArr[i] << " ";
                     }
@@ -171,7 +198,7 @@ void displayHeap()
      //Create an object for MinHeap
      Heap::MinHeap *MH = new Heap::MinHeap(size);
 
-     //Enter numbers
+     //Enter numbers as key value
      do
      {
           std::cout << "\nSelect option (0 to exit): \n";
@@ -187,7 +214,6 @@ void displayHeap()
           std::cout << "Choose option: ";
           std::cin >> options;
 
-          //TODO: (Get input)
           if (options == 0)
           {
                if (EXT == true)
@@ -203,24 +229,25 @@ void displayHeap()
           {
                std::cout << "Enter value to search in heap: ";
                std::cin >> value;
+               MH->linearSearch(value);
           }
           else if (options == 3)
           {
                std::cout << "Enter index of heap to delete: ";
                std::cin >> value;
+               MH->deleteKeyHeap(value);
           }
           else if (options == 4)
           {
-               std::cout << "Get min values: ";
+               std::cout << "\nGet min heap value: " << MH->getMinHeap() << std::endl;
           }
           else if (options == 5)
           {
-               std::cout << "Exract min values: ";
-               std::cout << MH->extractMinHeap() << std::endl;
+               std::cout << "\nExract min values: " << MH->extractMinHeap() << std::endl;
           }
           else if (options == 6)
           {
-               std::cout << "Height of heap tree: ";
+               std::cout << "\nHeight of heap tree is: "<< MH->heightHeap() << std::endl;
           }
           else if (options == 7)
           {
@@ -232,7 +259,7 @@ void displayHeap()
           }
           else
           {
-               std::cout << "Not found, try again ! \n";
+               std::cout << "\nNot found, try again ! \n";
           }
      } while (options != 100);
 }
