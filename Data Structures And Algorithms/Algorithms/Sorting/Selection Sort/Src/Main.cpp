@@ -1,6 +1,6 @@
 #include <iostream>
 
-class selectionSort
+class SelectionSort
 {
 private:
      int arr[5];
@@ -87,8 +87,8 @@ int main()
      //Descending (From the largest number to smallest number)
 
      //Object from class selectionSort and virtual function
-     selectionSort *SS;
-     selectionSort ss;
+     SelectionSort *SS;
+     SelectionSort ss;
 
      SS = &ss;
 
@@ -98,5 +98,4 @@ int main()
      SS->getShortedDescending();
 
      __debugbreak;
-     return false;
 }
