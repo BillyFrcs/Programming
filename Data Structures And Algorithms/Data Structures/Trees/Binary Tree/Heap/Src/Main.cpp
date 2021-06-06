@@ -247,7 +247,7 @@ void displayHeap()
           }
           else if (options == 6)
           {
-               std::cout << "\nHeight of heap tree is: "<< MH->heightHeap() << std::endl;
+               std::cout << "\nHeight of heap tree is: " << MH->heightHeap() << std::endl;
           }
           else if (options == 7)
           {
