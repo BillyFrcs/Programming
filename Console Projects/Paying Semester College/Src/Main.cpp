@@ -11,15 +11,15 @@ struct Student
 {
      char nameAcademicOfficer[30], nameStudent[30];
 
-     long double totalCostCollage, costCollageI, costCollageII,
-         costCollageIII, costCollageIV, remainderPaying, totalCost;
+     long double totalCostCollege, costCollegeI, costCollegeII,
+         costCollegeIII, costCollegeIV, remainderPaying, totalCost;
 
      int totalStudent;
 };
 
-namespace Collage
+namespace College
 {
-     class SemesterCollage
+     class SemesterCollege
      {
      protected:                     //Property
           std::vector<Student> vec; //Vector initialization
@@ -27,7 +27,7 @@ namespace Collage
           Student s; //Calling from struct
 
      public:
-          SemesterCollage() //Constructor
+          SemesterCollege() //Constructor
           {
                system("cls"); //Clear console
 
@@ -65,26 +65,26 @@ namespace Collage
                     std::cin.getline(s.nameStudent, 20);
 
                     std::cout << "Total biaya kuliah Rp.";
-                    std::cin >> s.totalCostCollage;
+                    std::cin >> s.totalCostCollege;
 
                     std::cout << "Masukan pembayaran I Rp.";
-                    std::cin >> s.costCollageI;
+                    std::cin >> s.costCollegeI;
 
                     std::cout << "Masukan pembayaran II Rp.";
-                    std::cin >> s.costCollageII;
+                    std::cin >> s.costCollegeII;
 
                     std::cout << "Masukan pembayaran III Rp.";
-                    std::cin >> s.costCollageIII;
+                    std::cin >> s.costCollegeIII;
 
                     std::cout << "Masukan pembayaran IV Rp.";
-                    std::cin >> s.costCollageIV;
+                    std::cin >> s.costCollegeIV;
 
                     vec.push_back(s);
                }
           }
      };
 
-     class Semester : public SemesterCollage //Access with inheritance
+     class Semester : public SemesterCollege //Access with inheritance
      {
      public:
           virtual void displayDataStudent()
@@ -97,15 +97,15 @@ namespace Collage
                     s = vec[i];
 
                     std::cout << "\nNama mahasiswa\t     : " << s.nameStudent << "\n";
-                    std::cout << "Total biaya kuliah Rp." << std::fixed << std::setprecision(0) << s.totalCostCollage << "\n"; //Remove large values (hex)
-                    std::cout << "Pembayaran I       Rp." << std::fixed << std::setprecision(0) << s.costCollageI << "\n";
-                    std::cout << "Pembayaran II      Rp." << std::fixed << std::setprecision(0) << s.costCollageII << "\n";
-                    std::cout << "Pembayaran III     Rp." << std::fixed << std::setprecision(0) << s.costCollageIII << "\n";
-                    std::cout << "Pembayaran IV      Rp." << std::fixed << std::setprecision(0) << s.costCollageIV << "\n";
+                    std::cout << "Total biaya kuliah Rp." << std::fixed << std::setprecision(0) << s.totalCostCollege << "\n"; //Remove large values (hex)
+                    std::cout << "Pembayaran I       Rp." << std::fixed << std::setprecision(0) << s.costCollegeI << "\n";
+                    std::cout << "Pembayaran II      Rp." << std::fixed << std::setprecision(0) << s.costCollegeII << "\n";
+                    std::cout << "Pembayaran III     Rp." << std::fixed << std::setprecision(0) << s.costCollegeIII << "\n";
+                    std::cout << "Pembayaran IV      Rp." << std::fixed << std::setprecision(0) << s.costCollegeIV << "\n";
 
                     //Calculate remainder paying
                     {
-                         s.remainderPaying = s.totalCostCollage - (s.costCollageI + s.costCollageII + s.costCollageIII + s.costCollageIV);
+                         s.remainderPaying = s.totalCostCollege - (s.costCollegeI + s.costCollegeII + s.costCollegeIII + s.costCollegeIV);
                     }
 
                     std::cout << "Sisa pembayaran    Rp." << fabs(s.remainderPaying) << '\n'; //To remove negative value
@@ -127,7 +127,7 @@ namespace Collage
 
                     //Calculate total cost
                     {
-                         s.totalCost = (s.costCollageI + s.costCollageII + s.costCollageIII + s.costCollageIV);
+                         s.totalCost = (s.costCollegeI + s.costCollegeII + s.costCollegeIII + s.costCollegeIV);
                          std::cout << "Total pembayaran " << s.nameStudent << " adalah Rp." << std::fixed << std::setprecision(0) << fabs(s.totalCost) << '\n';
                     }
                }
@@ -138,7 +138,7 @@ namespace Collage
 void displayData()
 {
      //Object from class
-     Collage::Semester *SC = new Collage::Semester(); //Heap memory
+     College::Semester *SC = new College::Semester(); //Heap memory
 
      SC->getDataAcademicOfficer();
      SC->getDataCostStudent();
