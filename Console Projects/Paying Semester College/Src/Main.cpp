@@ -6,19 +6,19 @@
 
 #define VALUE 0 //Preprocessor directive
 
-//Struct student
-struct Student
-{
-     char nameAcademicOfficer[30], nameStudent[30];
-
-     long double totalCostCollege, costCollegeI, costCollegeII,
-         costCollegeIII, costCollegeIV, remainderPaying, totalCost;
-
-     int totalStudent;
-};
-
 namespace College
 {
+     //Struct student
+     struct Student
+     {
+          char nameAcademicOfficer[30], nameStudent[30];
+
+          long double totalCostCollege, costCollegeI, costCollegeII,
+              costCollegeIII, costCollegeIV, remainderPaying, totalCost;
+
+          int totalStudent;
+     };
+
      class SemesterCollege
      {
      protected:                     //Property
@@ -30,18 +30,6 @@ namespace College
           SemesterCollege() //Constructor
           {
                system("cls"); //Clear console
-
-               std::cout << "||=================================||\n";
-               std::cout << "||Program Pembayaran Uang Semester ||\n";
-               std::cout << "||Kelompok 3, Kelas A (Informatika)||\n";
-               std::cout << "||=================================||\n";
-               std::cout << "||Billy Kolibonso                  ||\n";
-               std::cout << "||Alviandro Soukotta               ||\n";
-               std::cout << "||Eta Onarely                      ||\n";
-               std::cout << "||Dorsila Defretes                 ||\n";
-               std::cout << "||Edison Ngaibawar                 ||\n";
-               std::cout << "||Aryans Latuputty                 ||\n";
-               std::cout << "||=================================||\n\n";
           }
 
           void getDataAcademicOfficer()
@@ -150,4 +138,5 @@ int main()
      displayData();
 
      std::cin.get();
+     return 0;
 }
