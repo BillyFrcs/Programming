@@ -53,6 +53,11 @@ public:
 
 int main()
 {
+     /*Sample input
+     The Alchemist
+     Paulo Coelho
+     248
+     */
      string title, author;
      int price;
      getline(cin, title);
@@ -60,5 +65,6 @@ int main()
      cin >> price;
      MyBook novel(title, author, price);
      novel.display();
+
      return 0;
 }
