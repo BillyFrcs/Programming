@@ -68,10 +68,15 @@ void displayHeapSort()
 
      HS = &hs;
 
-     int arr[5];
+     int size;
 
-     std::cout << "Enter numbers to sort(Max 5): ";
-     for (auto i = 0; i < 5; i++)
+     std::cout << "Enter size: ";
+     std::cin >> size;
+
+     int arr[size];
+
+     std::cout << "Enter numbers to sort (Max " << size << "): ";
+     for (auto i = 0; i < size; i++)
      {
           std::cin >> arr[i];
      }
