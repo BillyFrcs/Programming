@@ -1,5 +1,5 @@
-#include "Calculator.hpp"
-#include "Display.hpp"
+#include "Calculator.h"
+#include "Display.h"
 
 int main()
 {
