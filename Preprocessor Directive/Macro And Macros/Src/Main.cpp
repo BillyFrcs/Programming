@@ -1,4 +1,5 @@
 #include <iostream>
+
 // Const
 #define LENGTH 50
 #define WIDTH 13
@@ -8,7 +9,7 @@
 #define CIRCLE(d) (PI * d)
 #define DEBUG //Comment this when we want to hide program
 
-/*/Macros
+/*Macros
 #ifdef
 
 #endif
@@ -19,13 +20,14 @@
 
 using namespace std;
 
-int main() {
+int main()
+{
 
-  //Wide 
-  #ifdef DEBUG //This can use to hide the programs
+//Wide
+#ifdef DEBUG //This can use to hide programs
   int wide = LENGTH * WIDTH;
   cout << "Result wide = " << wide << endl;
-  #endif
+#endif
 
   cout << endl;
 
@@ -37,7 +39,6 @@ int main() {
   float circumference = CIRCLE(d);
 
   cout << "Result = " << circumference << endl;
-
 
   return 0;
 }
