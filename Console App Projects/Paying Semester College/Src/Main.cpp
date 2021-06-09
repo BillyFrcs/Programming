@@ -21,7 +21,7 @@ namespace College
 
      class SemesterCollege
      {
-     protected:                     //Property
+     protected:                     //Properties
           std::vector<Student> vec; //Vector initialization
 
           Student s; //Calling from struct
@@ -121,7 +121,7 @@ namespace College
                }
           }
      };
-} //Namespace Collage
+} //Namespace College
 
 void displayData()
 {
