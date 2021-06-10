@@ -1,5 +1,5 @@
 # Java Object Oriented Programming
 
-> Getting started with Java OOP from basics to advanced.
+Learning basics or fundamental concepts in Java. 
 
 <i>© Billy Franscois <i>
