@@ -4,14 +4,15 @@
 #include <string>
 #include <vector>
 
-#define VALUE 0 //Preprocessor directive
+#define VALUE 0 //Preprocessor directive (Macro)
+#define INDEX 30
 
 namespace College
 {
      //Struct student
      struct Student
      {
-          char nameAcademicOfficer[30], nameStudent[30];
+          char nameAcademicOfficer[INDEX], nameStudent[INDEX];
 
           long double totalCostCollege, costCollegeI, costCollegeII,
               costCollegeIII, costCollegeIV, remainderPaying, totalCost;
