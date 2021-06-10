@@ -8,10 +8,10 @@ This repository are also contains about advanced concepts C++ like Dynamic memor
 
 ### Console app Projects with C++
 
-> - Calculator apps.
-> - Create read update delete (CRUD).
-> - Number system converted.
-> - System login register.
-> - Simple guessing game, etc.
+- Calculator apps.
+- Create read update delete (CRUD).
+- Number system converted.
+- System login register.
+- Simple guessing game, etc.
 
 <i> © Billy Franscois </i>
