@@ -8,7 +8,7 @@ void exceptions(std::string S)
 
           std::cout << S << std::endl;
      }
-     catch (...) //or we can use exception a in the argument
+     catch (...) //or we can use std::exception a in the argument
      {
           std::cout << "Bad String \n";
      }
