@@ -2,15 +2,12 @@
 
 using namespace std;
 
-class numberToPredikat
+class NumberToPredikat
 {
-private:
-     int value;
-
 public:
-     numberToPredikat(int Value)
+     NumberToPredikat(int Value)
      {
-          value = Value;
+          _value = Value;
      }
 
      void addNumber()
@@ -18,7 +15,7 @@ public:
           while (true)
           {
                cout << "Enter num = ";
-               cin >> value;
+               cin >> _value;
                break;
           }
      }
@@ -27,25 +24,25 @@ public:
      {
           do
           {
-               if (value >= 90 && value <= 100)
+               if (_value >= 90 && _value <= 100)
                {
                     cout << "Predikat A" << endl;
                     break;
                }
 
-               else if (value >= 75 && value <= 89)
+               else if (_value >= 75 && _value <= 89)
                {
                     cout << "Predikat B" << endl;
                     break;
                }
 
-               else if (value >= 50 && value <= 74)
+               else if (_value >= 50 && _value <= 74)
                {
                     cout << "Predikat C" << endl;
                     break;
                }
 
-               else if (value >= 0 && value <= 49)
+               else if (_value >= 0 && _value <= 49)
                {
                     cout << "Predikat D" << endl;
                     break;
@@ -57,11 +54,14 @@ public:
                }
           } while (true);
      }
+
+private:
+     int _value;
 };
 
 int main()
 {
-     numberToPredikat obj(0);
+     NumberToPredikat obj(0);
 
      obj.addNumber();
      obj.converdNumberToPredikat();
