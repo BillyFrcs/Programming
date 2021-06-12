@@ -1,7 +1,9 @@
 #include <iostream>
-#include <list>
+#include <string>
+#include <vector>
 
 #define INDEX 30
+#define TOTAL 50
 
 namespace Program
 {
@@ -9,9 +11,9 @@ namespace Program
      {
           char nameCashier[INDEX], item[INDEX];
 
-          double price, total;
+          double price, total, totalPrice;
 
-          int input;
+          int input, inputPrice;
      };
 
      class CashierProgram
@@ -35,22 +37,41 @@ namespace Program
                     std::cout << "\nMasukan nama barang: ";
                     std::cin.get(_c.item, INDEX);
 
-                    std::cout << "Masukan harga barang: ";
+                    std::cout << "Masukan harga barang Rp.";
                     std::cin >> _c.price;
 
                     std::cout << "Masukan jumlah barang: ";
                     std::cin >> _c.total;
 
-                    _list.push_back(_c);
+                    _vec.push_back(_c);
                }
           }
 
           void displayGrocery()
           {
+               std::cout << "\n===== Daftar Belanjaan =====\n";
+               for (auto i = 0; i < _c.input; i++)
+               {
+                    _c = _vec[i];
+
+                    std::cout << "\nNama barang yang dibeli: " << _c.item << std::endl;
+                    std::cout << "Jumlah barang yang dibeli: " << _c.total << std::endl;
+
+                    _c.totalPrice = (_c.total * _c.price);
+               }
+               std::cout << "\nTotal pembayaran Rp. " << _c.totalPrice << std::endl;
+          }
+
+          void paying()
+          {
+               std::cout << "\nEnter total paying: ";
+               std::cin >> _c.inputPrice;
+
+               std::cout << "Uang kembalian Rp. " << (_c.inputPrice - _c.totalPrice) << std::endl;
           }
 
      private:
-          std::list<Cashier> _list;
+          std::vector<Cashier> _vec;
           Cashier _c;
      };
 }
@@ -60,6 +81,8 @@ int main()
      Program::CashierProgram *PC = new Program::CashierProgram;
 
      PC->inputGrocery();
+     PC->displayGrocery();
+     PC->paying();
 
      return 0;
 }
