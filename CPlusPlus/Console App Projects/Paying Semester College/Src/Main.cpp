@@ -36,7 +36,7 @@ namespace College
           void getDataAcademicOfficer()
           {
                std::cout << "Masukan nama petugas akademik: ";
-               std::cin.getline(s.nameAcademicOfficer, 20);
+               std::cin.getline(s.nameAcademicOfficer, INDEX);
 
                std::cout << "Masukan jumlah mahasiswa: ";
                std::cin >> s.totalStudent;
@@ -51,7 +51,7 @@ namespace College
                {
                     std::cin.ignore();
                     std::cout << "\nNama mahasiswa: ";
-                    std::cin.getline(s.nameStudent, 20);
+                    std::cin.getline(s.nameStudent, INDEX);
 
                     std::cout << "Total biaya kuliah Rp.";
                     std::cin >> s.totalCostCollege;
