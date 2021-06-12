@@ -100,5 +100,6 @@
     "xloctime": "cpp",
     "xtree": "cpp"
   },
-  "C_Cpp.errorSquiggles": "Enabled"
+  "C_Cpp.errorSquiggles": "Enabled",
+  "python.pythonPath": "C:\\Users\\Billy\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
 }
