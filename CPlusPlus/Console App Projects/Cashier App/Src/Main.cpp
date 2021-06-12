@@ -4,6 +4,7 @@
 
 #define INDEX 30
 #define TOTAL 50
+#define MONEY 1000
 
 namespace Program
 {
@@ -11,7 +12,7 @@ namespace Program
      {
           char nameCashier[INDEX], item[INDEX];
 
-          double price, total, totalPrice;
+          float price, total, totalPrice[TOTAL];
 
           int input, inputPrice;
      };
@@ -21,8 +22,10 @@ namespace Program
      public:
           CashierProgram()
           {
+               system("cls");
+
                std::cout << "Masukan nama kasir: ";
-               std::cin.getline(_c.nameCashier, INDEX);
+               std::cin.get(_c.nameCashier, INDEX);
 
                std::cout << "Masukan jumlah barang yang ingin dibeli: ";
                std::cin >> _c.input;
@@ -43,7 +46,7 @@ namespace Program
                     std::cout << "Masukan jumlah barang: ";
                     std::cin >> _c.total;
 
-                    _vec.push_back(_c);
+                    _vertex.push_back(_c);
                }
           }
 
@@ -52,27 +55,41 @@ namespace Program
                std::cout << "\n===== Daftar Belanjaan =====\n";
                for (auto i = 0; i < _c.input; i++)
                {
-                    _c = _vec[i];
+                    _c = _vertex[i];
 
                     std::cout << "\nNama barang yang dibeli: " << _c.item << std::endl;
                     std::cout << "Jumlah barang yang dibeli: " << _c.total << std::endl;
 
-                    _c.totalPrice = (_c.total * _c.price);
+                    _c.totalPrice[i] = (_c.total * _c.price);
+
+                    std::cout << "Sub total barang Rp. " << _c.totalPrice[i] << std::endl;
+
+                    _countTotal += _c.totalPrice[i];
                }
-               std::cout << "\nTotal pembayaran Rp. " << _c.totalPrice << std::endl;
+               std::cout << "\nTotal pembayaran Rp." << _countTotal << std::endl;
           }
 
           void paying()
           {
+               float counter = (_c.inputPrice - _countTotal);
+
                std::cout << "\nEnter total paying: ";
                std::cin >> _c.inputPrice;
 
-               std::cout << "Uang kembalian Rp. " << (_c.inputPrice - _c.totalPrice) << std::endl;
+               if (_c.inputPrice > MONEY)
+               {
+                    std::cout << "Thank u for your paying, here's your change Rp." << counter << std::endl;
+               }
+               else
+               {
+                    std::cout << "Sorry you're money is not enough \n";
+               }
           }
 
      private:
-          std::vector<Cashier> _vec;
+          std::vector<Cashier> _vertex;
           Cashier _c;
+          float _countTotal;
      };
 }
 
