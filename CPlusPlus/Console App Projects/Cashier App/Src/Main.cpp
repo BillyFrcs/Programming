@@ -12,9 +12,9 @@ namespace Program
      {
           char nameCashier[INDEX], item[INDEX];
 
-          float price, total, totalPrice[TOTAL];
+          long double price, total, subTotalPrice, inputPrice;
 
-          int input, inputPrice;
+          int input;
      };
 
      class CashierProgram
@@ -60,21 +60,23 @@ namespace Program
                     std::cout << "\nNama barang yang dibeli: " << _c.item << std::endl;
                     std::cout << "Jumlah barang yang dibeli: " << _c.total << std::endl;
 
-                    _c.totalPrice[i] = (_c.total * _c.price);
+                    _c.subTotalPrice = (_c.total * _c.price);
 
-                    std::cout << "Sub total barang Rp. " << _c.totalPrice[i] << std::endl;
+                    std::cout << "Sub total barang Rp. " << _c.subTotalPrice << std::endl;
 
-                    _countTotal += _c.totalPrice[i];
+                    //TODO: (remove the weird value)
+                    _countTotal += _c.subTotalPrice;
                }
-               std::cout << "\nTotal pembayaran Rp." << _countTotal << std::endl;
+               //Reference it to disappier the weird value
+               std::cout << "\nTotal pembayaran Rp." << &_countTotal << std::endl;
           }
 
           void paying()
           {
-               float counter = (_c.inputPrice - _countTotal);
-
                std::cout << "\nEnter total paying: ";
                std::cin >> _c.inputPrice;
+
+               long double counter = (_c.inputPrice - _countTotal);
 
                if (_c.inputPrice > MONEY)
                {
@@ -89,7 +91,7 @@ namespace Program
      private:
           std::vector<Cashier> _vertex;
           Cashier _c;
-          float _countTotal;
+          long double _countTotal;
      };
 }
 
