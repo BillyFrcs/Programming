@@ -98,7 +98,9 @@
     "xlocmes": "cpp",
     "xlocmon": "cpp",
     "xloctime": "cpp",
-    "xtree": "cpp"
+    "xtree": "cpp",
+    "coroutine": "cpp",
+    "resumable": "cpp"
   },
   "C_Cpp.errorSquiggles": "Enabled",
   "python.pythonPath": "C:\\Users\\Billy\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
