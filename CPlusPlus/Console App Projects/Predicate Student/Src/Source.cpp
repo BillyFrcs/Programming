@@ -72,48 +72,48 @@ namespace College
 
                     if (qualityValue >= 85 && qualityValue <= 100)
                     {
-                         std::cout << "Huruf mutu: " << predicate[0] << std::endl;
-                         std::cout << "Category: " << category[0] << std::endl;
+                         std::cout << "Huruf mutu: " << _predicate[0] << std::endl;
+                         std::cout << "Category: " << _category[0] << std::endl;
                     }
                     else if (qualityValue >= 80 && qualityValue <= 84)
                     {
-                         std::cout << "Huruf mutu: " << predicate[0] << "-" << std::endl;
-                         std::cout << "Category: " << category[1] << std::endl;
+                         std::cout << "Huruf mutu: " << _predicate[0] << "-" << std::endl;
+                         std::cout << "Category: " << _category[1] << std::endl;
                     }
                     else if (qualityValue >= 75 && qualityValue <= 79)
                     {
-                         std::cout << "Huruf mutu: " << predicate[1] << "+" << std::endl;
-                         std::cout << "Category: " << category[2] << std::endl;
+                         std::cout << "Huruf mutu: " << _predicate[1] << "+" << std::endl;
+                         std::cout << "Category: " << _category[2] << std::endl;
                     }
                     else if (qualityValue >= 70 && qualityValue <= 74)
                     {
-                         std::cout << "Huruf mutu: " << predicate[1] << std::endl;
-                         std::cout << "Category: " << category[3] << std::endl;
+                         std::cout << "Huruf mutu: " << _predicate[1] << std::endl;
+                         std::cout << "Category: " << _category[3] << std::endl;
                     }
                     else if (qualityValue >= 65 && qualityValue <= 69)
                     {
-                         std::cout << "Huruf mutu: " << predicate[1] << "-" << std::endl;
-                         std::cout << "Category: " << category[4] << std::endl;
+                         std::cout << "Huruf mutu: " << _predicate[1] << "-" << std::endl;
+                         std::cout << "Category: " << _category[4] << std::endl;
                     }
                     else if (qualityValue >= 60 && qualityValue <= 64)
                     {
-                         std::cout << "Huruf mutu: " << predicate[2] << "+" << std::endl;
-                         std::cout << "Category: " << category[5] << std::endl;
+                         std::cout << "Huruf mutu: " << _predicate[2] << "+" << std::endl;
+                         std::cout << "Category: " << _category[5] << std::endl;
                     }
                     else if (qualityValue >= 55 && qualityValue <= 59)
                     {
-                         std::cout << "Huruf mutu: " << predicate[2] << std::endl;
-                         std::cout << "Category: " << category[6] << std::endl;
+                         std::cout << "Huruf mutu: " << _predicate[2] << std::endl;
+                         std::cout << "Category: " << _category[6] << std::endl;
                     }
                     else if (qualityValue >= 40 && qualityValue <= 54)
                     {
-                         std::cout << "Huruf mutu: " << predicate[3] << std::endl;
-                         std::cout << "Category: " << category[7] << std::endl;
+                         std::cout << "Huruf mutu: " << _predicate[3] << std::endl;
+                         std::cout << "Category: " << _category[7] << std::endl;
                     }
                     else if (qualityValue <= 39)
                     {
-                         std::cout << "Huruf mutu: " << predicate[4] << std::endl;
-                         std::cout << "Category: " << category[8] << std::endl;
+                         std::cout << "Huruf mutu: " << _predicate[4] << std::endl;
+                         std::cout << "Category: " << _category[8] << std::endl;
                     }
                }
           }
@@ -124,11 +124,11 @@ namespace College
           Student _student;
 
           //Array to access the elements
-          char predicate[5] = {'A', 'B', 'C', 'D', 'E'};
-          std::string category[9] = {"Istimewa", "Sangat baik", "Lebih baik", "Baik", "Cukup baik",
+          char _predicate[5] = {'A', 'B', 'C', 'D', 'E'};
+          std::string _category[9] = {"Istimewa", "Sangat baik", "Lebih baik", "Baik", "Cukup baik",
                                      "Kurang baik", "Cukup", "Kurang", "Sangat kurang"};
      };
-} //namespace Colleges
+} //namespace College
 
 int main(void)
 {
