@@ -4,7 +4,7 @@ This repository contains about learning basics or fundamental to advanced with t
 
 ## Getting Started
 
-1. Clone or forks this repository, then install compiler or sdk to compiled the code.clone this repo by using the syntax below, then copy and paste on your terminal, make sure that you've already installed [Git](https://git-scm.com/) in your local system.
+1. Clone or forks this repository, then install compiler or sdk to compiled the code. Clone this repo by using the syntax below, then copy and paste on your terminal, make sure that you've already installed [Git](https://git-scm.com/) in your local system.
 ```
 git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 ```
