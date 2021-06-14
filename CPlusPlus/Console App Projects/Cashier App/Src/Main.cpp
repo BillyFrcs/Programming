@@ -3,7 +3,6 @@
 #include <vector>
 
 #define INDEX 30
-#define TOTAL 50
 #define MONEY 1000
 
 namespace Program
