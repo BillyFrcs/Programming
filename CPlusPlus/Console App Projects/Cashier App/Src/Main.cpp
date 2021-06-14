@@ -29,6 +29,9 @@ namespace Program
 
                std::cout << "Masukan jumlah barang yang ingin dibeli: ";
                std::cin >> _c.input;
+
+               std::cout << "\nHi " << _c.nameCashier << " petugas kasir, silahkan masukan barang belanjaan customer sebanyak "
+                         << _c.input << " kali.\n";
           }
 
           void inputGrocery()
@@ -64,7 +67,7 @@ namespace Program
 
                     std::cout << "Sub total barang Rp. " << _c.subTotalPrice << std::endl;
 
-                    //TODO: (remove the weird value)
+                    //TODO: (remove the weird value) when calculate total paying 
                     _countTotal += _c.subTotalPrice;
                }
                //Reference it to disappier the weird value
