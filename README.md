@@ -4,7 +4,7 @@ This repository contains about learning basics or fundamental to advanced with t
 
 ## Getting Started
 
-1. Clone or forks this repository, then install compiler or sdk to compiled the code. Clone this repo by using the syntax below, then copy and paste on your terminal, make sure that you've already installed <a href = "https://git-scm.com/">Git</a> in your local system.
+1. Clone or forks this repository, then install compiler or sdk to compiled the code. Clone this repo by using the syntax below, then copy and paste on your terminal, make sure that you've already installed <a style = "text-decoration:none;" href = "https://git-scm.com/">Git</a> in your local system.
 ```
 git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 ```
@@ -19,16 +19,16 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 
 ## Data structures and algorithms
 
-Implementation data structures and algorithms, then solving problem and practice coding challenges on <a href = "https://www.hackerrank.com/dashboard">HackerRank</a> website.
+Implementation data structures and algorithms, then solving problem and practice coding challenges on <a style = "text-decoration:none;" href = "https://www.hackerrank.com/dashboard">HackerRank</a> website.
 
-To see the problem solving Implementation with C++, please check this <a href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Problem%20Solving">Folder</a>.
+To see the problem solving Implementation with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Problem%20Solving">Folder</a>.
 
 ## Console app projects
 
 This repository are also contains about simple console app projects with C++ and Dart, click the link below to see more details.
 
-- <a href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Console%20App%20Projects">C++</a> projects.
+- <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Console%20App%20Projects">C++</a> projects.
 
-- <a href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/Dart/Console%20App%20Projects">Dart</a> projects.
+- <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/Dart/Console%20App%20Projects">Dart</a> projects.
 
 <i> © Billy Franscois </i>
