@@ -11,9 +11,9 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 
 2. Visit the link below to download and install the compiler or sdk.
    - C++ [MinGw](https://sourceforge.net/projects/mingw-w64/)
-   - Dart [Dart-Sdk](http://gekorm.com/dart-windows/)
-   - Java [Java-Sdk](https://www.oracle.com/java/technologies/javase-downloads.html)
-   - Python [Python](https://www.python.org/downloads/)
+   - Dart [Sdk](http://gekorm.com/dart-windows/)
+   - Java [Sdk](https://www.oracle.com/java/technologies/javase-downloads.html)
+   - Python [Compiler](https://www.python.org/downloads/)
 
 3. Make sure that you've already add the path compiler or sdk file location to <b>edit the system environment variables</b> in Windows OS.
 
