@@ -66,11 +66,9 @@ namespace Program
 
                     std::cout << "Sub total barang Rp. " << _c.subTotalPrice << std::endl;
 
-                    //TODO: (remove the weird value) when calculate total paying 
                     _countTotal += _c.subTotalPrice;
                }
-               //Reference it to disappier the weird value
-               std::cout << "\nTotal pembayaran Rp." << &_countTotal << std::endl;
+               std::cout << "\nTotal pembayaran Rp." << _countTotal << std::endl;
           }
 
           void paying()
@@ -78,11 +76,11 @@ namespace Program
                std::cout << "\nEnter total paying: ";
                std::cin >> _c.inputPrice;
 
-               long double counter = (_c.inputPrice - _countTotal);
+               double counter = (_c.inputPrice - _countTotal);
 
                if (_c.inputPrice > MONEY)
                {
-                    std::cout << "Thank u for your paying, here's your change Rp." << counter << std::endl;
+                    std::cout << "Thank you for your paying, here's your change Rp." << counter << std::endl;
                }
                else
                {
@@ -93,7 +91,7 @@ namespace Program
      private:
           std::vector<Cashier> _vertex;
           Cashier _c;
-          long double _countTotal;
+          double _countTotal;
      };
 }
 
