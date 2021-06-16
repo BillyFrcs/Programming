@@ -66,6 +66,7 @@ namespace College
 
                     std::cout << "\nNama mahasiswa: " << _student.nameStudent << std::endl;
 
+                    //0.2 = 20%, 0.3 = 30%, 0.5 = 50%
                     int qualityValue = (_student.valueAssignment * 0.2) + (_student.examUTS * 0.3) + (_student.examUAS * 0.5);
 
                     std::cout << "Nilai mutu: " << qualityValue << std::endl;
