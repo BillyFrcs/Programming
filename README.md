@@ -21,7 +21,7 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 
 Implementation data structures and algorithms with <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Data%20Structures%20And%20Algorithms">C++</a>, then solving problem and practice coding challenges on <a style = "text-decoration:none;" href = "https://www.hackerrank.com/dashboard">HackerRank</a> website. And solving a little bit of interview question problem.
 
-To see the problem solving Implementation with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Problem%20Solving">Folder</a>.
+To see the coding challenges Implementation with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Problem%20Solving">Folder</a>.
 
 ## Console app projects
 
