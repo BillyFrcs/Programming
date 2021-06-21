@@ -21,7 +21,7 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 
 Implementation data structures and algorithms with <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Data%20Structures%20And%20Algorithms">C++</a>, then solving problem and practice coding challenges on <a style = "text-decoration:none;" href = "https://www.hackerrank.com/dashboard">HackerRank</a> website. And solving a little bit of interview question problem.
 
-To see the coding challenges that Implementation with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Coding%20Challenges">Folder</a>.
+To see the coding challenges that Implementation with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Coding%20Challenges">Folder</a>, thanks.
 
 ## Console app projects
 
@@ -30,5 +30,17 @@ This repository are also contains about simple console app projects with C++ and
 - <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Console%20App%20Projects">C++</a> projects.
 
 - <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/Dart/Console%20App%20Projects">Dart</a> projects.
+
+## Documentations And References 
+
+Here's the Programming Languages docs and references to understanding.
+
+- C++ [cppreference.com](https://en.cppreference.com/w/) and [cplusplus.com](https://www.cplusplus.com/)
+
+- Dart [dart.dev](https://dart.dev/guides)
+
+- Java [oracle.com](https://docs.oracle.com/javase/tutorial/)
+
+- Python [python.org](https://docs.python.org/3/)
 
 <i> © Billy Franscois </i>
