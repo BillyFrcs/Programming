@@ -19,13 +19,11 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 
 ## Data structures and algorithms
 
-Implementation data structures and algorithms with <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Data%20Structures%20And%20Algorithms">C++</a>, then solving problem and practice coding challenges on <a style = "text-decoration:none;" href = "https://www.hackerrank.com/dashboard">HackerRank</a> website. And solving a little bit of interview question problem.
-
-To see the coding challenges that Implementation with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Coding%20Challenges">Folder</a>, thanks.
+Implementation data structures and algorithms with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Data%20Structures%20And%20Algorithms">Folder</a> to see all the implementations.
 
 ## Console app projects
 
-This repository are also contains about simple console app projects with C++ and Dart, click the link below to see more details.
+This repository are also contains about simple console app projects with C++ and Dart, click the link below to see all the projects.
 
 - <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Console%20App%20Projects">C++</a> projects.
 
