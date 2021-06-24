@@ -2,6 +2,9 @@
 #include <string>
 #include <vector>
 
+#define INDEX_PREDICATE 5
+#define INDEX_CATEGORY 9
+
 namespace College
 {
      //class Student (just initialize the properties)
@@ -125,9 +128,9 @@ namespace College
           Student _student;
 
           //Array to access the elements
-          char _predicate[5] = {'A', 'B', 'C', 'D', 'E'};
-          std::string _category[9] = {"Istimewa", "Sangat baik", "Lebih baik", "Baik", "Cukup baik",
-                                     "Kurang baik", "Cukup", "Kurang", "Sangat kurang"};
+          char _predicate[INDEX_PREDICATE] = {'A', 'B', 'C', 'D', 'E'};
+          std::string _category[INDEX_CATEGORY] = {"Istimewa", "Sangat baik", "Lebih baik", "Baik", "Cukup baik",
+                                                   "Kurang baik", "Cukup", "Kurang", "Sangat kurang"};
      };
 } //namespace College
 
