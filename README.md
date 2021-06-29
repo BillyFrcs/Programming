@@ -31,7 +31,7 @@ This repository are also contains about simple console app projects with C++ and
 
 ## Documentations And References 
 
-Here's the Programming Languages docs and references to understanding.
+Here's the Programming Languages docs and references to understanding the concepts of programming language.
 
 - C++ [cppreference.com](https://en.cppreference.com/w/) and [cplusplus.com](https://www.cplusplus.com/)
 
