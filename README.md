@@ -1,6 +1,6 @@
 <h1>Welcome to the Programming Languages Repository</h1>
 
-This repository contains about learning basics or fundamental to advanced with the most Object Oriented Programming Language like C++, Dart, Java and Python.
+This repository contains about learning basics or fundamental to advanced with the most Object Oriented Programming Languages in the world.
 
 ## Getting Started
 
@@ -33,7 +33,7 @@ This repository are also contains about simple console app projects with C++ and
 
 ## Coding Challenges
 
-Learning how to solve problem Data Structures and Algorithms with Programming logic and passed all the problem cases from [HackerRank](https://www.hackerrank.com/dashboard) website and solve simple coding interview questions.
+Learning how to solve problem Data Structures and Algorithms with some Programming languages and passed all the problem cases from [HackerRank](https://www.hackerrank.com/dashboard) website and solve simple coding interview questions.
 
 > Note: Some block of code might be using template from HackerRank.
 
