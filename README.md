@@ -5,11 +5,13 @@ This repository contains about learning basics or fundamental to advanced with t
 ## Getting Started
 
 1. Clone or forks this repository, then install compiler or sdk to compiled the code. Clone this repo by using the syntax below, then copy and paste on your terminal, make sure that you've already installed <a style = "text-decoration:none;" href = "https://git-scm.com/">Git</a> in your local system.
+
 ```
 git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 ```
 
 2. Visit the link below to download and install the compiler or sdk.
+
    - C++ [MinGw](https://sourceforge.net/projects/mingw-w64/)
    - Dart [Sdk](http://gekorm.com/dart-windows/)
    - Java [Sdk](https://www.oracle.com/java/technologies/javase-downloads.html)
@@ -29,7 +31,13 @@ This repository are also contains about simple console app projects with C++ and
 
 - <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/Dart/Console%20App%20Projects">Dart</a> projects.
 
-## Documentations And References 
+## Coding Challenges
+
+Learning how to solve problem Data Structures and Algorithms with Programming logic and passed all the problem cases from [HackerRank](https://www.hackerrank.com/dashboard) website and solve simple coding interview questions.
+
+> Note: Some block of code might be using template from HackerRank.
+
+## Documentations And References
 
 Here's the Programming Languages docs and references to understanding the concepts of programming language.
 
