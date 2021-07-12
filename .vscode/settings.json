@@ -103,5 +103,6 @@
     "resumable": "cpp"
   },
   "C_Cpp.errorSquiggles": "Enabled",
-  "python.pythonPath": "C:\\Users\\Billy\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
+  //"python.pythonPath": "C:\\Users\\Billy\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+  "python.pythonPath": "/usr/bin/python3.8"
 }
