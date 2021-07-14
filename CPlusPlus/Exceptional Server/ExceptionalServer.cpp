@@ -64,7 +64,7 @@ int main()
           }
           catch (...)
           {
-               std::cout << "Another Excaption \n";
+               std::cout << "Other Exception \n";
           }
      }
      cout << Server::getLoad() << endl;
