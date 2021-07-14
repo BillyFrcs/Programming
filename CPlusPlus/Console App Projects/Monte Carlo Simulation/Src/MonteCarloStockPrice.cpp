@@ -49,9 +49,7 @@ double Boole(double StartPoint, double EndPoint, int n)
      double sum = 0;
 
      for (int t = 0; t <= (n - 1) / 4; t++)
-
      {
-
           int ind = 4 * t;
 
           sum += (1 / 45.0) * (14 * Y[ind] + 64 * Y[ind + 1] + 24 * Y[ind + 2] + 64 * Y[ind + 3] + 14 * Y[ind + 4]) * delta_x;
@@ -63,7 +61,6 @@ double Boole(double StartPoint, double EndPoint, int n)
 // N(0,1) cdf by Boole's Rule
 double N(double x)
 {
-
      return Boole(-10.0, x, 240);
 }
 
@@ -86,7 +83,6 @@ double BS(double S, double K, double v, double T, double r, double q, char PutCa
 
 int main()
 {
-
      srand(time(0)); // Set the seed for random number generation
 
      double S = 100.0; // Spot Price
@@ -116,7 +112,6 @@ int main()
      double pi = 3.141592653589793;
 
      for (int i = 0; i <= Nsims - 1; i++)
-
      {
 
           // Independent uniform random variables
@@ -126,11 +121,9 @@ int main()
           u2 = ((double)rand() / ((double)(RAND_MAX) + (double)(1)));
 
           // Floor u1 to avoid errors with log function
-
           u1 = std::max(u1, 1.0e-10);
 
           // Z ~ N(0,1) by Box-Muller transformation
-
           Z = sqrt(-2.0 * log(u1)) * sin(2 * pi * u2);
 
           ST[i] = S * exp((r - q - 0.5 * v * v) * T + v * sqrt(T) * Z); // Simulated terminal price S(T)
