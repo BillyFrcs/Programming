@@ -20,5 +20,5 @@ int main(int, char **)
 
      std::cout << findMaxNum(3.15, 8.95) << "\n"; //Maximum
 
-     __debugbreak;
+     return EXIT_FAILURE;
 }
