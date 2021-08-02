@@ -12,11 +12,11 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 
 2. Visit the link below to download and install the compiler or sdk.
 
-   - C++ [MinGw Compiler](https://sourceforge.net/projects/mingw-w64/)
-   - C# [SDK] (https://dotnet.microsoft.com/download)
-   - Dart [SDK](http://gekorm.com/dart-windows/)
-   - Java [SDK](https://www.oracle.com/java/technologies/javase-downloads.html)
-   - Python [Compiler](https://www.python.org/downloads/)
+   - [C++](https://sourceforge.net/projects/mingw-w64/)
+   - [C# ](https://dotnet.microsoft.com/download)
+   - [Dart](http://gekorm.com/dart-windows/)
+   - [Java](https://www.oracle.com/java/technologies/javase-downloads.html)
+   - [Python](https://www.python.org/downloads/)
 
 ## Data structures and algorithms
 
