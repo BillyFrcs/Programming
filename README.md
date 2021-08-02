@@ -24,7 +24,7 @@ Implementation data structures and algorithms with C++, please check this <a sty
 
 ## Console app projects
 
-This repository are also contains about simple console app projects with C++ and Dart, click the link below to see all the projects.
+This repository are also contains about simple console app projects, click the link below to see all the projects.
 
 - <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Console%20App%20Projects">C++</a> projects.
 
