@@ -12,12 +12,11 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 
 2. Visit the link below to download and install the compiler or sdk.
 
-   - C++ [MinGw](https://sourceforge.net/projects/mingw-w64/)
-   - Dart [Sdk](http://gekorm.com/dart-windows/)
-   - Java [Sdk](https://www.oracle.com/java/technologies/javase-downloads.html)
+   - C++ [MinGw Compiler](https://sourceforge.net/projects/mingw-w64/)
+   - C# [SDK] (https://dotnet.microsoft.com/download)
+   - Dart [SDK](http://gekorm.com/dart-windows/)
+   - Java [SDK](https://www.oracle.com/java/technologies/javase-downloads.html)
    - Python [Compiler](https://www.python.org/downloads/)
-
-3. Make sure that you've already add the path compiler or sdk file location to <b>edit the system environment variables</b> in Windows OS.
 
 ## Data structures and algorithms
 
@@ -36,17 +35,5 @@ This repository are also contains about simple console app projects with C++ and
 Learning how to solve problem Data Structures and Algorithms with some Programming languages and passed all the problem cases from [HackerRank](https://www.hackerrank.com/dashboard) website and solve simple coding interview questions.
 
 > Note: Some block of code might be using template from HackerRank.
-
-## Documentations And References
-
-Here's the Programming Languages docs and references to understanding the concepts of programming language.
-
-- C++ [cppreference.com](https://en.cppreference.com/w/) and [cplusplus.com](https://www.cplusplus.com/)
-
-- Dart [dart.dev](https://dart.dev/guides)
-
-- Java [oracle.com](https://docs.oracle.com/javase/tutorial/)
-
-- Python [python.org](https://docs.python.org/3/)
 
 <i> © Billy Franscois </i>
