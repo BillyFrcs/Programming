@@ -1,0 +1,16 @@
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/bin/Debug/net5.0/HelloWorld
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/bin/Debug/net5.0/HelloWorld.deps.json
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/bin/Debug/net5.0/HelloWorld.runtimeconfig.json
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/bin/Debug/net5.0/HelloWorld.runtimeconfig.dev.json
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/bin/Debug/net5.0/HelloWorld.dll
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/bin/Debug/net5.0/ref/HelloWorld.dll
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/bin/Debug/net5.0/HelloWorld.pdb
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/obj/Debug/net5.0/HelloWorld.csproj.AssemblyReference.cache
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/obj/Debug/net5.0/HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/obj/Debug/net5.0/HelloWorld.AssemblyInfoInputs.cache
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/obj/Debug/net5.0/HelloWorld.AssemblyInfo.cs
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/obj/Debug/net5.0/HelloWorld.csproj.CoreCompileInputs.cache
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/obj/Debug/net5.0/HelloWorld.dll
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/obj/Debug/net5.0/ref/HelloWorld.dll
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/obj/Debug/net5.0/HelloWorld.pdb
+/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/obj/Debug/net5.0/HelloWorld.genruntimeconfig.cache
