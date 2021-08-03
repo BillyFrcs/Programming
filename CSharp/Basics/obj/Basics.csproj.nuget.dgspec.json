@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/HelloWorld.csproj": {}
+    "/home/billy/Documents/ProgrammingLanguages/CSharp/Basics/Basics.csproj": {}
   },
   "projects": {
-    "/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/HelloWorld.csproj": {
+    "/home/billy/Documents/ProgrammingLanguages/CSharp/Basics/Basics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/HelloWorld.csproj",
-        "projectName": "HelloWorld",
-        "projectPath": "/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/HelloWorld.csproj",
+        "projectUniqueName": "/home/billy/Documents/ProgrammingLanguages/CSharp/Basics/Basics.csproj",
+        "projectName": "Basics",
+        "projectPath": "/home/billy/Documents/ProgrammingLanguages/CSharp/Basics/Basics.csproj",
         "packagesPath": "/home/billy/.nuget/packages/",
-        "outputPath": "/home/billy/Documents/ProgrammingLanguages/CSharp/HelloWorld/obj/",
+        "outputPath": "/home/billy/Documents/ProgrammingLanguages/CSharp/Basics/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/billy/.nuget/NuGet/NuGet.Config"
