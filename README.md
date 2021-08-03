@@ -22,14 +22,6 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 
 Implementation data structures and algorithms with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Data%20Structures%20And%20Algorithms">Folder</a> to see all the implementations.
 
-## Console app projects
-
-This repository are also contains about simple console app projects, click the link below to see all the projects.
-
-- <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Console%20App%20Projects">C++</a> projects.
-
-- <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/Dart/Console%20App%20Projects">Dart</a> projects.
-
 ## Coding Challenges
 
 Learning how to solve problem Data Structures and Algorithms with some Programming languages and passed all the problem cases from [HackerRank](https://www.hackerrank.com/dashboard) website and solve simple coding interview questions.
