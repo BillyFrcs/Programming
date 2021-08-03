@@ -1,4 +1,4 @@
-<h1>Welcome to the Programming Languages Repository</h1>
+<h1>Programming Languages</h1>
 
 This repository contains about learning basics or fundamental to advanced with the most Object Oriented Programming Languages in the world.
 
@@ -18,7 +18,7 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
    - [Java](https://www.oracle.com/java/technologies/javase-downloads.html)
    - [Python](https://www.python.org/downloads/)
 
-## Data structures and algorithms
+## Data Structures And Algorithms
 
 Implementation data structures and algorithms with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Data%20Structures%20And%20Algorithms">Folder</a> to see all the implementations.
 
