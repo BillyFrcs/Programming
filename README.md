@@ -12,7 +12,7 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 
 2. Visit the link below to download and install the compiler or sdk.
 
-   - [C++](https://sourceforge.net/projects/mingw-w64/)
+   - [C/C++](https://sourceforge.net/projects/mingw-w64/)
    - [C# ](https://dotnet.microsoft.com/download)
    - [Dart](http://gekorm.com/dart-windows/)
    - [Java](https://www.oracle.com/java/technologies/javase-downloads.html)
