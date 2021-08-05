@@ -22,6 +22,10 @@ namespace VariablesDataTypes
 
                char character = 'B';
                Console.WriteLine("Character is : " + character);
+
+               // Guess the type of the variable
+               var value = "Franscois";
+               Console.WriteLine("Value is : " + value);
           }
      }
 }
