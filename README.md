@@ -4,13 +4,13 @@ This repository contains about learning basics or fundamental to advanced with t
 
 ## Getting Started
 
-1. Clone or forks this repository, then install compiler or sdk to compiled the code. Clone this repo by using the syntax below, then copy and paste on your terminal, make sure that you've already installed <a style = "text-decoration:none;" href = "https://git-scm.com/">Git</a> in your local system.
+1. Clone or forks this repository, then install compiler and sdk to run or compiled the code. Clone this repo by using the syntax below, then copy and paste on your terminal, make sure that you've already installed <a style = "text-decoration:none;" href = "https://git-scm.com/">Git</a> in your local system.
 
 ```
 git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 ```
 
-2. Visit the link below to download and install the compiler or sdk.
+2. Visit the link below to download and install the compiler and sdk.
 
    - [C/C++](https://sourceforge.net/projects/mingw-w64/)
    - [C# ](https://dotnet.microsoft.com/download)
