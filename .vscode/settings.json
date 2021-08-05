@@ -103,5 +103,9 @@
     "resumable": "cpp"
   },
   "C_Cpp.errorSquiggles": "Enabled",
-  "python.pythonPath": "/usr/bin/python3.8"
+  "python.pythonPath": "/usr/bin/python3.8",
+  "java.project.sourcePaths": [
+    "Java/Type Casting/Src",
+    "Java/Variable And Data Types/Src"
+  ]
 }
