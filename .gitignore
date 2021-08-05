@@ -10,3 +10,6 @@ bin/
 
 # Cache file
 *.cache
+
+# File without extension
+[^\.]*
