@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Binary folder & file
-=======
 # Binary folder and file
->>>>>>> 4597a631d25c78ebc265c76a53e931e7d2fb2e17
 bin/
 *.exe
 
