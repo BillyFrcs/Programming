@@ -1,6 +1,6 @@
 <h1>Programming Languages</h1>
 
-This repository contains about learning basics or fundamental to advanced with the most Object Oriented Programming Languages in the world.
+This repository contains about learning basics and fundamental to advanced with the most Object Oriented Programming Languages in the world.
 
 ## Getting Started
 
@@ -21,11 +21,5 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 ## Data Structures And Algorithms
 
 Implementation data structures and algorithms with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Data%20Structures%20And%20Algorithms">Folder</a> to see all the implementations.
-
-## Coding Challenges
-
-Learning how to solve problem Data Structures and Algorithms with logic Programming and passed all the problem cases from [HackerRank](https://www.hackerrank.com/dashboard) website and solve simple coding interview questions.
-
-> Note: Some block of code might be using template from HackerRank.
 
 <i> © Billy Franscois </i>
