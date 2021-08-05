@@ -1,0 +1,8 @@
+# Binary file
+*.exe
+
+# Text file
+*.txt
+
+# Cache file
+*.cache
