@@ -1,6 +1,9 @@
 # Binary file
 *.exe
 
+# Java binary file
+*.class
+
 # Text file
 *.txt
 
