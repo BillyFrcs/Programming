@@ -2,7 +2,7 @@
 bin/
 *.exe
 
-# Java binary file
+# Java class binary file
 *.class
 
 # Text file
