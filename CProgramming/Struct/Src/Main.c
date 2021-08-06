@@ -15,7 +15,7 @@ typedef struct
 struct dataPlayer
 {
      char name[100];
-     long ID;
+     int ID;
 };
 
 struct rolePlayer
@@ -26,8 +26,8 @@ struct rolePlayer
 //Combine with another struct
 struct infoPlayer
 {
-     dataPlayer player1;
-     rolePlayer rolePlayer1;
+     struct dataPlayer player1;
+     struct rolePlayer rolePlayer1;
 };
 
 int main()
@@ -50,16 +50,16 @@ int main()
      printf("%.2f %.2f\n\n", setSimetri.x, setSimetri.y);
 
      //Struct data player
-     dataPlayer player = {"Billy", 128201913};
+     struct dataPlayer player = {"Billy", 128201913};
 
      printf("%s\n", player.name);
      printf("%d\n\n", player.ID);
 
      //Combine struct
-     infoPlayer profilePlayer = {{"BillyFrcs", 15676}, {"Rusher"}};
+     struct infoPlayer profilePlayer = {{"BillyFrcs", 15676}, {"Rusher"}};
 
      printf("Name player = %s\n", profilePlayer.player1.name);
-     printf("ID player = %lu\n", profilePlayer.player1.ID);
+     printf("ID player = %d\n", profilePlayer.player1.ID);
      printf("Role player = %s\n", profilePlayer.rolePlayer1.role);
 
      return 0;

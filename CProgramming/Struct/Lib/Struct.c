@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#include <windows.h>
+//#include <windows.h>
 
 struct Data
 {
@@ -15,14 +15,14 @@ struct Sum
 
 struct getInfo
 {
-     Data user;
-     Sum totalCount;
+     struct Data user;
+     struct Sum totalCount;
 };
 
-getInfo infoData[100];
+struct getInfo infoData[100];
 int totalData = 0;
 
-getInfo addData()
+struct getInfo addData()
 {
      char name[200];
      int age, height, weight;
@@ -43,7 +43,7 @@ getInfo addData()
      scanf("%d", &weight);
      getchar();
 
-     getInfo newInfo = {{"", age}, {height, weight}};
+     struct getInfo newInfo = {{"", age}, {height, weight}};
      strcpy(newInfo.user.name, name);
 
      return newInfo;
@@ -53,7 +53,7 @@ void showData()
 {
      for (int i = 0; i < totalData; i++)
      {
-          getInfo Total = infoData[i];
+          struct getInfo Total = infoData[i];
 
           printf("%s is %d years old total count height and weight is %d\n",
                  Total.user.name, Total.user.age, Total.totalCount.height + Total.totalCount.weight);
