@@ -2,6 +2,9 @@
 bin/
 *.exe
 
+# Debug folder for C#
+Debug/
+
 # Java class bytecode file
 *.class
 
