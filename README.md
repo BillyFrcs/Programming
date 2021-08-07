@@ -4,7 +4,7 @@ This repository contains about learning basics and fundamental to advanced with 
 
 ## Getting Started
 
-1. Clone or forks this repository, then install compiler and sdk to run or compiled the code. Clone this repo by using the syntax below, then copy and paste on your terminal, make sure that you've already installed <a style = "text-decoration:none;" href = "https://git-scm.com/">Git</a> in your local system.
+1. Clone or forks this repository, make sure that you've already installed <a style = "text-decoration:none;" href = "https://git-scm.com/">Git</a> on your local system. Then install compiler and sdk to run and compiled the code.
 
 ```
 git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
