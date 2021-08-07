@@ -20,6 +20,7 @@ namespace Arrays
                program.Food();
                program.ListItems();
                program.Students();
+               program.Names();
           }
 
           private void Food()
@@ -96,6 +97,30 @@ namespace Arrays
                for (int i = 0; i < nameStudent.Length; i++)
                {
                     Console.WriteLine(nameStudent[i]);
+               }
+          }
+
+          public void Names()
+          {
+               Console.WriteLine("How many name do you want to enter: ");
+
+               int size = Convert.ToInt32(Console.ReadLine());
+
+               List<string> names = new List<string>();
+
+               Console.WriteLine("Please enter " + size + " names: ");
+               for (int i = 0; i < size; i++)
+               {
+                    names.Add(Console.ReadLine());
+               }
+
+               names.Sort();
+
+               Console.WriteLine("-------------------------");
+
+               foreach (string name in names)
+               {
+                    Console.WriteLine(name);
                }
           }
      }
