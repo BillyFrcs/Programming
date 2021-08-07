@@ -1,8 +1,8 @@
-# Binary folder and file
+# Binary folder and file C, C++ and C# code
 bin/
 *.exe
 
-# Java class binary file
+# Java class bytecode file
 *.class
 
 # Text file
