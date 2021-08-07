@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/billy/Documents/ProgrammingLanguages/CSharp/Basics/Basics.csproj": {}
+    "/home/billy/Documents/ProgrammingLanguages/CSharp/PrintingConsole/PrintingConsole.csproj": {}
   },
   "projects": {
-    "/home/billy/Documents/ProgrammingLanguages/CSharp/Basics/Basics.csproj": {
+    "/home/billy/Documents/ProgrammingLanguages/CSharp/PrintingConsole/PrintingConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/billy/Documents/ProgrammingLanguages/CSharp/Basics/Basics.csproj",
-        "projectName": "Basics",
-        "projectPath": "/home/billy/Documents/ProgrammingLanguages/CSharp/Basics/Basics.csproj",
+        "projectUniqueName": "/home/billy/Documents/ProgrammingLanguages/CSharp/PrintingConsole/PrintingConsole.csproj",
+        "projectName": "PrintingConsole",
+        "projectPath": "/home/billy/Documents/ProgrammingLanguages/CSharp/PrintingConsole/PrintingConsole.csproj",
         "packagesPath": "/home/billy/.nuget/packages/",
-        "outputPath": "/home/billy/Documents/ProgrammingLanguages/CSharp/Basics/obj/",
+        "outputPath": "/home/billy/Documents/ProgrammingLanguages/CSharp/PrintingConsole/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/billy/.nuget/NuGet/NuGet.Config"

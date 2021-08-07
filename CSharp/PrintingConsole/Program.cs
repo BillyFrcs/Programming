@@ -6,12 +6,11 @@ namespace Basics
      {
           static void Main(string[] args)
           {
-               /* Basics printing on the console
+               // Basics printing on the console
                Console.Title = "Billy";
                Console.ForegroundColor = ConsoleColor.Blue; // Set color
 
                Console.WriteLine("Hello World!");
-               */
 
                Console.WriteLine("A proud knight named...");
                Console.ReadLine();
