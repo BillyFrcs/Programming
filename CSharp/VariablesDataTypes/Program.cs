@@ -26,6 +26,13 @@ namespace VariablesDataTypes
                // Guess the type of the variable
                var value = "Franscois";
                Console.WriteLine("Value is : " + value);
+
+               // Boolean
+               bool isTrue = true;
+               Console.WriteLine("Is true : " + isTrue);
+
+               bool isFalse = false;
+               Console.WriteLine("Is false : " + isFalse);
           }
      }
 }
