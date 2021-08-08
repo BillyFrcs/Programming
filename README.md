@@ -22,6 +22,6 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 
 ## Data Structures And Algorithms
 
-Implementation data structures and algorithms with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Data%20Structures%20And%20Algorithms">Folder</a> to see all the implementations and concepts.
+Implementation data structures and algorithms with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Data%20Structures%20And%20Algorithms">Folder</a> to see all the concepts and Implementation code.
 
 <i> © Billy Franscois </i>
