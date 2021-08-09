@@ -7,7 +7,6 @@ namespace Calculator
      {
           private double firstNumber;
           private double secondNumber;
-
           private double calculate;
           static private char operators;
 
@@ -63,6 +62,7 @@ namespace Calculator
                Console.WriteLine("Result calculate " + firstNumber + " " + operators + " " + secondNumber + " = " + calculate);
           }
      }
+
      class Program
      {
           static void Main(string[] args)
