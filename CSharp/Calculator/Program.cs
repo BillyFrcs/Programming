@@ -8,6 +8,7 @@ namespace Calculator
           private double firstNumber;
           private double secondNumber;
           private double calculate;
+
           static private char operators;
 
           public CalculatorApp(double first_number, double second_number)
