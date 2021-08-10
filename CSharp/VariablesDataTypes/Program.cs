@@ -33,6 +33,16 @@ namespace VariablesDataTypes
 
                bool isFalse = false;
                Console.WriteLine("Is false : " + isFalse);
+
+               // Constants
+               const int constantNumber = 10;
+               Console.WriteLine("Constant number is : " + constantNumber);
+
+               const float constantFloatingNumber = 1.5f;
+               Console.WriteLine("Constant floating number is : " + constantFloatingNumber);
+
+               const double constantDoubleNumber = 3.14d;
+               Console.WriteLine("Constant double number is : " + constantDoubleNumber);
           }
      }
 }
