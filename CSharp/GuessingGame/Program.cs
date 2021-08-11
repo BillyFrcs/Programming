@@ -30,6 +30,7 @@ namespace GuessingGame
                } while (number != 11);
           }
      }
+
      class Program
      {
           static void Main(string[] args)
