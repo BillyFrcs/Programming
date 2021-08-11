@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Dev\\ProgrammingLanguages\\CSharp\\QuizApp\\QuizApp.csproj": {}
+    "/home/billy/Documents/ProgrammingLanguages/CSharp/QuizApp/QuizApp.csproj": {}
   },
   "projects": {
-    "C:\\Dev\\ProgrammingLanguages\\CSharp\\QuizApp\\QuizApp.csproj": {
+    "/home/billy/Documents/ProgrammingLanguages/CSharp/QuizApp/QuizApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Dev\\ProgrammingLanguages\\CSharp\\QuizApp\\QuizApp.csproj",
+        "projectUniqueName": "/home/billy/Documents/ProgrammingLanguages/CSharp/QuizApp/QuizApp.csproj",
         "projectName": "QuizApp",
-        "projectPath": "C:\\Dev\\ProgrammingLanguages\\CSharp\\QuizApp\\QuizApp.csproj",
-        "packagesPath": "C:\\Users\\Billy\\.nuget\\packages\\",
-        "outputPath": "C:\\Dev\\ProgrammingLanguages\\CSharp\\QuizApp\\obj\\",
+        "projectPath": "/home/billy/Documents/ProgrammingLanguages/CSharp/QuizApp/QuizApp.csproj",
+        "packagesPath": "/home/billy/.nuget/packages/",
+        "outputPath": "/home/billy/Documents/ProgrammingLanguages/CSharp/QuizApp/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Billy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/home/billy/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }
