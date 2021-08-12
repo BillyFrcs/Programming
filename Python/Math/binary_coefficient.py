@@ -12,10 +12,11 @@ def pascal_triangle(lineNumber):
         l.append(1)
         list1.append(1)
         i = i + 1
-    
+
     return list1
+
 
 def binomial_coef(n, k):
     pascalTriangle = pascal_triangle(n)
-    
+
     return (pascalTriangle[n][k - 1])
