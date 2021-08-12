@@ -6,14 +6,14 @@ from matplotlib import pyplot as plt
 
 class Body:
     def __init__(
-        self,
-        position_x: float,
-        position_y: float,
-        velocity_x: float,
-        velocity_y: float,
-        mass: float = 1.0,
-        size: float = 1.0,
-        color: str = "blue",) -> None:
+            self,
+            position_x: float,
+            position_y: float,
+            velocity_x: float,
+            velocity_y: float,
+            mass: float = 1.0,
+            size: float = 1.0,
+            color: str = "blue",) -> None:
 
         self.position_x = position_x
         self.position_y = position_y
@@ -79,11 +79,11 @@ class Body:
 class Body_System:
 
     def __init__(
-        self,
-        bodies: list[Body],
-        gravitation_constant: float = 1.0,
-        time_factor: float = 1.0,
-        softening_factor: float = 0.0,) -> None:
+            self,
+            bodies: list[Body],
+            gravitation_constant: float = 1.0,
+            time_factor: float = 1.0,
+            softening_factor: float = 0.0,) -> None:
 
         self.bodies = bodies
         self.gravitation_constant = gravitation_constant
@@ -121,14 +121,19 @@ class Body_System:
                     dif_x = body2.position_x - body1.position_x
                     dif_y = body2.position_x - body1.position_y
 
-                    distance = (dif_x ** 2 + dif_y ** 2 + self.softening_factor) ** (1 / 2)
-                    force_x += (self.gravitation_constant * body2.mass * dif_x / distance ** 3)
-                    force_y += (self.gravitation_constant * body2.mass * dif_y / distance ** 3)
+                    distance = (dif_x ** 2 + dif_y ** 2 +
+                                self.softening_factor) ** (1 / 2)
+                    force_x += (self.gravitation_constant *
+                                body2.mass * dif_x / distance ** 3)
+                    force_y += (self.gravitation_constant *
+                                body2.mass * dif_y / distance ** 3)
 
-            body1.update_velocity(force_x, force_y, delta_time * self.time_factor)
-        
+            body1.update_velocity(
+                force_x, force_y, delta_time * self.time_factor)
+
         for body in self.bodies:
             body.update_position(delta_time * self.time_factor)
+
 
 def update_step(body_system: Body_System, delta_time: float, patches: list[plt.Circle]) -> None:
     """
@@ -146,19 +151,19 @@ def update_step(body_system: Body_System, delta_time: float, patches: list[plt.C
     >>> patches_2[0].center
     (-9.0, 0.0)
     """
-    
+
     body_system.update_system(delta_time)
-    for patch,body in zip(patches, body_system.bodies):
+    for patch, body in zip(patches, body_system.bodies):
         patch.center = (body.position_x, body.position_y)
 
+
 def plot(
-    title: str,
-    body_system: Body_System,
-    x_start: float = -1,
-    x_end: float = 1,
-    y_start: float = -1,
-    y_end: float = 1,) -> None:
-    
+        title: str,
+        body_system: Body_System,
+        x_start: float = -1,
+        x_end: float = 1,
+        y_start: float = -1,
+        y_end: float = 1,) -> None:
     """
     Utility function to plot how the given body-system evolves over time.
     No doctest provided since this function does not have a return value.
@@ -169,25 +174,25 @@ def plot(
 
     fig = plt.figure()
     fig.canvas.set_window_title(title)
-    
+
     ax = plt.axes(
-        xlim = (x_start, x_end), ylim =(y_start, y_end)
+        xlim=(x_start, x_end), ylim=(y_start, y_end)
     )
     plt.gca().set_aspect("equal")
 
     patches = [
-        plt.Circle((body.position_x, body.position_y), body.size, fc = body.color)
+        plt.Circle((body.position_x, body.position_y),
+                   body.size, fc=body.color)
         for body in body_system.bodies
     ]
 
     for patch in patches:
         ax.add_patch(patch)
 
-
     def update(frame: int) -> list[plt.Circle]:
         update_step(body_system, DELTA_TIME, patches)
         return patches
-    
+
     """
     anim = animation.FuncAnimation(
         fig, update, interval = INTERVAL, blit = True
@@ -213,8 +218,10 @@ def example_1() -> Body_System:
     velocity_y = 0.43236573
 
     bodies1 = [
-        Body(position_x, position_y, velocity_x, velocity_y, size=0.2, color="red"),
-        Body(-position_x, -position_y, velocity_x, velocity_y, size=0.2, color="green"),
+        Body(position_x, position_y, velocity_x,
+             velocity_y, size=0.2, color="red"),
+        Body(-position_x, -position_y, velocity_x,
+             velocity_y, size=0.2, color="green"),
         Body(0, 0, -2 * velocity_x, -2 * velocity_y, size=0.2, color="blue"),
     ]
     return Body_System(bodies1, time_factor=3)
@@ -241,7 +248,8 @@ def example_2() -> Body_System:
     moon_velocity = earth_mass * velocity_dif / (earth_mass + moon_mass)
     earth_velocity = moon_velocity - velocity_dif
 
-    moon = Body(-earth_moon_distance, 0, 0, moon_velocity, moon_mass, 10000000, "grey")
+    moon = Body(-earth_moon_distance, 0, 0, moon_velocity,
+                moon_mass, 10000000, "grey")
     earth = Body(0, 0, 0, earth_velocity, earth_mass, 50000000, "blue")
     return Body_System([earth, moon], gravitation_constant, time_factor=1000000)
 
