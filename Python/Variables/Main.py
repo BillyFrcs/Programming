@@ -11,3 +11,17 @@ print("Number:" + str(number))
 print("Decimal Number: " + str(decimalNumber))
 print("Is True: " + str(isTrue))
 print("Is False: " + str(isFalse))
+
+
+def myFunction():
+    print("Awesome")
+
+
+myFunction()
+
+
+def getData(Name):
+    print("Name: " + Name)
+
+
+getData("Franscois")
