@@ -24,4 +24,10 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
 
 Implementation data structures and algorithms with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Data%20Structures%20And%20Algorithms">Folder</a> to see all the concepts and Implementation code.
 
+## Coding Challenges
+
+Learning how to solve problem Data Structures and Algorithms with logic Programming and passed all the problem cases from [HackerRank](https://www.hackerrank.com/dashboard) website, check this [Folder](https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CodingChallenges) to see all the solutions.
+
+> Note: Some block of code might be using template from HackerRank.
+
 <i> © Billy Franscois </i>
