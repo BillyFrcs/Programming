@@ -18,8 +18,6 @@ git clone https://github.com/BillyFrcs/ProgrammingLanguages.git
    - [Java](https://www.oracle.com/java/technologies/javase-downloads.html)
    - [Python](https://www.python.org/downloads/)
 
-3. If you want to create a Pull Request, you need to fork this repository and clone it to your local system. Make sure that you've already create your new brach to push your commit and changes.
-
 ## Data Structures And Algorithms
 
 Implementation data structures and algorithms with C++, please check this <a style = "text-decoration:none;" href = "https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CPlusPlus/Data%20Structures%20And%20Algorithms">Folder</a> to see all the concepts and Implementation code.
@@ -28,6 +26,10 @@ Implementation data structures and algorithms with C++, please check this <a sty
 
 Learning how to solve problem Data Structures and Algorithms with logic Programming and passed all the problem cases from [HackerRank](https://www.hackerrank.com/dashboard) website, check this [Folder](https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CodingChallenges) to see all the solutions.
 
-> Note: Some block of code might be using template from HackerRank.
+> Note: Some block of code might be using template from HackerRank
+
+## Open Contributed 
+
+This repository is open to contribute, so feel free to add your new future or another cool stuff 😉.
 
 <i> © Billy Franscois </i>
