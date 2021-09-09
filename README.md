@@ -28,7 +28,7 @@ Learning how to solve problem Data Structures and Algorithms with logic Programm
 
 > Note: Some block of code might be using template from HackerRank
 
-## Open Contributed 
+## Open Contribution
 
 This repository is open to contribute, so feel free to add your new future or another cool stuff 😉.
 
