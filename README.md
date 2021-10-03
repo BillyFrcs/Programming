@@ -32,4 +32,4 @@ Learning how to solve problem Data Structures and Algorithms with logic Programm
 
 This repository is open to contribute, so feel free to add your new future or another cool stuff 😉.
 
-<i> © Billy Franscois </i>
+<i> ©️ Billy Franscois </i>
