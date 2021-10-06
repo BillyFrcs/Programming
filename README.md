@@ -34,4 +34,4 @@ This repository is open to contribute, so feel free to add your new future or an
 
 <i> ©️ Billy Franscois </i>
 
-<!-- 2020 Billy start Programming -->
+<!-- July 2020, Billy Start Programming -->
