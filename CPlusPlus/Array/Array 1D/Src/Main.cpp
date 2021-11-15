@@ -1,8 +1,8 @@
 #include <iostream>
 
-void Temperature(int arr)
+void Temperature(const int arr)
 {
-     float temperature[arr];
+     int temperature[arr];
 
      std::cout << "Enter " << arr << " temperature \n";
      for (int i = 0; i < arr; i++)
