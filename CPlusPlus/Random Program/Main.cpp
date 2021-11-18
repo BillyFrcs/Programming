@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string>
 
-#define EXT true
+constexpr bool EXT = true;
 
 using namespace std;
 
@@ -202,7 +202,7 @@ void Crud::saveFileCrud()
      //Saving file .txt
      ofstream crudFile;
 
-     crudFile.open("DataStudents.txt"); //This can change with another file location
+     crudFile.open("DataMahasiswa.txt"); //This can change with another file location
 
      for (int x = 0; x < maxRow; x++)
      {
