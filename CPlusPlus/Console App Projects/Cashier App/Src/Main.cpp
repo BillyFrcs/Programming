@@ -103,5 +103,5 @@ int main()
      PC->displayGrocery();
      PC->paying();
 
-     return 0;
+     return EXIT_SUCCESS;
 }
