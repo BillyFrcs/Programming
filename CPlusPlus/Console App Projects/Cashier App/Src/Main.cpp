@@ -2,8 +2,8 @@
 #include <string>
 #include <vector>
 
-#define INDEX 30
-#define MONEY 1000
+constexpr int INDEX = 30;
+constexpr int MONEY = 1000;
 
 namespace Program
 {
