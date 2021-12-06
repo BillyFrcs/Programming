@@ -73,7 +73,7 @@ namespace Program
 
           void paying()
           {
-               std::cout << "\nEnter total paying: ";
+               std::cout << "\nEnter total paying(Masukan Total Pembayaran): ";
                std::cin >> _c.inputPrice;
 
                double counter = (_c.inputPrice - _countTotal);
