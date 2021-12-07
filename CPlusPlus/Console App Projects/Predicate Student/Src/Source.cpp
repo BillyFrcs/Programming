@@ -5,19 +5,20 @@
 #define INDEX_PREDICATE 5
 #define INDEX_CATEGORY 9
 
-namespace College
+namespace Predicate
 {
-     //class Student (just initialize the properties)
+     // class Student (just initialize the properties)
      class Student
      {
      public:
           std::string adminName, nameStudent;
+
           int totalStudent;
 
           float valueAssignment, examUTS, examUAS;
      };
 
-     //class PredicateStudent (access all the properties from Student class)
+     // class PredicateStudent (access all the properties from Student class)
      class PredicateStudent
      {
      public:
@@ -69,7 +70,7 @@ namespace College
 
                     std::cout << "\nNama mahasiswa: " << _student.nameStudent << std::endl;
 
-                    //0.2 = 20%, 0.3 = 30%, 0.5 = 50%
+                    // 0.2 = 20%, 0.3 = 30%, 0.5 = 50%
                     int qualityValue = (_student.valueAssignment * 0.2) + (_student.examUTS * 0.3) + (_student.examUAS * 0.5);
 
                     std::cout << "Nilai mutu: " << qualityValue << std::endl;
@@ -123,20 +124,20 @@ namespace College
           }
 
      private:
-          //private properties
+          // private properties
           std::vector<Student> _vec;
           Student _student;
 
-          //Array to access the elements
-          char _predicate[INDEX_PREDICATE] = {'A', 'B', 'C', 'D', 'E'};
-          std::string _category[INDEX_CATEGORY] = {"Istimewa", "Sangat baik", "Lebih baik", "Baik", "Cukup baik",
-                                                   "Kurang baik", "Cukup", "Kurang", "Sangat kurang"};
+          // Array to access the elements
+          const char _predicate[INDEX_PREDICATE] = {'A', 'B', 'C', 'D', 'E'};
+          const std::string _category[INDEX_CATEGORY] = {"Istimewa", "Sangat baik", "Lebih baik", "Baik", "Cukup baik",
+                                                         "Kurang baik", "Cukup", "Kurang", "Sangat kurang"};
      };
-} //namespace College
+} // namespace Predicate
 
 int main(void)
 {
-     College::PredicateStudent PS;
+     Predicate::PredicateStudent PS;
 
      PS.dataAdministration();
      PS.inputDataStudent();
