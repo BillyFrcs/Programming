@@ -6,16 +6,24 @@ public class App
     {
       // Method 1
             // Create a fileoutputstream object (Buat folder dengan nama Test di C drive)
-            FileOutputStream FOS = new FileOutputStream("C://Test//Data.txt", true);
+            FileOutputStream FOS = new FileOutputStream("C://Test//Data.txt", true); // Lokasi file boleh dimodifikasi :)
      
             // Message to be written to the file
             String message = "Yooooooooooooooooooooooooooooo";
               
             char character[] = message.toCharArray();
             
+            /* For default
             for (int i = 0; i < message.length(); i++) 
             {
                 FOS.write(character[i]);
+            }
+            */
+
+            // For each 
+            for(char item : character)
+            {
+              FOS.write(item);
             }
                  
             FOS.close();
