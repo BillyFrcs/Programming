@@ -32,19 +32,19 @@ public class App
             SaveToFile("Heyoooooooooooooooooooooooooooooooooo", "YourFile");
     }
 
-    // Another implementation (more simple)
+    // Another implementation (using try & catch)
     private static void SaveToFile(String message, String fileName)
     {
       try 
       {
         // Check filenya di dalam project kalian
-          FileOutputStream output = new FileOutputStream(fileName + ".txt");
+          FileOutputStream FileOutput = new FileOutputStream(fileName + ".txt");
 
-          byte[] array = message.getBytes();
+          byte[] data = message.getBytes();
 
-          output.write(array);
+          FileOutput.write(data);
 
-          output.close();
+          FileOutput.close();
       }
       catch (Exception ErrorException) 
       {
