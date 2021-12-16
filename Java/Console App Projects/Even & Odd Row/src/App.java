@@ -11,7 +11,12 @@ public class App {
         int counter = 0;
 
         System.out.print("Even row numbers: ");
-        for (int i = 0; i < number.length; i++) {
+
+        int i = 0;
+
+        while (i < number.length) {
+            i++;
+
             if (i % 2 == 0) {
                 System.out.print(i + " ");
 
@@ -26,7 +31,12 @@ public class App {
         int counter = 0;
 
         System.out.print("\nOdd row numbers: ");
-        for (int i = 0; i < number.length; i++) {
+
+        int i = 0;
+
+        while (i < number.length) {
+            i++;
+
             if (i % 2 == 1) {
                 System.out.print(i + " ");
 
