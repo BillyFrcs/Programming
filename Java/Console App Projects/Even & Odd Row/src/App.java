@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        int[] number = new int[10];
+        int[] number = new int[20];
 
         App.EvenRow(number);
 
