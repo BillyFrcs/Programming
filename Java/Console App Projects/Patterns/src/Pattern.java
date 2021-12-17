@@ -5,7 +5,7 @@ public class Pattern {
 
         // Pattern.Pattern2(20);
 
-        Pattern.Pattern3(30);
+        Pattern.Pattern3(30, 1);
     }
 
     private static void Pattern1(int iteration, int number) {
@@ -38,13 +38,11 @@ public class Pattern {
         System.out.println(Builder.toString());
     }
 
-    private static void Pattern3(int i) {
+    private static void Pattern3(int i, int j) {
         do {
             System.out.print(i + " ");
             i--;
         } while (i >= 16);
-
-        int j = 1;
 
         do {
             System.out.print(j + " ");
