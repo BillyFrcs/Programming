@@ -87,7 +87,7 @@ public class Source {
                     fileSaya = new BufferedWriter(new FileWriter(namaFile));
 
                     System.out.print("Masukan sesuatu: ");
-                    pesan = Scan.next();
+                    pesan = Scan.nextLine();
                     Scan.close();
 
                     char[] c = pesan.toCharArray();
