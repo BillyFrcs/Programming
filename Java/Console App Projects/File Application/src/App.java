@@ -96,18 +96,18 @@ public class App {
                     MyFile.write(data);
                 }
 
-                System.out.println("Successfully written in file.");
+                System.out.println("Successfully written in file " + _fileName);
 
                 MyFile.close();
             } catch (IOException error) {
                 System.out.println("Error: " + error.getMessage());
             }
         } else {
-            System.out.println("File not found!");
+            System.out.println("File " + _fileName + " not found!");
         }
     }
 
-    private void ShowFile(FileInputStream MyFile, File FileData) {
+    private void ShowFile(FileInputStream ShowMyFile, File FileData) {
         System.out.print("Enter file name: ");
         _fileName = _ScanData.next();
         _ScanData.close();
@@ -116,24 +116,24 @@ public class App {
 
         if (FileData.exists()) {
             try {
-                FileInputStream input = new FileInputStream(_fileName);
+                ShowMyFile = new FileInputStream(_fileName);
 
-                int i = input.read();
+                int readFile = ShowMyFile.read();
 
-                while (i != -1) {
-                    System.out.print((char) i);
+                do {
+                    System.out.print((char) readFile);
 
-                    i = input.read();
-                }
+                    readFile = ShowMyFile.read();
+                } while (readFile != -1);
 
-                input.close();
+                ShowMyFile.close();
             }
 
             catch (Exception error) {
                 error.getStackTrace();
             }
         } else {
-            System.out.println("File not found!");
+            System.out.println("File " + _fileName + " not found!");
         }
     }
 
@@ -153,7 +153,7 @@ public class App {
 
             System.out.println("Renamed file successfully.");
         } else {
-            System.out.println("File not found!");
+            System.out.println("File " + _fileName + " not found!");
         }
     }
 
@@ -167,7 +167,7 @@ public class App {
 
             System.out.println("Delete file " + fileName + " successfully.");
         } else {
-            System.out.println("File not found!");
+            System.out.println("File " + _fileName + " not found!");
         }
     }
 }
