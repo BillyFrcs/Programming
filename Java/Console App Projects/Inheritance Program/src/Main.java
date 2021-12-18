@@ -1,16 +1,9 @@
 public class Main {
      public static void main(String[] args) throws Exception {
-          Kendaraan MyVehicle = new Kendaraan("Darat", 50f);
-          MyVehicle.Move();
+          SepedaMotor MotorCycle = new SepedaMotor("Trail RXF", 400f, "Ground vehicle(MotorCycle)");
+          MotorCycle.Move(100f);
 
-          KendaraanDarat GroundVehicle = new KendaraanDarat("Ground", 100f);
-
-          KendaraanLaut WaterVehicle = new KendaraanLaut("Water", 50f, "Perahu Layar");
-
-          SepedaMotor MotorCycle = new SepedaMotor("Ground", 150f);
-          MotorCycle.Move();
-
-          PerahuLayar Ship = new PerahuLayar("Sea", 75f, "Perahu Layar");
-          Ship.Move();
+          PerahuLayar SailBoats = new PerahuLayar("SeaBee", 200f, "Marine vehicle(SailBoats)");
+          SailBoats.Move(70f);
      }
 }

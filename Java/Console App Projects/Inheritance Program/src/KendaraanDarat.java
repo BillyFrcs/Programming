@@ -1,15 +1,8 @@
 public class KendaraanDarat extends Kendaraan {
-     protected int _vehicleNumber;
+     public KendaraanDarat(String vehicleName, float maxSpeed) {
+          super(vehicleName, maxSpeed);
 
-     public KendaraanDarat(String vehicleType, float speed) {
-          super(vehicleType, speed);
-
-          _vehicleNumber = 4536;
-
-          VehicleNumber();
-     }
-
-     private void VehicleNumber() {
-          System.out.println("Vehicle number: " + _vehicleNumber);
+          System.out.println("Vehicle name\t: " + vehicleName);
+          System.out.println("Max speed\t: " + String.format("%.0f", maxSpeed) + " km");
      }
 }

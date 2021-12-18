@@ -1,9 +1,8 @@
 public class KendaraanLaut extends Kendaraan {
-     private String _vehicleName;
+     public KendaraanLaut(String vehicleName, float maxSpeed) {
+          super(vehicleName, maxSpeed);
 
-     public KendaraanLaut(String vehicleType, float speed, String vehicleName) {
-          super(vehicleType, speed);
-
-          _vehicleName = vehicleName;
+          System.out.println("\nVehicle name\t: " + vehicleName);
+          System.out.println("Max speed\t: " + String.format("%.0f", maxSpeed) + " km");
      }
 }

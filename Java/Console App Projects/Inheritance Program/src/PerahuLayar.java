@@ -1,22 +1,18 @@
 public class PerahuLayar extends KendaraanLaut {
-     private static float _shipSpeed;
+     private static String _vehicleName;
+     private static float _speed;
 
-     public PerahuLayar(String vehicleType, float speed, String vehicleName) {
-          super(vehicleType, speed, vehicleName);
+     public PerahuLayar(String vehicleName, float speed, String vehicleType) {
+          super(vehicleName, speed);
 
-          _shipSpeed = 55f;
+          this._vehicleName = vehicleName;
+          this._speed = speed;
+
+          System.out.println("Vehicle type\t: " + vehicleType);
      }
 
      @Override
-     protected void Move() {
-          super.Move();
-
-          System.out.println("Perahu Layar bergerak dengan kecepatan " + _shipSpeed + " km/jam");
-
-          System.out.println("Ship speed: " + ShipSpeed());
-     }
-
-     private static float ShipSpeed() {
-          return _shipSpeed;
+     protected void Move(float speed) {
+          super.Move(speed);
      }
 }

@@ -1,23 +1,14 @@
 public class Kendaraan {
-    protected String _vehicleType;
-    protected float _speed;
-    protected float _move;
+    private String _vehicleName;
+    private boolean _isMove = false;
 
-    public Kendaraan(String vehicleType, float speed) {
-        _vehicleType = vehicleType;
-        _speed = speed;
-
-        Print();
+    public Kendaraan(String vehicleName, float maxSpeed) {
+        this._vehicleName = vehicleName;
     }
 
-    protected void Move() {
-        _move = _speed * 10f;
-
-        System.out.println("Kendaraan " + _vehicleType + " bergerak dengan kecepatan " + _move + " km/jam");
-    }
-
-    private void Print() {
-        System.out.println("Vehicle type: " + _vehicleType);
-        System.out.println("Vehicle Speed: " + _speed);
+    protected void Move(float speed) {
+        if (!_isMove) {
+            System.out.println(this._vehicleName + " is move at speed " + String.format("%.0f", speed) + " km/h");
+        }
     }
 }

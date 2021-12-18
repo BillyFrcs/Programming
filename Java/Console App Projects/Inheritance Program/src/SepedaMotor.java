@@ -1,15 +1,18 @@
 public class SepedaMotor extends KendaraanDarat {
-     private float _motorSpeed;
+     private static String _vehicleName;
+     private static float _speed;
 
-     public SepedaMotor(String vehicleType, float speed) {
-          super(vehicleType, speed);
+     public SepedaMotor(String vehicleName, float speed, String vehicleType) {
+          super(vehicleName, speed);
 
-          _motorSpeed = 100f;
+          this._vehicleName = vehicleName;
+          this._speed = speed;
+
+          System.out.println("Vehicle type\t: " + vehicleType);
      }
 
      @Override
-     protected void Move() {
-          super.Move();
-          System.out.println("Sepeda Motor bergerak dengan kecepatan " + _motorSpeed + " km/jam");
+     protected void Move(float speed) {
+          super.Move(speed);
      }
 }
