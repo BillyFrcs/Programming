@@ -1,8 +1,8 @@
 public class Hewan {
-     public void Move(boolean isMove) {
-          if (isMove)
-               System.out.println("Animal can move");
+     public void Run(Boolean isRun) {
+          if (isRun)
+               System.out.println("Animal can run.");
           else
-               System.out.println("Animal can't move");
+               System.out.println("Animal can't run.");
      }
 }

@@ -1,18 +1,13 @@
 public class Dog extends Hewan {
-     private boolean _isMove;
+     private Boolean _isRun;
 
-     public Dog() {
-          _isMove = true;
-     }
+     public void Run(Boolean isRun) {
+          this._isRun = isRun;
 
-     public void Move(boolean isMove) {
-          this._isMove = isMove;
-
-          if (_isMove) // if _isMove is true
-          {
-               System.out.println("Dog is move...");
+          if (this._isRun) {
+               System.out.println("Dog is run...");
           } else {
-               System.out.println("Dog is not move...");
+               System.out.println("Dog is not run.");
           }
      }
 }

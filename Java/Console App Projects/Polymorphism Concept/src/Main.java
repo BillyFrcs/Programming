@@ -3,7 +3,9 @@ public class Main {
         Hewan MyCuteAnimal = new Hewan();
         Hewan MyCuteDog = new Dog();
 
-        MyCuteAnimal.Move(true);
-        MyCuteDog.Move(false);
+        final Boolean isRun = true;
+
+        MyCuteAnimal.Run(isRun);
+        MyCuteDog.Run(isRun);
     }
 }
