@@ -87,13 +87,11 @@ public class App {
                 MyFile = new BufferedWriter(new FileWriter(_fileName));
 
                 System.out.print("Enter something: ");
-                _message = _ScanData.next();
+                _message = _ScanData.nextLine();
                 _ScanData.close();
 
-                char[] newMessage = _message.toCharArray();
-
-                for (char data : newMessage) {
-                    MyFile.write(data);
+                for (String data : _message.split(" ")) {
+                    MyFile.write(data + " ");
                 }
 
                 System.out.println("Successfully written in file " + _fileName);
