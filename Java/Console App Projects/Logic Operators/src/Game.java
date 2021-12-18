@@ -25,6 +25,8 @@ public class Game {
     }
 
     private void PlayerAttack(float damage) {
+        _isAttack = false;
+
         if (_isAttack || damage == 50f) {
             System.out.println("Player is attack enemy, with damage: " + String.format("%.0f", damage));
 
