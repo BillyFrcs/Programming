@@ -18,7 +18,7 @@ public class DataStudent {
         DataBilly.SetPhoneNumberStudent();
         DataBilly.SetEmailStudent();
 
-        System.out.println("\n\n===== Data Mahasiswa =====");
+        System.out.println("\n===== Data Mahasiswa =====");
 
         DataBilly.GetDataStudent();
     }
