@@ -16,7 +16,6 @@ public class App {
         FileOutputStream MyFile = null;
         FileInputStream ShowMyFile = null;
         BufferedWriter WriteFile = null;
-
         File FileData = null;
 
         System.out.println("1.Make file(.txt or .md)\n2.Write file\n3.Show File\n4.Rename file\n5.Delete file");
