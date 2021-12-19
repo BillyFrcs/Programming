@@ -35,7 +35,7 @@ public class DataStudent {
         try {
             _NPM = Long.parseLong(_ScanData.nextLine());
         } catch (Exception error) {
-            System.out.println("Error " + error.getMessage() + " NPM harus angka ajg!");
+            System.out.println("Error " + error.getMessage() + " NPM should numbers!");
 
             SetNPMStudent();
         }
