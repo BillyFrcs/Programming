@@ -13,6 +13,10 @@ public class App {
     public static void main(String[] args) throws Exception {
         App MyApp = new App();
 
+        MyApp.FileApplication();
+    }
+
+    private void FileApplication() throws IOError, IOException {
         FileOutputStream MyFile = null;
         FileInputStream ShowMyFile = null;
         BufferedWriter WriteFile = null;
@@ -22,34 +26,34 @@ public class App {
 
         System.out.print("\nChoose Operation(Enter a Number): ");
 
-        MyApp._operation = Integer.parseInt(MyApp._ScanData.nextLine());
+        _operation = Integer.parseInt(_ScanData.nextLine());
 
-        switch (MyApp._operation) {
+        switch (_operation) {
             case 1:
-                MyApp.CreateNewFile(MyFile);
+                CreateNewFile(MyFile);
                 break;
 
             case 2:
                 System.out.print("Enter file name: ");
-                MyApp._fileName = MyApp._ScanData.nextLine();
-                MyApp.WriteInFile(WriteFile, FileData, MyApp._message);
+                _fileName = _ScanData.nextLine();
+                WriteInFile(WriteFile, FileData, _message);
                 break;
 
             case 3:
-                MyApp.ShowFile(ShowMyFile, FileData);
+                ShowFile(ShowMyFile, FileData);
                 break;
 
             case 4:
                 System.out.print("Enter an existing file name that you want to rename: ");
-                MyApp._fileName = MyApp._ScanData.nextLine();
-                MyApp.RenameFile(FileData);
+                _fileName = _ScanData.nextLine();
+                RenameFile(FileData);
                 break;
 
             case 5:
                 System.out.print("Enter an existing file name to delete: ");
-                MyApp._fileName = MyApp._ScanData.next();
-                MyApp._ScanData.close();
-                MyApp.DeleteFile(FileData, MyApp._fileName);
+                _fileName = _ScanData.next();
+                _ScanData.close();
+                DeleteFile(FileData, _fileName);
                 break;
 
             default:
@@ -57,7 +61,7 @@ public class App {
                 break;
         }
 
-        MyApp._ScanData.close();
+        _ScanData.close();
     }
 
     private void CreateNewFile(FileOutputStream MyFile) {
