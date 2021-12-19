@@ -3,7 +3,7 @@ public class Pattern {
 
         Pattern.Pattern1(1, 20);
 
-        // Pattern.Pattern2(20);
+        Pattern.Pattern2(20);
 
         Pattern.Pattern3(30, 1);
     }
@@ -40,13 +40,11 @@ public class Pattern {
 
     private static void Pattern3(int i, int j) {
         do {
-            System.out.print(i + " ");
-            i--;
+            System.out.print(i-- + " ");
         } while (i >= 16);
 
         do {
-            System.out.print(j + " ");
-            j++;
+            System.out.print(j++ + " ");
         } while (j <= 15);
     }
 }
