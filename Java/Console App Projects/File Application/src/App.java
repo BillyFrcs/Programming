@@ -148,7 +148,7 @@ public class App {
 
             Files.move(FileData.toPath(), NewFile.toPath());
 
-            System.out.println("Renamed file successfully.");
+            System.out.println("Renamed file to " + _newFileName + " successfully.");
         } else {
             System.out.println("File " + _fileName + " not found!");
         }
