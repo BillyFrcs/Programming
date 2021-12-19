@@ -14,9 +14,7 @@ public class App {
 
         int i = 0;
 
-        while (i < number.length) {
-            i++;
-
+        while (i++ < number.length) {
             if (i % 2 == 0) {
                 System.out.print(i + " ");
 
@@ -34,9 +32,7 @@ public class App {
 
         int i = 0;
 
-        while (i < number.length) {
-            i++;
-
+        while (i++ < number.length) {
             if (i % 2 == 1) {
                 System.out.print(i + " ");
 
