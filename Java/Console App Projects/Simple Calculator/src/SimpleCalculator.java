@@ -12,11 +12,11 @@ public class SimpleCalculator {
         // create an object of Scanner class
         Scanner ScanInput = new Scanner(System.in);
 
-        System.out.print("Choose an operator(+, -, *, /): ");
-        _operator = ScanInput.next().charAt(0);
-
         System.out.print("Enter first number: ");
         _number1 = ScanInput.nextDouble();
+
+        System.out.print("Choose an operator(+, -, *, /): ");
+        _operator = ScanInput.next().charAt(0);
 
         System.out.print("Enter second number: ");
         _number2 = ScanInput.nextDouble();
