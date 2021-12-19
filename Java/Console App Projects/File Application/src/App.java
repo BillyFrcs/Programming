@@ -83,7 +83,7 @@ public class App {
     private void WriteInFile(BufferedWriter MyFile, File FileData, String message) {
         FileData = new File(_fileName);
 
-        _message = message;
+        this._message = message;
 
         if (FileData.exists()) {
             try {
@@ -168,7 +168,7 @@ public class App {
 
             System.out.println("Delete file " + fileName + " successfully.");
         } else {
-            System.out.println("File " + _fileName + " not found!");
+            System.out.println("File " + fileName + " not found!");
         }
     }
 }
