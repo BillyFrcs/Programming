@@ -1,3 +1,4 @@
+@FunctionalInterface
 public interface ICalculator {
      // Method to choose operator
      public void ChooseOperation();
