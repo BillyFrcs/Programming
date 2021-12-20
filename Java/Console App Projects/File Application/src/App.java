@@ -129,7 +129,6 @@ public class App {
 
                 ShowMyFile.close();
             }
-
             catch (Exception error) {
                 error.getStackTrace();
             }
