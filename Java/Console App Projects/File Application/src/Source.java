@@ -128,7 +128,6 @@ public class Source {
 
                     lihatFile.close();
                }
-
                catch (Exception error) {
                     error.getCause();
                }
