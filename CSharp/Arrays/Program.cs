@@ -28,7 +28,7 @@ namespace Arrays
                // New array to store elements
                string[] food = new string[5];
 
-               Console.Write("Enter your favorite food: ");
+               Console.Write("Enter 5 of your favorite food: ");
                for (int i = 0; i < food.Length; i++)
                {
                     food[i] = Console.ReadLine();
