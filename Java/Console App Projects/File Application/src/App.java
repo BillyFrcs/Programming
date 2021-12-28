@@ -22,11 +22,18 @@ public class App {
         BufferedWriter WriteFile = null;
         File FileData = null;
 
-        System.out.println("1.Make file(.txt or .md)\n2.Write file\n3.Show File\n4.Rename file\n5.Delete file\n6.Exit");
+        System.out.println(
+                "1.Create new file(.txt or .md)\n2.Write file\n3.Show File\n4.Rename file\n5.Delete file\n6.Exit");
 
         System.out.print("\nChoose Operation(Enter a Number): ");
 
-        _operation = Integer.parseInt(_ScanData.nextLine());
+        try {
+            _operation = Integer.parseInt(_ScanData.nextLine());
+        } catch (InputMismatchException errorInput) {
+            System.out.println("Error " + errorInput.getMessage() + " Input should numbers!");
+
+            FileApplication();
+        }
 
         switch (_operation) {
             case 1:
