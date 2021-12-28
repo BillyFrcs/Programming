@@ -40,7 +40,7 @@ public class App {
                 break;
 
             case 3:
-                ShowFile(ShowMyFile, FileData);
+                ShowFileInConsole(ShowMyFile, FileData);
                 break;
 
             case 4:
@@ -108,7 +108,7 @@ public class App {
         }
     }
 
-    private void ShowFile(FileInputStream ShowMyFile, File FileData) {
+    private void ShowFileInConsole(FileInputStream ShowMyFile, File FileData) {
         System.out.print("Enter file name: ");
         _fileName = _ScanData.next();
         _ScanData.close();
@@ -121,15 +121,18 @@ public class App {
 
                 int readFile = ShowMyFile.read();
 
-                do {
-                    System.out.print((char) readFile);
+                if (readFile == -1) {
+                    System.out.println("File " + _fileName + " is empty you need to write something!");
+                } else {
+                    do {
+                        System.out.print((char) readFile);
 
-                    readFile = ShowMyFile.read();
-                } while (readFile != -1);
+                        readFile = ShowMyFile.read();
+                    } while (readFile != -1);
+                }
 
                 ShowMyFile.close();
-            }
-            catch (Exception error) {
+            } catch (Exception error) {
                 error.getStackTrace();
             }
         } else {
