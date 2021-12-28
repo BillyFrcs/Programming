@@ -22,7 +22,7 @@ public class App {
         BufferedWriter WriteFile = null;
         File FileData = null;
 
-        System.out.println("1.Make file(.txt or .md)\n2.Write file\n3.Show File\n4.Rename file\n5.Delete file");
+        System.out.println("1.Make file(.txt or .md)\n2.Write file\n3.Show File\n4.Rename file\n5.Delete file\n6.Exit");
 
         System.out.print("\nChoose Operation(Enter a Number): ");
 
@@ -56,8 +56,13 @@ public class App {
                 DeleteFile(FileData, _fileName);
                 break;
 
+            case 6:
+                System.out.println("Exiting...");
+                System.exit(0);
+                break;
+
             default:
-                System.out.println("Invalid operation!");
+                System.out.println("Invalid operation, please try again!");
                 break;
         }
 
@@ -80,7 +85,7 @@ public class App {
         }
     }
 
-    private void WriteInFile(BufferedWriter MyFile, File FileData, String message) {
+    private void WriteInFile(BufferedWriter MyFile, File FileData, final String message) {
         FileData = new File(_fileName);
 
         this._message = message;
@@ -160,7 +165,7 @@ public class App {
         }
     }
 
-    private void DeleteFile(File FileData, String fileName) throws ExceptionInInitializerError {
+    private void DeleteFile(File FileData, final String fileName) throws ExceptionInInitializerError {
         this._fileName = fileName;
 
         FileData = new File(_fileName);
