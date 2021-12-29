@@ -6,9 +6,15 @@ public class App {
     private String _message;
     private String _fileName;
     private String _newFileName;
+
     private int _operation;
 
     private Scanner _ScanData = new Scanner(System.in);
+
+    private FileOutputStream MyFile = null;
+    private FileInputStream ShowMyFile = null;
+    private BufferedWriter WriteFile = null;
+    private File FileData = null;
 
     public static void main(String[] args) throws Exception {
         App MyApp = new App();
@@ -17,11 +23,6 @@ public class App {
     }
 
     private void FileApplication() throws IOError, IOException {
-        FileOutputStream MyFile = null;
-        FileInputStream ShowMyFile = null;
-        BufferedWriter WriteFile = null;
-        File FileData = null;
-
         System.out.println(
                 "1.Create new file(.txt or .md)\n2.Write file\n3.Show File\n4.Rename file\n5.Delete file\n6.Exit");
 
@@ -29,10 +30,10 @@ public class App {
 
         try {
             _operation = Integer.parseInt(_ScanData.nextLine());
-        } catch (InputMismatchException errorInput) {
-            System.out.println("Error " + errorInput.getMessage() + " Input should numbers!");
 
-            FileApplication();
+            // _operation = _ScanData.nextInt();
+        } catch (InputMismatchException errorInput) {
+            System.out.println("Error " + errorInput.getMessage() + ", input should numbers!");
         }
 
         switch (_operation) {
