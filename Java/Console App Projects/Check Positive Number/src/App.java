@@ -15,5 +15,9 @@ public class App {
         String counter = App._number > 0 ? "Positive" : "Negative";
 
         System.out.println("Number of " + App._number + " is " + counter);
+
+        if (App._number == 0) {
+            throw new Exception("Number is zero");
+        }
     }
 }
