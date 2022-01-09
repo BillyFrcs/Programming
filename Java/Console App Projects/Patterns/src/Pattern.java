@@ -3,7 +3,11 @@ public class Pattern {
 
         Pattern.Pattern1(1, 20);
 
-        Pattern.Pattern2(20);
+        System.out.println("\n");
+
+        Pattern.Pattern2(21);
+
+        System.out.println("\n");
 
         Pattern.Pattern3(30, 1);
     }
@@ -30,7 +34,7 @@ public class Pattern {
 
             Builder.append(i + " ");
 
-            if (i < 10) {
+            if (i <= 10) {
                 Builder.append("\n");
             }
         }
