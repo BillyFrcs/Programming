@@ -1,20 +1,18 @@
 #include <stdio.h>
 
-int balikBilangan(int m);
+int ReverseNumber(int m);
 
-int main()
+void main(void)
 {
      int n;
 
      printf("Berikan sebuah bilangan bulat: ");
      scanf("%d", &n);
 
-     printf("Bilangan saudara sekarang: %d\n", balikBilangan(n));
-
-     return 0;
+     printf("Bilangan saudara sekarang: %d\n", ReverseNumber(n));
 }
 
-int balikBilangan(int m)
+int ReverseNumber(int m)
 {
      int rev = 0;
 
