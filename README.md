@@ -1,6 +1,6 @@
 <h1 align="center">Programming Languages</h1>
 
-This repository contains about learning basics and fundamental to advanced with the most Object Oriented & Procedural Programming Languages in the world.
+This repository contains about learning the basics and fundamental to advanced with the most Object Oriented & Procedural Programming Languages in the world.
 
 ## Getting Started
 
@@ -13,7 +13,7 @@ git clone https://github.com/BillyFrcs/Programming.git
 2. To run and compiled the code, you need to install compiler and sdk. Visit the link below to download and install the compiler and sdk.
 
    - [C/C++](https://sourceforge.net/projects/mingw-w64/)
-   - [C# ](https://dotnet.microsoft.com/download)
+   - [.NET ](https://dotnet.microsoft.com/download)
    - [Dart](http://gekorm.com/dart-windows/)
    - [Java](https://www.oracle.com/java/technologies/javase-downloads.html)
    - [Python](https://www.python.org/downloads/)
