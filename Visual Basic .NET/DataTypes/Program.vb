@@ -9,7 +9,8 @@ Module Program
         ' Byte
         Dim number As Byte = 19
         Console.WriteLine($"Number: {number}")
-
+        
+        ' Decimal(Float)
         Dim decimalNumber As Decimal = 4.5F
         Console.WriteLine($"Decimal {decimalNumber}")
 
