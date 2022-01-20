@@ -4,7 +4,11 @@ Module Program
     Sub Main(args As String())
         ' Boolean 
         Dim isStart As Boolean = True
-        Console.WriteLine($"Value {isStart}")
+        Console.WriteLine($"Start {isStart}")
+
+        ' Integer
+        Dim value As Integer = 20
+        Console.WriteLine($"Value {value}")
 
         ' Byte
         Dim number As Byte = 19
