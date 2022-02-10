@@ -14,6 +14,9 @@ Debug/
 # Cache file
 *.cache
 
+# Environment file
+.env
+
 # .vscode folder
 .vscode/*
 .vscode
