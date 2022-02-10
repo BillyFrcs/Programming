@@ -10,7 +10,7 @@ This repository contains about learning the basics and fundamental to advanced w
 git clone https://github.com/BillyFrcs/Programming.git
 ```
 
-2. To run and compiled the code, you need to install compiler and sdk. Visit the link below to download and install the compiler and sdk.
+2. To run and compiled the code, you need to install some compiler and sdk. Visit the link below to download and install the compiler and sdk.
 
    - [C/C++](https://sourceforge.net/projects/mingw-w64/)
    - [.NET ](https://dotnet.microsoft.com/download)
