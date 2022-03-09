@@ -1,4 +1,4 @@
-<h1 align="center">Programming Languages</h1>
+<h1 align="center">Programming</h1>
 
 This repository contains about learning the basics and fundamental to advanced with the most Object Oriented & Procedural Programming Languages in the world.
 
