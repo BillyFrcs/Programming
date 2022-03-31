@@ -81,14 +81,14 @@ void printVector(const Vector<Vector3> &vector)
 
 int main(int argc, char const *argv[])
 {
-    //Array
+    // Array
     Array<string, 2> data;
 
     data[0] = "Billy";
     data[1] = "Franscois";
 
 #ifndef CLOSE
-    //Vector
+    // Vector
     Vector<string> vector;
 
     vector.pushBack("Game");
@@ -106,7 +106,7 @@ int main(int argc, char const *argv[])
     printVector(vector3);
 #endif
 
-    //Vector 3
+    // Vector 3
     {
         Vector<Vector3> vector3;
 
