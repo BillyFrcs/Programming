@@ -36,6 +36,7 @@ namespace Loops
                program.CoolNumbers(numbers);
                program.RolledNumbers();
                program.DiceGame();
+               program.EvenNumbers();
           }
 
           private void CoolNumbers(double numbers)
@@ -94,6 +95,19 @@ namespace Loops
                }
 
                Console.WriteLine("It took you " + attemp + " attemps to roll two of a kind.");
+          }
+
+          private void EvenNumbers()
+          {
+               for (var i = 0; i < 100; i++)
+               {
+                    if (i % 2 != 0)
+                    {
+                         continue;
+                    }
+
+                    Console.WriteLine("Even number: {0}", i);
+               }
           }
      }
 }

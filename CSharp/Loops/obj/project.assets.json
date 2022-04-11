@@ -1,36 +1,38 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net6.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net6.0": []
   },
   "packageFolders": {
-    "/home/billy/.nuget/packages/": {}
+    "C:\\Users\\Billy\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/billy/Documents/ProgrammingLanguages/CSharp/Loops/Loops.csproj",
+      "projectUniqueName": "D:\\Programming\\CSharp\\Loops\\Loops.csproj",
       "projectName": "Loops",
-      "projectPath": "/home/billy/Documents/ProgrammingLanguages/CSharp/Loops/Loops.csproj",
-      "packagesPath": "/home/billy/.nuget/packages/",
-      "outputPath": "/home/billy/Documents/ProgrammingLanguages/CSharp/Loops/obj/",
+      "projectPath": "D:\\Programming\\CSharp\\Loops\\Loops.csproj",
+      "packagesPath": "C:\\Users\\Billy\\.nuget\\packages\\",
+      "outputPath": "D:\\Programming\\CSharp\\Loops\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/billy/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Billy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -41,8 +43,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "imports": [
           "net461",
           "net462",
@@ -58,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
