@@ -7,7 +7,7 @@ h1 {
   background-color: #7035be;
 }
 
-/* h1:hover {
+h1:hover {
   color: #7035be;
   background-color: rgb(214, 214, 214);
   -webkit-transition: all 500ms ease-in-out;
@@ -15,10 +15,10 @@ h1 {
   -o-transition: all 500ms ease-in-out;
   -ms-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
-} */
+}
 
 h1.clicked {
-  color: rgb(47, 248, 57);
+  color: #7035be;
   background-color: lightgray;
 }
 
