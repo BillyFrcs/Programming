@@ -1,0 +1,23 @@
+.rectangle {
+  width: 200px;
+  height: 200px;
+  margin: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
