@@ -18,7 +18,7 @@ namespace String
                 "learn",
                 "dream",
                 "fun"
-            };
+               };
 
                Console.Write("Enter a letter: ");
                string letter = Console.ReadLine();
