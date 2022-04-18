@@ -12,12 +12,12 @@ git clone https://github.com/BillyFrcs/Programming.git
 
 2. To run and compiled the code, you need to install some compiler and sdk. Visit the link below to download and install the compiler and sdk.
 
-   - [C/C++](https://sourceforge.net/projects/mingw-w64/)
-   - [.NET ](https://dotnet.microsoft.com/download)
+   - [C/C++ (MinGW)](https://sourceforge.net/projects/mingw-w64/)
+   - [.NET](https://dotnet.microsoft.com/download)
    - [Dart](http://gekorm.com/dart-windows/)
    - [Java](https://www.oracle.com/java/technologies/javase-downloads.html)
    - [Python](https://www.python.org/downloads/)
-   - [JavaScript](https://nodejs.org/en/download/)
+   - [JavaScript (NodeJS)](https://nodejs.org/en/download/)
 
 ## Data Structures And Algorithms
 
