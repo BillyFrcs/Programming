@@ -2,7 +2,7 @@
 
 namespace Abstract
 {
-     // Abstarct Book Class
+     // Abstract Book Class
      abstract class Book
      {
 
