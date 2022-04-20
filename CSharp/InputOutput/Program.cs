@@ -28,6 +28,25 @@ namespace InputOutput
                ChallengeProgram challenge = new ChallengeProgram();
 
                challenge.ChallengeAverageNumber();
+
+               SumNumber();
+          }
+
+          private static void SumNumber()
+          {
+               Console.Write("Input a number: ");
+               var input = int.Parse(Console.ReadLine());
+
+               var total = 0;
+
+               for (var i = 2; i <= input; i += 2)
+               {
+                    total += i;
+
+                    Console.Write($"{i} + ");
+               }
+
+               Console.Write(" = " + total);
           }
      }
 
