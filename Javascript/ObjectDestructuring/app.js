@@ -13,7 +13,8 @@ console.log(`Name: ${name}`);
 console.log('Age: ' + age);
 console.log('ID: ' + ID + '\n');
 
-const student = {
+const student =
+{
      ID: '21',
      name: 'Sendy',
      GPA: '9.0',
