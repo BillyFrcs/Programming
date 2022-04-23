@@ -42,3 +42,21 @@ console.log(null - 7);     // -> -7
 console.log('abc' + null); // -> abcnull
 console.log(20 + 'abc');   // -> 20abc
 console.log(9 + true);     // -> 10
+
+// Logical Operators
+console.log('\nLogical Operator');
+
+// Falsey values become true
+console.log(!false);      // -> true
+console.log(!'');         // -> true
+console.log(!0);          // -> true
+console.log(!null);       // -> true
+console.log(!undefined);  // -> true
+console.log(!NaN);        // -> true
+
+// Truthy values become false
+console.log(!true);      // -> false
+console.log(!1);         // -> false
+console.log(!'abc');     // -> false
+console.log(!9999999);   // -> false
+console.log(!'ha*UIHJ'); // -> false
