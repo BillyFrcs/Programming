@@ -31,6 +31,4 @@ Learning how to solve problem Data Structures and Algorithms with logic Programm
 
 ## Open Contribution
 
-This repository is open to contribute, so feel free to add your new feature or another cool stuff.😉
-
-<i> ©️ Billy Franscois </i>
+This repository is open to contribute, so feel free to add your new feature or another cool stuff 😉
