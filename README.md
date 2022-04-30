@@ -14,7 +14,7 @@ git clone https://github.com/BillyFrcs/Programming.git
 
    - [C/C++ (MinGW)](https://sourceforge.net/projects/mingw-w64/)
    - [.NET](https://dotnet.microsoft.com/download)
-   - [Dart](http://gekorm.com/dart-windows/)
+   - [Dart](https://dart.dev/get-dart)
    - [Java](https://www.oracle.com/java/technologies/javase-downloads.html)
    - [Python](https://www.python.org/downloads/)
    - [JavaScript (NodeJS)](https://nodejs.org/en/download/)
