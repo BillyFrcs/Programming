@@ -25,7 +25,7 @@ Implementation data structures and algorithms with C++, please check this <a sty
 
 ## Coding Challenges
 
-Learning how to solve problem Data Structures and Algorithms with logic Programming and passed all the problem cases from [HackerRank](https://www.hackerrank.com/dashboard) website, check this [Folder](https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CodingChallenges) to see all the solutions.
+Learning how to solve problem Data Structures and Algorithms with logic Programming and passed all the problem cases from [HackerRank](https://www.hackerrank.com) website, check this [Folder](https://github.com/BillyFrcs/ProgrammingLanguages/tree/master/CodingChallenges) to see all the solutions.
 
 > Note: Some block of code might be using template from HackerRank
 
