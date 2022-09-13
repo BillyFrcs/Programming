@@ -8,7 +8,6 @@ config = dotenv_values(".env")
 prefix = config['BOT_MEME_PREFIX']
 bot = discord.Client()
 
-
 @bot.event
 async def on_ready():
 
@@ -21,7 +20,6 @@ async def on_ready():
     )
 
     print(f'Logged on as {bot.user}!')
-
 
 @bot.event
 async def on_message(message):
