@@ -9,7 +9,9 @@ void whileBreakLoops()
      while (i < 10)
      {
           i++;
+
           cout << i << endl;
+
           if (i == 5)
           {
                break;
@@ -27,6 +29,7 @@ void forBreakLoops()
           {
                break;
           }
+
           cout << i << endl;
      }
 }
@@ -54,7 +57,7 @@ void sumBreak()
      cout << "The sum is = " << sum << endl;
 }
 
-void breakNestesLoops()
+void breakNestedLoops()
 {
      for (int i = 1; i <= 5; i++)
      {
@@ -64,6 +67,7 @@ void breakNestesLoops()
                {
                     break;
                }
+               
                cout << "i = " << i << ", j = " << j << endl;
           }
      }
@@ -84,7 +88,7 @@ int main()
 
      cout << endl;
 
-     breakNestesLoops();
+     breakNestedLoops();
 
      std::cout << "\n";
 
