@@ -17,6 +17,7 @@ void averageNumber()
           {
                goto statements;
           }
+          
           sum += num;
      }
 
