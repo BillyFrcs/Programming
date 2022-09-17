@@ -1,8 +1,7 @@
 #include <iostream>
 
-class countWideProgram
+class CountWideProgram
 {
-
 protected:
      int Length, Width;
 
@@ -19,16 +18,17 @@ public:
      friend class getInfo;
 };
 
-class getInfo : public countWideProgram
+class Info : public CountWideProgram
 {
 public:
-     const int counterWide(countWideProgram)
+     const int counterWide(CountWideProgram)
      {
           //Count wide program
           if (Length <= 0)
           {
                std::cout << "Length not include 0 or negative \n";
           }
+
           if (Width <= 0)
           {
                std::cout << "Width not include 0 or negative \n";
@@ -36,15 +36,15 @@ public:
 
           const double Wide = (Length * Width);
 
-          return (Wide);
+          return Wide;
      }
 };
 
 int main(int argc, char const *argv[])
 {
-     countWideProgram objWide;
+     CountWideProgram objWide;
 
-     getInfo objWide2;
+     Info objWide2;
 
      objWide2.setInfo();
 
