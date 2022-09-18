@@ -8,6 +8,7 @@ public class Main {
 
           float myNumber = 6.34f;
           int myValue = (int) myNumber;
+          
           System.out.println("My number = " + myNumber);
           System.out.println("My value = " + myValue + "\n");
      }
