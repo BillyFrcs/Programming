@@ -16,12 +16,10 @@ print("Is False: " + str(isFalse))
 def myFunction():
     print("Awesome")
 
-
 myFunction()
 
 
 def getData(Name):
     print("Name: " + Name)
-
 
 getData("Franscois")
