@@ -55,8 +55,7 @@ void showData()
      {
           struct getInfo Total = infoData[i];
 
-          printf("%s is %d years old total count height and weight is %d\n",
-                 Total.user.name, Total.user.age, Total.totalCount.height + Total.totalCount.weight);
+          printf("%s is %d years old total count height and weight is %d\n", Total.user.name, Total.user.age, Total.totalCount.height + Total.totalCount.weight);
      }
 }
 
