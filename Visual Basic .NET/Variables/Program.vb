@@ -42,6 +42,5 @@ Module Program
         End If
 
         Console.ReadKey()
-
     End Sub
 End Module
