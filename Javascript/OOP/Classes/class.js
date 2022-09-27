@@ -54,5 +54,6 @@ class Car
 const car = new Car("Blue", "Lamborghini", 4.0, "KA-01-HH-1234");
 
 console.log(`Color ${car.getColor()}, Model ${car.getModel()}`);
+
 car.setColor("Green");
 car.setModel("Ferrari");
