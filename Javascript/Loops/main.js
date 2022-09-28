@@ -13,8 +13,6 @@ for (let i = 1; check == false; i++) {
 
 console.log();
 
-const n = 9;
-
 // Even & Odd numbers
 for (let i = number; i < number + 10; i++) {
      if (i % 2 === 0) {
