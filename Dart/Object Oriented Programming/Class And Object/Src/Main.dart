@@ -2,7 +2,7 @@ void main(List<String> arguments) {
   //Create object
   var myCar = new Car();
 
-  myCar.carName = ('Lamborgini');
+  myCar.carName = ('Lamborghini');
   myCar.carColor = ("Black");
   myCar.carNum = (19082002);
 
