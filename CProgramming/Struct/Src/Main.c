@@ -10,7 +10,7 @@ typedef struct
 {
      double x, y;
 
-} Simetri;
+} Symmetric;
 
 struct dataPlayer
 {
@@ -45,9 +45,9 @@ int main()
      printf("%d\n\n", countVal.length * countVal.width);
 
      //Called typedef struct
-     Simetri setSimetri = {3.14, 4.15};
+     Symmetric setSymmetric = {3.14, 4.15};
 
-     printf("%.2f %.2f\n\n", setSimetri.x, setSimetri.y);
+     printf("%.2f %.2f\n\n", setSymmetric.x, setSymmetric.y);
 
      //Struct data player
      struct dataPlayer player = {"Billy", 128201913};
