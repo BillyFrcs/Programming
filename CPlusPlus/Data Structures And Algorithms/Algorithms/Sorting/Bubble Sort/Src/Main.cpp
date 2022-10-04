@@ -46,7 +46,7 @@ void Sorting::BubbleSort::BubbleSortAscending()
      }
 
      // Get the values sorted ascending
-     std::cout << "Values sorted ascending: ";
+     std::cout << "\nValues sorted ascending: ";
      for (size_t i = 0; i < 5; i++)
      {
           std::cout << arr[i] << ' ';
