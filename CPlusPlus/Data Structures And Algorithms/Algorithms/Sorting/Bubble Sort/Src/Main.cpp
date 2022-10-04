@@ -33,10 +33,10 @@ void Sorting::BubbleSort::getBubbleSortAscending()
 
           for (int j = 0; j < (5 - i - 1); j++)
           {
-               //Comparison ascending
+               // Comparison ascending
                if (arr[j] > arr[j + 1])
                {
-                    //Swapping
+                    // Swapping
                     int swap = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = swap;
@@ -44,7 +44,7 @@ void Sorting::BubbleSort::getBubbleSortAscending()
           }
      }
 
-     //Get the values sorted ascending
+     // Get the values sorted ascending
      std::cout << "Values sorted ascending: ";
      for (size_t i = 0; i < 5; i++)
      {
@@ -62,7 +62,7 @@ void Sorting::BubbleSort::getBubbleSortDescending()
 
           for (int j = 0; j < (5 - i - 1); j++)
           {
-               //Comparison descending
+               // Comparison descending
                if (arr[j] < arr[j + 1])
                {
                     int swap = arr[j];
@@ -72,7 +72,7 @@ void Sorting::BubbleSort::getBubbleSortDescending()
           }
      }
 
-     //Get the values sorted descending
+     // Get the values sorted descending
      std::cout << "\nValues sorted descending: ";
      for (size_t i = 0; i < 5; i++)
      {
@@ -86,13 +86,13 @@ void PrintBubbleSort()
 {
      Sorting::BubbleSort *BS = new Sorting::BubbleSort;
 
-     //Set numbers
+     // Set numbers
      BS->setNumbersBubbleSort();
 
-     //Bubble sort algorithm ascending
+     // Bubble sort algorithm ascending
      BS->getBubbleSortAscending();
 
-     //Bubble sort algorithm descending
+     // Bubble sort algorithm descending
      BS->getBubbleSortDescending();
 }
 
