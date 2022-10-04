@@ -5,18 +5,19 @@ namespace Sorting
      class BubbleSort
      {
      private:
-          int arr[5], Rounds = 0;
+          int arr[5];
+          int Rounds = 0;
 
      public:
-          void setNumbersBubbleSort();
+          void InputNumberBubbleSort();
 
-          virtual void getBubbleSortAscending();
+          virtual void BubbleSortAscending();
 
-          virtual void getBubbleSortDescending();
+          virtual void BubbleSortDescending();
      };
 };
 
-void Sorting::BubbleSort::setNumbersBubbleSort()
+void Sorting::BubbleSort::InputNumberBubbleSort()
 {
      std::cout << "Enter 5 numbers: ";
      for (size_t i = 0; i < 5; i++)
@@ -25,7 +26,7 @@ void Sorting::BubbleSort::setNumbersBubbleSort()
      }
 }
 
-void Sorting::BubbleSort::getBubbleSortAscending()
+void Sorting::BubbleSort::BubbleSortAscending()
 {
      for (int i = 0; i < 5; i++)
      {
@@ -54,7 +55,7 @@ void Sorting::BubbleSort::getBubbleSortAscending()
      std::cout << "\nTotal rounds: " << Rounds << "\n";
 }
 
-void Sorting::BubbleSort::getBubbleSortDescending()
+void Sorting::BubbleSort::BubbleSortDescending()
 {
      for (int i = 0; i < 5; i++)
      {
@@ -87,13 +88,13 @@ void PrintBubbleSort()
      Sorting::BubbleSort *BS = new Sorting::BubbleSort;
 
      // Set numbers
-     BS->setNumbersBubbleSort();
+     BS->InputNumberBubbleSort();
 
      // Bubble sort algorithm ascending
-     BS->getBubbleSortAscending();
+     BS->BubbleSortAscending();
 
      // Bubble sort algorithm descending
-     BS->getBubbleSortDescending();
+     BS->BubbleSortDescending();
 }
 
 int main()
