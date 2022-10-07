@@ -17,6 +17,7 @@ namespace Sorting
                     {
                          arr[j] = arr[j - interval];
                     }
+                    
                     arr[j] = temp;
                }
           }
