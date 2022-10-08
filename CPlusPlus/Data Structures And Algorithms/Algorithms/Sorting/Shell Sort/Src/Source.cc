@@ -3,10 +3,10 @@
 
 namespace Sorting
 {
-     //Function to short array elements in shell sort
+     // Function to short array elements in shell sort
      void ShellSort(int arr[], int number)
      {
-          //Rearrange the array elements
+          // Rearrange the array elements
           for (int interval = (number / VALUE); interval > 0; interval /= VALUE)
           {
                for (int i = interval; i < number; i++)
@@ -23,7 +23,7 @@ namespace Sorting
           }
      }
 
-     //Print the sorted array elements in shell sort
+     // Print the sorted array elements in shell sort
      void PrintShellSort(int arr[], int number)
      {
           std::cout << "Values shell short: ";
@@ -32,7 +32,7 @@ namespace Sorting
                std::cout << arr[i] << " ";
           }
      }
-} //namespace Sorting
+} // namespace Sorting
 
 int main()
 {
