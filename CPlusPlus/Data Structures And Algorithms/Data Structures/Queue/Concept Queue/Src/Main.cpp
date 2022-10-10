@@ -6,7 +6,8 @@ using namespace std;
 class Queue
 {
 private:
-     int front, rear;
+     int front;
+     int rear;
      int arr[5];
 
 public:
@@ -118,7 +119,7 @@ void showQueue()
           cout << "3. Is empty" << endl;
           cout << "4. Is full" << endl;
           cout << "5. Count" << endl;
-          cout << "6. Dislay" << endl;
+          cout << "6. Display" << endl;
           cout << "7. Clear Console" << endl;
           cout << "0. Exit" << endl
                << endl;
