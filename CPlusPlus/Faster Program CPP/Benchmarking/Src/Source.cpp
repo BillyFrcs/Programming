@@ -26,7 +26,7 @@ public:
           auto duration = end - start;
           double ms = duration * 0.001;
 
-          //std::cout << duration << " us (" << ms << "ms)\n";
+          // std::cout << duration << " us (" << ms << "ms)\n";
           std::cout << "Duration = " << duration << " (" << ms << ") ms" << std::endl;
      }
 
@@ -36,7 +36,7 @@ private:
 
 int main(int argc, char const *argv[])
 {
-     //Wrap
+     // Wrap
      {
           int value = 0;
           Timer timer;
@@ -49,7 +49,7 @@ int main(int argc, char const *argv[])
 
      std::cout << std::endl;
 
-     //Struct
+     // Struct
      struct Vector
      {
           float x, y;
