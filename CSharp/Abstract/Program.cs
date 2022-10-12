@@ -48,12 +48,10 @@ namespace Abstract
           {
                return Name + ", " + Author + ", " + Price;
           }
-
      }
 
      class Demo
      {
-
           public static void Main(string[] args)
           {
                Book myBook = new MyBook("Harry Potter", "J.k. Rowling", "100");
