@@ -5,7 +5,6 @@ namespace Abstract
      // Abstract Book Class
      abstract class Book
      {
-
           // Private Fields
           private string _name;
           private string _author;
@@ -34,19 +33,17 @@ namespace Abstract
 
           // Abstract Method
           public abstract string GetDetails();
-
      }
 
      // Class MyBook extending Book Class
      class MyBook : Book
      {
-
           // Parameterized Constructor
           public MyBook(string name, string author, string price)
             : base(name, author, price)
           { }
 
-          // Overrideing the GetDetails Abstract Method of the Base Class
+          // Overriding the GetDetails Abstract Method of the Base Class
           public override string GetDetails()
           {
                return Name + ", " + Author + ", " + Price;
