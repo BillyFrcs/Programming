@@ -5,29 +5,29 @@ namespace GuessingGame
 {
      class GuessingNumber
      {
-          private int number;
+          private int _number;
 
           public void GuessNumber()
           {
                do
                {
                     Console.Write("Guessing a number between 1 to 20: ");
-                    number = Convert.ToInt32(Console.ReadLine());
+                    _number = Convert.ToInt32(Console.ReadLine());
 
-                    if (number < 11)
+                    if (_number < 11)
                     {
                          Console.WriteLine("Too low!");
                     }
-                    else if (number > 11)
+                    else if (_number > 11)
                     {
                          Console.WriteLine("Too high!");
                     }
 
-                    if (number == 11)
+                    if (_number == 11)
                     {
                          Console.WriteLine("You guess it, congrats...:D");
                     }
-               } while (number != 11);
+               } while (_number != 11);
           }
      }
 
