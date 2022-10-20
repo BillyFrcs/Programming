@@ -20,4 +20,3 @@ while (n > 50) {
 }
 
 console.log(`Alright, you got ${n}`);
-
