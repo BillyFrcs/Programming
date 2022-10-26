@@ -12,9 +12,12 @@ void continueWhileLoops()
           if (x == 5)
           {
                x++;
+
                continue;
           }
+
           cout << x << endl;
+
           x++;
      }
 }
@@ -27,6 +30,7 @@ void continueForLoops()
           {
                continue;
           }
+
           cout << i << endl;
      }
 }
@@ -47,6 +51,7 @@ void continueWhileLoopsProgram()
           {
                cout << "If number is greater than 50 it won't be calculated \n";
                num = 0;
+
                continue;
           }
      }
@@ -63,6 +68,7 @@ void continueNestedLoops()
                {
                     continue;
                }
+               
                cout << "i = " << i << ", j = " << j << endl;
           }
      }
