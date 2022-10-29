@@ -11,14 +11,17 @@ void bubbleSort(int a[], int n)
                if (a[j] > a[j + 1])
                {
                     std::swap(a[j], a[j + 1]);
+
                     numOfSwaps++;
                }
           }
+
           if (numOfSwaps == 0)
           {
                break;
           }
      }
+     
      std::cout << "Array is sorted in " << numOfSwaps << " swaps.\n";
      std::cout << "First Element: " << a[0] << std::endl;
      std::cout << "Last Element: " << a[j] << std::endl;
