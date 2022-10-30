@@ -14,6 +14,7 @@ namespace Collections.Dictionary
                int discount = Convert.ToInt32(Console.ReadLine());
 
                Dictionary<string, int> coffee = new Dictionary<string, int>();
+               
                coffee.Add("Americano", 50);
                coffee.Add("Latte", 70);
                coffee.Add("Flat White", 60);
