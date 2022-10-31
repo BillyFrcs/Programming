@@ -71,7 +71,6 @@ namespace Conditions
                {
                     Console.WriteLine("Sorry you're still young and short.");
                }
-
                else
                {
                     if (age >= minAge)
