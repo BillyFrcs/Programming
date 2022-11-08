@@ -16,6 +16,7 @@ int linearSearch(int search)
                return i;
           }
      }
+     
      return -1;
 }
 
