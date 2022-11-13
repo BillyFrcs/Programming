@@ -32,10 +32,8 @@ int binarySearch(int search)
 
           if (searchArr[mid] == search)
                return mid;
-
           else if (search < searchArr[mid])
                high = mid - 1;
-
           else if (search > searchArr[mid])
                low = mid + 1;
 
@@ -51,7 +49,6 @@ int main()
 
      if (resultIndexLinear == -1)
           printf("Not found linear\n");
-
      else
           printf("Search index linear = %d \n", resultIndexLinear);
 
@@ -60,7 +57,6 @@ int main()
 
      if (resultIndexBinary == -1)
           printf("Not found binary \n");
-
      else
           printf("Search index binary = %d \n", resultIndexBinary);
 
