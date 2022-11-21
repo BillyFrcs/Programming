@@ -26,3 +26,12 @@ function minMax(arrayOfNumbers) {
 }
 
 minMax([8, -6, 0, 9, 40, 2, 23, 50, 2, -3, -15, 15, -23, 71]);
+
+try {
+    const arr = [1, 2, 3, 4];
+    for (let i = 0; i <= 4; i++) {
+        console.log(arr[i]);
+    }
+} catch(e) {
+    console.log("Out of bounds");
+}
