@@ -84,7 +84,6 @@ int main()
                e = Division(c, d);
                cout << e << endl;
           }
-
           catch (exception &g)
           {
                cout << g.what() << endl;
@@ -94,6 +93,7 @@ int main()
      }
 
      cin.get();
+     
      return 0;
 }
 
