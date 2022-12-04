@@ -50,5 +50,7 @@ int main(int argc, char *argv[])
 
      callocProgram();
 
-     __debugbreak;
+     // __debugbreak; // Only for windows
+
+     return EXIT_SUCCESS;
 }
