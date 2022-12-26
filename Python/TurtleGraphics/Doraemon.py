@@ -250,7 +250,6 @@ def Doraemon():
     end_fill()
 
     # Doraemon with Python Turtle
-
     ankur(-103.42, 15.09)
     seth(0)
     fd(38)
