@@ -13,7 +13,7 @@ Billy.speed(100)
 
 # Start drawing stars
 def star(turtle, size):
-    if(size <= 10):
+    if (size <= 10):
         return
     else:
         turtle.begin_fill()
@@ -22,6 +22,7 @@ def star(turtle, size):
             star(turtle, size / 3)
             turtle.left(216)
             turtle.end_fill()
+
 
 star(Billy, 360)
 turtle.done()
