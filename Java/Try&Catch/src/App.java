@@ -23,7 +23,7 @@ public class App
         }
         catch (NullPointerException ErrorException)
         {
-            System.err.println("Error Name: " + ErrorException.getMessage());
+            System.err.println("Error type: " + ErrorException.getMessage());
 
             System.out.print("You didn't enter your name yet!, please enter your name: ");
 
@@ -45,5 +45,7 @@ public class App
         Scanner Scan = new Scanner(System.in);
 
         this._name = Scan.nextLine();
+
+        Scan.close();
     }
 }
