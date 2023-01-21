@@ -32,7 +32,7 @@ try {
     for (let i = 0; i <= 4; i++) {
         console.log(arr[i]);
     }
-} catch(e) {
+} catch (e) {
     console.log("Out of bounds");
 }
 
@@ -40,7 +40,7 @@ function fetchUsername() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve('JSUser');
-            }, 3000);
+        }, 3000);
     })
 }
 
