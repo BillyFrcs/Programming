@@ -24,7 +24,7 @@ namespace Abstract
           }
 
           // Parameterized Constructor
-          public Book(string name, string author, string price)
+          protected Book(string name, string author, string price)
           {
                this._name = name;
                this._author = author;
