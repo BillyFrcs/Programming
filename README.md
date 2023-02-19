@@ -4,13 +4,7 @@ This repository contains about learning the basics and fundamental to advanced w
 
 ## Getting Started
 
-1. Download or clone this repository, make sure that you've already installed <a style = "text-decoration:none;" href = "https://git-scm.com/">Git</a> in your local computer.
-
-```
-git clone https://github.com/BillyFrcs/Programming.git
-```
-
-2. To run and compiled the code, you need to install some compiler and sdk. Visit the link below to download and install the compiler and sdk.
+To run and compiled the code, you need to install some compiler and sdk. Go to the link below to download and install the compiler and sdk.
 
    - [C/C++ (MinGW)](https://sourceforge.net/projects/mingw-w64/)
    - [.NET](https://dotnet.microsoft.com/download)
