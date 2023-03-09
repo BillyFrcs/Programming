@@ -1,6 +1,7 @@
 # Binary folder and file C, C++ and C# code
 bin/
 *.exe
+Main
 
 # C# Debug folder
 Debug/
