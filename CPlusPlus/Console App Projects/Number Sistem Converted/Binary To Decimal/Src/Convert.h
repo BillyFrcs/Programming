@@ -15,5 +15,6 @@ int convertedBinToDec(long long num)
           decNum += remainder * pow(2, i);
           i++;
      }
+     
      return decNum;
 }
