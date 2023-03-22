@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-dev": "NODE_ENV=development node app.js",
+    "start": "NODE_ENV=production node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/BillyFrcs/Programming/issues"
   },
-  "homepage": "https://github.com/BillyFrcs/Programming#readme"
+  "homepage": "https://github.com/BillyFrcs/Programming#readme",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
 }
