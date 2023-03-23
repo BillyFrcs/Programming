@@ -33,3 +33,11 @@ readableStream.on('readable', () => {
 readableStream.on('end', () => {
     console.log("Done reading");
 });
+
+// Writeable stream
+const writeableStream = fileSystem.createWriteStream('output.txt');
+
+writeableStream.write('First line \n');
+writeableStream.write('Second line \n');
+
+writeableStream.end();
