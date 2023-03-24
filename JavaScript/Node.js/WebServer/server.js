@@ -1,21 +1,32 @@
 const http = require('http');
 
 const requestListener = (request, response) => {
-    response.setHeader('Content-Type', 'text/html');
-
-    response.statusCode = 200;
+    response.setHeader('Content-Type', 'application/json');
+    response.setHeader('X-Powered-By', 'NodeJS');
 
     const { method, url } = request;
 
     if (url === '/') {
         if (method === 'GET') {
-            response.end('<h1>This is the home page</h1>');
+            response.statusCode = 200;
+
+            response.end(JSON.stringify({
+                message: '<h1>This is the home page</h1>'
+            }));
         } else {
-            response.end(`<h1>Cannot access page with ${method} request!</h1>`);
+            response.statusCode = 400;
+
+            response.end(JSON.stringify({
+                message: `<h1>Cannot access page with ${method} request!</h1>`
+            }));
         }
     } else if (url === '/about') {
         if (method === 'GET') {
-            response.end('<h1>This is the about page</h1>');
+            response.statusCode = 200;
+
+            response.end(JSON.stringify({
+                message: '<h1>This is the about page</h1>'
+            }));
         } else if (method === 'POST') {
             let body = [];
 
@@ -28,13 +39,25 @@ const requestListener = (request, response) => {
 
                 const { name } = JSON.parse(body);
 
-                response.end(`<h1>Hello ${name}!, This the about page</h1>`);
+                response.statusCode = 200;
+
+                response.end(JSON.stringify({
+                    message: `<h1>Hello ${name}!, This the about page</h1>`
+                }));
             });
         } else {
-            response.end(`<h1>Cannot access page with ${method} request!</h1>`);
+            response.statusCode = 400;
+
+            response.end(JSON.stringify({
+                message: `<h1>Cannot access page with ${method} request!</h1>`
+            }));
         }
     } else {
-        response.end('<h1>Page not found!</h1>');
+        response.statusCode = 404;
+
+        response.end(JSON.stringify({
+            message: 'Page not found!'
+        }));
     }
 
     /*
