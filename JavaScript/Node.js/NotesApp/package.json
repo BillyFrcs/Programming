@@ -1,0 +1,19 @@
+{
+  "name": "notesapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "lint": "eslint ./"
+  },
+  "keywords": [],
+  "author": "Billy Franscois",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.22"
+  }
+}
