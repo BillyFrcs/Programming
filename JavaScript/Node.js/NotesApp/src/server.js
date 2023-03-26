@@ -1,6 +1,8 @@
 const Hapi = require('@hapi/hapi');
 const routes = require('./routes');
 
+// Testing the server: http://notesapp-v1.dicodingacademy.com
+
 const init = async () => {
   const server = Hapi.server({
     port: 1908,
@@ -8,8 +10,8 @@ const init = async () => {
     routes: {
       cors: {
         origin: ['*']
-      }
-    }
+      },
+    },
   });
 
   server.route(routes);
