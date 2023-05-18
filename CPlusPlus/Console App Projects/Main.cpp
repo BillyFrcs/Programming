@@ -32,7 +32,7 @@ namespace Program
     public:
         Student()
         {
-            system("clear");
+            system("clear"); // use "cls" instead in Windows
         }
 
         void Initialize()
@@ -43,10 +43,10 @@ namespace Program
             std::cerr << "Masukan NIM anda: ";
             std::cin >> StudentData.nim;
             
-            std::cout << "Masukan data semester (1/2): ";
+            std::cerr << "Masukan data semester (1/2): ";
             std::cin >> StudentData.semester;
 
-            std::cout << "Berapa data mata kuliah yang ingin anda input? ";
+            std::cerr << "Berapa data mata kuliah yang ingin anda input? ";
             std::cin >> StudentData.totalSubject;
         }
 
